@@ -1,0 +1,103 @@
+[2025-08-19 15:29:48] [Serial Error] Could not open serial port: could not open port 'COM7': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+[2025-08-19 15:29:50] [Comm] Pipeline started (AV-triggered capture + JPEG queues).
+[2025-08-19 15:29:52] [Barcode Capture] Using AV camera id=DEV_1AB22C00C5A5
+[2025-08-19 15:29:55] [Barcode Capture] Saving to: captures\barcode
+[2025-08-19 15:29:55] [Barcode Capture] Ready. Waiting for press...
+[2025-08-19 15:29:57] [Comm] Pipeline stopped.
+[2025-08-19 15:37:51] [Serial Error] Could not open serial port: could not open port 'COM7': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+[2025-08-19 15:37:54] [Comm] Pipeline started (AV-triggered capture + JPEG queues).
+[2025-08-19 15:37:56] [Barcode Capture] Using AV camera id=DEV_1AB22C00C5A5
+[2025-08-19 15:37:58] [Barcode Capture] Saving to: captures\barcode
+[2025-08-19 15:37:58] [Barcode Capture] Ready. Waiting for press...
+[2025-08-19 15:39:05] [Serial Error] Could not open serial port: could not open port 'COM7': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+[2025-08-19 15:39:07] [Comm] Pipeline started (AV-triggered capture + JPEG queues).
+[2025-08-19 15:39:09] [Barcode Capture] Using AV camera id=DEV_1AB22C00C5A5
+[2025-08-19 15:39:11] [Barcode Capture] Saving to: captures\barcode
+[2025-08-19 15:39:11] [Barcode Capture] Ready. Waiting for press...
+[2025-08-19 15:44:52] [Serial] Listening on COM4 ...
+[2025-08-19 15:44:55] [Comm] Pipeline started (AV-triggered capture + JPEG queues).
+[2025-08-19 15:44:57] [Barcode Capture] Using AV camera id=DEV_1AB22C00C5A5
+[2025-08-19 15:44:59] [Barcode Capture] Saving to: captures\barcode
+[2025-08-19 15:44:59] [Barcode Capture] Ready. Waiting for press...
+[2025-08-19 15:46:59] [Serial] Listening on COM4 ...
+[2025-08-19 15:47:01] [Comm] Pipeline started (AV-triggered capture + JPEG queues).
+[2025-08-19 15:47:03] [Barcode Capture] Using AV camera id=DEV_1AB22C00C5A5
+[2025-08-19 15:47:06] [Barcode Capture] Saving to: captures\barcode
+[2025-08-19 15:47:06] [Barcode Capture] Ready. Waiting for press...
+[2025-08-19 15:48:31] [Serial] Trigger received.
+[2025-08-19 15:48:31] [Barcode Capture] Saved 20250819_154831_459_DEV_1AB22C00C5A5.jpg
+[2025-08-19 15:48:31] [Barcode Process] Processing image...
+[2025-08-19 15:48:31] [Barcode YOLO Error] Invalid CUDA 'device=0' requested. Use 'device=cpu' or pass valid CUDA device(s) if available, i.e. 'device=0' or 'device=0,1,2,3' for Multi-GPU.
+
+torch.cuda.is_available(): False
+torch.cuda.device_count(): 0
+os.environ['CUDA_VISIBLE_DEVICES']: None
+See https://pytorch.org/get-started/locally/ for up-to-date torch install instructions if no CUDA devices are seen by torch.
+
+[2025-08-19 15:48:36] [Comm] Pipeline stopped.
+[2025-08-19 15:56:54] [Serial] Listening on COM4 ...
+[2025-08-19 15:56:56] [Comm] Pipeline started (AV-triggered capture + JPEG queues).
+[2025-08-19 15:56:58] [Barcode Capture] Using AV camera id=DEV_1AB22C00C5A5
+[2025-08-19 15:57:00] [Barcode Capture] Saving to: captures\barcode
+[2025-08-19 15:57:00] [Barcode Capture] Ready. Waiting for press...
+[2025-08-19 16:07:01] [Serial] Listening on COM4 ...
+[2025-08-19 16:07:03] [Comm] Pipeline started (AV-triggered capture + JPEG queues).
+[2025-08-19 16:07:05] [Barcode Capture] Using AV camera id=DEV_1AB22C00C5A5
+[2025-08-19 16:07:07] [Barcode Capture] Saving to: captures\barcode
+[2025-08-19 16:07:07] [Barcode Capture] Ready. Waiting for press...
+[2025-08-19 16:08:03] [Serial] Listening on COM4 ...
+[2025-08-19 16:08:05] [Comm] Pipeline started (AV-triggered capture + JPEG queues).
+[2025-08-19 16:08:07] [Barcode Capture] Using AV camera id=DEV_1AB22C00C5A5
+[2025-08-19 16:08:10] [Barcode Capture] Saving to: captures\barcode
+[2025-08-19 16:08:10] [Barcode Capture] Ready. Waiting for press...
+[2025-08-19 16:08:11] [LabelWorker] Camera 0 started.
+[2025-08-19 16:09:28] [Comm] Pipeline stopped.
+[2025-08-19 16:15:18] [Serial] Listening on COM4 ...
+[2025-08-19 16:15:20] [Comm] Pipeline started (AV-triggered capture + JPEG queues).
+[2025-08-19 16:15:22] [Barcode Capture] Using AV camera id=DEV_1AB22C00C5A5
+[2025-08-19 16:15:25] [Barcode Capture] Saving to: captures\barcode
+[2025-08-19 16:15:25] [Barcode Capture] Ready. Waiting for press...
+[2025-08-19 16:15:26] [LabelWorker] Camera 0 started.
+[2025-08-19 16:15:33] [Serial] Trigger received.
+[2025-08-19 16:15:33] [Barcode Capture] Saved 20250819_161533_733_DEV_1AB22C00C5A5.jpg
+[2025-08-19 16:15:33] [Barcode Process] Processing image...
+[2025-08-19 16:15:33] [Barcode YOLO Error] Invalid CUDA 'device=0' requested. Use 'device=cpu' or pass valid CUDA device(s) if available, i.e. 'device=0' or 'device=0,1,2,3' for Multi-GPU.
+
+torch.cuda.is_available(): False
+torch.cuda.device_count(): 0
+os.environ['CUDA_VISIBLE_DEVICES']: None
+See https://pytorch.org/get-started/locally/ for up-to-date torch install instructions if no CUDA devices are seen by torch.
+
+[2025-08-19 16:15:45] [Comm] Pipeline stopped.
+[2025-08-19 17:06:38] [Serial] Listening on COM4 ...
+[2025-08-19 17:06:41] [Comm] Pipeline started (AV-triggered capture + JPEG queues).
+[2025-08-19 17:06:43] [Barcode Capture] Using AV camera id=DEV_1AB22C00C5A5
+[2025-08-19 17:06:45] [Barcode Capture] Saving to: captures\barcode
+[2025-08-19 17:06:45] [Barcode Capture] Ready. Waiting for press...
+[2025-08-19 17:06:46] [LabelWorker] Camera 0 started.
+[2025-08-19 17:06:52] [Serial] Trigger received.
+[2025-08-19 17:06:52] [Barcode Capture] Saved 20250819_170652_638_DEV_1AB22C00C5A5.jpg
+[2025-08-19 17:09:27] [Comm] Pipeline stopped.
+[2025-08-19 17:10:29] [Serial] Listening on COM4 ...
+[2025-08-19 17:10:31] [Comm] Pipeline started (AV-triggered capture + JPEG queues).
+[2025-08-19 17:10:33] [Barcode Capture] Using AV camera id=DEV_1AB22C00C5A5
+[2025-08-19 17:10:35] [Barcode Process] DirectML init failed: DLL load failed while importing onnxruntime_pybind11_state: A dynamic link library (DLL) initialization routine failed. -> falling back to Ultralytics CPU.
+[2025-08-19 17:10:35] [Barcode Capture] Saving to: captures\barcode
+[2025-08-19 17:10:35] [Barcode Capture] Ready. Waiting for press...
+[2025-08-19 17:10:36] [LabelWorker] Camera 0 started.
+[2025-08-19 17:10:43] [Serial] Trigger received.
+[2025-08-19 17:10:43] [Barcode Capture] Saved 20250819_171043_740_DEV_1AB22C00C5A5.jpg
+[2025-08-19 17:10:46] [Barcode Process] Box #0 -> box_q_B2E
+[2025-08-19 17:10:46] [Expire Process] Box #0 (expiry=2025-12-31) -> box_q_E2L
+[2025-08-19 17:10:46] [LabelWorker] Assigned Box #0 -> track 1
+[2025-08-19 17:13:16] [Serial] Trigger received.
+[2025-08-19 17:13:16] [Barcode Capture] Saved 20250819_171316_588_DEV_1AB22C00C5A5.jpg
+[2025-08-19 17:13:16] [Barcode Process] Box #1 -> box_q_B2E
+[2025-08-19 17:13:16] [Expire Process] Box #1 (expiry=2025-12-31) -> box_q_E2L
+[2025-08-19 17:13:16] [LabelWorker] Assigned Box #1 -> track 9
+[2025-08-19 17:13:40] [Serial] Trigger received.
+[2025-08-19 17:13:40] [Barcode Capture] Saved 20250819_171340_266_DEV_1AB22C00C5A5.jpg
+[2025-08-19 17:13:40] [Barcode Process] Box #2 -> box_q_B2E
+[2025-08-19 17:13:40] [Expire Process] Box #2 (expiry=2025-12-31) -> box_q_E2L
+[2025-08-19 17:13:40] [LabelWorker] Assigned Box #2 -> track 15
+[2025-08-19 17:14:08] [Comm] Pipeline stopped.

@@ -1,0 +1,3 @@
+{'id': 0, 'barcode': 'inverted', 'expire_date': '2025-12-31', 'cap': None, 'brand': 'Suntop', 'flavor': 'Orange', 'capacity': '250ml', 'product_type': 'juice', 'reason': 'inverted, not in batch', 'status': 'rejected'}
+{'id': 1, 'barcode': 'inverted', 'expire_date': '2025-12-31', 'cap': None, 'brand': 'Suntop', 'flavor': 'Orange', 'capacity': '250ml', 'product_type': 'juice', 'reason': 'inverted, not in batch', 'status': 'rejected'}
+{'id': 2, 'barcode': 'inverted', 'expire_date': '2025-12-31', 'cap': None, 'brand': 'Juhayna', 'flavor': 'Fullcream', 'capacity': '235ml', 'product_type': 'milk', 'reason': 'inverted, invalid barcode', 'status': 'rejected'}
