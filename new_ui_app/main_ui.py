@@ -67,11 +67,13 @@ class JuiceControlUI(QMainWindow):
     def start_all(self):
         try:
             selected_batch = self.labels.batch_combo.currentText()
+            self.boxes = []  # reset for a fresh run
             self.pipeline.start(self.frame_q, self.info_q, batch_name=selected_batch)
             self.labels.clear()
             self.timer.start(30)
         except Exception as e:
             QMessageBox.critical(self, "Pipeline Error", str(e))
+
 
     def stop_all(self):
         self.timer.stop()
@@ -105,9 +107,20 @@ class JuiceControlUI(QMainWindow):
                 continue
 
             if evt.get("event") == "box_saved":
-            # evt already contains brand/flavor/etc.
-                self.labels.update_info(evt)
-                
+                self.labels.update_info(evt)   # existing UI update
+                # NEW: store the row for export
+                self.boxes.append({
+                    "id": evt.get("id"),
+                    "brand": evt.get("brand"),
+                    "flavor": evt.get("flavor"),
+                    "capacity": evt.get("capacity"),
+                    "product_type": evt.get("product_type"),
+                    "barcode": evt.get("barcode"),
+                    "expire": evt.get("expire"),
+                    "status": evt.get("status"),
+                    "reason": evt.get("reason"),
+                })
+
 
     def export_excel(self):
         if not self.boxes:

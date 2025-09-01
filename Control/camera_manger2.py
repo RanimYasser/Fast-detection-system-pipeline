@@ -40,6 +40,16 @@ class SoftTriggerGrabber:
         except: pass
         try: f('AcquisitionMode').set('Continuous')
         except: pass
+        try:  f('Width').set(1100)
+        except: pass
+        try: f('OffsetX').set(250)
+        except: pass
+
+        try:  f('Height').set(1400)     
+        except: pass
+        try: f('OffsetY').set(260)
+        except: pass
+
 
         # --- Trigger config: OFF -> set Source/Activation -> ON (safe order) ---
         f('TriggerSelector').set('FrameStart')

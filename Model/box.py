@@ -5,8 +5,8 @@ class Box:
     def __init__(self ):
         self.id = None
         self.barcode = None
-        self.expire_date = bool
-        self.cap = None
+        self.expire_date = False
+        self.cap = False
         self.brand = None
         self.flavor = None
         self.capacity = None
@@ -92,7 +92,7 @@ class Box:
             rejection_reasons.append("unreadable barcode")
 
         # Expiry date check
-        if not self.has_expire_date():
+        if self.has_expire_date() == "no expire date":
             rejection_reasons.append("missing expire date")
 
         # Cap check
@@ -106,11 +106,13 @@ class Box:
                 self.get_flavor(),
                 self.get_capacity()
             )
-            if self.get_barcode():
-                if not findProduct(product_str):
-                    rejection_reasons.append("not in batch")
-                elif not matchBarcode(product_str, self.get_barcode()):
-                    rejection_reasons.append("invalid barcode")
+         
+            if not findProduct(product_str):
+                rejection_reasons.append("not in batch")
+            else:
+                if self.get_barcode()!="inverted" and self.get_barcode():
+                    if not matchBarcode(product_str, self.get_barcode()):
+                        rejection_reasons.append("mismatched barcode")
 
         # Final decision
         if rejection_reasons:
@@ -121,25 +123,6 @@ class Box:
             self.set_reason(None)
 
         return self.get_status()
-
-
-    def evaluate_box2(self):
-        rejection_reasons=[]
-        if self.get_barcode == "inverted":
-            rejection_reasons.append("inverted")
-        if not self.get_barcode:
-            rejection_reasons.append("unreadable barcode")
-        if not self.has_expire_date:
-            rejection_reasons.append("missing expiredate")
-        if self.get_cap is False and self.get_capacity == "1L":
-            rejection_reasons.append("unsealed")          
-        if rejection_reasons:
-            self.set_status("rejected")
-            self.set_reason(",".join(rejection_reasons))
-        else:
-            self.set_status("accepted")
-            self.set_reason(None)
-        return self.status
 
     def to_dict(self):
         return {

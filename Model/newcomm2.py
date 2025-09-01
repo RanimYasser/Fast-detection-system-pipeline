@@ -1,4 +1,3 @@
-# Model/communication.py
 import os
 import sys
 import cv2
@@ -12,47 +11,36 @@ from collections import namedtuple
 from typing import Optional
 from multiprocessing.queues import Queue as MPQueue
 from multiprocessing.synchronize import Event as MPEvent
+from multiprocessing import Barrier
+
+import torch
+
+# --- add these two early ---
+import torch
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if PROJECT_ROOT not in sys.path:
+    sys.path.insert(0, PROJECT_ROOT)
 
 from Control.ReadExcel import readExcel, findProduct, matchBarcode, product_from_parts
 from Model.utils import log, save_box_info, _assert_file, try_open_camera
 from Control.sensor import start_serial_listener
 from Control.camera_manger2 import SoftTriggerGrabber
-# NOTE: Do NOT import onnx_infer here. We lazy-import it only if/when ONNX is used.
 
-# =====================================================================================
 # Config
-# =====================================================================================
 os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 
-# General label/track model
-MODEL_PATH = r"C:\Users\RC-co\Desktop\Fast-detection\Yolo-models\best.pt"
-# Barcode ROI model
-BARCODE_MODEL_PATH = r"C:\Users\RC-co\Desktop\Fast-detection\Yolo-models\bestBarcode.pt"
-
-# Hardcoded expiry for pipeline test
-TEST_DATE = "2025-12-31"
-
-# Label camera index (OpenCV webcam)
+MODEL_PATH = r"C:\Users\RC-co\Desktop\Fast-detection\Yolo-models\best_label.pt"
+BARCODE_MODEL_PATH = r"C:\Users\RC-co\Desktop\Fast-detection\Yolo-models\best_barcode.pt"
+TOP_MODEL_PATH = r"C:\Users\RC-co\Desktop\Fast-detection\Yolo-models\best_top.pt"
+TEST_DATE = True
 LABEL_CAM_INDEX = 0
-TRIGGER_X = 200  # px position to assign Box -> first track that crosses this line
-
-# Where to save barcode captures
+TRIGGER_X = 100
 BARCODE_SAVE_DIR = os.path.join("captures", "barcode")
 os.makedirs(BARCODE_SAVE_DIR, exist_ok=True)
+TOP_SAVE_DIR = os.path.join("captures", "top")
+os.makedirs(TOP_SAVE_DIR, exist_ok=True)
 
-# === GPU usage switches ===
-# Use DirectML (AMD GPU) for BARCODE stage (ONNX). Keep LABEL stage on Ultralytics CPU for tracker.
-USE_ONNX_DML = True
-USE_ONNX_DML_FOR_LABEL = False  # keeping False preserves model.track()
-
-HERE = os.path.dirname(os.path.abspath(__file__))
-ROOT = os.path.abspath(os.path.join(HERE, ".."))
-ONNX_MODEL_PATH   = os.path.join(ROOT, "Yolo-models", "best.onnx")
-ONNX_BARCODE_PATH = os.path.join(ROOT, "Yolo-models", "bestBarcode.onnx")
-
-# =====================================================================================
 # Project imports (relative safe import)
-# =====================================================================================
 try:
     from Model.box import Box
     from Model.detection import Detect
@@ -62,40 +50,39 @@ except ModuleNotFoundError:
     from Model.box import Box
     from Model.detection import Detect
 
+# Device picker (CUDA / DirectML / CPU)
 
-def initialize_label_model():
-    """
-    LABEL stage needs Ultralytics' tracker. Keep it on CPU to avoid CUDA/AMD issues.
-    """
-    if USE_ONNX_DML_FOR_LABEL:
-        # Advanced path (not used here): ONNX + custom tracker
-        from Model.onnx_infer import new_dml_session
-        return new_dml_session(ONNX_MODEL_PATH), None
-    else:
-        _assert_file(MODEL_PATH, "MODEL_PATH")
-        model = YOLO(MODEL_PATH)
-        return model, None
+def warmup_yolo_for_detect(model, device="cpu", imgsz=640):
+    import numpy as np, cv2
+    dummy = np.zeros((imgsz, imgsz, 3), np.uint8)
+    # One detect forward
+    _ = model.predict(dummy, imgsz=imgsz, device=device, verbose=False)
+    # One more to stabilize memory allocator
+    _ = model.predict(dummy, imgsz=imgsz, device=device, verbose=False)
 
 
-def initialize_barcode_model():
-    """
-    BARCODE stage: use ONNX + DirectML (AMD GPU) when enabled, else Ultralytics CPU.
-    """
-    if USE_ONNX_DML:
-        from Model.onnx_infer import new_dml_session  # lazy import
-        return new_dml_session(ONNX_BARCODE_PATH)
-    else:
-        _assert_file(BARCODE_MODEL_PATH, "BARCODE_MODEL_PATH")
-        return YOLO(BARCODE_MODEL_PATH)
+def pick_device():
+    # Ultralytics can't use 'dml' as a device string; sanitize env if present
+    if os.environ.get("CUDA_VISIBLE_DEVICES", "").lower() == "dml":
+        os.environ.pop("CUDA_VISIBLE_DEVICES", None)
 
-# =====================================================================================
+    # Prefer CUDA if really available
+    if torch.cuda.is_available():
+        return "cuda"
+
+    # NOTE: Even if torch-directml is installed, Ultralytics cannot take 'dml' here.
+    # For reliability, use CPU. (DML option shown further below.)
+    return "cpu"
+
+DEVICE = pick_device()
+
 # Stage 1a: Barcode Capture (triggered by switch) — AV + software trigger + SAVE + bytes
-# =====================================================================================
+
 def barcode_capture_process(event_queue: mp.Queue, barcode_image_queue: mp.Queue, cam_id: str):
-    log(f"[Barcode Capture] Using AV camera id={cam_id}")
+    #log(f"[Barcode Capture] Using AV camera id={cam_id}")
     g = SoftTriggerGrabber(cam_id, pixel_format='BGR8')
-    log(f"[Barcode Capture] Saving to: {BARCODE_SAVE_DIR}")
-    log("[Barcode Capture] Ready. Waiting for press...")
+    #log(f"[Barcode Capture] Saving to: {BARCODE_SAVE_DIR}")
+    #log("[Barcode Capture] Ready. Waiting for press...")
 
     try:
         while True:
@@ -107,7 +94,7 @@ def barcode_capture_process(event_queue: mp.Queue, barcode_image_queue: mp.Queue
                 # Trigger a new exposure and get the frame
                 img = g.fire(timeout=0.3)
                 if img is None:
-                    log("[Barcode Capture] Trigger timeout (no frame).")
+                    #log("[Barcode Capture] Trigger timeout (no frame).")
                     continue
 
                 # Save with timestamp and cam id
@@ -126,14 +113,14 @@ def barcode_capture_process(event_queue: mp.Queue, barcode_image_queue: mp.Queue
                 # Put JPEG bytes on queue (Windows-picklable)
                 ok, buf = cv2.imencode(".jpg", img, [cv2.IMWRITE_JPEG_QUALITY, 95])
                 if not ok:
-                    log("[Barcode Capture] imencode failed")
+                    #log("[Barcode Capture] imencode failed")
                     continue
                 barcode_image_queue.put(buf.tobytes())
 
             except Empty:
                 time.sleep(0.02)
             except Exception as e:
-                log(f"[Barcode Capture Error] {e}")
+                #log(f"[Barcode Capture Error] {e}")
                 time.sleep(0.05)
     finally:
         try:
@@ -141,140 +128,167 @@ def barcode_capture_process(event_queue: mp.Queue, barcode_image_queue: mp.Queue
         except Exception:
             pass
 
-# =====================================================================================
 # Stage 1b: Barcode Process (detect ROI + decode -> create Box -> queue to Expire)
-# =====================================================================================
-def barcode_process(barcode_image_queue: mp.Queue, box_q_B2E: mp.Queue):
-    """
-    Barcode stage. Prefer ONNX+DirectML (AMD GPU). If DirectML init/import fails,
-    automatically fall back to Ultralytics CPU so the process never dies.
-    """
-    use_onnx = False
-    names = None
 
-    if USE_ONNX_DML:
-        try:
-            # Lazy import so normal CPU path works even if ORT is missing
-            from Model.onnx_infer import new_dml_session, run_yolo_onnx
-            try:
-                model = new_dml_session(ONNX_BARCODE_PATH)  # may raise if ORT/DML is broken
-                names = {0: "barcode"}  # adjust if your model has more classes
-                use_onnx = True
-                log("[Barcode Process] Using ONNX Runtime DirectML (GPU).")
-            except Exception as e:
-                log(f"[Barcode Process] DirectML init failed: {e} -> falling back to Ultralytics CPU.")
-                _assert_file(BARCODE_MODEL_PATH, "BARCODE_MODEL_PATH")
-                model = YOLO(BARCODE_MODEL_PATH)
-                names = getattr(model, "names", {0: "barcode"})
-                use_onnx = False
-        except Exception as e:
-            # Even the import of onnx_infer failed
-            log(f"[Barcode Process] onnx_infer import error: {e} -> falling back to Ultralytics CPU.")
-            _assert_file(BARCODE_MODEL_PATH, "BARCODE_MODEL_PATH")
-            model = YOLO(BARCODE_MODEL_PATH)
-            names = getattr(model, "names", {0: "barcode"})
-            use_onnx = False
-    else:
-        _assert_file(BARCODE_MODEL_PATH, "BARCODE_MODEL_PATH")
-        model = YOLO(BARCODE_MODEL_PATH)
-        names = getattr(model, "names", {0: "barcode"})
-        use_onnx = False
-
+def barcode_process(barcode_image_queue: mp.Queue, box_q_B2E: mp.Queue,ready):
+    _assert_file(BARCODE_MODEL_PATH, "BARCODE_MODEL_PATH")
+    model = YOLO(BARCODE_MODEL_PATH)
+    warmup_yolo_for_detect(model, DEVICE, imgsz=640)  # 2 dummy predicts
+    ready.wait()
     detect = Detect()
     next_box_id = 0
 
     while True:
+        # Receive JPEG bytes, decode to ndarray
         data = barcode_image_queue.get()  # blocking
         nparr = np.frombuffer(data, dtype=np.uint8)
         img = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
         if img is None:
-            log("[Barcode Process] imdecode failed")
+            #log("[Barcode Process] imdecode failed")
             continue
 
+        #log("[Barcode Process] Processing image...")
         try:
-            if use_onnx:
-                # returns [{'xyxy':(x1,y1,x2,y2), 'conf':float, 'cls':int}, ...]
-                from Model.onnx_infer import run_yolo_onnx
-                dets = run_yolo_onnx(model, img, conf_thr=0.8)
-            else:
-                ul_results = model(img, conf=0.8, device="cpu", verbose=False)
-                r0 = ul_results[0]
-                dets = []
-                if len(r0.boxes):
-                    for b in r0.boxes:
-                        (x1, y1, x2, y2) = map(float, b.xyxy[0])
-                        dets.append({
-                            "xyxy": (x1, y1, x2, y2),
-                            "conf": float(b.conf[0]),
-                            "cls": int(b.cls[0])
-                        })
+            results = model(img, conf=0.7, device=DEVICE)[0]
         except Exception as e:
-            log(f"[Barcode YOLO Error] {e}")
-            dets = []
+            #log(f"[Barcode YOLO Error] {e}")
+            continue
 
         new_box = Box()
         new_box.set_id(next_box_id)
         next_box_id += 1
 
-        if not dets:
+        if len(results.boxes) == 0:
             new_box.set_barcode("inverted")
         else:
-            decoded = None
-            for d in dets:
-                cls = d["cls"]
-                cls_name = names.get(cls, str(cls)) if isinstance(names, dict) else str(cls)
+            for b in results.boxes:
+                cls = int(b.cls[0])
+                cls_name = model.names[cls]
                 if cls_name.lower() == "barcode":
-                    x1, y1, x2, y2 = map(int, d["xyxy"])
+                    x1, y1, x2, y2 = map(int, b.xyxy[0])
                     roi = img[y1:y2, x1:x2]
                     try:
                         decoded = detect.barcode_detection(roi)
                     except Exception as e:
-                        log(f"[Barcode Decode Error] {e}")
+                        #log(f"[Barcode Decode Error] {e}")
                         decoded = None
-                    break
-
-            new_box.set_barcode(decoded if decoded else None)
-
+                    if decoded:
+                        new_box.set_barcode(decoded)
+                        break
+                    else:
+                        new_box.set_barcode(None)
+                       
         box_q_B2E.put(new_box)
-        log(f"[Barcode Process] Box #{new_box.id} -> box_q_B2E")
+       # log(f"[Barcode Process] Box #{new_box.id} -> box_q_B2E")
 
-# =====================================================================================
-# Stage 2a: Expire Capture (wait for Box -> capture expiry cam -> send work)
-# =====================================================================================
-def expire_capture_process(box_q_B2E: mp.Queue, expire_work_q: mp.Queue):
-    while True:
+
+
+def initialize_top_model():
+    _assert_file(TOP_MODEL_PATH, "TOP_MODEL_PATH")
+    return YOLO(TOP_MODEL_PATH)
+
+
+def top_capture_process(event_queue: mp.Queue,top_image_queue:mp.Queue ,cam_id: str):
+    #log(f"[top Capture] Using AV camera id={cam_id}")
+    g = SoftTriggerGrabber(cam_id, pixel_format='BGR8')
+    #log(f"[top Capture] Saving to: {TOP_SAVE_DIR}")
+    #log("[top Capture] Ready. Waiting for press...")
+
+    try:
+        while True:
+            try:
+                event, event_time = event_queue.get(timeout=1)
+                if event != "switch pressed":
+                    continue
+
+                # Trigger a new exposure and get the frame
+                img = g.fire(timeout=0.3)
+                if img is None:
+                    log("[TOP Capture] Trigger timeout (no frame).")
+                    continue
+
+                #Save with timestamp and cam id
+                ts = datetime.now().strftime("%Y%m%d_%H%M%S_%f")[:-3]
+                fname = f"{ts}_{cam_id.replace(':','_').replace('/','_')}.jpg"
+                fpath = os.path.join(TOP_SAVE_DIR, fname)
+                try:
+                    ok = cv2.imwrite(fpath, img, [cv2.IMWRITE_JPEG_QUALITY, 95])
+                    if ok:
+                        log(f"[Top Capture] Saved {fname}")
+                    else:
+                        log(f"[Top Capture] Failed to save {fname}")
+                except Exception as e:
+                    log(f"[Top Capture] Save error: {e}")
+
+                # Put JPEG bytes on queue (Windows-picklable)
+                ok, buf = cv2.imencode(".jpg", img, [cv2.IMWRITE_JPEG_QUALITY, 95])
+                if not ok:
+                    #log("[Top Capture] imencode failed")
+                    continue
+                top_image_queue.put(buf.tobytes())
+
+            except Empty:
+                time.sleep(0.02)
+            except Exception as e:
+                #log(f"[top Capture Error] {e}")
+                time.sleep(0.05)
+    finally:
         try:
-            current_box = box_q_B2E.get(timeout=2)
-            expire_work_q.put((current_box, None))
-        except Empty:
-            time.sleep(0.02)
+            g.close()
+        except Exception:
+            pass
 
-# =====================================================================================
 # Stage 2b: Expire Process (set TEST_DATE) -> queue to Label
-# =====================================================================================
-def expire_process(expire_work_q: mp.Queue, box_q_E2L: mp.Queue):
+def top_process(box_q_B2E, box_q_E2L: mp.Queue,top_image_queue:mp.Queue,ready):
+    _assert_file(TOP_MODEL_PATH, "TOP_MODEL_PATH")
+    model = YOLO(TOP_MODEL_PATH)
+    warmup_yolo_for_detect(model, DEVICE, imgsz=640)  # 2 dummy predicts
+    ready.wait()
+  
     while True:
+        # Receive JPEG bytes, decode to ndarray
+        data = top_image_queue.get()  # blocking
+        nparr = np.frombuffer(data, dtype=np.uint8)
+        img = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
+        if img is None:
+            #log("[top Process] imdecode failed")
+            continue
+
+        #log("[top Process] Processing image...")
         try:
-            current_box, _img = expire_work_q.get(timeout=2)  # unpack tuple
-            current_box.set_expire_date(TEST_DATE)
-            box_q_E2L.put(current_box)  # send only Box, not tuple
-            log(f"[Expire Process] Box #{current_box.id} (expiry={TEST_DATE}) -> box_q_E2L")
-        except Empty:
-            time.sleep(0.05)
+            results = model(img, conf=0.5, device=DEVICE)[0]
         except Exception as e:
-            log(f"[Expire Process Error] {e}")
-            time.sleep(0.1)
+            log(f"[top YOLO Error] {e}")
+            continue
+        current_box=box_q_B2E. get()
 
-# =====================================================================================
+        has_cap = False
+        has_expire = False
+        for b in results.boxes:
+            cls = int(b.cls[0])
+            cls_name = model.names[cls].lower()
+            if cls_name == "cap":
+                has_cap = True
+            elif cls_name == "expiredate":
+                has_expire = True
+
+        current_box.set_cap(has_cap)
+        current_box.set_expire_date("expire date printed" if has_expire else "no expire date")  
+
+        box_q_E2L.put(current_box)
+        #log(f"[top Process] Box #{current_box.id} -> box_q_E2L")
+
+
 # Label Worker helpers
-# =====================================================================================
-def load_batch_data(batch_name: Optional[str]):
-    """Load Excel batch file only if provided."""
-    if not batch_name:
-        return
-    batch_file = f"{batch_name}.xlsx"
-    readExcel(batch_file)  # module-level df in Control.ReadExcel
+def initialize_label_model():
+    """Load YOLO and detection helper."""
+    _assert_file(MODEL_PATH, "MODEL_PATH")
+    return YOLO(MODEL_PATH), Detect()
 
+def load_batch_data(batch_name: Optional[str]):
+    """Load Excel batch file."""
+    batch_file = f"{batch_name}.xlsx" 
+    readExcel(batch_file)  # module-level df in Control.ReadExcel
 
 def recover_camera(camera_index: int):
     """Handle camera reopen if frame fails."""
@@ -289,8 +303,10 @@ def recover_camera(camera_index: int):
     return cap, False, None
 
 
+#still uses trigger
 def assign_box(track_id, cx, box_q_E2L, assigned, seen_tracks, processed_ids, trigger_x=TRIGGER_X):
     """Assign a pending box to a detected track if it crosses trigger (one-shot)."""
+    # Do not assign if this track_id already processed
     if track_id in processed_ids:
         return
     if (track_id not in seen_tracks) and (cx >= trigger_x):
@@ -298,17 +314,15 @@ def assign_box(track_id, cx, box_q_E2L, assigned, seen_tracks, processed_ids, tr
             pending_box = box_q_E2L.get_nowait()
             assigned[track_id] = pending_box
             seen_tracks.add(track_id)
-            log(f"[LabelWorker] Assigned Box #{pending_box.id} -> track {track_id}")
+            #log(f"[LabelWorker] Assigned Box #{pending_box.id} -> track {track_id}")
         except Empty:
             pass
 
-
+#no need awi
 def _norm_capacity_for_cap_check(capacity: str) -> str:
     # "1 L" -> "1l", "1000 ml" -> "1000ml"
     c = (capacity or "").strip().lower().replace(" ", "")
     return c
-
-
 def process_detection(track_id, class_name, assigned, detect, info_q, processed_ids):
     if track_id in processed_ids:
         assigned.pop(track_id, None)
@@ -332,7 +346,7 @@ def process_detection(track_id, class_name, assigned, detect, info_q, processed_
             if len(parts) >= 4:
                 box.set_product_type(parts[3])
 
-            # Decision logic (inside Box)
+            # Run box evaluation (all rejection logic)
             box.evaluate_box()
 
         # Notify UI once
@@ -360,51 +374,51 @@ def process_detection(track_id, class_name, assigned, detect, info_q, processed_
         assigned.pop(track_id, None)
         processed_ids.add(track_id)
 
-# =====================================================================================
+
+# 
 # Stage 3: Label (OpenCV webcam)
-# =====================================================================================
+# 
 def label_worker(
     camera_index: int,
     box_q_E2L: MPQueue,
     frame_q: MPQueue,
     info_q: MPQueue,
     stop_event: MPEvent,
-    batch_name: Optional[str] = None
+    batch_name: Optional[str] = None,
+    ready   = None
 ):
     """Main label worker process (tracks boxes and enriches them)."""
     time.sleep(1.5)
     cap = try_open_camera(camera_index)
     if not cap:
-        log(f"[LabelWorker] Failed to open camera {camera_index}")
+        #log(f"[LabelWorker] Failed to open camera {camera_index}")
         return
 
     model, detect = initialize_label_model()
-    if detect is None:
-        detect = Detect()  # ensure we have a parser for label strings
-
+    warmup_yolo_for_detect(model, DEVICE, imgsz=640)  # 2 dummy predicts
+    ready.wait()
     load_batch_data(batch_name)
 
     assigned, seen_tracks = {}, set()
-    processed_ids = set()  # one-shot processed track IDs
-    device = "cpu"         # keep CPU for tracking (stable on AMD/Windows)
+    processed_ids = set()  # <<< Option A: one-shot processed track IDs
+    device = DEVICE
     FONT = cv2.FONT_HERSHEY_SIMPLEX
 
-    log(f"[LabelWorker] Camera {camera_index} started.")
+    #log(f"[LabelWorker] Camera {camera_index} started.")
 
     while not stop_event.is_set():
         ok, frame = cap.read()
         if not ok:
             cap, ok, frame = recover_camera(camera_index)
             if not ok:
-                log("[LabelWorker] Camera recovery failed.")
+                #log("[LabelWorker] Camera recovery failed.")
                 break
 
-        # Run YOLO tracking (Ultralytics, CPU)
+        # Run YOLO tracking
         try:
-            results = model.track(source=frame, conf=0.7, persist=True, device=device, verbose=False)
-        except Exception as e:
-            log(f"[LabelWorker] YOLO track error, retrying CPU: {e}")
-            results = model.track(source=frame, conf=0.7, persist=True, device="cpu", verbose=False)
+            results = model.track(source=frame, conf=0.8, persist=True, device=device, verbose=False)
+        except Exception:
+            results = model.track(source=frame, conf=0.8, persist=True, device="cpu", verbose=False)
             device = "cpu"
 
         if results and results[0].boxes is not None and results[0].boxes.id is not None:
@@ -416,8 +430,7 @@ def label_worker(
                     track_id = int(boxes.id[i].item())
                     class_id = int(boxes.cls[i].item())
                     class_name = names[class_id] if isinstance(names, dict) else str(class_id)
-                    if class_id in (13, 14):
-                        continue
+                   
 
                     # Draw rectangle for debugging
                     x1, y1, x2, y2 = map(int, boxes.xyxy[i].tolist())
@@ -426,7 +439,7 @@ def label_worker(
                     cv2.putText(frame, f"{class_name} ID:{track_id}", (x1, max(0, y1 - 8)),
                                 FONT, 0.55, (0, 0, 255), 1)
 
-                    # Box assignment (one-shot guard)
+                    # Box assignment (one-shot guard included)
                     assign_box(track_id, cx, box_q_E2L, assigned, seen_tracks, processed_ids)
 
                     # Process once assigned (and never again)
@@ -434,7 +447,7 @@ def label_worker(
                         process_detection(track_id, class_name, assigned, detect, info_q, processed_ids)
 
                 except Exception as e:
-                    log(f"[LabelWorker] Error: {e}")
+                    #log(f"[LabelWorker] Error: {e}")
                     continue
 
         # Push frame for UI display
@@ -444,26 +457,29 @@ def label_worker(
                 if frame_q.full():
                     _ = frame_q.get_nowait()  # drop stale
                 frame_q.put_nowait(buf.tobytes())
-        except Exception:
+        except:
             pass
 
     cap.release()
-    log("[LabelWorker] Stopped.")
+    #log("[LabelWorker] Stopped.")
 
-# =====================================================================================
 # Pipeline start/stop helpers for the UI
-# =====================================================================================
+
 Pipeline = namedtuple("Pipeline", ["procs", "serial_thread", "frame_q", "info_q", "stop_event"])
 
 def start_pipeline(label_cam_index: int = LABEL_CAM_INDEX,
                    frame_q: Optional[MPQueue] = None,
                    info_q: Optional[MPQueue] = None,
                    batch_name: Optional[str] = None):
+    
+    ready = Barrier(3)
 
     barcode_event_queue = mp.Queue()
+    top_event_queue=mp.Queue()
     barcode_image_queue = mp.Queue()
+    top_image_queue=mp.Queue()
     box_q_B2E = mp.Queue()
-    expire_work_q = mp.Queue()
+ 
     box_q_E2L = mp.Queue()
 
     # UI streams
@@ -472,7 +488,7 @@ def start_pipeline(label_cam_index: int = LABEL_CAM_INDEX,
     stop_event = mp.Event()
 
     # Serial thread
-    serial_thread = start_serial_listener(barcode_event_queue)
+    serial_thread = start_serial_listener(barcode_event_queue, top_event_queue)
 
     # Discover Allied Vision cameras
     av_ids = SoftTriggerGrabber.discover_av_cameras()
@@ -480,6 +496,7 @@ def start_pipeline(label_cam_index: int = LABEL_CAM_INDEX,
         log("[Comm] No Allied Vision cameras found! Barcode/Expire capture will not start.")
 
     barcode_cam_id = av_ids[0] if len(av_ids) >= 1 else None
+    top_cam_id  = av_ids[1] if len(av_ids) >= 2 else None  
 
     procs = []
 
@@ -489,29 +506,29 @@ def start_pipeline(label_cam_index: int = LABEL_CAM_INDEX,
                                 args=(barcode_event_queue, barcode_image_queue, barcode_cam_id),
                                 daemon=True))
         procs.append(mp.Process(target=barcode_process,
-                                args=(barcode_image_queue, box_q_B2E),
+                                args=(barcode_image_queue, box_q_B2E,ready),
                                 daemon=True))
     else:
         log("[Comm] Skipping barcode capture/process (no AV camera).")
 
     # Expiry capture + processing
-    procs.append(mp.Process(target=expire_capture_process,
-                            args=(box_q_B2E, expire_work_q),
+    procs.append(mp.Process(target=top_capture_process,
+                            args=(top_event_queue, top_image_queue,top_cam_id   ),
                             daemon=True))
-    procs.append(mp.Process(target=expire_process,
-                            args=(expire_work_q, box_q_E2L),
+    procs.append(mp.Process(target=top_process,
+                            args=(box_q_B2E, box_q_E2L,top_image_queue,ready),
                             daemon=True))
 
     # Label worker
     procs.append(mp.Process(
         target=label_worker,
-        args=(label_cam_index, box_q_E2L, frame_q, info_q, stop_event, batch_name),
+        args=(label_cam_index, box_q_E2L, frame_q, info_q, stop_event, batch_name,ready),
         daemon=True))
 
     for p in procs:
         p.start()
 
-    log("[Comm] Pipeline started (AV-triggered capture + JPEG queues).")
+    #log("[Comm] Pipeline started (AV-triggered capture + JPEG queues).")
     return Pipeline(procs=procs, serial_thread=serial_thread, frame_q=frame_q, info_q=info_q, stop_event=stop_event)
 
 def stop_pipeline(pipeline: Pipeline):
@@ -530,4 +547,4 @@ def stop_pipeline(pipeline: Pipeline):
             p.join(timeout=2.0)
         except Exception:
             pass
-    log("[Comm] Pipeline stopped.")
+    #log("[Comm] Pipeline stopped.")

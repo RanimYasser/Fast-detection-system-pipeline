@@ -7,7 +7,7 @@ class LabelPanel(QWidget):
         self.layout = QVBoxLayout()
 
         self.batch_combo = QComboBox()
-        self.batch_combo.addItems(["Batch A", "Batch B", "Batch C"])
+        self.batch_combo.addItems(["Milk Batch", "Orange Batch", "Batch C"])
         self.batch_combo.setStyleSheet(COMBOBOX_STYLE)
         self.layout.addWidget(self._group("Batch Control", self.batch_combo))
 
