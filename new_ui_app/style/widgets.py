@@ -20,13 +20,29 @@ COMBOBOX_STYLE = """
         color: white;
         padding: 6px;
         border-radius: 4px;
+        border: none;
     }
+
+    QComboBox::drop-down {
+        width: 26px;
+        border: none;
+    }
+
+    QComboBox:focus {
+        border: none;
+        outline: none;
+        background-color: #263545;  /* override system blue focus */
+    }
+
     QComboBox QAbstractItemView {
         background-color: #1f2a3a;
         color: white;
-        selection-background-color: #144678;
+        selection-background-color: #2E353B;
+        selection-color: white;
+        outline: none;
     }
 """
+
 
 GROUPBOX_STYLE = """
     QGroupBox {

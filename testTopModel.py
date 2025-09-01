@@ -2,8 +2,8 @@ import os
 from ultralytics import YOLO
 
 # --- config ---
-MODEL_PATH = r"C:\Users\RC-co\Desktop\Fast-detection\Yolo-models\best_top.pt"   # change to your model (e.g., "best.pt")
-IMAGE_FOLDER = r"C:\Users\RC-co\Desktop\Fast-detection\captures\top"     # folder with your images
+MODEL_PATH = r"C:\Users\RC-co\Desktop\Fast-detection\Yolo-models\best_barcode.pt"   # change to your model (e.g., "best.pt")
+IMAGE_FOLDER = r"C:\Users\RC-co\Desktop\Fast-detection\captures\barcode"     # folder with your images
 OUTPUT_FOLDER = "runs/detect"  # YOLO saves results here by default
 
 def run_yolo_on_folder(model_path, image_folder, output_folder):

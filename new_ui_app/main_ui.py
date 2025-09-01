@@ -1,65 +1,44 @@
-import sys
-import multiprocessing as mp
-import numpy as np
-import os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-import pandas as pd
-
-import cv2
-from PyQt5.QtWidgets import (
-    QApplication, QMainWindow, QWidget, QVBoxLayout,
-    QHBoxLayout, QPushButton, QMessageBox
-)
+import sys, multiprocessing as mp, numpy as np, cv2, pandas as pd
+from queue import Empty
+from datetime import datetime
+from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout, QMessageBox
 from PyQt5.QtCore import QTimer
 from PyQt5.QtGui import QPixmap, QImage
-from queue import Empty
 
 from new_ui_app.pipeline_manager import PipelineManager
-from new_ui_app.widgets.camera_widget import CameraWidget
-from new_ui_app.widgets.label_panel import LabelPanel
-from new_ui_app.widgets.header_bar import HeaderBar
-from new_ui_app.style.theme import APP_STYLE
-from new_ui_app.style.widgets import BUTTON_PRIMARY
+from new_ui_app.widgets.cam_view import CameraView
+from new_ui_app.widgets.label_panel import LabelPanelModern
 
 
-
-class JuiceControlUI(QMainWindow):
+class JuiceUI(QMainWindow):
     def __init__(self, pipeline: PipelineManager):
         super().__init__()
         self.pipeline = pipeline
-        self.setWindowTitle("Juice Bottle Control and Detection System")
+        self.setWindowTitle("Juice Bottle Detection - Modern UI")
         self.setGeometry(100, 100, 1400, 800)
-        self.setStyleSheet(APP_STYLE)
-        self.boxes=[]
+        self.setStyleSheet("background-color: #121417; color: #EAEFF3; font-family: Arial; font-size: 13px;")
+
         self.frame_q = mp.Queue(maxsize=2)
         self.info_q = mp.Queue(maxsize=64)
         self.timer = QTimer()
         self.timer.timeout.connect(self.on_tick)
+        self.boxes = []
 
         self.init_ui()
 
     def init_ui(self):
         main_layout = QVBoxLayout()
+        row = QHBoxLayout()
 
-        main_layout.addWidget(HeaderBar())
+        self.labels = LabelPanelModern()
+        self.camera = CameraView(self.start_all, self.stop_all)
 
-        self.camera = CameraWidget(self.start_all, self.stop_all)
-        self.labels = LabelPanel()
-        self.export_btn = QPushButton("🖨 Export run excel sheet")
-        self.export_btn.setStyleSheet(BUTTON_PRIMARY)
-        self.export_btn.clicked.connect(self.export_excel)
+        self.labels.export_button.clicked.connect(self.export_excel)
 
-        side_layout = QVBoxLayout()
-        side_layout.addWidget(self.labels)
-        side_layout.addStretch()
-        side_layout.addWidget(self.export_btn)
+        row.addWidget(self.labels, 2)
+        row.addWidget(self.camera, 5)
 
-        content = QHBoxLayout()
-        content.addWidget(self.camera)
-        content.addLayout(side_layout)
-
-        main_layout.addLayout(content)
-
+        main_layout.addLayout(row)
         container = QWidget()
         container.setLayout(main_layout)
         self.setCentralWidget(container)
@@ -67,13 +46,12 @@ class JuiceControlUI(QMainWindow):
     def start_all(self):
         try:
             selected_batch = self.labels.batch_combo.currentText()
-            self.boxes = []  # reset for a fresh run
+            self.boxes.clear()
             self.pipeline.start(self.frame_q, self.info_q, batch_name=selected_batch)
             self.labels.clear()
             self.timer.start(30)
         except Exception as e:
-            QMessageBox.critical(self, "Pipeline Error", str(e))
-
+            QMessageBox.critical(self, "Error", str(e))
 
     def stop_all(self):
         self.timer.stop()
@@ -83,12 +61,10 @@ class JuiceControlUI(QMainWindow):
     def on_tick(self):
         frame = None
         for _ in range(3):
-            try:
-                data = self.frame_q.get_nowait()
-                frame = data
-            except Empty:
-                break
-        if frame is not None:
+            try: frame = self.frame_q.get_nowait()
+            except Empty: break
+
+        if frame:
             arr = np.frombuffer(frame, dtype=np.uint8)
             img = cv2.imdecode(arr, cv2.IMREAD_COLOR)
             if img is not None:
@@ -99,16 +75,10 @@ class JuiceControlUI(QMainWindow):
                 self.camera.update_frame(pix)
 
         while True:
-            try:
-                evt = self.info_q.get_nowait()
-            except Empty:
-                break
-            if not isinstance(evt, dict):
-                continue
-
-            if evt.get("event") == "box_saved":
-                self.labels.update_info(evt)   # existing UI update
-                # NEW: store the row for export
+            try: evt = self.info_q.get_nowait()
+            except Empty: break
+            if isinstance(evt, dict) and evt.get("event") == "box_saved":
+                self.labels.update_info(evt)
                 self.boxes.append({
                     "id": evt.get("id"),
                     "brand": evt.get("brand"),
@@ -121,26 +91,19 @@ class JuiceControlUI(QMainWindow):
                     "reason": evt.get("reason"),
                 })
 
-
     def export_excel(self):
         if not self.boxes:
-            QMessageBox.information(self, "Export", "No boxes to export yet.")
+            QMessageBox.information(self, "Export", "No boxes to export.")
             return
-
         df = pd.DataFrame(self.boxes)
-
-        # Format filename with timestamp
-        from datetime import datetime
-        fname = f"run_output_{datetime.now().strftime('%Y%m%d_%H%M%S')}.xlsx"
-
+        fname = f"Excel/run_output_{datetime.now().strftime('%Y%m%d_%H%M%S')}.xlsx"
         df.to_excel(fname, index=False, engine="openpyxl")
-        QMessageBox.information(self, "Export", f"Excel saved: {fname}")
-        print(f"[✓] Excel file saved as {fname}")
+        QMessageBox.information(self, "Export", f"Saved: {fname}")
 
 
 if __name__ == "__main__":
     mp.set_start_method("spawn", force=True)
     app = QApplication(sys.argv)
-    win = JuiceControlUI(PipelineManager())
+    win = JuiceUI(PipelineManager())
     win.show()
     sys.exit(app.exec_())
