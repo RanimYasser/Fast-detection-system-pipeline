@@ -34,7 +34,7 @@ BARCODE_MODEL_PATH = r"C:\Users\RC-co\Desktop\Fast-detection\Yolo-models\best_ba
 TOP_MODEL_PATH = r"C:\Users\RC-co\Desktop\Fast-detection\Yolo-models\best_top.pt"
 TEST_DATE = True
 LABEL_CAM_INDEX = 0
-TRIGGER_X = 100
+TRIGGER_X = 200
 BARCODE_SAVE_DIR = os.path.join("captures", "barcode")
 os.makedirs(BARCODE_SAVE_DIR, exist_ok=True)
 TOP_SAVE_DIR = os.path.join("captures", "top")
@@ -277,6 +277,13 @@ def top_process(box_q_B2E, box_q_E2L: mp.Queue,top_image_queue:mp.Queue,ready):
 
         box_q_E2L.put(current_box)
         #log(f"[top Process] Box #{current_box.id} -> box_q_E2L")
+# --- Size classification via horizontal trigger line ---
+SIZE_LINE_Y = 330   # <-- calibrate this once from a few frames
+SIZE_LINE_MARGIN = 6  # small hysteresis so tiny jitters don't flip result
+def intersects_horizontal_line(y1: int, y2: int, line_y: int, margin: int = 0) -> bool:
+    # y grows downward in images; rectangle intersects a horizontal line if the line
+    # lies between top (y1) and bottom (y2) with an optional margin.
+    return (y1 - margin) <= line_y <= (y2 + margin)
 
 
 # Label Worker helpers
@@ -323,7 +330,7 @@ def _norm_capacity_for_cap_check(capacity: str) -> str:
     # "1 L" -> "1l", "1000 ml" -> "1000ml"
     c = (capacity or "").strip().lower().replace(" ", "")
     return c
-def process_detection(track_id, class_name, assigned, detect, info_q, processed_ids):
+def process_detection(track_id, class_name, assigned, detect, info_q, processed_ids, size_hint=None):
     if track_id in processed_ids:
         assigned.pop(track_id, None)
         return
@@ -333,23 +340,30 @@ def process_detection(track_id, class_name, assigned, detect, info_q, processed_
         return
 
     try:
-        # Parse YOLO class into product parts
         parts = detect.label_detections(class_name)  # [brand, flavor, capacity, (opt) type]
         if not parts or len(parts) < 3:
             box.set_status("rejected")
             box.set_reason("parse_error")
         else:
             brand, flavor, capacity = parts[:3]
+
+            # --- NEW: apply horizontal-line size override ---
+            if size_hint:
+                # normalize then slam to the enforced capacity
+                if size_hint == "1l":
+                    capacity = "1 L"
+                else:
+                    capacity = "235 ml"
+
             box.set_brand(brand)
             box.set_flavor(flavor)
             box.set_capacity(capacity)
             if len(parts) >= 4:
                 box.set_product_type(parts[3])
 
-            # Run box evaluation (all rejection logic)
+            # continue with your usual evaluation logic
             box.evaluate_box()
 
-        # Notify UI once
         info = box.get_box_info()
         save_box_info(info)
         try:
@@ -374,7 +388,6 @@ def process_detection(track_id, class_name, assigned, detect, info_q, processed_
         assigned.pop(track_id, None)
         processed_ids.add(track_id)
 
-
 # 
 # Stage 3: Label (OpenCV webcam)
 # 
@@ -385,36 +398,42 @@ def label_worker(
     info_q: MPQueue,
     stop_event: MPEvent,
     batch_name: Optional[str] = None,
-    ready   = None
+    ready = None
 ):
     """Main label worker process (tracks boxes and enriches them)."""
     time.sleep(1.5)
+
     cap = try_open_camera(camera_index)
     if not cap:
-        #log(f"[LabelWorker] Failed to open camera {camera_index}")
         return
 
     model, detect = initialize_label_model()
-    warmup_yolo_for_detect(model, DEVICE, imgsz=640)  # 2 dummy predicts
-    ready.wait()
-    load_batch_data(batch_name)
+    warmup_yolo_for_detect(model, DEVICE, imgsz=640)
+    if ready:
+        ready.wait()
+
+    # If you can start without a batch, guard this:
+    if batch_name:
+        load_batch_data(batch_name)
 
     assigned, seen_tracks = {}, set()
-    processed_ids = set()  # <<< Option A: one-shot processed track IDs
+    processed_ids = set()
     device = DEVICE
-    FONT = cv2.FONT_HERSHEY_SIMPLEX
-
-    #log(f"[LabelWorker] Camera {camera_index} started.")
+    FONT = cv2.FONT_HERSHEY_SIMPLEX  # define before any use
 
     while not stop_event.is_set():
         ok, frame = cap.read()
         if not ok:
             cap, ok, frame = recover_camera(camera_index)
             if not ok:
-                #log("[LabelWorker] Camera recovery failed.")
                 break
 
-        # Run YOLO tracking
+        # --- Draw horizontal size trigger line on the live frame (for tuning) ---
+        cv2.line(frame, (0, SIZE_LINE_Y), (frame.shape[1], SIZE_LINE_Y), (0, 255, 255), 2)
+        cv2.putText(frame, f"SIZE LINE y={SIZE_LINE_Y}", (10, max(20, SIZE_LINE_Y - 8)),
+                    FONT, 0.55, (0, 255, 255), 1)
+
+        # YOLO tracking
         try:
             results = model.track(source=frame, conf=0.8, persist=True, device=device, verbose=False)
         except Exception:
@@ -430,38 +449,43 @@ def label_worker(
                     track_id = int(boxes.id[i].item())
                     class_id = int(boxes.cls[i].item())
                     class_name = names[class_id] if isinstance(names, dict) else str(class_id)
-                   
 
-                    # Draw rectangle for debugging
                     x1, y1, x2, y2 = map(int, boxes.xyxy[i].tolist())
                     cx = (x1 + x2) // 2
+
+                    # viz
                     cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 0, 255), 2)
                     cv2.putText(frame, f"{class_name} ID:{track_id}", (x1, max(0, y1 - 8)),
                                 FONT, 0.55, (0, 0, 255), 1)
 
-                    # Box assignment (one-shot guard included)
+                    # --- horizontal trigger size hint ---
+                    hits_size_line = intersects_horizontal_line(y1, y2, SIZE_LINE_Y, margin=SIZE_LINE_MARGIN)
+                    size_hint = "1l" if hits_size_line else "235ml"
+                    cv2.putText(frame, f"size_hint:{size_hint}", (x1, max(0, y1 - 24)),
+                                FONT, 0.55, (0, 255, 255), 1)
+
+                    # Assign pending Box to this track once it crosses TRIGGER_X
                     assign_box(track_id, cx, box_q_E2L, assigned, seen_tracks, processed_ids)
 
-                    # Process once assigned (and never again)
+                    # Process exactly once per track
                     if track_id in assigned:
-                        process_detection(track_id, class_name, assigned, detect, info_q, processed_ids)
+                        process_detection(track_id, class_name, assigned, detect, info_q, processed_ids,
+                                          size_hint=size_hint)
 
-                except Exception as e:
-                    #log(f"[LabelWorker] Error: {e}")
+                except Exception:
                     continue
 
-        # Push frame for UI display
+        # Push frame for UI
         try:
             ok, buf = cv2.imencode(".jpg", frame)
             if ok:
                 if frame_q.full():
-                    _ = frame_q.get_nowait()  # drop stale
+                    _ = frame_q.get_nowait()
                 frame_q.put_nowait(buf.tobytes())
-        except:
+        except Exception:
             pass
 
     cap.release()
-    #log("[LabelWorker] Stopped.")
 
 # Pipeline start/stop helpers for the UI
 

@@ -1,106 +1,86 @@
-# sensor_monitor.py
-# Read switch events from Arduino over serial and print/log them.
-# Works with your sketch that prints lines like:
-#   "D2: PRESSED", "D2: RELEASED", "D3: PRESSED", "D3: RELEASED"
+import os
+import cv2
+import numpy as np
+from pyzbar import pyzbar
+import csv
 
-import sys, time, argparse
-from datetime import datetime
+class BarcodeReader:
+    def __init__(self, input_folder, output_csv, output_images_dir):
+        self.input_folder = input_folder
+        self.output_csv = output_csv
+        self.output_images_dir = output_images_dir
+        os.makedirs(self.output_images_dir, exist_ok=True)
 
-try:
-    import serial
-    from serial.tools import list_ports
-except ImportError:
-    print("Install pyserial first:  pip install pyserial")
-    sys.exit(1)
+    def _annotate(self, image, barcode, text):
+        # Prefer polygon if available; otherwise use rect
+        if getattr(barcode, "polygon", None):
+            pts = np.array([barcode.polygon], dtype=np.int32).reshape(-1, 1, 2)
+            cv2.polylines(image, [pts], True, (0, 255, 0), 2)
+            # Place label near the first point
+            label_x, label_y = pts[0][0][0], max(10, pts[0][0][1] - 10)
+        else:
+            x, y, w, h = barcode.rect
+            cv2.rectangle(image, (x, y), (x + w, y + h), (0, 255, 0), 2)
+            label_x, label_y = x, max(10, y - 10)
 
-def pick_port(preferred: str | None) -> str | None:
-    if preferred:
-        return preferred
-    candidates = []
+        # Text background for readability
+        font = cv2.FONT_HERSHEY_SIMPLEX
+        scale, thickness = 0.6, 2
+        (tw, th), _ = cv2.getTextSize(text, font, scale, thickness)
+        cv2.rectangle(image, (label_x, label_y - th - 6), (label_x + tw + 6, label_y + 4), (0, 0, 0), -1)
+        cv2.putText(image, text, (label_x + 3, label_y), font, scale, (255, 255, 255), thickness, cv2.LINE_AA)
 
-    for p in list_ports.comports():
-        manu = (p.manufacturer or "").lower()
-        desc = (p.description or "").lower()
-        # Common Arduino/USB-serial VID/PID or names (Arduino, CH340, FTDI, RP2040)
-        if (
-            "arduino" in manu or "arduino" in desc or
-            "wch" in manu or "ch340" in desc or
-            "ftdi" in manu or "usb serial" in desc or
-            p.vid in {0x2341, 0x1A86, 0x0403, 0x2E8A}
-        ):
-            candidates.append(p.device)
+    def barcode_detection(self, image):
+        gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+        barcodes = pyzbar.decode(gray)
 
-    if candidates:
-        return candidates[0]
+        results = []
+        for barcode in barcodes:
+            data = barcode.data.decode("utf-8")
+            btype = barcode.type
+            results.append((data, btype, barcode))  # keep barcode object for drawing
+        return results
 
-    # Fallback: first serial-ish device
-    all_ports = [p.device for p in list_ports.comports()]
-    for dev in all_ports:
-        if sys.platform.startswith("win") and dev.upper().startswith("COM"):
-            return dev
-        if not sys.platform.startswith("win") and ("/dev/ttyACM" in dev or "/dev/ttyUSB" in dev):
-            return dev
+    def process_folder(self):
+        csv_rows = []
 
-    return None
-
-def main():
-    ap = argparse.ArgumentParser(description="Monitor D2/D3 switch events from Arduino.")
-    ap.add_argument("--port", help="Serial port (e.g., COM5, /dev/ttyACM0)")
-    ap.add_argument("--baud", type=int, default=115200, help="Baud rate (default: 115200)")
-    ap.add_argument("--csv", help="Optional path to log CSV (timestamp,event)")
-    args = ap.parse_args()
-
-    port = pick_port(args.port)
-    if not port:
-        print("No serial port found. Pass one explicitly with --port (e.g., --port COM5).")
-        sys.exit(2)
-
-    print(f"Opening {port} @ {args.baud} ... (close Arduino Serial Monitor first)")
-    try:
-        ser = serial.Serial(port, args.baud, timeout=1)
-    except serial.SerialException as e:
-        print("Could not open serial:", e)
-        sys.exit(3)
-
-    # Give Arduino time to reset after opening port
-    time.sleep(2.0)
-    ser.reset_input_buffer()
-
-    writer = None
-    if args.csv:
-        import csv
-        f = open(args.csv, "a", newline="", encoding="utf-8")
-        writer = csv.writer(f)
-        if f.tell() == 0:
-            writer.writerow(["timestamp", "event"])
-
-    print("Listening. Press Ctrl+C to quit.\n")
-    try:
-        while True:
-            line = ser.readline()
-            if not line:
-                continue
-            try:
-                text = line.decode("utf-8", errors="replace").strip()
-            except Exception:
-                continue
-            if not text:
+        for filename in os.listdir(self.input_folder):
+            if not filename.lower().endswith(('.png', '.jpg', '.jpeg', '.bmp', '.tiff')):
                 continue
 
-            ts = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-            # Expected: "D2: PRESSED", "D3: RELEASED", etc.
-            print(f"[{ts}] {text}")
-            if writer:
-                writer.writerow([ts, text])
-    except KeyboardInterrupt:
-        print("\nExiting...")
-    finally:
-        try:
-            ser.close()
-        except Exception:
-            pass
-        if writer:
-            f.close()
+            img_path = os.path.join(self.input_folder, filename)
+            image = cv2.imread(img_path)
+            if image is None:
+                print(f"⚠️ Could not read {filename}")
+                continue
+
+            detections = self.barcode_detection(image)
+
+            if detections:
+                for (data, btype, barcode) in detections:
+                    self._annotate(image, barcode, f"{data} ({btype})")
+                    csv_rows.append([filename, data, btype])
+            else:
+                csv_rows.append([filename, "NO BARCODE FOUND", "N/A"])
+
+            # Save annotated image (even if none found, so you can review)
+            save_path = os.path.join(self.output_images_dir, filename)
+            cv2.imwrite(save_path, image)
+
+        # Save CSV
+        with open(self.output_csv, mode="w", newline="", encoding="utf-8") as f:
+            writer = csv.writer(f)
+            writer.writerow(["Image", "BarcodeData", "BarcodeType"])
+            writer.writerows(csv_rows)
+
+        print(f"✅ Results saved to {self.output_csv}")
+        print(f"🖼️ Annotated images saved in: {self.output_images_dir}")
+
 
 if __name__ == "__main__":
-    main()
+    folder = r"C:\Users\RC-co\Desktop\Fast-detection\captures\barcode"   # input folder
+    output_csv = "barcode_results.csv"
+    output_images_dir = r"C:\Users\RC-co\Desktop\Fast-detection\captures\barcode_annotated"
+
+    reader = BarcodeReader(folder, output_csv, output_images_dir)
+    reader.process_folder()
