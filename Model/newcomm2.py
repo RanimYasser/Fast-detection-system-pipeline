@@ -23,7 +23,7 @@ if PROJECT_ROOT not in sys.path:
 
 from Control.ReadExcel import readExcel, findProduct, matchBarcode, product_from_parts
 from Model.utils import log, save_box_info, _assert_file, try_open_camera
-from Control.sensor import start_serial_listener
+from Control.sensorLuna import start_serial_listener
 from Control.camera_manger2 import SoftTriggerGrabber
 
 # Config
@@ -88,7 +88,7 @@ def barcode_capture_process(event_queue: mp.Queue, barcode_image_queue: mp.Queue
         while True:
             try:
                 event, event_time = event_queue.get(timeout=1)
-                if event != "switch pressed":
+                if event != "lidar_trigger":
                     continue
 
                 # Trigger a new exposure and get the frame
@@ -198,7 +198,7 @@ def top_capture_process(event_queue: mp.Queue,top_image_queue:mp.Queue ,cam_id: 
         while True:
             try:
                 event, event_time = event_queue.get(timeout=1)
-                if event != "switch pressed":
+                if event != "lidar_trigger":
                     continue
 
                 # Trigger a new exposure and get the frame

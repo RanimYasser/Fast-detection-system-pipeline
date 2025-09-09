@@ -5,7 +5,7 @@ from datetime import datetime
 from Control.camera_manger2 import SoftTriggerGrabber
 
 # ===== Config =====
-PORT = "COM5"          # ← change if needed
+PORT = "COM6"          # ← change if needed
 BAUD = 115200
 SAVE_DIR = os.path.join(os.getcwd(), "top dataset")
 JPEG_QUALITY = 95
@@ -37,7 +37,7 @@ def main():
             print("Waiting for switch press...")
             for raw in ser:  # blocks until a line arrives
                 line = raw.decode(errors="ignore").strip().lower()
-                if line == "switch pressed":
+                if line == "d3: pressed":
                     img = g.fire(timeout=FIRE_TIMEOUT)
                     if img is None:
                         print("Trigger timeout (no frame).")
