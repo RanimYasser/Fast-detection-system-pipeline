@@ -98,17 +98,17 @@ def barcode_capture_process(event_queue: mp.Queue, barcode_image_queue: mp.Queue
                     continue
 
                 # Save with timestamp and cam id
-                ts = datetime.now().strftime("%Y%m%d_%H%M%S_%f")[:-3]
-                fname = f"{ts}{cam_id.replace(':','').replace('/','_')}.jpg"
-                fpath = os.path.join(BARCODE_SAVE_DIR, fname)
-                try:
-                    ok = cv2.imwrite(fpath, img, [cv2.IMWRITE_JPEG_QUALITY, 95])
-                    if ok:
-                        log(f"[Barcode Capture] Saved {fname}")
-                    else:
-                        log(f"[Barcode Capture] Failed to save {fname}")
-                except Exception as e:
-                    log(f"[Barcode Capture] Save error: {e}")
+                # ts = datetime.now().strftime("%Y%m%d_%H%M%S_%f")[:-3]
+                # fname = f"{ts}{cam_id.replace(':','').replace('/','_')}.jpg"
+                # fpath = os.path.join(BARCODE_SAVE_DIR, fname)
+                # try:
+                #     ok = cv2.imwrite(fpath, img, [cv2.IMWRITE_JPEG_QUALITY, 95])
+                #     if ok:
+                #         log(f"[Barcode Capture] Saved {fname}")
+                #     else:
+                #         log(f"[Barcode Capture] Failed to save {fname}")
+                # except Exception as e:
+                #     log(f"[Barcode Capture] Save error: {e}")
 
                 # Put JPEG bytes on queue (Windows-picklable)
                 ok, buf = cv2.imencode(".jpg", img, [cv2.IMWRITE_JPEG_QUALITY, 95])
@@ -208,17 +208,17 @@ def top_capture_process(event_queue: mp.Queue,top_image_queue:mp.Queue ,cam_id: 
                     continue
 
                 #Save with timestamp and cam id
-                ts = datetime.now().strftime("%Y%m%d_%H%M%S_%f")[:-3]
-                fname = f"{ts}{cam_id.replace(':','').replace('/','_')}.jpg"
-                fpath = os.path.join(TOP_SAVE_DIR, fname)
-                try:
-                    ok = cv2.imwrite(fpath, img, [cv2.IMWRITE_JPEG_QUALITY, 95])
-                    if ok:
-                        log(f"[Top Capture] Saved {fname}")
-                    else:
-                        log(f"[Top Capture] Failed to save {fname}")
-                except Exception as e:
-                    log(f"[Top Capture] Save error: {e}")
+                # ts = datetime.now().strftime("%Y%m%d_%H%M%S_%f")[:-3]
+                # fname = f"{ts}{cam_id.replace(':','').replace('/','_')}.jpg"
+                # fpath = os.path.join(TOP_SAVE_DIR, fname)
+                # try:
+                #     ok = cv2.imwrite(fpath, img, [cv2.IMWRITE_JPEG_QUALITY, 95])
+                #     if ok:
+                #         log(f"[Top Capture] Saved {fname}")
+                #     else:
+                #         log(f"[Top Capture] Failed to save {fname}")
+                # except Exception as e:
+                #     log(f"[Top Capture] Save error: {e}")
 
                 # Put JPEG bytes on queue (Windows-picklable)
                 ok, buf = cv2.imencode(".jpg", img, [cv2.IMWRITE_JPEG_QUALITY, 95])
@@ -467,7 +467,7 @@ def label_worker(
                 pass
             except Exception:
                 # if queue hiccups, ignore this iteration
-                pass
+                log("event error")
 
             # ---- Only run detection if we have a trigger ----
             if pending_event_id is not None:
@@ -481,28 +481,35 @@ def label_worker(
                     )
                 except Exception:
                     results = None
+                    log("model error")
 
                 boxes = None
                 names = {}
                 try:
+                    log("hello")
                     if results and results[0].boxes is not None and results[0].boxes.id is not None:
                         boxes = results[0].boxes
                         names = getattr(results[0], "names", None) or getattr(model, "names", {}) or {}
                 except Exception:
                     boxes = None
+                    log("box error")
 
                 if boxes is not None:
                     # iterate detections safely
                     try:
                         n = len(boxes)
+                        log(f"n={n}")
+                    
                     except Exception:
                         n = 0
 
                     for i in range(n):
                         try:
-                            track_id = int(boxes.id[i].item())
                             class_id = int(boxes.cls[i].item())
                             class_name = names[class_id] if isinstance(names, dict) and class_id in names else str(class_id)
+                            log(f"[LabelWorker] Detected class={class_name} pending_id={pending_event_id}")
+                  
+                            
 
                             x1, y1, x2, y2 = map(int, boxes.xyxy[i].tolist())
                             cx = (x1 + x2) // 2
@@ -575,7 +582,6 @@ def label_worker(
         except NameError:
             # cap was never defined/initialized
             pass
-
 
 # Pipeline start/stop helpers for the UI
 

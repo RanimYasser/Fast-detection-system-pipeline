@@ -2807,3 +2807,1606 @@ ed
 [2025-09-15 16:20:51] [Top Capture] Saved 20250915_162051_360DEV_1AB22C00C5A7.jpg
 [2025-09-15 16:20:51] [Top Capture] Saved 20250915_162051_791DEV_1AB22C00C5A7.jpg
 [2025-09-15 16:20:52] [Top Capture] Saved 20250915_162052_284DEV_1AB22C00C5A7.jpg
+[2025-09-15 16:30:51] [Barcode Capture] Saved 20250915_163051_180DEV_1AB22C00C5A5.jpg
+[2025-09-15 16:30:51] [Barcode Capture] Saved 20250915_163051_737DEV_1AB22C00C5A5.jpg
+[2025-09-15 16:30:52] [Barcode Capture] Saved 20250915_163052_125DEV_1AB22C00C5A5.jpg
+[2025-09-15 16:30:52] [Top Capture] Saved 20250915_163052_180DEV_1AB22C00C5A7.jpg
+[2025-09-15 16:30:52] [Barcode Capture] Saved 20250915_163052_514DEV_1AB22C00C5A5.jpg
+[2025-09-15 16:30:52] [Top Capture] Saved 20250915_163052_556DEV_1AB22C00C5A7.jpg
+[2025-09-15 16:30:52] [Barcode Capture] Saved 20250915_163052_888DEV_1AB22C00C5A5.jpg
+[2025-09-15 16:30:52] [Top Capture] Saved 20250915_163052_941DEV_1AB22C00C5A7.jpg
+[2025-09-15 16:30:53] [Barcode Capture] Saved 20250915_163053_309DEV_1AB22C00C5A5.jpg
+[2025-09-15 16:30:53] [Top Capture] Saved 20250915_163053_332DEV_1AB22C00C5A7.jpg
+[2025-09-15 16:30:53] [Top Capture] Saved 20250915_163053_700DEV_1AB22C00C5A7.jpg
+[2025-09-15 16:30:54] [Top Capture] Saved 20250915_163054_133DEV_1AB22C00C5A7.jpg
+[2025-09-15 16:30:54] [SerialListener] TOF/LiDAR event_id=0
+[2025-09-15 16:30:54] [LabelWorker] Pending event_id=0
+[2025-09-15 16:30:55] [SerialListener] TOF/LiDAR event_id=1
+[2025-09-15 16:30:55] [Barcode Capture] Saved 20250915_163055_780DEV_1AB22C00C5A5.jpg
+[2025-09-15 16:30:56] [LabelWorker] Pending event_id=1
+[2025-09-15 16:33:29] [Top Capture] Saved 20250915_163329_509DEV_1AB22C00C5A7.jpg
+[2025-09-15 16:33:30] [Top Capture] Saved 20250915_163330_010DEV_1AB22C00C5A7.jpg
+[2025-09-15 16:33:30] [Top Capture] Saved 20250915_163330_080DEV_1AB22C00C5A7.jpg
+[2025-09-15 16:34:47] [Barcode Capture] Saved 20250915_163447_561DEV_1AB22C00C5A5.jpg
+[2025-09-15 16:34:48] [Barcode Capture] Saved 20250915_163448_025DEV_1AB22C00C5A5.jpg
+[2025-09-15 16:34:48] [Barcode Capture] Saved 20250915_163448_464DEV_1AB22C00C5A5.jpg
+[2025-09-15 16:34:48] [Top Capture] Saved 20250915_163448_525DEV_1AB22C00C5A7.jpg
+[2025-09-15 16:34:48] [SerialListener] TOF/LiDAR event_id=0
+[2025-09-15 16:34:48] [LabelWorker] Pending event_id=0
+[2025-09-15 16:34:48] [Barcode Capture] Saved 20250915_163448_934DEV_1AB22C00C5A5.jpg
+[2025-09-15 16:34:48] [Top Capture] Saved 20250915_163448_971DEV_1AB22C00C5A7.jpg
+[2025-09-15 16:34:49] [SerialListener] TOF/LiDAR event_id=1
+[2025-09-15 16:34:49] [Barcode Capture] Saved 20250915_163449_364DEV_1AB22C00C5A5.jpg
+[2025-09-15 16:34:49] [LabelWorker] Pending event_id=1
+[2025-09-15 16:34:49] [Top Capture] Saved 20250915_163449_418DEV_1AB22C00C5A7.jpg
+[2025-09-15 16:34:49] [SerialListener] TOF/LiDAR event_id=2
+[2025-09-15 16:34:49] [LabelWorker] Pending event_id=2
+[2025-09-15 16:34:49] [Barcode Capture] Saved 20250915_163449_852DEV_1AB22C00C5A5.jpg
+[2025-09-15 16:34:49] [Top Capture] Saved 20250915_163449_868DEV_1AB22C00C5A7.jpg
+[2025-09-15 16:34:50] [SerialListener] TOF/LiDAR event_id=3
+[2025-09-15 16:34:50] [LabelWorker] Pending event_id=3
+[2025-09-15 16:34:50] [Top Capture] Saved 20250915_163450_291DEV_1AB22C00C5A7.jpg
+[2025-09-15 16:34:50] [SerialListener] TOF/LiDAR event_id=4
+[2025-09-15 16:34:50] [LabelWorker] Pending event_id=4
+[2025-09-15 16:34:50] [Top Capture] Saved 20250915_163450_773DEV_1AB22C00C5A7.jpg
+[2025-09-15 16:34:51] [SerialListener] TOF/LiDAR event_id=5
+[2025-09-15 16:34:51] [LabelWorker] Pending event_id=5
+[2025-09-15 16:39:21] [SerialListener] TOF/LiDAR event_id=0
+[2025-09-15 16:39:21] [LabelWorker] Pending event_id=0
+[2025-09-15 16:39:21] [SerialListener] TOF/LiDAR event_id=1
+[2025-09-15 16:39:22] [LabelWorker] Pending event_id=1
+[2025-09-15 16:39:22] [SerialListener] TOF/LiDAR event_id=2
+[2025-09-15 16:39:22] [LabelWorker] Pending event_id=2
+[2025-09-15 16:39:22] [LabelWorker] Detected class=Juhayna_Orange_235ml
+[2025-09-15 16:39:22] [SerialListener] TOF/LiDAR event_id=3
+[2025-09-15 16:39:22] [LabelWorker] Pending event_id=3
+[2025-09-15 16:39:23] [LabelWorker] Detected class=Suntop_Orange_250ml
+[2025-09-15 16:39:23] [SerialListener] TOF/LiDAR event_id=4
+[2025-09-15 16:39:23] [LabelWorker] Pending event_id=4
+[2025-09-15 16:39:23] [LabelWorker] Detected class=Beyti_Orange_235ml
+[2025-09-15 16:39:23] [SerialListener] TOF/LiDAR event_id=5
+[2025-09-15 16:39:23] [LabelWorker] Pending event_id=5
+[2025-09-15 16:39:23] [LabelWorker] Detected class=Juhayna_Applepear_235ml
+[2025-09-15 16:41:53] [SerialListener] TOF/LiDAR event_id=0
+[2025-09-15 16:42:01] [LabelWorker] Pending event_id=0
+[2025-09-15 16:42:12] [SerialListener] TOF/LiDAR event_id=1
+[2025-09-15 16:42:12] [LabelWorker] Pending event_id=1
+[2025-09-15 16:42:13] [SerialListener] TOF/LiDAR event_id=2
+[2025-09-15 16:42:13] [LabelWorker] Pending event_id=2
+[2025-09-15 16:42:14] [LabelWorker] Detected class=Juhayna_Fullcream_235ml
+[2025-09-15 16:42:15] [SerialListener] TOF/LiDAR event_id=3
+[2025-09-15 16:42:15] [LabelWorker] Pending event_id=3
+[2025-09-15 16:42:15] [LabelWorker] Detected class=Juhayna_Orange_235ml
+[2025-09-15 16:42:16] [SerialListener] TOF/LiDAR event_id=4
+[2025-09-15 16:42:16] [LabelWorker] Pending event_id=4
+[2025-09-15 16:42:16] [LabelWorker] Detected class=Suntop_Orange_250ml
+[2025-09-15 16:42:17] [SerialListener] TOF/LiDAR event_id=5
+[2025-09-15 16:42:17] [LabelWorker] Pending event_id=5
+[2025-09-15 16:42:17] [LabelWorker] Detected class=Beyti_Orange_235ml
+[2025-09-15 16:42:19] [SerialListener] TOF/LiDAR event_id=6
+[2025-09-15 16:42:19] [LabelWorker] Pending event_id=6
+[2025-09-15 16:42:19] [LabelWorker] Detected class=Juhayna_Applepear_235ml
+[2025-09-15 16:43:44] [SerialListener] TOF/LiDAR event_id=0
+[2025-09-15 16:43:44] [LabelWorker] Pending event_id=0
+[2025-09-15 16:43:44] [SerialListener] TOF/LiDAR event_id=1
+[2025-09-15 16:43:44] [LabelWorker] Pending event_id=1
+[2025-09-15 16:43:45] [SerialListener] TOF/LiDAR event_id=2
+[2025-09-15 16:43:45] [LabelWorker] Pending event_id=2
+[2025-09-15 16:43:45] [LabelWorker] Detected class=Juhayna_Orange_235ml
+[2025-09-15 16:43:45] [SerialListener] TOF/LiDAR event_id=3
+[2025-09-15 16:43:45] [LabelWorker] Pending event_id=3
+[2025-09-15 16:43:45] [LabelWorker] Detected class=Suntop_Orange_250ml
+[2025-09-15 16:43:45] [SerialListener] TOF/LiDAR event_id=4
+[2025-09-15 16:43:46] [LabelWorker] Pending event_id=4
+[2025-09-15 16:43:46] [LabelWorker] Detected class=Beyti_Orange_235ml
+[2025-09-15 16:43:46] [SerialListener] TOF/LiDAR event_id=5
+[2025-09-15 16:43:46] [LabelWorker] Pending event_id=5
+[2025-09-15 16:43:46] [LabelWorker] Detected class=Juhayna_Applepear_235ml
+[2025-09-15 16:43:53] [SerialListener] TOF/LiDAR event_id=6
+[2025-09-15 16:43:53] [LabelWorker] Pending event_id=6
+[2025-09-15 16:43:54] [SerialListener] TOF/LiDAR event_id=7
+[2025-09-15 16:43:54] [LabelWorker] Pending event_id=7
+[2025-09-15 16:43:54] [LabelWorker] Detected class=Juhayna_Fullcream_235ml
+[2025-09-15 16:43:54] [SerialListener] TOF/LiDAR event_id=8
+[2025-09-15 16:43:55] [LabelWorker] Pending event_id=8
+[2025-09-15 16:43:55] [LabelWorker] Detected class=Juhayna_Orange_235ml
+[2025-09-15 16:43:55] [SerialListener] TOF/LiDAR event_id=9
+[2025-09-15 16:43:55] [LabelWorker] Pending event_id=9
+[2025-09-15 16:43:55] [LabelWorker] Detected class=Suntop_Orange_250ml
+[2025-09-15 16:43:56] [SerialListener] TOF/LiDAR event_id=10
+[2025-09-15 16:43:56] [LabelWorker] Pending event_id=10
+[2025-09-15 16:43:56] [LabelWorker] Detected class=Beyti_Orange_235ml
+[2025-09-15 16:43:57] [SerialListener] TOF/LiDAR event_id=11
+[2025-09-15 16:43:57] [LabelWorker] Pending event_id=11
+[2025-09-15 16:43:57] [LabelWorker] Detected class=Juhayna_Applepear_235ml
+[2025-09-15 16:44:01] [SerialListener] TOF/LiDAR event_id=12
+[2025-09-15 16:44:01] [LabelWorker] Pending event_id=12
+[2025-09-15 16:44:02] [SerialListener] TOF/LiDAR event_id=13
+[2025-09-15 16:44:02] [LabelWorker] Pending event_id=13
+[2025-09-15 16:44:02] [SerialListener] TOF/LiDAR event_id=14
+[2025-09-15 16:44:02] [LabelWorker] Detected class=Juhayna_Fullcream_235ml
+[2025-09-15 16:44:02] [LabelWorker] Pending event_id=14
+[2025-09-15 16:44:04] [SerialListener] TOF/LiDAR event_id=15
+[2025-09-15 16:44:04] [LabelWorker] Pending event_id=15
+[2025-09-15 16:44:07] [SerialListener] TOF/LiDAR event_id=16
+[2025-09-15 16:44:07] [LabelWorker] Pending event_id=16
+[2025-09-15 16:44:07] [LabelWorker] Detected class=Beyti_Orange_235ml
+[2025-09-15 16:44:11] [SerialListener] TOF/LiDAR event_id=17
+[2025-09-15 16:44:11] [LabelWorker] Pending event_id=17
+[2025-09-15 16:44:11] [LabelWorker] Detected class=Juhayna_Applepear_235ml
+[2025-09-15 16:44:31] [SerialListener] TOF/LiDAR event_id=0
+[2025-09-15 16:44:32] [SerialListener] TOF/LiDAR event_id=1
+[2025-09-15 16:44:32] [SerialListener] TOF/LiDAR event_id=2
+[2025-09-15 16:44:32] [SerialListener] TOF/LiDAR event_id=3
+[2025-09-15 16:44:32] [SerialListener] TOF/LiDAR event_id=4
+[2025-09-15 16:44:33] [SerialListener] TOF/LiDAR event_id=5
+[2025-09-15 16:45:05] [SerialListener] TOF/LiDAR event_id=0
+[2025-09-15 16:45:05] [LabelWorker] Pending event_id=0
+[2025-09-15 16:45:06] [SerialListener] TOF/LiDAR event_id=1
+[2025-09-15 16:45:06] [LabelWorker] Pending event_id=1
+[2025-09-15 16:45:06] [LabelWorker] Detected class=Juhayna_Fullcream_235ml
+[2025-09-15 16:45:06] [SerialListener] TOF/LiDAR event_id=2
+[2025-09-15 16:45:06] [LabelWorker] Pending event_id=2
+[2025-09-15 16:45:07] [LabelWorker] Detected class=Juhayna_Orange_235ml
+[2025-09-15 16:45:07] [SerialListener] TOF/LiDAR event_id=3
+[2025-09-15 16:45:07] [LabelWorker] Pending event_id=3
+[2025-09-15 16:45:07] [LabelWorker] Detected class=Suntop_Orange_250ml
+[2025-09-15 16:45:07] [SerialListener] TOF/LiDAR event_id=4
+[2025-09-15 16:45:07] [LabelWorker] Pending event_id=4
+[2025-09-15 16:45:07] [LabelWorker] Detected class=Beyti_Orange_235ml
+[2025-09-15 16:45:08] [SerialListener] TOF/LiDAR event_id=5
+[2025-09-15 16:45:08] [LabelWorker] Pending event_id=5
+[2025-09-15 16:45:08] [LabelWorker] Detected class=Juhayna_Applepear_235ml
+[2025-09-15 16:45:11] [SerialListener] TOF/LiDAR event_id=6
+[2025-09-15 16:45:11] [LabelWorker] Pending event_id=6
+[2025-09-15 16:45:11] [SerialListener] TOF/LiDAR event_id=7
+[2025-09-15 16:45:11] [LabelWorker] Pending event_id=7
+[2025-09-15 16:45:12] [LabelWorker] Detected class=Juhayna_Fullcream_235ml
+[2025-09-15 16:45:12] [SerialListener] TOF/LiDAR event_id=8
+[2025-09-15 16:45:12] [LabelWorker] Pending event_id=8
+[2025-09-15 16:45:12] [LabelWorker] Detected class=Juhayna_Orange_235ml
+[2025-09-15 16:45:12] [SerialListener] TOF/LiDAR event_id=9
+[2025-09-15 16:45:12] [LabelWorker] Pending event_id=9
+[2025-09-15 16:45:12] [LabelWorker] Detected class=Suntop_Orange_250ml
+[2025-09-15 16:45:13] [SerialListener] TOF/LiDAR event_id=10
+[2025-09-15 16:45:13] [LabelWorker] Pending event_id=10
+[2025-09-15 16:45:13] [LabelWorker] Detected class=Beyti_Orange_235ml
+[2025-09-15 16:45:13] [SerialListener] TOF/LiDAR event_id=11
+[2025-09-15 16:45:13] [LabelWorker] Pending event_id=11
+[2025-09-15 16:45:13] [LabelWorker] Detected class=Juhayna_Applepear_235ml
+[2025-09-15 16:45:29] [SerialListener] TOF/LiDAR event_id=12
+[2025-09-15 16:45:29] [LabelWorker] Pending event_id=12
+[2025-09-15 16:45:30] [SerialListener] TOF/LiDAR event_id=13
+[2025-09-15 16:45:30] [LabelWorker] Pending event_id=13
+[2025-09-15 16:45:30] [LabelWorker] Detected class=Juhayna_Fullcream_235ml
+[2025-09-15 16:45:31] [SerialListener] TOF/LiDAR event_id=14
+[2025-09-15 16:45:31] [LabelWorker] Pending event_id=14
+[2025-09-15 16:45:31] [LabelWorker] Detected class=Juhayna_Orange_235ml
+[2025-09-15 16:45:31] [SerialListener] TOF/LiDAR event_id=15
+[2025-09-15 16:45:31] [LabelWorker] Pending event_id=15
+[2025-09-15 16:45:31] [LabelWorker] Detected class=Suntop_Orange_250ml
+[2025-09-15 16:45:32] [SerialListener] TOF/LiDAR event_id=16
+[2025-09-15 16:45:32] [LabelWorker] Pending event_id=16
+[2025-09-15 16:45:32] [LabelWorker] Detected class=Beyti_Orange_235ml
+[2025-09-15 16:45:33] [SerialListener] TOF/LiDAR event_id=17
+[2025-09-15 16:45:33] [LabelWorker] Pending event_id=17
+[2025-09-15 16:45:33] [LabelWorker] Detected class=Juhayna_Applepear_235ml
+[2025-09-15 16:45:39] [SerialListener] TOF/LiDAR event_id=18
+[2025-09-15 16:45:39] [LabelWorker] Pending event_id=18
+[2025-09-15 16:45:40] [SerialListener] TOF/LiDAR event_id=19
+[2025-09-15 16:45:40] [LabelWorker] Pending event_id=19
+[2025-09-15 16:45:41] [LabelWorker] Detected class=Juhayna_Fullcream_235ml
+[2025-09-15 16:45:41] [SerialListener] TOF/LiDAR event_id=20
+[2025-09-15 16:45:41] [LabelWorker] Pending event_id=20
+[2025-09-15 16:45:41] [LabelWorker] Detected class=Juhayna_Orange_235ml
+[2025-09-15 16:45:42] [SerialListener] TOF/LiDAR event_id=21
+[2025-09-15 16:45:42] [LabelWorker] Pending event_id=21
+[2025-09-15 16:45:42] [LabelWorker] Detected class=Suntop_Orange_250ml
+[2025-09-15 16:45:43] [SerialListener] TOF/LiDAR event_id=22
+[2025-09-15 16:45:43] [LabelWorker] Pending event_id=22
+[2025-09-15 16:45:43] [LabelWorker] Detected class=Beyti_Orange_235ml
+[2025-09-15 16:45:44] [SerialListener] TOF/LiDAR event_id=23
+[2025-09-15 16:45:44] [LabelWorker] Pending event_id=23
+[2025-09-15 16:45:44] [LabelWorker] Detected class=Juhayna_Applepear_235ml
+[2025-09-15 16:46:01] [SerialListener] TOF/LiDAR event_id=24
+[2025-09-15 16:46:01] [LabelWorker] Pending event_id=24
+[2025-09-15 16:46:02] [SerialListener] TOF/LiDAR event_id=25
+[2025-09-15 16:46:02] [LabelWorker] Pending event_id=25
+[2025-09-15 16:46:02] [LabelWorker] Detected class=Juhayna_Fullcream_235ml
+[2025-09-15 16:46:03] [SerialListener] TOF/LiDAR event_id=26
+[2025-09-15 16:46:03] [LabelWorker] Pending event_id=26
+[2025-09-15 16:46:03] [LabelWorker] Detected class=Juhayna_Orange_235ml
+[2025-09-15 16:46:04] [SerialListener] TOF/LiDAR event_id=27
+[2025-09-15 16:46:04] [LabelWorker] Pending event_id=27
+[2025-09-15 16:46:04] [LabelWorker] Detected class=Suntop_Orange_250ml
+[2025-09-15 16:46:05] [SerialListener] TOF/LiDAR event_id=28
+[2025-09-15 16:46:05] [LabelWorker] Pending event_id=28
+[2025-09-15 16:46:06] [LabelWorker] Detected class=Beyti_Orange_235ml
+[2025-09-15 16:46:49] [SerialListener] TOF/LiDAR event_id=0
+[2025-09-15 16:46:49] [LabelWorker] Pending event_id=0
+[2025-09-15 16:46:50] [SerialListener] TOF/LiDAR event_id=1
+[2025-09-15 16:46:50] [LabelWorker] Pending event_id=1
+[2025-09-15 16:46:50] [LabelWorker] Detected class=Juhayna_Fullcream_235ml
+[2025-09-15 16:46:50] [SerialListener] TOF/LiDAR event_id=2
+[2025-09-15 16:46:50] [LabelWorker] Pending event_id=2
+[2025-09-15 16:46:50] [LabelWorker] Detected class=Juhayna_Orange_235ml
+[2025-09-15 16:46:51] [SerialListener] TOF/LiDAR event_id=3
+[2025-09-15 16:46:51] [LabelWorker] Pending event_id=3
+[2025-09-15 16:46:51] [LabelWorker] Detected class=Suntop_Orange_250ml
+[2025-09-15 16:46:51] [SerialListener] TOF/LiDAR event_id=4
+[2025-09-15 16:46:51] [LabelWorker] Pending event_id=4
+[2025-09-15 16:46:51] [LabelWorker] Detected class=Beyti_Orange_235ml
+[2025-09-15 16:46:56] [SerialListener] TOF/LiDAR event_id=5
+[2025-09-15 16:46:56] [LabelWorker] Pending event_id=5
+[2025-09-15 16:46:56] [SerialListener] TOF/LiDAR event_id=6
+[2025-09-15 16:46:56] [LabelWorker] Pending event_id=6
+[2025-09-15 16:46:57] [LabelWorker] Detected class=Juhayna_Fullcream_235ml
+[2025-09-15 16:46:57] [SerialListener] TOF/LiDAR event_id=7
+[2025-09-15 16:46:57] [LabelWorker] Pending event_id=7
+[2025-09-15 16:46:57] [LabelWorker] Detected class=Juhayna_Orange_235ml
+[2025-09-15 16:46:57] [SerialListener] TOF/LiDAR event_id=8
+[2025-09-15 16:46:57] [LabelWorker] Pending event_id=8
+[2025-09-15 16:46:57] [LabelWorker] Detected class=Suntop_Orange_250ml
+[2025-09-15 16:46:58] [SerialListener] TOF/LiDAR event_id=9
+[2025-09-15 16:46:58] [LabelWorker] Pending event_id=9
+[2025-09-15 16:46:58] [LabelWorker] Detected class=Beyti_Orange_235ml
+[2025-09-15 16:47:04] [SerialListener] TOF/LiDAR event_id=10
+[2025-09-15 16:47:04] [LabelWorker] Pending event_id=10
+[2025-09-15 16:47:05] [SerialListener] TOF/LiDAR event_id=11
+[2025-09-15 16:47:05] [LabelWorker] Pending event_id=11
+[2025-09-15 16:47:05] [LabelWorker] Detected class=Juhayna_Fullcream_235ml
+[2025-09-15 16:47:05] [SerialListener] TOF/LiDAR event_id=12
+[2025-09-15 16:47:05] [LabelWorker] Pending event_id=12
+[2025-09-15 16:47:06] [LabelWorker] Detected class=Juhayna_Orange_235ml
+[2025-09-15 16:47:06] [SerialListener] TOF/LiDAR event_id=13
+[2025-09-15 16:47:06] [LabelWorker] Pending event_id=13
+[2025-09-15 16:47:06] [LabelWorker] Detected class=Suntop_Orange_250ml
+[2025-09-15 16:47:06] [SerialListener] TOF/LiDAR event_id=14
+[2025-09-15 16:47:06] [LabelWorker] Pending event_id=14
+[2025-09-15 16:47:07] [LabelWorker] Detected class=Beyti_Orange_235ml
+[2025-09-15 16:47:10] [SerialListener] TOF/LiDAR event_id=15
+[2025-09-15 16:47:10] [LabelWorker] Pending event_id=15
+[2025-09-15 16:47:10] [SerialListener] TOF/LiDAR event_id=16
+[2025-09-15 16:47:11] [LabelWorker] Pending event_id=16
+[2025-09-15 16:47:11] [LabelWorker] Detected class=Juhayna_Fullcream_235ml
+[2025-09-15 16:47:11] [SerialListener] TOF/LiDAR event_id=17
+[2025-09-15 16:47:11] [LabelWorker] Pending event_id=17
+[2025-09-15 16:47:11] [LabelWorker] Detected class=Juhayna_Orange_235ml
+[2025-09-15 16:47:11] [SerialListener] TOF/LiDAR event_id=18
+[2025-09-15 16:47:11] [LabelWorker] Pending event_id=18
+[2025-09-15 16:47:12] [LabelWorker] Detected class=Suntop_Orange_250ml
+[2025-09-15 16:47:12] [SerialListener] TOF/LiDAR event_id=19
+[2025-09-15 16:47:12] [LabelWorker] Pending event_id=19
+[2025-09-15 16:47:12] [LabelWorker] Detected class=Beyti_Orange_235ml
+[2025-09-15 16:47:15] [SerialListener] TOF/LiDAR event_id=20
+[2025-09-15 16:47:15] [LabelWorker] Pending event_id=20
+[2025-09-15 16:47:15] [SerialListener] TOF/LiDAR event_id=21
+[2025-09-15 16:47:15] [LabelWorker] Pending event_id=21
+[2025-09-15 16:47:15] [SerialListener] TOF/LiDAR event_id=22
+[2025-09-15 16:47:15] [LabelWorker] Pending event_id=22
+[2025-09-15 16:47:16] [LabelWorker] Detected class=Juhayna_Orange_235ml
+[2025-09-15 16:47:16] [SerialListener] TOF/LiDAR event_id=23
+[2025-09-15 16:47:16] [LabelWorker] Pending event_id=23
+[2025-09-15 16:47:16] [LabelWorker] Detected class=Suntop_Orange_250ml
+[2025-09-15 16:47:16] [SerialListener] TOF/LiDAR event_id=24
+[2025-09-15 16:47:16] [LabelWorker] Pending event_id=24
+[2025-09-15 16:47:16] [LabelWorker] Detected class=Beyti_Orange_235ml
+[2025-09-15 16:47:19] [SerialListener] TOF/LiDAR event_id=25
+[2025-09-15 16:47:19] [LabelWorker] Pending event_id=25
+[2025-09-15 16:47:20] [SerialListener] TOF/LiDAR event_id=26
+[2025-09-15 16:47:20] [LabelWorker] Pending event_id=26
+[2025-09-15 16:47:20] [SerialListener] TOF/LiDAR event_id=27
+[2025-09-15 16:47:20] [LabelWorker] Detected class=Juhayna_Fullcream_235ml
+[2025-09-15 16:47:20] [LabelWorker] Pending event_id=27
+[2025-09-15 16:47:20] [SerialListener] TOF/LiDAR event_id=28
+[2025-09-15 16:47:20] [LabelWorker] Pending event_id=28
+[2025-09-15 16:47:21] [LabelWorker] Detected class=Suntop_Orange_250ml
+[2025-09-15 16:47:22] [SerialListener] TOF/LiDAR event_id=29
+[2025-09-15 16:47:22] [LabelWorker] Pending event_id=29
+[2025-09-15 16:47:22] [LabelWorker] Detected class=Beyti_Orange_235ml
+[2025-09-15 16:47:30] [SerialListener] TOF/LiDAR event_id=30
+[2025-09-15 16:47:30] [LabelWorker] Pending event_id=30
+[2025-09-15 16:47:31] [SerialListener] TOF/LiDAR event_id=31
+[2025-09-15 16:47:31] [LabelWorker] Pending event_id=31
+[2025-09-15 16:47:31] [LabelWorker] Detected class=Juhayna_Fullcream_235ml
+[2025-09-15 16:47:31] [SerialListener] TOF/LiDAR event_id=32
+[2025-09-15 16:47:31] [LabelWorker] Pending event_id=32
+[2025-09-15 16:47:31] [LabelWorker] Detected class=Juhayna_Orange_235ml
+[2025-09-15 16:47:32] [SerialListener] TOF/LiDAR event_id=33
+[2025-09-15 16:47:32] [LabelWorker] Pending event_id=33
+[2025-09-15 16:47:32] [LabelWorker] Detected class=Suntop_Orange_250ml
+[2025-09-15 16:48:37] [SerialListener] TOF/LiDAR event_id=0
+[2025-09-15 16:48:37] [LabelWorker] Pending event_id=0
+[2025-09-15 16:48:44] [SerialListener] TOF/LiDAR event_id=1
+[2025-09-15 16:48:44] [LabelWorker] Pending event_id=1
+[2025-09-15 16:48:44] [SerialListener] TOF/LiDAR event_id=2
+[2025-09-15 16:48:44] [LabelWorker] Pending event_id=2
+[2025-09-15 16:48:44] [LabelWorker] Detected class=Juhayna_Fullcream_235ml
+[2025-09-15 16:48:45] [SerialListener] TOF/LiDAR event_id=3
+[2025-09-15 16:48:45] [LabelWorker] Pending event_id=3
+[2025-09-15 16:48:45] [LabelWorker] Detected class=Juhayna_Orange_235ml
+[2025-09-15 16:48:45] [SerialListener] TOF/LiDAR event_id=4
+[2025-09-15 16:48:45] [LabelWorker] Pending event_id=4
+[2025-09-15 16:48:45] [LabelWorker] Detected class=Suntop_Orange_250ml
+[2025-09-15 16:48:50] [SerialListener] TOF/LiDAR event_id=5
+[2025-09-15 16:48:50] [LabelWorker] Pending event_id=5
+[2025-09-15 16:48:50] [SerialListener] TOF/LiDAR event_id=6
+[2025-09-15 16:48:50] [LabelWorker] Pending event_id=6
+[2025-09-15 16:48:51] [LabelWorker] Detected class=Juhayna_Fullcream_235ml
+[2025-09-15 16:48:51] [SerialListener] TOF/LiDAR event_id=7
+[2025-09-15 16:48:51] [LabelWorker] Pending event_id=7
+[2025-09-15 16:48:51] [LabelWorker] Detected class=Juhayna_Orange_235ml
+[2025-09-15 16:48:51] [SerialListener] TOF/LiDAR event_id=8
+[2025-09-15 16:48:51] [LabelWorker] Pending event_id=8
+[2025-09-15 16:48:52] [LabelWorker] Detected class=Suntop_Orange_250ml
+[2025-09-15 16:51:01] [SerialListener] TOF/LiDAR event_id=0
+[2025-09-15 16:51:01] [LabelWorker] Pending event_id=0
+[2025-09-15 16:51:02] [SerialListener] TOF/LiDAR event_id=1
+[2025-09-15 16:51:02] [LabelWorker] Pending event_id=1
+[2025-09-15 16:51:02] [LabelWorker] Detected class=Juhayna_Fullcream_235ml
+[2025-09-15 16:51:02] [SerialListener] TOF/LiDAR event_id=2
+[2025-09-15 16:51:02] [LabelWorker] Pending event_id=2
+[2025-09-15 16:51:03] [LabelWorker] Detected class=Juhayna_Orange_235ml
+[2025-09-15 16:51:03] [SerialListener] TOF/LiDAR event_id=3
+[2025-09-15 16:51:03] [LabelWorker] Pending event_id=3
+[2025-09-15 16:51:03] [LabelWorker] Detected class=Suntop_Orange_250ml
+[2025-09-15 16:57:43] [SerialListener] TOF/LiDAR event_id=0
+[2025-09-15 16:57:43] [LabelWorker] Enqueued event_id=0 (pending=1)
+[2025-09-15 16:57:43] [LabelWorker] Matched event 0 -> class=Juhayna_Fullcream_1L
+[2025-09-15 16:57:43] [SerialListener] TOF/LiDAR event_id=1
+[2025-09-15 16:57:44] [LabelWorker] Enqueued event_id=1 (pending=1)
+[2025-09-15 16:57:44] [LabelWorker] Matched event 1 -> class=Juhayna_Fullcream_235ml
+[2025-09-15 16:57:44] [SerialListener] TOF/LiDAR event_id=2
+[2025-09-15 16:57:44] [LabelWorker] Enqueued event_id=2 (pending=1)
+[2025-09-15 16:57:44] [LabelWorker] Matched event 2 -> class=Juhayna_Orange_235ml
+[2025-09-15 16:57:45] [SerialListener] TOF/LiDAR event_id=3
+[2025-09-15 16:57:45] [LabelWorker] Enqueued event_id=3 (pending=1)
+[2025-09-15 16:57:45] [LabelWorker] Matched event 3 -> class=Suntop_Orange_250ml
+[2025-09-15 16:57:54] [SerialListener] TOF/LiDAR event_id=4
+[2025-09-15 16:57:54] [LabelWorker] Enqueued event_id=4 (pending=1)
+[2025-09-15 16:57:54] [LabelWorker] Matched event 4 -> class=Juhayna_Fullcream_1L
+[2025-09-15 16:57:55] [SerialListener] TOF/LiDAR event_id=5
+[2025-09-15 16:57:55] [LabelWorker] Enqueued event_id=5 (pending=1)
+[2025-09-15 16:57:55] [LabelWorker] Matched event 5 -> class=Juhayna_Fullcream_235ml
+[2025-09-15 16:57:56] [SerialListener] TOF/LiDAR event_id=6
+[2025-09-15 16:57:56] [LabelWorker] Enqueued event_id=6 (pending=1)
+[2025-09-15 16:57:56] [LabelWorker] Matched event 6 -> class=Juhayna_Orange_235ml
+[2025-09-15 16:57:57] [SerialListener] TOF/LiDAR event_id=7
+[2025-09-15 16:57:57] [LabelWorker] Enqueued event_id=7 (pending=1)
+[2025-09-15 16:57:57] [LabelWorker] Matched event 7 -> class=Suntop_Orange_250ml
+[2025-09-15 16:59:52] [SerialListener] TOF/LiDAR event_id=0
+[2025-09-15 16:59:52] [LabelWorker] Pending event_id=0
+[2025-09-15 16:59:52] [SerialListener] TOF/LiDAR event_id=1
+[2025-09-15 16:59:52] [LabelWorker] Pending event_id=1
+[2025-09-15 16:59:52] [LabelWorker] Detected class=Juhayna_Fullcream_235ml
+[2025-09-15 16:59:53] [SerialListener] TOF/LiDAR event_id=2
+[2025-09-15 16:59:53] [LabelWorker] Pending event_id=2
+[2025-09-15 16:59:53] [LabelWorker] Detected class=Juhayna_Orange_235ml
+[2025-09-15 16:59:53] [SerialListener] TOF/LiDAR event_id=3
+[2025-09-15 16:59:53] [LabelWorker] Pending event_id=3
+[2025-09-15 16:59:54] [LabelWorker] Detected class=Suntop_Orange_250ml
+[2025-09-15 17:01:03] [SerialListener] TOF/LiDAR event_id=0
+[2025-09-15 17:01:03] [LabelWorker] Pending event_id=0
+[2025-09-15 17:01:03] [SerialListener] TOF/LiDAR event_id=1
+[2025-09-15 17:01:03] [LabelWorker] Pending event_id=1
+[2025-09-15 17:01:04] [LabelWorker] Detected class=Juhayna_Fullcream_235ml
+[2025-09-15 17:01:04] [SerialListener] TOF/LiDAR event_id=2
+[2025-09-15 17:01:04] [LabelWorker] Pending event_id=2
+[2025-09-15 17:01:04] [LabelWorker] Detected class=Juhayna_Orange_235ml
+[2025-09-15 17:01:04] [SerialListener] TOF/LiDAR event_id=3
+[2025-09-15 17:01:05] [LabelWorker] Pending event_id=3
+[2025-09-15 17:01:05] [LabelWorker] Detected class=Suntop_Orange_250ml
+[2025-09-15 17:01:48] [SerialListener] TOF/LiDAR event_id=0
+[2025-09-15 17:01:48] [LabelWorker] Pending event_id=0
+[2025-09-15 17:01:48] [SerialListener] TOF/LiDAR event_id=1
+[2025-09-15 17:01:49] [LabelWorker] Pending event_id=1
+[2025-09-15 17:01:49] [LabelWorker] Detected class=Juhayna_Fullcream_235ml
+[2025-09-15 17:01:49] [SerialListener] TOF/LiDAR event_id=2
+[2025-09-15 17:01:49] [LabelWorker] Pending event_id=2
+[2025-09-15 17:01:49] [LabelWorker] Detected class=Juhayna_Orange_235ml
+[2025-09-15 17:01:50] [SerialListener] TOF/LiDAR event_id=3
+[2025-09-15 17:01:50] [LabelWorker] Pending event_id=3
+[2025-09-15 17:01:50] [LabelWorker] Detected class=Suntop_Orange_250ml
+[2025-09-15 17:02:19] [SerialListener] TOF/LiDAR event_id=0
+[2025-09-15 17:02:19] [LabelWorker] Pending event_id=0
+[2025-09-15 17:02:20] [SerialListener] TOF/LiDAR event_id=1
+[2025-09-15 17:02:20] [LabelWorker] Pending event_id=1
+[2025-09-15 17:02:20] [SerialListener] TOF/LiDAR event_id=2
+[2025-09-15 17:02:20] [LabelWorker] Pending event_id=2
+[2025-09-15 17:02:20] [LabelWorker] Detected class=Juhayna_Orange_235ml
+[2025-09-15 17:02:21] [SerialListener] TOF/LiDAR event_id=3
+[2025-09-15 17:02:21] [LabelWorker] Pending event_id=3
+[2025-09-15 17:02:21] [LabelWorker] Detected class=Suntop_Orange_250ml
+[2025-09-15 17:02:29] [SerialListener] TOF/LiDAR event_id=4
+[2025-09-15 17:02:29] [LabelWorker] Pending event_id=4
+[2025-09-15 17:02:29] [SerialListener] TOF/LiDAR event_id=5
+[2025-09-15 17:02:29] [LabelWorker] Pending event_id=5
+[2025-09-15 17:02:29] [LabelWorker] Detected class=Juhayna_Fullcream_235ml
+[2025-09-15 17:02:30] [SerialListener] TOF/LiDAR event_id=6
+[2025-09-15 17:02:30] [LabelWorker] Pending event_id=6
+[2025-09-15 17:02:30] [LabelWorker] Detected class=Juhayna_Orange_235ml
+[2025-09-15 17:02:31] [SerialListener] TOF/LiDAR event_id=7
+[2025-09-15 17:02:31] [LabelWorker] Pending event_id=7
+[2025-09-15 17:02:31] [LabelWorker] Detected class=Suntop_Orange_250ml
+[2025-09-15 17:03:24] [SerialListener] TOF/LiDAR event_id=0
+[2025-09-15 17:03:24] [LabelWorker] Pending event_id=0
+[2025-09-15 17:03:24] [SerialListener] TOF/LiDAR event_id=1
+[2025-09-15 17:03:24] [LabelWorker] Pending event_id=1
+[2025-09-15 17:03:24] [LabelWorker] Detected class=Juhayna_Fullcream_235ml track_id=1
+[2025-09-15 17:03:25] [SerialListener] TOF/LiDAR event_id=2
+[2025-09-15 17:03:25] [LabelWorker] Pending event_id=2
+[2025-09-15 17:03:25] [LabelWorker] Detected class=Juhayna_Orange_235ml track_id=2
+[2025-09-15 17:03:25] [SerialListener] TOF/LiDAR event_id=3
+[2025-09-15 17:03:25] [LabelWorker] Pending event_id=3
+[2025-09-15 17:03:26] [LabelWorker] Detected class=Suntop_Orange_250ml track_id=3
+[2025-09-15 17:05:10] [SerialListener] TOF/LiDAR event_id=0
+[2025-09-15 17:05:11] [LabelWorker] Pending event_id=0
+[2025-09-15 17:05:11] [SerialListener] TOF/LiDAR event_id=1
+[2025-09-15 17:05:11] [LabelWorker] Pending event_id=1
+[2025-09-15 17:05:11] [LabelWorker] Detected class=Juhayna_Fullcream_235ml track_id=1
+[2025-09-15 17:05:12] [SerialListener] TOF/LiDAR event_id=2
+[2025-09-15 17:05:12] [LabelWorker] Pending event_id=2
+[2025-09-15 17:05:12] [LabelWorker] Detected class=Juhayna_Orange_235ml track_id=2
+[2025-09-15 17:05:13] [SerialListener] TOF/LiDAR event_id=3
+[2025-09-15 17:05:13] [LabelWorker] Pending event_id=3
+[2025-09-15 17:05:13] [LabelWorker] Detected class=Suntop_Orange_250ml track_id=3
+[2025-09-15 17:08:34] [SerialListener] TOF/LiDAR event_id=4
+[2025-09-15 17:08:34] [LabelWorker] Pending event_id=4
+[2025-09-15 17:08:37] [SerialListener] TOF/LiDAR event_id=5
+[2025-09-15 17:08:37] [LabelWorker] Pending event_id=5
+[2025-09-15 17:08:38] [SerialListener] TOF/LiDAR event_id=6
+[2025-09-15 17:08:38] [LabelWorker] Pending event_id=6
+[2025-09-15 17:08:38] [SerialListener] TOF/LiDAR event_id=7
+[2025-09-15 17:08:38] [LabelWorker] Pending event_id=7
+[2025-09-15 17:08:39] [SerialListener] TOF/LiDAR event_id=8
+[2025-09-15 17:08:39] [LabelWorker] Pending event_id=8
+[2025-09-15 17:08:39] [SerialListener] TOF/LiDAR event_id=9
+[2025-09-15 17:08:39] [LabelWorker] Pending event_id=9
+[2025-09-15 17:08:39] [SerialListener] TOF/LiDAR event_id=10
+[2025-09-15 17:08:39] [LabelWorker] Pending event_id=10
+[2025-09-15 17:08:40] [SerialListener] TOF/LiDAR event_id=11
+[2025-09-15 17:08:40] [LabelWorker] Pending event_id=11
+[2025-09-15 17:08:40] [SerialListener] TOF/LiDAR event_id=12
+[2025-09-15 17:08:40] [LabelWorker] Pending event_id=12
+[2025-09-15 17:08:46] [SerialListener] TOF/LiDAR event_id=13
+[2025-09-15 17:08:46] [LabelWorker] Pending event_id=13
+[2025-09-15 17:08:47] [SerialListener] TOF/LiDAR event_id=14
+[2025-09-15 17:08:47] [LabelWorker] Pending event_id=14
+[2025-09-15 17:08:47] [LabelWorker] Detected class=Juhayna_Fullcream_235ml track_id=14
+[2025-09-15 17:08:47] [SerialListener] TOF/LiDAR event_id=15
+[2025-09-15 17:08:48] [LabelWorker] Pending event_id=15
+[2025-09-15 17:08:48] [LabelWorker] Detected class=Juhayna_Orange_235ml track_id=15
+[2025-09-15 17:08:48] [SerialListener] TOF/LiDAR event_id=16
+[2025-09-15 17:08:48] [LabelWorker] Pending event_id=16
+[2025-09-15 17:08:48] [LabelWorker] Detected class=Suntop_Orange_250ml track_id=16
+[2025-09-15 17:18:11] [SerialListener] TOF/LiDAR event_id=0
+[2025-09-15 17:18:11] [LabelWorker] Enqueued event_id=0 (pending=1)
+[2025-09-15 17:18:12] [SerialListener] TOF/LiDAR event_id=1
+[2025-09-15 17:18:12] [LabelWorker] Enqueued event_id=1 (pending=2)
+[2025-09-15 17:18:12] [LabelWorker] Matched event 0 -> class=Juhayna_Fullcream_235ml
+[2025-09-15 17:18:12] [LabelWorker] Matched event 1 -> class=Juhayna_Fullcream_235ml
+[2025-09-15 17:18:12] [SerialListener] TOF/LiDAR event_id=2
+[2025-09-15 17:18:12] [LabelWorker] Enqueued event_id=2 (pending=1)
+[2025-09-15 17:18:12] [LabelWorker] Matched event 2 -> class=Juhayna_Orange_235ml
+[2025-09-15 17:18:13] [SerialListener] TOF/LiDAR event_id=3
+[2025-09-15 17:18:13] [LabelWorker] Enqueued event_id=3 (pending=1)
+[2025-09-15 17:18:13] [LabelWorker] Matched event 3 -> class=Suntop_Orange_250ml
+[2025-09-15 17:18:24] [SerialListener] TOF/LiDAR event_id=4
+[2025-09-15 17:18:25] [LabelWorker] Enqueued event_id=4 (pending=1)
+[2025-09-15 17:18:25] [LabelWorker] Matched event 4 -> class=Juhayna_Fullcream_1L
+[2025-09-15 17:18:25] [SerialListener] TOF/LiDAR event_id=5
+[2025-09-15 17:18:25] [LabelWorker] Enqueued event_id=5 (pending=1)
+[2025-09-15 17:18:25] [LabelWorker] Matched event 5 -> class=Juhayna_Fullcream_235ml
+[2025-09-15 17:18:26] [SerialListener] TOF/LiDAR event_id=6
+[2025-09-15 17:18:26] [LabelWorker] Enqueued event_id=6 (pending=1)
+[2025-09-15 17:18:26] [LabelWorker] Matched event 6 -> class=Juhayna_Orange_235ml
+[2025-09-15 17:18:26] [SerialListener] TOF/LiDAR event_id=7
+[2025-09-15 17:18:26] [LabelWorker] Enqueued event_id=7 (pending=1)
+[2025-09-15 17:18:26] [LabelWorker] Matched event 7 -> class=Suntop_Orange_250ml
+[2025-09-15 17:19:03] [SerialListener] TOF/LiDAR event_id=8
+[2025-09-15 17:19:03] [LabelWorker] Enqueued event_id=8 (pending=1)
+[2025-09-15 17:19:03] [LabelWorker] Matched event 8 -> class=Juhayna_Orange_235ml
+[2025-09-15 17:19:10] [SerialListener] TOF/LiDAR event_id=9
+[2025-09-15 17:19:10] [LabelWorker] Enqueued event_id=9 (pending=1)
+[2025-09-15 17:19:11] [LabelWorker] Matched event 9 -> class=Juhayna_Orange_1L
+[2025-09-15 17:21:48] [SerialListener] TOF/LiDAR event_id=0
+[2025-09-15 17:21:48] [LabelWorker] Pending event_id=0
+[2025-09-15 17:21:48] [SerialListener] TOF/LiDAR event_id=1
+[2025-09-15 17:21:48] [LabelWorker] Pending event_id=1
+[2025-09-15 17:21:49] [LabelWorker] Detected class=Juhayna_Fullcream_235ml track_id=1
+[2025-09-15 17:21:49] [SerialListener] TOF/LiDAR event_id=2
+[2025-09-15 17:21:49] [LabelWorker] Pending event_id=2
+[2025-09-15 17:21:49] [LabelWorker] Detected class=Juhayna_Orange_235ml track_id=2
+[2025-09-15 17:21:50] [SerialListener] TOF/LiDAR event_id=3
+[2025-09-15 17:21:50] [LabelWorker] Pending event_id=3
+[2025-09-15 17:21:50] [LabelWorker] Detected class=Juhayna_Orange_235ml track_id=3
+[2025-09-15 17:21:50] [SerialListener] TOF/LiDAR event_id=4
+[2025-09-15 17:21:50] [LabelWorker] Pending event_id=4
+[2025-09-15 17:21:50] [LabelWorker] Detected class=Juhayna_Applepear_235ml track_id=4
+[2025-09-15 17:21:51] [SerialListener] TOF/LiDAR event_id=5
+[2025-09-15 17:21:51] [LabelWorker] Pending event_id=5
+[2025-09-15 17:21:51] [LabelWorker] Detected class=Suntop_Orange_250ml track_id=5
+[2025-09-15 17:23:39] [SerialListener] TOF/LiDAR event_id=0
+[2025-09-15 17:23:39] [LabelWorker] Pending event_id=0
+[2025-09-15 17:23:40] [SerialListener] TOF/LiDAR event_id=1
+[2025-09-15 17:23:40] [LabelWorker] Pending event_id=1
+[2025-09-15 17:23:41] [SerialListener] TOF/LiDAR event_id=2
+[2025-09-15 17:23:41] [LabelWorker] Pending event_id=2
+[2025-09-15 17:23:41] [LabelWorker] Detected class=Juhayna_Fullcream_235ml track_id=2
+[2025-09-15 17:23:42] [SerialListener] TOF/LiDAR event_id=3
+[2025-09-15 17:23:42] [LabelWorker] Pending event_id=3
+[2025-09-15 17:23:42] [LabelWorker] Detected class=Juhayna_Orange_235ml track_id=3
+[2025-09-15 17:23:43] [SerialListener] TOF/LiDAR event_id=4
+[2025-09-15 17:23:43] [LabelWorker] Pending event_id=4
+[2025-09-15 17:23:43] [LabelWorker] Detected class=Juhayna_Orange_235ml track_id=4
+[2025-09-15 17:23:44] [SerialListener] TOF/LiDAR event_id=5
+[2025-09-15 17:23:45] [LabelWorker] Pending event_id=5
+[2025-09-15 17:23:45] [LabelWorker] Detected class=Juhayna_Applepear_235ml track_id=5
+[2025-09-15 17:23:46] [SerialListener] TOF/LiDAR event_id=6
+[2025-09-15 17:23:46] [LabelWorker] Pending event_id=6
+[2025-09-15 17:23:46] [LabelWorker] Detected class=Suntop_Orange_250ml track_id=6
+[2025-09-15 17:23:53] [SerialListener] TOF/LiDAR event_id=7
+[2025-09-15 17:23:53] [LabelWorker] Pending event_id=7
+[2025-09-15 17:23:54] [SerialListener] TOF/LiDAR event_id=8
+[2025-09-15 17:23:54] [LabelWorker] Pending event_id=8
+[2025-09-15 17:23:54] [LabelWorker] Detected class=Juhayna_Fullcream_235ml track_id=8
+[2025-09-15 17:23:55] [SerialListener] TOF/LiDAR event_id=9
+[2025-09-15 17:23:55] [LabelWorker] Pending event_id=9
+[2025-09-15 17:23:56] [LabelWorker] Detected class=Juhayna_Orange_235ml track_id=9
+[2025-09-15 17:23:57] [SerialListener] TOF/LiDAR event_id=10
+[2025-09-15 17:23:57] [LabelWorker] Pending event_id=10
+[2025-09-15 17:23:57] [LabelWorker] Detected class=Juhayna_Orange_235ml track_id=10
+[2025-09-15 17:23:58] [SerialListener] TOF/LiDAR event_id=11
+[2025-09-15 17:23:58] [LabelWorker] Pending event_id=11
+[2025-09-15 17:23:58] [LabelWorker] Detected class=Juhayna_Applepear_235ml track_id=11
+[2025-09-15 17:23:58] [SerialListener] TOF/LiDAR event_id=12
+[2025-09-15 17:23:59] [LabelWorker] Pending event_id=12
+[2025-09-15 17:23:59] [SerialListener] TOF/LiDAR event_id=13
+[2025-09-15 17:23:59] [LabelWorker] Pending event_id=13
+[2025-09-15 17:23:59] [LabelWorker] Detected class=Suntop_Orange_250ml track_id=13
+[2025-09-15 17:24:06] [SerialListener] TOF/LiDAR event_id=14
+[2025-09-15 17:24:06] [LabelWorker] Pending event_id=14
+[2025-09-15 17:24:08] [SerialListener] TOF/LiDAR event_id=15
+[2025-09-15 17:24:08] [LabelWorker] Pending event_id=15
+[2025-09-15 17:24:08] [LabelWorker] Detected class=Juhayna_Fullcream_235ml track_id=15
+[2025-09-15 17:24:09] [SerialListener] TOF/LiDAR event_id=16
+[2025-09-15 17:24:09] [LabelWorker] Pending event_id=16
+[2025-09-15 17:24:09] [LabelWorker] Detected class=Juhayna_Orange_235ml track_id=16
+[2025-09-15 17:24:10] [SerialListener] TOF/LiDAR event_id=17
+[2025-09-15 17:24:10] [LabelWorker] Pending event_id=17
+[2025-09-15 17:24:10] [LabelWorker] Detected class=Juhayna_Orange_235ml track_id=17
+[2025-09-15 17:24:11] [SerialListener] TOF/LiDAR event_id=18
+[2025-09-15 17:24:11] [LabelWorker] Pending event_id=18
+[2025-09-15 17:24:11] [LabelWorker] Detected class=Juhayna_Applepear_235ml track_id=18
+[2025-09-15 17:24:12] [SerialListener] TOF/LiDAR event_id=19
+[2025-09-15 17:24:12] [LabelWorker] Pending event_id=19
+[2025-09-15 17:24:12] [LabelWorker] Detected class=Suntop_Orange_250ml track_id=19
+[2025-09-15 17:24:13] [SerialListener] TOF/LiDAR event_id=20
+[2025-09-15 17:24:13] [LabelWorker] Pending event_id=20
+[2025-09-15 17:24:14] [LabelWorker] Detected class=Beyti_Orange_235ml track_id=20
+[2025-09-15 17:24:14] [SerialListener] TOF/LiDAR event_id=21
+[2025-09-15 17:24:14] [LabelWorker] Pending event_id=21
+[2025-09-15 17:24:14] [LabelWorker] Detected class=Beyti_Orange_235ml track_id=21
+[2025-09-15 17:24:20] [SerialListener] TOF/LiDAR event_id=22
+[2025-09-15 17:24:20] [LabelWorker] Pending event_id=22
+[2025-09-15 17:24:21] [SerialListener] TOF/LiDAR event_id=23
+[2025-09-15 17:24:21] [LabelWorker] Pending event_id=23
+[2025-09-15 17:24:23] [SerialListener] TOF/LiDAR event_id=24
+[2025-09-15 17:24:23] [LabelWorker] Pending event_id=24
+[2025-09-15 17:24:23] [LabelWorker] Detected class=Juhayna_Orange_235ml track_id=24
+[2025-09-15 17:24:23] [SerialListener] TOF/LiDAR event_id=25
+[2025-09-15 17:24:23] [LabelWorker] Pending event_id=25
+[2025-09-15 17:24:23] [LabelWorker] Detected class=Juhayna_Orange_235ml track_id=25
+[2025-09-15 17:24:23] [SerialListener] TOF/LiDAR event_id=26
+[2025-09-15 17:24:23] [LabelWorker] Pending event_id=26
+[2025-09-15 17:24:24] [LabelWorker] Detected class=Juhayna_Applepear_235ml track_id=26
+[2025-09-15 17:24:24] [SerialListener] TOF/LiDAR event_id=27
+[2025-09-15 17:24:24] [LabelWorker] Pending event_id=27
+[2025-09-15 17:24:24] [LabelWorker] Detected class=Suntop_Orange_250ml track_id=27
+[2025-09-15 17:27:11] [SerialListener] TOF/LiDAR event_id=0
+[2025-09-15 17:27:11] [LabelWorker] Pending event_id=0
+[2025-09-15 17:27:12] [SerialListener] TOF/LiDAR event_id=1
+[2025-09-15 17:27:12] [LabelWorker] Pending event_id=1
+[2025-09-15 17:27:12] [LabelWorker] Detected class=Juhayna_Orange_235ml track_id=1
+[2025-09-15 17:27:21] [SerialListener] TOF/LiDAR event_id=2
+[2025-09-15 17:27:21] [LabelWorker] Pending event_id=2
+[2025-09-15 17:27:34] [SerialListener] TOF/LiDAR event_id=3
+[2025-09-15 17:27:34] [LabelWorker] Pending event_id=3
+[2025-09-15 17:27:34] [LabelWorker] Detected class=Juhayna_Applepear_235ml track_id=3
+[2025-09-15 17:41:01] [SerialListener] TOF/LiDAR event_id=0
+[2025-09-15 17:41:01] [LabelWorker] Pending event_id=0
+[2025-09-15 17:41:07] [SerialListener] TOF/LiDAR event_id=1
+[2025-09-15 17:41:07] [LabelWorker] Pending event_id=1
+[2025-09-15 17:41:08] [SerialListener] TOF/LiDAR event_id=2
+[2025-09-15 17:41:08] [LabelWorker] Pending event_id=2
+[2025-09-15 17:41:08] [LabelWorker] Detected class=Juhayna_Orange_235ml track_id=2
+[2025-09-15 17:41:09] [SerialListener] TOF/LiDAR event_id=3
+[2025-09-15 17:41:09] [LabelWorker] Pending event_id=3
+[2025-09-15 17:42:25] [SerialListener] TOF/LiDAR event_id=0
+[2025-09-15 17:42:25] [LabelWorker] Pending event_id=0
+[2025-09-15 17:42:27] [SerialListener] TOF/LiDAR event_id=1
+[2025-09-15 17:42:27] [LabelWorker] Pending event_id=1
+[2025-09-15 17:42:33] [SerialListener] TOF/LiDAR event_id=2
+[2025-09-15 17:42:33] [LabelWorker] Pending event_id=2
+[2025-09-15 17:42:35] [SerialListener] TOF/LiDAR event_id=3
+[2025-09-15 17:42:35] [LabelWorker] Pending event_id=3
+[2025-09-15 17:42:35] [LabelWorker] Detected class=Juhayna_Orange_235ml track_id=3
+[2025-09-15 17:52:33] [SerialListener] TOF/LiDAR event_id=0
+[2025-09-15 17:52:33] [LabelWorker] Pending event_id=0
+[2025-09-15 17:52:38] [SerialListener] TOF/LiDAR event_id=1
+[2025-09-15 17:52:38] [LabelWorker] Pending event_id=1
+[2025-09-15 17:52:39] [SerialListener] TOF/LiDAR event_id=2
+[2025-09-15 17:52:39] [LabelWorker] Pending event_id=2
+[2025-09-15 17:52:43] [SerialListener] TOF/LiDAR event_id=3
+[2025-09-15 17:52:43] [LabelWorker] Pending event_id=3
+[2025-09-15 17:52:43] [SerialListener] TOF/LiDAR event_id=4
+[2025-09-15 17:52:43] [LabelWorker] Pending event_id=4
+[2025-09-15 17:52:48] [SerialListener] TOF/LiDAR event_id=5
+[2025-09-15 17:52:48] [LabelWorker] Pending event_id=5
+[2025-09-15 17:52:49] [SerialListener] TOF/LiDAR event_id=6
+[2025-09-15 17:52:49] [LabelWorker] Pending event_id=6
+[2025-09-15 17:52:49] [LabelWorker] Detected class=Juhayna_Orange_235ml track_id=6
+[2025-09-15 17:56:50] [SerialListener] TOF/LiDAR event_id=0
+[2025-09-15 17:56:50] [LabelWorker] Pending event_id=0
+[2025-09-15 17:57:02] [SerialListener] TOF/LiDAR event_id=1
+[2025-09-15 17:57:02] [LabelWorker] Pending event_id=1
+[2025-09-15 17:57:03] [SerialListener] TOF/LiDAR event_id=2
+[2025-09-15 17:57:03] [LabelWorker] Pending event_id=2
+[2025-09-15 17:57:03] [LabelWorker] Detected class=Juhayna_Orange_235ml track_id=2
+[2025-09-15 18:08:33] no event
+[2025-09-15 18:08:33] no event
+[2025-09-15 18:08:33] no event
+[2025-09-15 18:08:33] no event
+[2025-09-15 18:08:33] no event
+[2025-09-15 18:08:33] no event
+[2025-09-15 18:08:34] no event
+[2025-09-15 18:08:34] no event
+[2025-09-15 18:08:34] no event
+[2025-09-15 18:08:34] no event
+[2025-09-15 18:08:34] no event
+[2025-09-15 18:08:34] no event
+[2025-09-15 18:08:34] no event
+[2025-09-15 18:08:34] no event
+[2025-09-15 18:08:34] no event
+[2025-09-15 18:08:34] no event
+[2025-09-15 18:08:35] no event
+[2025-09-15 18:08:35] no event
+[2025-09-15 18:08:35] no event
+[2025-09-15 18:08:35] no event
+[2025-09-15 18:08:35] no event
+[2025-09-15 18:08:35] no event
+[2025-09-15 18:08:35] no event
+[2025-09-15 18:08:35] no event
+[2025-09-15 18:08:35] no event
+[2025-09-15 18:08:35] no event
+[2025-09-15 18:08:36] no event
+[2025-09-15 18:08:36] no event
+[2025-09-15 18:08:36] no event
+[2025-09-15 18:08:36] no event
+[2025-09-15 18:08:36] no event
+[2025-09-15 18:08:36] no event
+[2025-09-15 18:08:36] no event
+[2025-09-15 18:08:36] no event
+[2025-09-15 18:08:36] no event
+[2025-09-15 18:08:36] no event
+[2025-09-15 18:08:37] no event
+[2025-09-15 18:08:37] no event
+[2025-09-15 18:08:37] no event
+[2025-09-15 18:08:37] no event
+[2025-09-15 18:08:37] no event
+[2025-09-15 18:08:37] no event
+[2025-09-15 18:08:37] no event
+[2025-09-15 18:08:37] no event
+[2025-09-15 18:08:37] no event
+[2025-09-15 18:08:37] no event
+[2025-09-15 18:08:38] no event
+[2025-09-15 18:08:38] no event
+[2025-09-15 18:08:38] no event
+[2025-09-15 18:08:38] no event
+[2025-09-15 18:08:38] no event
+[2025-09-15 18:08:38] no event
+[2025-09-15 18:08:38] no event
+[2025-09-15 18:08:38] no event
+[2025-09-15 18:08:38] no event
+[2025-09-15 18:08:38] no event
+[2025-09-15 18:08:39] no event
+[2025-09-15 18:08:39] no event
+[2025-09-15 18:08:39] no event
+[2025-09-15 18:08:39] no event
+[2025-09-15 18:08:39] no event
+[2025-09-15 18:08:39] no event
+[2025-09-15 18:08:39] no event
+[2025-09-15 18:08:39] no event
+[2025-09-15 18:08:39] no event
+[2025-09-15 18:08:39] no event
+[2025-09-15 18:08:40] no event
+[2025-09-15 18:08:40] [SerialListener] TOF/LiDAR event_id=0
+[2025-09-15 18:08:40] [LabelWorker] Pending event_id=0
+[2025-09-15 18:08:40] no event
+[2025-09-15 18:08:40] hello
+[2025-09-15 18:08:40] no event
+[2025-09-15 18:08:40] no event
+[2025-09-15 18:08:40] no event
+[2025-09-15 18:08:40] no event
+[2025-09-15 18:08:40] no event
+[2025-09-15 18:08:40] no event
+[2025-09-15 18:08:40] no event
+[2025-09-15 18:08:41] no event
+[2025-09-15 18:08:41] no event
+[2025-09-15 18:08:41] no event
+[2025-09-15 18:08:41] no event
+[2025-09-15 18:08:41] no event
+[2025-09-15 18:08:41] no event
+[2025-09-15 18:08:41] no event
+[2025-09-15 18:08:41] no event
+[2025-09-15 18:08:41] no event
+[2025-09-15 18:08:41] no event
+[2025-09-15 18:08:42] no event
+[2025-09-15 18:08:42] no event
+[2025-09-15 18:08:42] no event
+[2025-09-15 18:08:42] no event
+[2025-09-15 18:08:42] no event
+[2025-09-15 18:08:42] no event
+[2025-09-15 18:08:42] no event
+[2025-09-15 18:08:42] no event
+[2025-09-15 18:08:42] no event
+[2025-09-15 18:08:42] no event
+[2025-09-15 18:08:43] no event
+[2025-09-15 18:08:43] no event
+[2025-09-15 18:08:43] no event
+[2025-09-15 18:08:43] no event
+[2025-09-15 18:08:43] no event
+[2025-09-15 18:08:43] no event
+[2025-09-15 18:08:43] no event
+[2025-09-15 18:08:43] no event
+[2025-09-15 18:10:48] no event
+[2025-09-15 18:10:48] no event
+[2025-09-15 18:10:48] no event
+[2025-09-15 18:10:48] no event
+[2025-09-15 18:10:49] no event
+[2025-09-15 18:10:49] no event
+[2025-09-15 18:10:49] no event
+[2025-09-15 18:10:49] no event
+[2025-09-15 18:10:49] no event
+[2025-09-15 18:10:49] no event
+[2025-09-15 18:10:49] no event
+[2025-09-15 18:10:49] no event
+[2025-09-15 18:10:49] no event
+[2025-09-15 18:10:49] no event
+[2025-09-15 18:10:50] no event
+[2025-09-15 18:10:50] no event
+[2025-09-15 18:10:50] no event
+[2025-09-15 18:10:50] no event
+[2025-09-15 18:10:50] no event
+[2025-09-15 18:10:50] no event
+[2025-09-15 18:10:50] no event
+[2025-09-15 18:10:50] no event
+[2025-09-15 18:10:50] no event
+[2025-09-15 18:10:50] no event
+[2025-09-15 18:10:51] no event
+[2025-09-15 18:10:51] no event
+[2025-09-15 18:10:51] no event
+[2025-09-15 18:10:51] no event
+[2025-09-15 18:10:51] no event
+[2025-09-15 18:10:51] no event
+[2025-09-15 18:10:51] no event
+[2025-09-15 18:10:51] no event
+[2025-09-15 18:10:51] no event
+[2025-09-15 18:10:51] no event
+[2025-09-15 18:10:52] no event
+[2025-09-15 18:10:52] no event
+[2025-09-15 18:10:52] no event
+[2025-09-15 18:10:52] no event
+[2025-09-15 18:10:52] no event
+[2025-09-15 18:10:52] no event
+[2025-09-15 18:10:52] no event
+[2025-09-15 18:10:52] no event
+[2025-09-15 18:10:52] no event
+[2025-09-15 18:10:52] no event
+[2025-09-15 18:10:53] no event
+[2025-09-15 18:10:53] no event
+[2025-09-15 18:10:53] no event
+[2025-09-15 18:10:53] no event
+[2025-09-15 18:10:53] no event
+[2025-09-15 18:10:53] no event
+[2025-09-15 18:10:53] no event
+[2025-09-15 18:10:53] no event
+[2025-09-15 18:10:53] no event
+[2025-09-15 18:10:53] no event
+[2025-09-15 18:10:54] no event
+[2025-09-15 18:10:54] no event
+[2025-09-15 18:10:54] no event
+[2025-09-15 18:10:54] no event
+[2025-09-15 18:10:54] no event
+[2025-09-15 18:10:54] no event
+[2025-09-15 18:10:54] no event
+[2025-09-15 18:10:54] no event
+[2025-09-15 18:10:54] no event
+[2025-09-15 18:10:54] no event
+[2025-09-15 18:10:55] no event
+[2025-09-15 18:10:55] no event
+[2025-09-15 18:10:55] no event
+[2025-09-15 18:10:55] no event
+[2025-09-15 18:10:55] no event
+[2025-09-15 18:10:55] no event
+[2025-09-15 18:10:55] no event
+[2025-09-15 18:10:55] no event
+[2025-09-15 18:10:55] no event
+[2025-09-15 18:10:55] no event
+[2025-09-15 18:10:56] no event
+[2025-09-15 18:10:56] no event
+[2025-09-15 18:10:56] no event
+[2025-09-15 18:10:56] no event
+[2025-09-15 18:10:56] no event
+[2025-09-15 18:10:56] no event
+[2025-09-15 18:10:56] no event
+[2025-09-15 18:10:56] no event
+[2025-09-15 18:10:56] no event
+[2025-09-15 18:10:56] no event
+[2025-09-15 18:10:57] no event
+[2025-09-15 18:10:57] no event
+[2025-09-15 18:10:57] no event
+[2025-09-15 18:10:57] no event
+[2025-09-15 18:10:57] no event
+[2025-09-15 18:10:57] no event
+[2025-09-15 18:10:57] no event
+[2025-09-15 18:10:57] no event
+[2025-09-15 18:10:57] no event
+[2025-09-15 18:10:57] no event
+[2025-09-15 18:10:58] no event
+[2025-09-15 18:10:58] no event
+[2025-09-15 18:10:58] no event
+[2025-09-15 18:10:58] no event
+[2025-09-15 18:10:58] no event
+[2025-09-15 18:10:58] no event
+[2025-09-15 18:10:58] no event
+[2025-09-15 18:10:58] no event
+[2025-09-15 18:10:58] no event
+[2025-09-15 18:10:58] no event
+[2025-09-15 18:10:59] no event
+[2025-09-15 18:10:59] no event
+[2025-09-15 18:10:59] no event
+[2025-09-15 18:10:59] no event
+[2025-09-15 18:10:59] no event
+[2025-09-15 18:10:59] no event
+[2025-09-15 18:10:59] [SerialListener] TOF/LiDAR event_id=0
+[2025-09-15 18:10:59] [LabelWorker] Pending event_id=0
+[2025-09-15 18:10:59] no event
+[2025-09-15 18:10:59] hello
+[2025-09-15 18:10:59] no event
+[2025-09-15 18:10:59] no event
+[2025-09-15 18:11:00] no event
+[2025-09-15 18:11:00] no event
+[2025-09-15 18:11:00] no event
+[2025-09-15 18:11:00] no event
+[2025-09-15 18:11:00] no event
+[2025-09-15 18:11:00] no event
+[2025-09-15 18:11:00] no event
+[2025-09-15 18:11:00] no event
+[2025-09-15 18:11:00] no event
+[2025-09-15 18:11:00] no event
+[2025-09-15 18:11:01] no event
+[2025-09-15 18:11:01] no event
+[2025-09-15 18:11:01] no event
+[2025-09-15 18:11:01] no event
+[2025-09-15 18:11:01] no event
+[2025-09-15 18:11:01] no event
+[2025-09-15 18:11:01] no event
+[2025-09-15 18:11:01] no event
+[2025-09-15 18:11:01] no event
+[2025-09-15 18:11:01] no event
+[2025-09-15 18:11:02] no event
+[2025-09-15 18:11:02] no event
+[2025-09-15 18:11:02] no event
+[2025-09-15 18:11:02] no event
+[2025-09-15 18:11:02] no event
+[2025-09-15 18:11:02] no event
+[2025-09-15 18:11:02] no event
+[2025-09-15 18:11:02] no event
+[2025-09-15 18:11:02] no event
+[2025-09-15 18:11:02] no event
+[2025-09-15 18:11:03] no event
+[2025-09-15 18:11:03] no event
+[2025-09-15 18:11:03] no event
+[2025-09-15 18:11:03] no event
+[2025-09-15 18:11:03] no event
+[2025-09-15 18:11:03] no event
+[2025-09-15 18:11:03] no event
+[2025-09-15 18:11:03] no event
+[2025-09-15 18:12:38] [SerialListener] TOF/LiDAR event_id=0
+[2025-09-15 18:12:39] [LabelWorker] Pending event_id=0
+[2025-09-15 18:12:39] hello
+[2025-09-15 18:12:45] [SerialListener] TOF/LiDAR event_id=1
+[2025-09-15 18:12:45] [LabelWorker] Pending event_id=1
+[2025-09-15 18:12:46] hello
+[2025-09-15 18:12:50] [SerialListener] TOF/LiDAR event_id=2
+[2025-09-15 18:12:50] [LabelWorker] Pending event_id=2
+[2025-09-15 18:12:50] hello
+[2025-09-15 18:12:52] [SerialListener] TOF/LiDAR event_id=3
+[2025-09-15 18:12:52] [LabelWorker] Pending event_id=3
+[2025-09-15 18:12:52] hello
+[2025-09-15 18:12:52] [SerialListener] TOF/LiDAR event_id=4
+[2025-09-15 18:12:52] [LabelWorker] Pending event_id=4
+[2025-09-15 18:12:53] hello
+[2025-09-15 18:12:53] [SerialListener] TOF/LiDAR event_id=5
+[2025-09-15 18:12:53] [LabelWorker] Pending event_id=5
+[2025-09-15 18:12:53] hello
+[2025-09-15 18:12:54] [SerialListener] TOF/LiDAR event_id=6
+[2025-09-15 18:12:54] [LabelWorker] Pending event_id=6
+[2025-09-15 18:12:54] hello
+[2025-09-15 18:13:11] [SerialListener] TOF/LiDAR event_id=0
+[2025-09-15 18:13:13] [SerialListener] TOF/LiDAR event_id=1
+[2025-09-15 18:13:36] [SerialListener] TOF/LiDAR event_id=0
+[2025-09-15 18:13:36] [LabelWorker] Pending event_id=0
+[2025-09-15 18:13:36] hello
+[2025-09-15 18:13:37] [SerialListener] TOF/LiDAR event_id=1
+[2025-09-15 18:13:37] [LabelWorker] Pending event_id=1
+[2025-09-15 18:13:37] hello
+[2025-09-15 18:13:38] [SerialListener] TOF/LiDAR event_id=2
+[2025-09-15 18:13:38] [LabelWorker] Pending event_id=2
+[2025-09-15 18:13:38] hello
+[2025-09-15 18:13:39] [SerialListener] TOF/LiDAR event_id=3
+[2025-09-15 18:13:39] [LabelWorker] Pending event_id=3
+[2025-09-15 18:13:39] hello
+[2025-09-15 18:13:43] [SerialListener] TOF/LiDAR event_id=4
+[2025-09-15 18:13:43] [LabelWorker] Pending event_id=4
+[2025-09-15 18:13:43] hello
+[2025-09-15 18:13:51] [SerialListener] TOF/LiDAR event_id=5
+[2025-09-15 18:13:51] [LabelWorker] Pending event_id=5
+[2025-09-15 18:13:51] hello
+[2025-09-15 18:13:51] n=1
+[2025-09-15 18:13:51] [LabelWorker] Detected class=Juhayna_Orange_235ml pending_id=5
+[2025-09-15 18:13:54] [SerialListener] TOF/LiDAR event_id=6
+[2025-09-15 18:13:54] [LabelWorker] Pending event_id=6
+[2025-09-15 18:13:55] hello
+[2025-09-15 18:14:12] [SerialListener] TOF/LiDAR event_id=0
+[2025-09-15 18:14:14] [SerialListener] TOF/LiDAR event_id=1
+[2025-09-15 18:14:19] [LabelWorker] Pending event_id=0
+[2025-09-15 18:14:19] [LabelWorker] Pending event_id=1
+[2025-09-15 18:14:20] hello
+[2025-09-15 18:14:23] [SerialListener] TOF/LiDAR event_id=2
+[2025-09-15 18:14:23] [LabelWorker] Pending event_id=2
+[2025-09-15 18:14:23] hello
+[2025-09-15 18:14:24] [SerialListener] TOF/LiDAR event_id=3
+[2025-09-15 18:14:24] [LabelWorker] Pending event_id=3
+[2025-09-15 18:14:24] [SerialListener] TOF/LiDAR event_id=4
+[2025-09-15 18:14:24] hello
+[2025-09-15 18:14:24] [LabelWorker] Pending event_id=4
+[2025-09-15 18:14:25] hello
+[2025-09-15 18:14:25] [SerialListener] TOF/LiDAR event_id=5
+[2025-09-15 18:14:25] [LabelWorker] Pending event_id=5
+[2025-09-15 18:14:25] hello
+[2025-09-15 18:14:25] [SerialListener] TOF/LiDAR event_id=6
+[2025-09-15 18:14:25] [LabelWorker] Pending event_id=6
+[2025-09-15 18:14:25] [SerialListener] TOF/LiDAR event_id=7
+[2025-09-15 18:14:25] hello
+[2025-09-15 18:14:25] [LabelWorker] Pending event_id=7
+[2025-09-15 18:14:25] hello
+[2025-09-15 18:14:25] [SerialListener] TOF/LiDAR event_id=8
+[2025-09-15 18:14:25] [LabelWorker] Pending event_id=8
+[2025-09-15 18:14:26] hello
+[2025-09-15 18:14:26] [SerialListener] TOF/LiDAR event_id=9
+[2025-09-15 18:14:26] [LabelWorker] Pending event_id=9
+[2025-09-15 18:14:26] hello
+[2025-09-15 18:14:26] [SerialListener] TOF/LiDAR event_id=10
+[2025-09-15 18:14:26] [LabelWorker] Pending event_id=10
+[2025-09-15 18:14:26] [SerialListener] TOF/LiDAR event_id=11
+[2025-09-15 18:14:26] hello
+[2025-09-15 18:14:26] [LabelWorker] Pending event_id=11
+[2025-09-15 18:14:26] hello
+[2025-09-15 18:14:27] [SerialListener] TOF/LiDAR event_id=12
+[2025-09-15 18:14:27] [LabelWorker] Pending event_id=12
+[2025-09-15 18:14:27] hello
+[2025-09-15 18:14:27] [SerialListener] TOF/LiDAR event_id=13
+[2025-09-15 18:14:27] [LabelWorker] Pending event_id=13
+[2025-09-15 18:14:27] hello
+[2025-09-15 18:14:29] [SerialListener] TOF/LiDAR event_id=14
+[2025-09-15 18:14:29] [LabelWorker] Pending event_id=14
+[2025-09-15 18:14:29] hello
+[2025-09-15 18:14:29] [SerialListener] TOF/LiDAR event_id=15
+[2025-09-15 18:14:29] [LabelWorker] Pending event_id=15
+[2025-09-15 18:14:29] hello
+[2025-09-15 18:14:30] [SerialListener] TOF/LiDAR event_id=16
+[2025-09-15 18:14:30] [LabelWorker] Pending event_id=16
+[2025-09-15 18:14:30] hello
+[2025-09-15 18:14:30] [SerialListener] TOF/LiDAR event_id=17
+[2025-09-15 18:14:30] [LabelWorker] Pending event_id=17
+[2025-09-15 18:14:30] hello
+[2025-09-15 18:14:31] [SerialListener] TOF/LiDAR event_id=18
+[2025-09-15 18:14:31] [LabelWorker] Pending event_id=18
+[2025-09-15 18:14:31] hello
+[2025-09-15 18:14:31] [SerialListener] TOF/LiDAR event_id=19
+[2025-09-15 18:14:31] [LabelWorker] Pending event_id=19
+[2025-09-15 18:14:31] hello
+[2025-09-15 18:14:31] [SerialListener] TOF/LiDAR event_id=20
+[2025-09-15 18:14:31] [LabelWorker] Pending event_id=20
+[2025-09-15 18:14:32] hello
+[2025-09-15 18:14:32] [SerialListener] TOF/LiDAR event_id=21
+[2025-09-15 18:14:32] [LabelWorker] Pending event_id=21
+[2025-09-15 18:14:32] hello
+[2025-09-15 18:14:33] [SerialListener] TOF/LiDAR event_id=22
+[2025-09-15 18:14:33] [LabelWorker] Pending event_id=22
+[2025-09-15 18:14:33] hello
+[2025-09-15 18:14:34] [SerialListener] TOF/LiDAR event_id=23
+[2025-09-15 18:14:34] [LabelWorker] Pending event_id=23
+[2025-09-15 18:14:34] hello
+[2025-09-15 18:14:35] [SerialListener] TOF/LiDAR event_id=24
+[2025-09-15 18:14:35] [LabelWorker] Pending event_id=24
+[2025-09-15 18:14:35] hello
+[2025-09-15 18:14:36] [SerialListener] TOF/LiDAR event_id=25
+[2025-09-15 18:14:36] [LabelWorker] Pending event_id=25
+[2025-09-15 18:14:36] hello
+[2025-09-15 18:14:36] [SerialListener] TOF/LiDAR event_id=26
+[2025-09-15 18:14:36] [LabelWorker] Pending event_id=26
+[2025-09-15 18:14:37] hello
+[2025-09-15 18:14:38] [SerialListener] TOF/LiDAR event_id=27
+[2025-09-15 18:14:38] [LabelWorker] Pending event_id=27
+[2025-09-15 18:14:38] [SerialListener] TOF/LiDAR event_id=28
+[2025-09-15 18:14:39] hello
+[2025-09-15 18:14:39] [LabelWorker] Pending event_id=28
+[2025-09-15 18:14:39] hello
+[2025-09-15 18:15:03] [SerialListener] TOF/LiDAR event_id=0
+[2025-09-15 18:15:13] [LabelWorker] Pending event_id=0
+[2025-09-15 18:15:13] hello
+[2025-09-15 18:15:31] [SerialListener] TOF/LiDAR event_id=1
+[2025-09-15 18:15:31] [LabelWorker] Pending event_id=1
+[2025-09-15 18:15:31] hello
+[2025-09-15 18:15:36] [SerialListener] TOF/LiDAR event_id=2
+[2025-09-15 18:15:36] [LabelWorker] Pending event_id=2
+[2025-09-15 18:15:36] hello
+[2025-09-15 18:15:36] [SerialListener] TOF/LiDAR event_id=3
+[2025-09-15 18:15:36] [LabelWorker] Pending event_id=3
+[2025-09-15 18:15:36] hello
+[2025-09-15 18:15:46] [SerialListener] TOF/LiDAR event_id=4
+[2025-09-15 18:15:46] [LabelWorker] Pending event_id=4
+[2025-09-15 18:15:46] hello
+[2025-09-15 18:15:46] n=1
+[2025-09-15 18:15:46] [LabelWorker] Detected class=Juhayna_Fullcream_235ml pending_id=4
+[2025-09-15 18:16:02] [SerialListener] TOF/LiDAR event_id=0
+[2025-09-15 18:16:11] [LabelWorker] Pending event_id=0
+[2025-09-15 18:16:11] hello
+[2025-09-15 18:17:08] [SerialListener] TOF/LiDAR event_id=0
+[2025-09-15 18:17:18] [LabelWorker] Pending event_id=0
+[2025-09-15 18:17:18] hello
+[2025-09-15 18:17:43] [SerialListener] TOF/LiDAR event_id=0
+[2025-09-15 18:17:44] [SerialListener] TOF/LiDAR event_id=1
+[2025-09-15 18:17:44] [LabelWorker] Pending event_id=0
+[2025-09-15 18:17:44] [LabelWorker] Pending event_id=1
+[2025-09-15 18:17:44] hello
+[2025-09-15 18:17:44] n=1
+[2025-09-15 18:17:44] [LabelWorker] Detected class=Juhayna_Fullcream_235ml pending_id=1
+[2025-09-15 18:18:39] [SerialListener] TOF/LiDAR event_id=0
+[2025-09-15 18:18:39] [LabelWorker] Pending event_id=0
+[2025-09-15 18:18:39] hello
+[2025-09-15 18:18:39] [SerialListener] TOF/LiDAR event_id=1
+[2025-09-15 18:18:39] [LabelWorker] Pending event_id=1
+[2025-09-15 18:18:39] hello
+[2025-09-15 18:18:39] n=1
+[2025-09-15 18:18:39] [LabelWorker] Detected class=Juhayna_Fullcream_235ml pending_id=1
+[2025-09-15 18:18:40] [SerialListener] TOF/LiDAR event_id=2
+[2025-09-15 18:18:40] [LabelWorker] Pending event_id=2
+[2025-09-15 18:18:40] hello
+[2025-09-15 18:18:40] n=1
+[2025-09-15 18:18:40] [LabelWorker] Detected class=Juhayna_Orange_235ml pending_id=2
+[2025-09-15 18:18:41] [SerialListener] TOF/LiDAR event_id=3
+[2025-09-15 18:18:41] [LabelWorker] Pending event_id=3
+[2025-09-15 18:18:41] hello
+[2025-09-15 18:18:41] n=1
+[2025-09-15 18:18:41] [LabelWorker] Detected class=Juhayna_Orange_235ml pending_id=3
+[2025-09-15 18:20:06] [SerialListener] TOF/LiDAR event_id=0
+[2025-09-15 18:20:15] [LabelWorker] Pending event_id=0
+[2025-09-15 18:20:15] hello
+[2025-09-15 18:20:34] [SerialListener] TOF/LiDAR event_id=1
+[2025-09-15 18:20:34] [LabelWorker] Pending event_id=1
+[2025-09-15 18:20:34] hello
+[2025-09-15 18:20:36] [SerialListener] TOF/LiDAR event_id=2
+[2025-09-15 18:20:36] [LabelWorker] Pending event_id=2
+[2025-09-15 18:20:36] hello
+[2025-09-15 18:20:37] [SerialListener] TOF/LiDAR event_id=3
+[2025-09-15 18:20:37] [LabelWorker] Pending event_id=3
+[2025-09-15 18:20:37] hello
+[2025-09-15 18:20:37] [SerialListener] TOF/LiDAR event_id=4
+[2025-09-15 18:20:38] [LabelWorker] Pending event_id=4
+[2025-09-15 18:20:38] hello
+[2025-09-15 18:20:38] [SerialListener] TOF/LiDAR event_id=5
+[2025-09-15 18:20:38] [LabelWorker] Pending event_id=5
+[2025-09-15 18:20:38] hello
+[2025-09-15 18:20:39] [SerialListener] TOF/LiDAR event_id=6
+[2025-09-15 18:20:39] [LabelWorker] Pending event_id=6
+[2025-09-15 18:20:39] hello
+[2025-09-15 18:20:39] [SerialListener] TOF/LiDAR event_id=7
+[2025-09-15 18:20:39] [LabelWorker] Pending event_id=7
+[2025-09-15 18:20:39] hello
+[2025-09-15 18:20:40] [SerialListener] TOF/LiDAR event_id=8
+[2025-09-15 18:20:40] [LabelWorker] Pending event_id=8
+[2025-09-15 18:20:40] hello
+[2025-09-15 18:20:41] [SerialListener] TOF/LiDAR event_id=9
+[2025-09-15 18:20:41] [LabelWorker] Pending event_id=9
+[2025-09-15 18:20:41] [SerialListener] TOF/LiDAR event_id=10
+[2025-09-15 18:20:41] hello
+[2025-09-15 18:20:41] [LabelWorker] Pending event_id=10
+[2025-09-15 18:20:42] hello
+[2025-09-15 18:20:43] [SerialListener] TOF/LiDAR event_id=11
+[2025-09-15 18:20:43] [LabelWorker] Pending event_id=11
+[2025-09-15 18:20:43] hello
+[2025-09-15 18:20:44] [SerialListener] TOF/LiDAR event_id=12
+[2025-09-15 18:20:44] [LabelWorker] Pending event_id=12
+[2025-09-15 18:20:44] hello
+[2025-09-15 18:20:44] [SerialListener] TOF/LiDAR event_id=13
+[2025-09-15 18:20:44] [LabelWorker] Pending event_id=13
+[2025-09-15 18:20:44] hello
+[2025-09-15 18:20:45] [SerialListener] TOF/LiDAR event_id=14
+[2025-09-15 18:20:45] [LabelWorker] Pending event_id=14
+[2025-09-15 18:20:45] hello
+[2025-09-15 18:20:45] [SerialListener] TOF/LiDAR event_id=15
+[2025-09-15 18:20:45] [LabelWorker] Pending event_id=15
+[2025-09-15 18:20:45] hello
+[2025-09-15 18:20:46] [SerialListener] TOF/LiDAR event_id=16
+[2025-09-15 18:20:46] [LabelWorker] Pending event_id=16
+[2025-09-15 18:20:46] hello
+[2025-09-15 18:20:47] [SerialListener] TOF/LiDAR event_id=17
+[2025-09-15 18:20:47] [LabelWorker] Pending event_id=17
+[2025-09-15 18:20:48] hello
+[2025-09-15 18:20:48] [SerialListener] TOF/LiDAR event_id=18
+[2025-09-15 18:20:48] [LabelWorker] Pending event_id=18
+[2025-09-15 18:20:48] hello
+[2025-09-15 18:20:48] [SerialListener] TOF/LiDAR event_id=19
+[2025-09-15 18:20:48] [LabelWorker] Pending event_id=19
+[2025-09-15 18:20:48] hello
+[2025-09-15 18:20:48] [SerialListener] TOF/LiDAR event_id=20
+[2025-09-15 18:20:48] [LabelWorker] Pending event_id=20
+[2025-09-15 18:20:48] hello
+[2025-09-15 18:20:49] [SerialListener] TOF/LiDAR event_id=21
+[2025-09-15 18:20:49] [LabelWorker] Pending event_id=21
+[2025-09-15 18:20:49] hello
+[2025-09-15 18:20:50] [SerialListener] TOF/LiDAR event_id=22
+[2025-09-15 18:20:50] [LabelWorker] Pending event_id=22
+[2025-09-15 18:20:50] hello
+[2025-09-15 18:20:51] [SerialListener] TOF/LiDAR event_id=23
+[2025-09-15 18:20:51] [LabelWorker] Pending event_id=23
+[2025-09-15 18:20:51] hello
+[2025-09-15 18:20:56] [SerialListener] TOF/LiDAR event_id=24
+[2025-09-15 18:20:56] [LabelWorker] Pending event_id=24
+[2025-09-15 18:20:56] hello
+[2025-09-15 18:20:57] [SerialListener] TOF/LiDAR event_id=25
+[2025-09-15 18:20:57] [LabelWorker] Pending event_id=25
+[2025-09-15 18:20:57] hello
+[2025-09-15 18:20:57] [SerialListener] TOF/LiDAR event_id=26
+[2025-09-15 18:20:57] [LabelWorker] Pending event_id=26
+[2025-09-15 18:20:57] hello
+[2025-09-15 18:21:03] [SerialListener] TOF/LiDAR event_id=27
+[2025-09-15 18:21:03] [LabelWorker] Pending event_id=27
+[2025-09-15 18:21:03] hello
+[2025-09-15 18:21:03] [SerialListener] TOF/LiDAR event_id=28
+[2025-09-15 18:21:03] [LabelWorker] Pending event_id=28
+[2025-09-15 18:21:03] hello
+[2025-09-15 18:22:22] [SerialListener] TOF/LiDAR event_id=0
+[2025-09-15 18:22:27] [LabelWorker] Pending event_id=0
+[2025-09-15 18:22:28] hello
+[2025-09-15 18:22:28] [SerialListener] TOF/LiDAR event_id=1
+[2025-09-15 18:22:28] [LabelWorker] Pending event_id=1
+[2025-09-15 18:22:29] hello
+[2025-09-15 18:22:29] n=1
+[2025-09-15 18:22:29] [LabelWorker] Detected class=Juhayna_Orange_235ml pending_id=1
+[2025-09-15 18:22:29] [SerialListener] TOF/LiDAR event_id=2
+[2025-09-15 18:22:29] [LabelWorker] Pending event_id=2
+[2025-09-15 18:22:29] hello
+[2025-09-15 18:22:29] n=1
+[2025-09-15 18:22:29] [LabelWorker] Detected class=Juhayna_Orange_235ml pending_id=2
+[2025-09-15 18:22:29] [SerialListener] TOF/LiDAR event_id=3
+[2025-09-15 18:22:29] [LabelWorker] Pending event_id=3
+[2025-09-15 18:22:29] hello
+[2025-09-15 18:22:29] n=1
+[2025-09-15 18:22:29] [LabelWorker] Detected class=Juhayna_Orange_235ml pending_id=3
+[2025-09-15 18:22:32] [SerialListener] TOF/LiDAR event_id=4
+[2025-09-15 18:22:32] [LabelWorker] Pending event_id=4
+[2025-09-15 18:22:32] hello
+[2025-09-15 18:22:32] n=1
+[2025-09-15 18:22:32] [LabelWorker] Detected class=Beyti_Orange_235ml pending_id=4
+[2025-09-15 18:23:42] [SerialListener] TOF/LiDAR event_id=0
+[2025-09-15 18:23:42] [LabelWorker] Pending event_id=0
+[2025-09-15 18:23:42] hello
+[2025-09-15 18:23:42] n=1
+[2025-09-15 18:23:42] [LabelWorker] Detected class=Juhayna_Orange_235ml pending_id=0
+[2025-09-15 18:23:42] [SerialListener] TOF/LiDAR event_id=1
+[2025-09-15 18:23:42] [LabelWorker] Pending event_id=1
+[2025-09-15 18:23:42] hello
+[2025-09-15 18:23:42] n=1
+[2025-09-15 18:23:42] [LabelWorker] Detected class=Juhayna_Orange_235ml pending_id=1
+[2025-09-15 18:23:43] [SerialListener] TOF/LiDAR event_id=2
+[2025-09-15 18:23:43] [LabelWorker] Pending event_id=2
+[2025-09-15 18:23:43] hello
+[2025-09-15 18:23:43] n=1
+[2025-09-15 18:23:43] [LabelWorker] Detected class=Beyti_Orange_235ml pending_id=2
+[2025-09-15 18:23:57] [SerialListener] TOF/LiDAR event_id=3
+[2025-09-15 18:23:57] [LabelWorker] Pending event_id=3
+[2025-09-15 18:23:57] [SerialListener] TOF/LiDAR event_id=4
+[2025-09-15 18:23:57] hello
+[2025-09-15 18:23:57] n=1
+[2025-09-15 18:23:57] [LabelWorker] Detected class=Juhayna_Orange_235ml pending_id=3
+[2025-09-15 18:23:57] [LabelWorker] Pending event_id=4
+[2025-09-15 18:23:58] hello
+[2025-09-15 18:23:58] n=1
+[2025-09-15 18:23:58] [LabelWorker] Detected class=Juhayna_Orange_235ml pending_id=4
+[2025-09-15 18:23:58] [SerialListener] TOF/LiDAR event_id=5
+[2025-09-15 18:23:58] [LabelWorker] Pending event_id=5
+[2025-09-15 18:23:58] [SerialListener] TOF/LiDAR event_id=6
+[2025-09-15 18:23:58] hello
+[2025-09-15 18:23:58] n=1
+[2025-09-15 18:23:58] [LabelWorker] Detected class=Juhayna_Orange_235ml pending_id=5
+[2025-09-15 18:23:59] [LabelWorker] Pending event_id=6
+[2025-09-15 18:23:59] hello
+[2025-09-15 18:23:59] n=1
+[2025-09-15 18:23:59] [LabelWorker] Detected class=Juhayna_Orange_235ml pending_id=6
+[2025-09-15 18:23:59] [SerialListener] TOF/LiDAR event_id=7
+[2025-09-15 18:23:59] [LabelWorker] Pending event_id=7
+[2025-09-15 18:24:00] hello
+[2025-09-15 18:24:00] n=1
+[2025-09-15 18:24:00] [LabelWorker] Detected class=Beyti_Orange_235ml pending_id=7
+[2025-09-15 18:26:06] [SerialListener] TOF/LiDAR event_id=0
+[2025-09-15 18:26:06] [LabelWorker] Pending event_id=0
+[2025-09-15 18:26:07] [SerialListener] TOF/LiDAR event_id=1
+[2025-09-15 18:26:07] hello
+[2025-09-15 18:26:07] n=1
+[2025-09-15 18:26:07] [LabelWorker] Detected class=Juhayna_Orange_235ml pending_id=0
+[2025-09-15 18:26:07] [LabelWorker] Pending event_id=1
+[2025-09-15 18:26:07] hello
+[2025-09-15 18:26:07] n=1
+[2025-09-15 18:26:07] [LabelWorker] Detected class=Juhayna_Orange_235ml pending_id=1
+[2025-09-15 18:26:07] [SerialListener] TOF/LiDAR event_id=2
+[2025-09-15 18:26:07] [LabelWorker] Pending event_id=2
+[2025-09-15 18:26:07] hello
+[2025-09-15 18:26:07] n=1
+[2025-09-15 18:26:07] [LabelWorker] Detected class=Juhayna_Orange_235ml pending_id=2
+[2025-09-15 18:26:08] [SerialListener] TOF/LiDAR event_id=3
+[2025-09-15 18:26:08] [LabelWorker] Pending event_id=3
+[2025-09-15 18:26:08] hello
+[2025-09-15 18:26:08] n=1
+[2025-09-15 18:26:08] [LabelWorker] Detected class=Beyti_Orange_235ml pending_id=3
+[2025-09-15 18:28:06] [SerialListener] TOF/LiDAR event_id=0
+[2025-09-15 18:28:07] [LabelWorker] Pending event_id=0
+[2025-09-15 18:28:07] hello
+[2025-09-15 18:28:07] n=1
+[2025-09-15 18:28:07] [LabelWorker] Detected class=Juhayna_Orange_235ml pending_id=0
+[2025-09-15 18:28:28] [SerialListener] TOF/LiDAR event_id=1
+[2025-09-15 18:28:28] [LabelWorker] Pending event_id=1
+[2025-09-15 18:28:28] hello
+[2025-09-15 18:28:28] n=1
+[2025-09-15 18:28:28] [LabelWorker] Detected class=Juhayna_Orange_235ml pending_id=1
+[2025-09-15 18:28:28] [SerialListener] TOF/LiDAR event_id=2
+[2025-09-15 18:28:28] [LabelWorker] Pending event_id=2
+[2025-09-15 18:28:29] hello
+[2025-09-15 18:28:29] n=1
+[2025-09-15 18:28:29] [LabelWorker] Detected class=Beyti_Orange_235ml pending_id=2
+[2025-09-15 18:28:44] [SerialListener] TOF/LiDAR event_id=3
+[2025-09-15 18:28:44] [LabelWorker] Pending event_id=3
+[2025-09-15 18:28:44] hello
+[2025-09-15 18:28:44] n=1
+[2025-09-15 18:28:44] [LabelWorker] Detected class=Juhayna_Orange_235ml pending_id=3
+[2025-09-15 18:28:45] [SerialListener] TOF/LiDAR event_id=4
+[2025-09-15 18:28:45] [LabelWorker] Pending event_id=4
+[2025-09-15 18:28:45] hello
+[2025-09-15 18:28:45] n=1
+[2025-09-15 18:28:45] [LabelWorker] Detected class=Beyti_Orange_235ml pending_id=4
+[2025-09-15 18:29:16] [SerialListener] TOF/LiDAR event_id=5
+[2025-09-15 18:29:16] [LabelWorker] Pending event_id=5
+[2025-09-15 18:29:16] hello
+[2025-09-15 18:29:16] n=1
+[2025-09-15 18:29:16] [LabelWorker] Detected class=Juhayna_Orange_235ml pending_id=5
+[2025-09-15 18:29:17] [SerialListener] TOF/LiDAR event_id=6
+[2025-09-15 18:29:17] [LabelWorker] Pending event_id=6
+[2025-09-15 18:29:17] hello
+[2025-09-15 18:29:17] n=1
+[2025-09-15 18:29:17] [LabelWorker] Detected class=Beyti_Orange_235ml pending_id=6
+[2025-09-15 18:29:18] [SerialListener] TOF/LiDAR event_id=7
+[2025-09-15 18:29:18] [LabelWorker] Pending event_id=7
+[2025-09-15 18:29:18] hello
+[2025-09-15 18:29:18] n=1
+[2025-09-15 18:29:18] [LabelWorker] Detected class=Beyti_Orange_235ml pending_id=7
+[2025-09-15 18:30:01] [SerialListener] TOF/LiDAR event_id=0
+[2025-09-15 18:30:01] [LabelWorker] Pending event_id=0
+[2025-09-15 18:30:01] [SerialListener] TOF/LiDAR event_id=1
+[2025-09-15 18:30:01] hello
+[2025-09-15 18:30:01] n=1
+[2025-09-15 18:30:01] [LabelWorker] Detected class=Juhayna_Orange_235ml pending_id=0
+[2025-09-15 18:30:01] [LabelWorker] Pending event_id=1
+[2025-09-15 18:30:01] hello
+[2025-09-15 18:30:01] n=1
+[2025-09-15 18:30:01] [LabelWorker] Detected class=Juhayna_Orange_235ml pending_id=1
+[2025-09-15 18:30:02] [SerialListener] TOF/LiDAR event_id=2
+[2025-09-15 18:30:02] [LabelWorker] Pending event_id=2
+[2025-09-15 18:30:02] [SerialListener] TOF/LiDAR event_id=3
+[2025-09-15 18:30:02] hello
+[2025-09-15 18:30:02] n=1
+[2025-09-15 18:30:02] [LabelWorker] Detected class=Beyti_Orange_235ml pending_id=2
+[2025-09-15 18:30:02] [LabelWorker] Pending event_id=3
+[2025-09-15 18:30:02] hello
+[2025-09-15 18:30:02] n=1
+[2025-09-15 18:30:02] [LabelWorker] Detected class=Beyti_Orange_235ml pending_id=3
+[2025-09-15 18:30:03] [SerialListener] TOF/LiDAR event_id=4
+[2025-09-15 18:30:03] [LabelWorker] Pending event_id=4
+[2025-09-15 18:30:03] hello
+[2025-09-15 18:30:03] n=1
+[2025-09-15 18:30:03] [LabelWorker] Detected class=Beyti_Orange_235ml pending_id=4
+[2025-09-15 18:30:04] [SerialListener] TOF/LiDAR event_id=5
+[2025-09-15 18:30:04] [LabelWorker] Pending event_id=5
+[2025-09-15 18:30:04] hello
+[2025-09-15 18:30:04] n=1
+[2025-09-15 18:30:04] [LabelWorker] Detected class=Juhayna_Orange_235ml pending_id=5
+[2025-09-15 18:30:48] [SerialListener] TOF/LiDAR event_id=0
+[2025-09-15 18:30:48] [LabelWorker] Pending event_id=0
+[2025-09-15 18:30:48] [SerialListener] TOF/LiDAR event_id=1
+[2025-09-15 18:30:48] hello
+[2025-09-15 18:30:48] n=1
+[2025-09-15 18:30:48] [LabelWorker] Detected class=Juhayna_Orange_235ml pending_id=0
+[2025-09-15 18:30:48] [LabelWorker] Pending event_id=1
+[2025-09-15 18:30:48] hello
+[2025-09-15 18:30:48] n=1
+[2025-09-15 18:30:48] [LabelWorker] Detected class=Juhayna_Orange_235ml pending_id=1
+[2025-09-15 18:30:49] [SerialListener] TOF/LiDAR event_id=2
+[2025-09-15 18:30:49] [LabelWorker] Pending event_id=2
+[2025-09-15 18:30:49] [SerialListener] TOF/LiDAR event_id=3
+[2025-09-15 18:30:49] hello
+[2025-09-15 18:30:49] n=1
+[2025-09-15 18:30:49] [LabelWorker] Detected class=Beyti_Orange_235ml pending_id=2
+[2025-09-15 18:30:49] [LabelWorker] Pending event_id=3
+[2025-09-15 18:30:49] hello
+[2025-09-15 18:30:49] n=1
+[2025-09-15 18:30:49] [LabelWorker] Detected class=Beyti_Orange_235ml pending_id=3
+[2025-09-15 18:30:49] [SerialListener] TOF/LiDAR event_id=4
+[2025-09-15 18:30:49] [LabelWorker] Pending event_id=4
+[2025-09-15 18:30:50] hello
+[2025-09-15 18:30:50] n=1
+[2025-09-15 18:30:50] [LabelWorker] Detected class=Juhayna_Orange_235ml pending_id=4
+[2025-09-15 18:30:50] [SerialListener] TOF/LiDAR event_id=5
+[2025-09-15 18:30:50] [LabelWorker] Pending event_id=5
+[2025-09-15 18:30:50] hello
+[2025-09-15 18:30:50] n=1
+[2025-09-15 18:30:50] [LabelWorker] Detected class=Beyti_Orange_235ml pending_id=5
+[2025-09-15 18:30:51] [SerialListener] TOF/LiDAR event_id=6
+[2025-09-15 18:30:51] [LabelWorker] Pending event_id=6
+[2025-09-15 18:30:51] hello
+[2025-09-15 18:30:51] n=1
+[2025-09-15 18:30:51] [LabelWorker] Detected class=Juhayna_Orange_235ml pending_id=6
+[2025-09-15 18:31:39] [SerialListener] TOF/LiDAR event_id=7
+[2025-09-15 18:31:39] [LabelWorker] Pending event_id=7
+[2025-09-15 18:31:39] hello
+[2025-09-15 18:31:39] n=1
+[2025-09-15 18:31:39] [LabelWorker] Detected class=Juhayna_Orange_235ml pending_id=7
+[2025-09-15 18:31:39] [SerialListener] TOF/LiDAR event_id=8
+[2025-09-15 18:31:39] [LabelWorker] Pending event_id=8
+[2025-09-15 18:31:40] hello
+[2025-09-15 18:31:40] [SerialListener] TOF/LiDAR event_id=9
+[2025-09-15 18:31:40] [LabelWorker] Pending event_id=9
+[2025-09-15 18:31:40] hello
+[2025-09-15 18:31:40] n=1
+[2025-09-15 18:31:40] [LabelWorker] Detected class=Juhayna_Orange_235ml pending_id=9
+[2025-09-15 18:31:40] [SerialListener] TOF/LiDAR event_id=10
+[2025-09-15 18:31:40] [LabelWorker] Pending event_id=10
+[2025-09-15 18:31:40] hello
+[2025-09-15 18:31:40] n=1
+[2025-09-15 18:31:40] [LabelWorker] Detected class=Beyti_Orange_235ml pending_id=10
+[2025-09-15 18:31:41] [SerialListener] TOF/LiDAR event_id=11
+[2025-09-15 18:31:41] [LabelWorker] Pending event_id=11
+[2025-09-15 18:31:41] hello
+[2025-09-15 18:31:41] n=1
+[2025-09-15 18:31:41] [LabelWorker] Detected class=Juhayna_Orange_235ml pending_id=11
+[2025-09-15 18:33:38] [SerialListener] TOF/LiDAR event_id=0
+[2025-09-15 18:33:38] [LabelWorker] Pending event_id=0
+[2025-09-15 18:33:39] hello
+[2025-09-15 18:33:39] n=1
+[2025-09-15 18:33:39] [LabelWorker] Detected class=Juhayna_Orange_235ml pending_id=0
+[2025-09-15 18:33:39] [SerialListener] TOF/LiDAR event_id=1
+[2025-09-15 18:33:39] [LabelWorker] Pending event_id=1
+[2025-09-15 18:33:39] hello
+[2025-09-15 18:33:39] n=1
+[2025-09-15 18:33:39] [LabelWorker] Detected class=Juhayna_Orange_235ml pending_id=1
+[2025-09-15 18:33:43] [SerialListener] TOF/LiDAR event_id=2
+[2025-09-15 18:33:43] [LabelWorker] Pending event_id=2
+[2025-09-15 18:33:44] hello
+[2025-09-15 18:33:44] n=1
+[2025-09-15 18:33:44] [LabelWorker] Detected class=Beyti_Orange_235ml pending_id=2
+[2025-09-15 18:33:44] [SerialListener] TOF/LiDAR event_id=3
+[2025-09-15 18:33:44] [LabelWorker] Pending event_id=3
+[2025-09-15 18:33:44] hello
+[2025-09-15 18:33:44] n=1
+[2025-09-15 18:33:44] [LabelWorker] Detected class=Beyti_Orange_235ml pending_id=3
+[2025-09-15 18:33:48] [SerialListener] TOF/LiDAR event_id=4
+[2025-09-15 18:33:48] [LabelWorker] Pending event_id=4
+[2025-09-15 18:33:48] hello
+[2025-09-15 18:33:48] n=1
+[2025-09-15 18:33:48] [LabelWorker] Detected class=Juhayna_Orange_235ml pending_id=4
+[2025-09-15 18:33:53] [SerialListener] TOF/LiDAR event_id=5
+[2025-09-15 18:33:53] [LabelWorker] Pending event_id=5
+[2025-09-15 18:33:53] hello
+[2025-09-15 18:33:53] n=1
+[2025-09-15 18:33:53] [LabelWorker] Detected class=Beyti_Orange_235ml pending_id=5
+[2025-09-15 18:33:57] [SerialListener] TOF/LiDAR event_id=6
+[2025-09-15 18:33:57] [LabelWorker] Pending event_id=6
+[2025-09-15 18:33:57] hello
+[2025-09-15 18:33:57] n=1
+[2025-09-15 18:33:57] [LabelWorker] Detected class=Juhayna_Orange_235ml pending_id=6
+[2025-09-15 18:33:58] [SerialListener] TOF/LiDAR event_id=7
+[2025-09-15 18:33:58] [LabelWorker] Pending event_id=7
+[2025-09-15 18:33:58] hello
+[2025-09-15 18:33:58] n=1
+[2025-09-15 18:33:58] [LabelWorker] Detected class=Juhayna_Orange_235ml pending_id=7
+[2025-09-15 18:39:06] [SerialListener] TOF/LiDAR event_id=0
+[2025-09-15 18:39:06] [LabelWorker] Pending event_id=0
+[2025-09-15 18:39:06] hello
+[2025-09-15 18:39:06] n=1
+[2025-09-15 18:39:06] [LabelWorker] Detected class=Juhayna_Orange_235ml pending_id=0
+[2025-09-15 18:39:06] [SerialListener] TOF/LiDAR event_id=1
+[2025-09-15 18:39:06] [LabelWorker] Pending event_id=1
+[2025-09-15 18:39:07] hello
+[2025-09-15 18:39:07] n=1
+[2025-09-15 18:39:07] [LabelWorker] Detected class=Beyti_Orange_235ml pending_id=1
+[2025-09-15 18:39:07] [SerialListener] TOF/LiDAR event_id=2
+[2025-09-15 18:39:07] [LabelWorker] Pending event_id=2
+[2025-09-15 18:39:07] hello
+[2025-09-15 18:39:07] n=1
+[2025-09-15 18:39:07] [LabelWorker] Detected class=Juhayna_Orange_235ml pending_id=2
+[2025-09-15 18:39:07] [SerialListener] TOF/LiDAR event_id=3
+[2025-09-15 18:39:07] [LabelWorker] Pending event_id=3
+[2025-09-15 18:39:08] hello
+[2025-09-15 18:39:08] n=1
+[2025-09-15 18:39:08] [LabelWorker] Detected class=Beyti_Orange_235ml pending_id=3
+[2025-09-15 18:39:08] [SerialListener] TOF/LiDAR event_id=4
+[2025-09-15 18:39:08] [LabelWorker] Pending event_id=4
+[2025-09-15 18:39:08] hello
+[2025-09-15 18:39:08] n=1
+[2025-09-15 18:39:08] [LabelWorker] Detected class=Juhayna_Orange_235ml pending_id=4
+[2025-09-15 18:39:30] [SerialListener] TOF/LiDAR event_id=5
+[2025-09-15 18:39:30] [LabelWorker] Pending event_id=5
+[2025-09-15 18:39:30] [SerialListener] TOF/LiDAR event_id=6
+[2025-09-15 18:39:30] hello
+[2025-09-15 18:39:30] n=1
+[2025-09-15 18:39:30] [LabelWorker] Detected class=Juhayna_Orange_235ml pending_id=5
+[2025-09-15 18:39:30] [LabelWorker] Pending event_id=6
+[2025-09-15 18:39:30] hello
+[2025-09-15 18:39:30] n=1
+[2025-09-15 18:39:30] [LabelWorker] Detected class=Juhayna_Orange_235ml pending_id=6
+[2025-09-15 18:39:31] [SerialListener] TOF/LiDAR event_id=7
+[2025-09-15 18:39:31] [LabelWorker] Pending event_id=7
+[2025-09-15 18:39:31] hello
+[2025-09-15 18:39:31] n=1
+[2025-09-15 18:39:31] [LabelWorker] Detected class=Juhayna_Orange_235ml pending_id=7
+[2025-09-15 18:39:31] [SerialListener] TOF/LiDAR event_id=8
+[2025-09-15 18:39:31] [LabelWorker] Pending event_id=8
+[2025-09-15 18:39:31] hello
+[2025-09-15 18:39:31] n=1
+[2025-09-15 18:39:31] [LabelWorker] Detected class=Beyti_Orange_235ml pending_id=8
+[2025-09-15 18:39:31] [SerialListener] TOF/LiDAR event_id=9
+[2025-09-15 18:39:31] [LabelWorker] Pending event_id=9
+[2025-09-15 18:39:31] hello
+[2025-09-15 18:39:31] n=1
+[2025-09-15 18:39:31] [LabelWorker] Detected class=Juhayna_Orange_235ml pending_id=9
+[2025-09-15 18:39:58] [SerialListener] TOF/LiDAR event_id=10
+[2025-09-15 18:39:58] [LabelWorker] Pending event_id=10
+[2025-09-15 18:39:59] hello
+[2025-09-15 18:39:59] n=1
+[2025-09-15 18:39:59] [LabelWorker] Detected class=Juhayna_Orange_235ml pending_id=10
+[2025-09-15 18:39:59] [SerialListener] TOF/LiDAR event_id=11
+[2025-09-15 18:39:59] [LabelWorker] Pending event_id=11
+[2025-09-15 18:39:59] hello
+[2025-09-15 18:39:59] [SerialListener] TOF/LiDAR event_id=12
+[2025-09-15 18:39:59] [LabelWorker] Pending event_id=12
+[2025-09-15 18:39:59] [SerialListener] TOF/LiDAR event_id=13
+[2025-09-15 18:39:59] hello
+[2025-09-15 18:39:59] n=1
+[2025-09-15 18:39:59] [LabelWorker] Detected class=Juhayna_Orange_235ml pending_id=12
+[2025-09-15 18:39:59] [LabelWorker] Pending event_id=13
+[2025-09-15 18:39:59] hello
+[2025-09-15 18:39:59] n=1
+[2025-09-15 18:39:59] [LabelWorker] Detected class=Juhayna_Orange_1L pending_id=13
+[2025-09-15 18:39:59] [SerialListener] TOF/LiDAR event_id=14
+[2025-09-15 18:40:00] [LabelWorker] Pending event_id=14
+[2025-09-15 18:40:00] hello
+[2025-09-15 18:40:18] [SerialListener] TOF/LiDAR event_id=15
+[2025-09-15 18:40:18] [LabelWorker] Pending event_id=15
+[2025-09-15 18:40:18] hello
+[2025-09-15 18:40:18] n=1
+[2025-09-15 18:40:18] [LabelWorker] Detected class=Juhayna_Orange_235ml pending_id=15
+[2025-09-15 18:40:18] [SerialListener] TOF/LiDAR event_id=16
+[2025-09-15 18:40:18] [LabelWorker] Pending event_id=16
+[2025-09-15 18:40:19] hello
+[2025-09-15 18:40:19] n=1
+[2025-09-15 18:40:19] [LabelWorker] Detected class=Beyti_Orange_235ml pending_id=16
+[2025-09-15 18:40:19] [SerialListener] TOF/LiDAR event_id=17
+[2025-09-15 18:40:19] [LabelWorker] Pending event_id=17
+[2025-09-15 18:40:19] hello
+[2025-09-15 18:40:19] n=1
+[2025-09-15 18:40:19] [LabelWorker] Detected class=Juhayna_Orange_235ml pending_id=17
+[2025-09-15 18:40:19] [SerialListener] TOF/LiDAR event_id=18
+[2025-09-15 18:40:19] [LabelWorker] Pending event_id=18
+[2025-09-15 18:40:19] hello
+[2025-09-15 18:40:19] n=1
+[2025-09-15 18:40:19] [LabelWorker] Detected class=Beyti_Orange_235ml pending_id=18
+[2025-09-15 18:40:20] [SerialListener] TOF/LiDAR event_id=19
+[2025-09-15 18:40:20] [LabelWorker] Pending event_id=19
+[2025-09-15 18:40:20] hello
+[2025-09-15 18:40:20] n=1
+[2025-09-15 18:40:20] [LabelWorker] Detected class=Juhayna_Orange_235ml pending_id=19
+[2025-09-15 18:40:40] [SerialListener] TOF/LiDAR event_id=20
+[2025-09-15 18:40:40] [LabelWorker] Pending event_id=20
+[2025-09-15 18:40:40] [SerialListener] TOF/LiDAR event_id=21
+[2025-09-15 18:40:40] hello
+[2025-09-15 18:40:40] n=1
+[2025-09-15 18:40:40] [LabelWorker] Detected class=Juhayna_Orange_235ml pending_id=20
+[2025-09-15 18:40:40] [LabelWorker] Pending event_id=21
+[2025-09-15 18:40:40] [SerialListener] TOF/LiDAR event_id=22
+[2025-09-15 18:40:40] hello
+[2025-09-15 18:40:40] [LabelWorker] Pending event_id=22
+[2025-09-15 18:40:41] hello
+[2025-09-15 18:40:41] n=1
+[2025-09-15 18:40:41] [LabelWorker] Detected class=Beyti_Orange_235ml pending_id=22
+[2025-09-15 18:40:41] [SerialListener] TOF/LiDAR event_id=23
+[2025-09-15 18:40:41] [LabelWorker] Pending event_id=23
+[2025-09-15 18:40:41] hello
+[2025-09-15 18:40:41] n=1
+[2025-09-15 18:40:41] [LabelWorker] Detected class=Beyti_Orange_235ml pending_id=23
+[2025-09-15 18:40:41] [SerialListener] TOF/LiDAR event_id=24
+[2025-09-15 18:40:41] [LabelWorker] Pending event_id=24
+[2025-09-15 18:40:41] hello
+[2025-09-15 18:40:41] n=1
+[2025-09-15 18:40:41] [LabelWorker] Detected class=Juhayna_Orange_235ml pending_id=24
+[2025-09-15 18:40:54] [SerialListener] TOF/LiDAR event_id=25
+[2025-09-15 18:40:54] [LabelWorker] Pending event_id=25
+[2025-09-15 18:40:54] hello
+[2025-09-15 18:40:54] n=1
+[2025-09-15 18:40:54] [LabelWorker] Detected class=Juhayna_Orange_235ml pending_id=25
+[2025-09-15 18:40:55] [SerialListener] TOF/LiDAR event_id=26
+[2025-09-15 18:40:55] [LabelWorker] Pending event_id=26
+[2025-09-15 18:40:55] hello
+[2025-09-15 18:40:55] n=1
+[2025-09-15 18:40:55] [LabelWorker] Detected class=Beyti_Orange_235ml pending_id=26
+[2025-09-15 18:40:55] [SerialListener] TOF/LiDAR event_id=27
+[2025-09-15 18:40:55] [LabelWorker] Pending event_id=27
+[2025-09-15 18:40:55] hello
+[2025-09-15 18:40:55] n=1
+[2025-09-15 18:40:55] [LabelWorker] Detected class=Juhayna_Orange_235ml pending_id=27
+[2025-09-15 18:40:55] [SerialListener] TOF/LiDAR event_id=28
+[2025-09-15 18:40:55] [LabelWorker] Pending event_id=28
+[2025-09-15 18:40:56] hello
+[2025-09-15 18:40:56] n=1
+[2025-09-15 18:40:56] [LabelWorker] Detected class=Beyti_Orange_235ml pending_id=28
+[2025-09-15 18:40:56] [SerialListener] TOF/LiDAR event_id=29
+[2025-09-15 18:40:56] [LabelWorker] Pending event_id=29
+[2025-09-15 18:40:56] hello
+[2025-09-15 18:40:56] n=1
+[2025-09-15 18:40:56] [LabelWorker] Detected class=Juhayna_Orange_235ml pending_id=29
+[2025-09-15 18:42:01] [SerialListener] TOF/LiDAR event_id=0
+[2025-09-15 18:42:01] [LabelWorker] Pending event_id=0
+[2025-09-15 18:42:01] [SerialListener] TOF/LiDAR event_id=1
+[2025-09-15 18:42:02] hello
+[2025-09-15 18:42:02] n=1
+[2025-09-15 18:42:02] [LabelWorker] Detected class=Juhayna_Orange_235ml pending_id=0
+[2025-09-15 18:42:02] [LabelWorker] Pending event_id=1
+[2025-09-15 18:42:02] hello
+[2025-09-15 18:42:02] n=1
+[2025-09-15 18:42:02] [LabelWorker] Detected class=Juhayna_Orange_235ml pending_id=1
+[2025-09-15 18:42:02] [SerialListener] TOF/LiDAR event_id=2
+[2025-09-15 18:42:02] [LabelWorker] Pending event_id=2
+[2025-09-15 18:42:02] [SerialListener] TOF/LiDAR event_id=3
+[2025-09-15 18:42:02] hello
+[2025-09-15 18:42:02] n=1
+[2025-09-15 18:42:02] [LabelWorker] Detected class=Beyti_Orange_235ml pending_id=2
+[2025-09-15 18:42:02] [LabelWorker] Pending event_id=3
+[2025-09-15 18:42:02] hello
+[2025-09-15 18:42:02] n=1
+[2025-09-15 18:42:02] [LabelWorker] Detected class=Beyti_Orange_235ml pending_id=3
+[2025-09-15 18:42:03] [SerialListener] TOF/LiDAR event_id=4
+[2025-09-15 18:42:03] [LabelWorker] Pending event_id=4
+[2025-09-15 18:42:03] hello
+[2025-09-15 18:42:03] n=1
+[2025-09-15 18:42:03] [LabelWorker] Detected class=Juhayna_Orange_235ml pending_id=4
+[2025-09-15 18:42:03] [SerialListener] TOF/LiDAR event_id=5
+[2025-09-15 18:42:03] [LabelWorker] Pending event_id=5
+[2025-09-15 18:42:03] hello
+[2025-09-15 18:42:03] n=1
+[2025-09-15 18:42:03] [LabelWorker] Detected class=Beyti_Orange_235ml pending_id=5
+[2025-09-15 18:42:04] [SerialListener] TOF/LiDAR event_id=6
+[2025-09-15 18:42:04] [LabelWorker] Pending event_id=6
+[2025-09-15 18:42:04] hello
+[2025-09-15 18:42:04] n=1
+[2025-09-15 18:42:04] [LabelWorker] Detected class=Juhayna_Orange_235ml pending_id=6
