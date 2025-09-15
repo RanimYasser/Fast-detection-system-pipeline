@@ -48,6 +48,10 @@ class JuiceUI(QMainWindow):
             selected_batch = self.labels.batch_combo.currentText()
             self.boxes.clear()
             self.pipeline.start(self.frame_q, self.info_q, batch_name=selected_batch)
+            # sanity test
+            self.info_q.put_nowait({"event":"box_saved","id":-1,"brand":"TEST","flavor":"TEST",
+                                    "capacity":"TEST","product_type":"-","barcode":"-",
+                                    "expire":"-","status":"ok","reason":""})
             self.labels.clear()
             self.timer.start(30)
         except Exception as e:

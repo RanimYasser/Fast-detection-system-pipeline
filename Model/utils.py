@@ -24,17 +24,22 @@ def _assert_file(path: str, name: str):
         raise FileNotFoundError(f"{name} not found at: {path}")
     
 
-def try_open_camera(index: int): #remove
+
+def try_open_camera(index: int):
     """Try common Windows backends for reliability; prefer DSHOW, set small buffers."""
-    for be in (cv2.CAP_DSHOW, cv2.CAP_MSMF, cv2.CAP_ANY):
+    backends = (cv2.CAP_DSHOW, cv2.CAP_MSMF, cv2.CAP_ANY)
+    for be in backends:
         cap = cv2.VideoCapture(index, be)
-        if cap.isOpened():
+        if cap is not None and cap.isOpened():
+            print(f"[Camera] Opened index={index} with backend={be}", flush=True)
             # keep latency low
             cap.set(cv2.CAP_PROP_BUFFERSIZE, 1)
             cap.set(cv2.CAP_PROP_FPS, 30)
             cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
             cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 720)
             return cap
-        cap.release()
-    return None
+        else:
+            if cap is not None:
+                cap.release()
+    raise RuntimeError(f"Failed to open camera {index} with backends {backends}")
 

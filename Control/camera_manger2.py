@@ -26,7 +26,7 @@ class SoftTriggerGrabber:
         for name, val in [('ExposureAuto','Off'), ('GainAuto','Off')]:
             try: f(name).set(val)
             except: pass
-        try: f('ExposureTime').set(2000.0)  # us
+        try: f('ExposureTime').set(1500.0)  # us
         except: pass
         try: f('Gain').set(4.0)
         except: pass

@@ -1,56 +1,104 @@
+# serial_timestamp_listener.py (legacy-free)
 import serial, time, threading, multiprocessing as mp
+from typing import Tuple, Optional
 from Model.utils import log
 
-SERIAL_PORT = "COM6"
-BAUD_RATE = 115200
+DEFAULT_PORT  = "COM7"
+DEFAULT_BAUD  = 115200
+READ_TIMEOUT  = 0.02   # seconds
+BOOT_WAIT     = 1.0
+REOPEN_DELAY  = 0.5
 
-def serial_listener_thread(barcode_event_queue: mp.Queue,
-                           top_event_queue: mp.Queue):
+def _enqueue(q: Optional[mp.Queue], item) -> None:
+    if q is None:
+        return
     try:
-        ser = serial.Serial(SERIAL_PORT, BAUD_RATE, timeout=0)
-        log(f"[Serial] Listening on {SERIAL_PORT} ...")
-        while True:
+        q.put_nowait(item)
+    except Exception:
+        pass  # drop if full
+
+def _listen_loop(barcode_event_queue:mp.Queue,top_event_queue:mp.Queue,label_event_queue:mp.Queue, port: str, baud: int):
+    """
+    Reads frames: 'T' (0x54), sensor_id (0/1), <uint32 micros LE>
+    Enqueues to q0 for id=0 (D2) and q1 for id=1 (D3).
+
+    Queue item:
+      ("triggered", sensor_id, arduino_us, pc_time_s, delta_ms)
+    """
+    top_event_id=0
+    barcode_event_id=0
+    # label_event_id=0
+    ser = None
+    while True:
+        try:
+            if ser is None:
+                ser = serial.Serial(port, baudrate=baud, timeout=READ_TIMEOUT)
+                time.sleep(BOOT_WAIT)
+                ser.reset_input_buffer()
+
+            b = ser.read(1)
+            if not b:
+                continue
+            if b != b'T':
+                continue  # resync
+
+            id_b = ser.read(1)
+            if len(id_b) != 1:
+                continue  # short read, resync
+
+            ts_b = ser.read(4)
+            if len(ts_b) != 4:
+                continue  # short read, resync
+
+            sensor_id = id_b[0]  # 0 (D2) or 1 (D3)
+            # t_arduino_us = int.from_bytes(ts_b, 'little', signed=False)
+            # t_pc = time.time()
+            # delta_ms = (t_pc * 1e6 - t_arduino_us) / 1000.0
+           
+            if sensor_id == 0:
+                item = ("triggered", barcode_event_id)
+
+                _enqueue(barcode_event_queue, item)
+                barcode_event_id += 1
+            elif sensor_id == 1:
+                item = ("triggered", top_event_id)
+
+                _enqueue(top_event_queue, item)
+                top_event_id += 1
+
+            # elif sensor_id == 2:
+            #     item = ("triggered", label_event_id)
+            #     log|(f"[SerialListener] Label event_id={label_event_id}")
+
+            #     _enqueue(label_event_queue, item)
+            #     label_event_id += 1
+            # ignore any other IDs
+
+        except serial.SerialException:
             try:
-                raw = ser.readline()
-                if not raw:
-                    time.sleep(0.01)
-                    continue
+                if ser:
+                    ser.close()
+            except Exception:
+                pass
+            ser = None
+            time.sleep(REOPEN_DELAY)
+        except Exception:
+            time.sleep(REOPEN_DELAY)
 
-                line = raw.decode(errors="ignore").strip()
-                low  = line.lower()
-
-                # --- Back-compat with your old sketch ---
-                if low == "switch pressed":
-                    t = time.time()
-                    log("[Serial] Trigger D2 (compat) received.")
-                    barcode_event_queue.put(("switch pressed", t))
-                    continue
-
-                # --- New format: "D2: PRESSED", "D3: PRESSED" ---
-                # Accept minor variations in spacing/case
-                if ":" in low:
-                    left, right = [s.strip() for s in low.split(":", 1)]
-                    if right == "pressed":
-                        t = time.time()
-                        if left == "d2":
-                            log("[Serial] Trigger D2 received.")
-                            barcode_event_queue.put(("switch pressed", t))
-                        elif left == "d3":
-                            log("[Serial] Trigger D3 received.")
-                            top_event_queue.put(("switch pressed", t))
-            except Exception as e:
-                log(f"[Serial Error] {e}")
-                time.sleep(0.05)
-    except serial.SerialException as e:
-        log(f"[Serial Error] Could not open serial port: {e}")
-
-def start_serial_listener(barcode_event_queue: mp.Queue,
-                          top_event_queue: mp.Queue):
-    """Start the serial listener thread (daemon)."""
-    serial_thread = threading.Thread(
-        target=serial_listener_thread,
-        args=(barcode_event_queue, top_event_queue),
-        daemon=True
+def start_serial_listener(
+    barcode_event_queue: mp.Queue,
+    top_event_queue: mp.Queue,
+    label_event_queue: mp.Queue,
+    *,
+    port: str = DEFAULT_PORT,
+    baud: int = DEFAULT_BAUD,
+) -> threading.Thread:
+ 
+    t = threading.Thread(
+        target=_listen_loop,
+        args=(barcode_event_queue, top_event_queue,label_event_queue, port, baud),
+        daemon=True,
+        name="SerialTimestampListener",
     )
-    serial_thread.start()
-    return serial_thread
+    t.start()
+    return t

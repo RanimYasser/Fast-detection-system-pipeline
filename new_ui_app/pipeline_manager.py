@@ -1,4 +1,4 @@
-import Model.newcomm2 as comm
+import Model.newcomm2old as comm
 
 class PipelineManager:
     def __init__(self):

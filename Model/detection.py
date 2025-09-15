@@ -4,7 +4,7 @@ import numpy as np
 import os
 import re
 import time
-# from google.cloud import vision
+from Model.utils import log
 
 # === Google Cloud Setup ===
 #os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = r"C:\Users\kmoha\OneDrive\Desktop\Last-fast-detection\Credentials\key.json"
@@ -35,16 +35,10 @@ class Detect:
         barcodes = pyzbar.decode(gray)
         
         if not barcodes:
-            print("No barcodes found in the image.")
             return
 
         for barcode in barcodes:
-            (x, y, w, h) = barcode.rect
-            pts = np.array([barcode.polygon], np.int32).reshape(-1, 1, 2)
-            cv2.polylines(image, [pts], True, (0, 255, 0), 2)
-        
             barcodeData = barcode.data.decode("utf-8")
-            barcodeType = barcode.type
             return barcodeData
 
 
@@ -56,31 +50,4 @@ class Detect:
         return False
     
 
-    # === Date Regex Pattern ===
-    date_pattern = r'\d{1,2}[./-]\d{1,2}[./-]\d{2,4}|\d{2,4}[./-]\d{1,2}[./-]\d{1,2}'
-
-    # def expiry_check(self, image):
-    #     success, encoded_image = cv2.imencode(".jpg", image)
-    #     if not success:
-    #         print("❌ Failed to encode image.")
-    #         return []
-
-    #     image_bytes = encoded_image.tobytes()
-    #     vision_image = vision.Image(content=image_bytes)
-    #     response = client.text_detection(image=vision_image)
-    #     annotations = response.text_annotations
-
-    #     if not annotations:
-    #         print("❌ No text detected.")
-    #         return []
-
-    #     full_text = annotations[0].description
-    #     dates = re.findall(self.date_pattern, full_text)
-    #     if dates:
-    #         print("📅 Dates Detected:")
-    #         for d in dates:
-    #             print(f" - {d}")
-    #     else:
-    #         print("⚠️ No date patterns found.")
-
-    #     return dates
+  

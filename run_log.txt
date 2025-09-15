@@ -1,76 +1,2809 @@
-
-[2025-09-09 13:12:51] [Serial] Listening on COM7 @ 115200 …
-[2025-09-09 13:13:16] [Serial] LIDAR B trigger d1=47 d2=24 time=20250909_131316_497
-[2025-09-09 13:13:16] [Barcode Capture] Saved 20250909_131316_555_DEV_1AB22C00C5A5.jpg
-[2025-09-09 13:13:17] [Serial] LIDAR A trigger d1=24 d2=49 time=20250909_131317_325
-[2025-09-09 13:13:17] [Top Capture] Saved 20250909_131317_384_DEV_1AB22C00C5A7.jpg
-[2025-09-09 13:13:20] [Serial] LIDAR B trigger d1=47 d2=26 time=20250909_131320_614
-[2025-09-09 13:13:20] [Barcode Capture] Saved 20250909_131320_673_DEV_1AB22C00C5A5.jpg
-[2025-09-09 13:13:21] [Serial] LIDAR A trigger d1=24 d2=49 time=20250909_131321_650
-[2025-09-09 13:13:21] [Top Capture] Saved 20250909_131321_708_DEV_1AB22C00C5A7.jpg
-[2025-09-09 13:13:24] [Serial] LIDAR B trigger d1=48 d2=21 time=20250909_131324_971
-[2025-09-09 13:13:25] [Barcode Capture] Saved 20250909_131325_029_DEV_1AB22C00C5A5.jpg
-[2025-09-09 13:13:25] [Serial] LIDAR A trigger d1=24 d2=49 time=20250909_131325_791
-[2025-09-09 13:13:25] [Top Capture] Saved 20250909_131325_849_DEV_1AB22C00C5A7.jpg
-[2025-09-09 13:13:29] [Serial] LIDAR B trigger d1=48 d2=22 time=20250909_131329_066
-[2025-09-09 13:13:29] [Barcode Capture] Saved 20250909_131329_124_DEV_1AB22C00C5A5.jpg
-[2025-09-09 13:13:30] [Serial] LIDAR A trigger d1=25 d2=49 time=20250909_131330_099
-[2025-09-09 13:13:30] [Top Capture] Saved 20250909_131330_156_DEV_1AB22C00C5A7.jpg
-[2025-09-09 13:21:53] [Serial] Listening on COM7 @ 115200 …
-[2025-09-09 13:22:01] [Serial] LIDAR A trigger d1=25 d2=0 time=20250909_132201_267
-[2025-09-09 13:22:01] [Top Capture] Saved 20250909_132201_327_DEV_1AB22C00C5A7.jpg
-[2025-09-09 13:22:05] [Serial] LIDAR A trigger d1=25 d2=0 time=20250909_132205_359
-[2025-09-09 13:22:05] [Top Capture] Saved 20250909_132205_417_DEV_1AB22C00C5A7.jpg
-[2025-09-09 13:22:09] [Serial] LIDAR A trigger d1=25 d2=0 time=20250909_132209_251
-[2025-09-09 13:22:09] [Top Capture] Saved 20250909_132209_308_DEV_1AB22C00C5A7.jpg
-[2025-09-09 13:22:13] [Serial] LIDAR A trigger d1=25 d2=0 time=20250909_132213_371
-[2025-09-09 13:22:13] [Top Capture] Saved 20250909_132213_428_DEV_1AB22C00C5A7.jpg
-[2025-09-09 13:22:17] [Serial] LIDAR A trigger d1=24 d2=0 time=20250909_132217_484
-[2025-09-09 13:22:17] [Top Capture] Saved 20250909_132217_541_DEV_1AB22C00C5A7.jpg
-[2025-09-09 13:23:53] [Serial] Listening on COM7 @ 115200 …
-[2025-09-09 13:24:00] [Serial] LIDAR A trigger d1=25 d2=0 time=20250909_132400_559
-[2025-09-09 13:24:00] [Top Capture] Saved 20250909_132400_617_DEV_1AB22C00C5A7.jpg
-[2025-09-09 13:24:08] [Serial] LIDAR A trigger d1=25 d2=0 time=20250909_132408_918
-[2025-09-09 13:24:08] [Top Capture] Saved 20250909_132408_976_DEV_1AB22C00C5A7.jpg
-[2025-09-09 13:24:17] [Serial] LIDAR A trigger d1=25 d2=0 time=20250909_132417_075
-[2025-09-09 13:24:17] [Top Capture] Saved 20250909_132417_132_DEV_1AB22C00C5A7.jpg
-[2025-09-09 13:24:25] [Serial] LIDAR A trigger d1=25 d2=0 time=20250909_132425_407
-[2025-09-09 13:24:25] [Top Capture] Saved 20250909_132425_464_DEV_1AB22C00C5A7.jpg
-[2025-09-09 13:27:32] [Serial Error] could not open port 'COM7': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2) — reconnecting in 1.0s
-[2025-09-09 13:27:33] [Serial Error] could not open port 'COM7': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2) — reconnecting in 1.0s
-[2025-09-09 13:27:34] [Serial Error] could not open port 'COM7': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2) — reconnecting in 1.0s
-[2025-09-09 13:27:35] [Serial Error] could not open port 'COM7': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2) — reconnecting in 1.0s
-[2025-09-09 13:27:36] [Serial Error] could not open port 'COM7': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2) — reconnecting in 1.0s
-[2025-09-09 13:27:37] [Serial Error] could not open port 'COM7': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2) — reconnecting in 1.0s
-[2025-09-09 13:27:38] [Serial Error] could not open port 'COM7': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2) — reconnecting in 1.0s
-[2025-09-09 13:27:39] [Serial Error] could not open port 'COM7': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2) — reconnecting in 1.0s
-[2025-09-09 13:27:40] [Serial Error] could not open port 'COM7': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2) — reconnecting in 1.0s
-[2025-09-09 13:27:41] [Serial Error] could not open port 'COM7': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2) — reconnecting in 1.0s
-[2025-09-09 13:27:42] [Serial Error] could not open port 'COM7': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2) — reconnecting in 1.0s
-[2025-09-09 13:27:43] [Serial Error] could not open port 'COM7': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2) — reconnecting in 1.0s
-[2025-09-09 13:29:23] [Serial] Listening on COM7 @ 115200 …
-[2025-09-09 13:29:41] [Serial] LIDAR A trigger d1=20 d2=0 time=20250909_132941_353
-[2025-09-09 13:29:41] [Top Capture] Saved 20250909_132941_411_DEV_1AB22C00C5A7.jpg
-[2025-09-09 13:29:45] [Serial] LIDAR A trigger d1=24 d2=0 time=20250909_132945_633
-[2025-09-09 13:29:45] [Top Capture] Saved 20250909_132945_691_DEV_1AB22C00C5A7.jpg
-[2025-09-09 13:29:49] [Serial] LIDAR A trigger d1=21 d2=0 time=20250909_132949_720
-[2025-09-09 13:29:49] [Top Capture] Saved 20250909_132949_778_DEV_1AB22C00C5A7.jpg
-[2025-09-09 13:29:53] [Serial] LIDAR A trigger d1=21 d2=0 time=20250909_132953_794
-[2025-09-09 13:29:53] [Top Capture] Saved 20250909_132953_852_DEV_1AB22C00C5A7.jpg
-[2025-09-09 13:31:13] [Serial] Listening on COM7 @ 115200 …
-[2025-09-09 13:31:20] [Serial] LIDAR A trigger d1=27 d2=0 time=20250909_133120_415
-[2025-09-09 13:31:20] [Barcode Capture] Saved 20250909_133120_474_DEV_1AB22C00C5A5.jpg
-[2025-09-09 13:31:24] [Serial] LIDAR A trigger d1=21 d2=0 time=20250909_133124_693
-[2025-09-09 13:31:24] [Barcode Capture] Saved 20250909_133124_750_DEV_1AB22C00C5A5.jpg
-[2025-09-09 13:31:28] [Serial] LIDAR A trigger d1=29 d2=0 time=20250909_133128_765
-[2025-09-09 13:31:28] [Barcode Capture] Saved 20250909_133128_822_DEV_1AB22C00C5A5.jpg
-[2025-09-09 13:31:33] [Serial] LIDAR A trigger d1=28 d2=0 time=20250909_133133_035
-[2025-09-09 13:31:33] [Barcode Capture] Saved 20250909_133133_093_DEV_1AB22C00C5A5.jpg
-[2025-09-09 13:31:59] [Serial] LIDAR A trigger d1=25 d2=0 time=20250909_133159_872
-[2025-09-09 13:31:59] [Barcode Capture] Saved 20250909_133159_929_DEV_1AB22C00C5A5.jpg
-[2025-09-09 13:32:08] [Serial] LIDAR A trigger d1=24 d2=0 time=20250909_133208_422
-[2025-09-09 13:32:08] [Barcode Capture] Saved 20250909_133208_480_DEV_1AB22C00C5A5.jpg
-[2025-09-09 13:32:16] [Serial] LIDAR A trigger d1=26 d2=0 time=20250909_133216_970
-[2025-09-09 13:32:17] [Barcode Capture] Saved 20250909_133217_027_DEV_1AB22C00C5A5.jpg
-[2025-09-09 13:32:25] [Serial] LIDAR A trigger d1=29 d2=0 time=20250909_133225_526
-[2025-09-09 13:32:25] [Barcode Capture] Saved 20250909_133225_583_DEV_1AB22C00C5A5.jpg
+[2025-09-14 21:18:43] [Comm] AV cameras discovered: ['DEV_1AB22C00C5A5', 'DEV_1AB22C00C5A7']
+[2025-09-14 21:18:45] [barcode] Using device: cpu
+[2025-09-14 21:18:45] [Coordinator] Loaded batch: Milk Batch.xlsx
+[2025-09-14 21:18:57] [Barcode] Decoded: 6223000350010
+[2025-09-14 21:18:57] [Barcode] Emitted box id=0 event_id=0 barcode=6223000350010
+[2025-09-14 21:18:58] [Barcode] Decoded: 6222014330537
+[2025-09-14 21:18:58] [Barcode] Emitted box id=1 event_id=1 barcode=6222014330537
+[2025-09-14 21:18:58] [Top Capture] Captured top image.
+[2025-09-14 21:18:58] [Top] Got top image.
+[2025-09-14 21:18:58] [Top] event_id=0 cap=False expire=True
+[2025-09-14 21:18:58] [Top] paired event_id=0 cap=False expire=True
+[2025-09-14 21:18:58] [Barcode] Decoded: 6224001167423
+[2025-09-14 21:18:58] [Barcode] Emitted box id=2 event_id=2 barcode=6224001167423
+[2025-09-14 21:18:58] [Top Capture] Captured top image.
+[2025-09-14 21:18:58] [Top] Got top image.
+[2025-09-14 21:18:59] [Top] event_id=1 cap=False expire=True
+[2025-09-14 21:18:59] [Top] paired event_id=1 cap=False expire=True
+[2025-09-14 21:18:59] [Barcode] Decoded: 6223001875246
+[2025-09-14 21:18:59] [Barcode] Emitted box id=3 event_id=3 barcode=6223001875246
+[2025-09-14 21:18:59] [Top Capture] Captured top image.
+[2025-09-14 21:18:59] [Top] Got top image.
+[2025-09-14 21:18:59] [Top] event_id=2 cap=False expire=True
+[2025-09-14 21:18:59] [Top] paired event_id=2 cap=False expire=True
+[2025-09-14 21:18:59] [Top Capture] Captured top image.
+[2025-09-14 21:18:59] [Top] Got top image.
+[2025-09-14 21:18:59] [Top] event_id=3 cap=False expire=True
+[2025-09-14 21:18:59] [Top] paired event_id=3 cap=False expire=True
+[2025-09-14 21:19:00] [Label] Fired on new obj: Suntop_Orange_250ml
+[2025-09-14 21:19:00] [Label] Fired on new obj: Suntop_Orange_250ml
+[2025-09-14 21:19:00] [Label] Fired on new obj: Beyti_Orange_235ml
+[2025-09-14 21:20:57] [Comm] AV cameras discovered: ['DEV_1AB22C00C5A5', 'DEV_1AB22C00C5A7']
+[2025-09-14 21:20:59] [barcode] Using device: cpu
+[2025-09-14 21:20:59] [Coordinator] Loaded batch: Milk Batch.xlsx
+[2025-09-14 21:21:08] [Barcode] Decoded: 6223000350010
+[2025-09-14 21:21:08] [Barcode] Decoded: 6222014330537
+[2025-09-14 21:21:08] [Top] Got top image.
+[2025-09-14 21:21:09] [Top] event_id=0 cap=False expire=True
+[2025-09-14 21:21:09] [Barcode] Decoded: 6224001167423
+[2025-09-14 21:21:09] [Top] Got top image.
+[2025-09-14 21:21:09] [Top] event_id=1 cap=False expire=True
+[2025-09-14 21:21:09] [Barcode] Decoded: 6223001875246
+[2025-09-14 21:21:09] [Top] Got top image.
+[2025-09-14 21:21:10] [Top] event_id=2 cap=False expire=True
+[2025-09-14 21:21:10] [Label] Detected: Juhayna_Fullcream_235ml bbox=(538,408,668,658)
+[2025-09-14 21:21:10] [Top] Got top image.
+[2025-09-14 21:21:10] [Label] Detected: Juhayna_Fullcream_1L bbox=(451,408,588,657)
+[2025-09-14 21:21:10] [Top] event_id=3 cap=False expire=True
+[2025-09-14 21:21:10] [Label] Detected: Juhayna_Orange_1L bbox=(680,369,841,670)
+[2025-09-14 21:21:10] [Label] Fired on new obj: Juhayna_Orange_1L
+[2025-09-14 21:21:10] [Label] Detected: Juhayna_Orange_235ml bbox=(535,371,678,662)
+[2025-09-14 21:21:11] [Label] Detected: Suntop_Orange_250ml bbox=(593,435,763,675)
+[2025-09-14 21:21:11] [Label] Fired on new obj: Suntop_Orange_250ml
+[2025-09-14 21:21:11] [Label] Detected: Suntop_Orange_250ml bbox=(512,434,674,665)
+[2025-09-14 21:21:11] [Label] Detected: Beyti_Orange_235ml bbox=(633,371,771,654)
+[2025-09-14 21:21:11] [Label] Fired on new obj: Beyti_Orange_235ml
+[2025-09-14 21:21:11] [Label] Detected: Beyti_Orange_235ml bbox=(461,373,608,657)
+[2025-09-14 21:21:11] [Label] Detected: Beyti_Orange_235ml bbox=(438,370,529,657)
+[2025-09-15 13:29:56] [Comm] AV cameras discovered: ['DEV_1AB22C00C5A5', 'DEV_1AB22C00C5A7']
+[2025-09-15 13:29:58] [barcode] Using device: cpu
+[2025-09-15 13:29:58] [Coordinator] Loaded batch: Milk Batch.xlsx
+[2025-09-15 13:30:10] [Barcode] No barcodes decoded in ROI.
+[2025-09-15 13:30:11] [Barcode] No barcodes decoded in ROI.
+[2025-09-15 13:30:11] [Top] Got top image.
+[2025-09-15 13:30:11] [Barcode] No barcodes decoded in ROI.
+[2025-09-15 13:30:11] [Top] event_id=0 cap=False expire=False
+[2025-09-15 13:30:11] [Top] Got top image.
+[2025-09-15 13:30:11] [Barcode] No barcodes decoded in ROI.
+[2025-09-15 13:30:11] [Top] event_id=1 cap=False expire=True
+[2025-09-15 13:30:11] [Top] Got top image.
+[2025-09-15 13:30:12] [Top] event_id=2 cap=False expire=True
+[2025-09-15 13:30:12] [Label] Detected: Juhayna_Fullcream_235ml bbox=(510,407,639,660)
+[2025-09-15 13:30:12] [Top] Got top image.
+[2025-09-15 13:30:12] [Top] event_id=3 cap=False expire=True
+[2025-09-15 13:30:12] [Label] Detected: Juhayna_Orange_235ml bbox=(614,369,765,653)
+[2025-09-15 13:30:12] [Label] Fired on new obj: Juhayna_Orange_235ml
+[2025-09-15 13:30:13] [Label] Detected: Suntop_Orange_250ml bbox=(490,434,654,674)
+[2025-09-15 13:30:13] [Label] Detected: Beyti_Orange_235ml bbox=(651,372,798,663)
+[2025-09-15 13:30:13] [Label] Fired on new obj: Beyti_Orange_235ml
+[2025-09-15 13:30:13] [Label] Detected: Beyti_Orange_235ml bbox=(551,370,698,660)
+[2025-09-15 13:30:13] [Label] Detected: Beyti_Orange_235ml bbox=(440,370,594,659)
+[2025-09-15 13:46:16] [Comm] AV cameras discovered: ['DEV_1AB22C00C5A5', 'DEV_1AB22C00C5A7']
+[2025-09-15 13:46:18] [barcode] Using device: cpu
+[2025-09-15 13:46:18] [Coordinator] Loaded batch: Milk Batch.xlsx
+[2025-09-15 13:46:36] [Barcode] No barcodes decoded in ROI.
+[2025-09-15 13:46:36] [Barcode] No barcodes decoded in ROI.
+[2025-09-15 13:46:37] [Top] Got top image.
+[2025-09-15 13:46:37] [Barcode] No barcodes decoded in ROI.
+[2025-09-15 13:46:37] [Top] event_id=0 cap=False expire=False
+[2025-09-15 13:46:37] [Top] Got top image.
+[2025-09-15 13:46:37] [Barcode] No barcode class found.
+[2025-09-15 13:46:37] [Top] event_id=1 cap=False expire=True
+[2025-09-15 13:46:38] [Top] Got top image.
+[2025-09-15 13:46:38] [Top] event_id=2 cap=False expire=True
+[2025-09-15 13:46:38] [Top] Got top image.
+[2025-09-15 13:46:38] [Top] event_id=3 cap=False expire=True
+[2025-09-15 13:46:48] [Barcode] No barcodes decoded in ROI.
+[2025-09-15 13:46:49] [Barcode] No barcodes decoded in ROI.
+[2025-09-15 13:46:49] [Top] Got top image.
+[2025-09-15 13:46:49] [Barcode] No barcodes decoded in ROI.
+[2025-09-15 13:46:49] [Top] event_id=4 cap=False expire=False
+[2025-09-15 13:46:50] [Barcode] No barcodes decoded in ROI.
+[2025-09-15 13:46:50] [Top] Got top image.
+[2025-09-15 13:46:50] [Top] event_id=5 cap=False expire=True
+[2025-09-15 13:46:50] [Top] Got top image.
+[2025-09-15 13:46:50] [Top] event_id=6 cap=False expire=True
+[2025-09-15 13:46:50] [Top] Got top image.
+[2025-09-15 13:46:50] [Top] event_id=7 cap=False expire=True
+[2025-09-15 13:47:18] [Comm] AV cameras discovered: ['DEV_1AB22C00C5A5', 'DEV_1AB22C00C5A7']
+[2025-09-15 13:47:20] [barcode] Using device: cpu
+[2025-09-15 13:47:20] [Coordinator] Loaded batch: Milk Batch.xlsx
+[2025-09-15 13:48:18] [Barcode] No barcodes decoded in ROI.
+[2025-09-15 13:48:19] [Barcode] No barcodes decoded in ROI.
+[2025-09-15 13:48:19] [Top] Got top image.
+[2025-09-15 13:48:19] [Barcode] No barcodes decoded in ROI.
+[2025-09-15 13:48:19] [Top] event_id=0 cap=False expire=False
+[2025-09-15 13:48:19] [Top] Got top image.
+[2025-09-15 13:48:19] [Barcode] No barcodes decoded in ROI.
+[2025-09-15 13:48:20] [Top] event_id=1 cap=False expire=True
+[2025-09-15 13:48:20] [Top] Got top image.
+[2025-09-15 13:48:20] [Top] event_id=2 cap=False expire=True
+[2025-09-15 13:48:20] [Top] Got top image.
+[2025-09-15 13:48:20] [Top] event_id=3 cap=False expire=True
+[2025-09-15 13:48:29] [Barcode] No barcodes decoded in ROI.
+[2025-09-15 13:48:30] [Barcode] No barcodes decoded in ROI.
+[2025-09-15 13:48:31] [Barcode] No barcodes decoded in ROI.
+[2025-09-15 13:48:31] [Top] Got top image.
+[2025-09-15 13:48:31] [Top] event_id=4 cap=False expire=False
+[2025-09-15 13:48:31] [Barcode] No barcode class found.
+[2025-09-15 13:48:31] [Top] Got top image.
+[2025-09-15 13:48:32] [Top] event_id=5 cap=False expire=True
+[2025-09-15 13:48:32] [Top] Got top image.
+[2025-09-15 13:48:32] [Top] event_id=6 cap=False expire=True
+[2025-09-15 13:48:32] [Top] Got top image.
+[2025-09-15 13:48:33] [Top] event_id=7 cap=False expire=True
+[2025-09-15 13:48:56] [Comm] AV cameras discovered: ['DEV_1AB22C00C5A5', 'DEV_1AB22C00C5A7']
+[2025-09-15 13:48:58] [barcode] Using device: cpu
+[2025-09-15 13:48:58] [Coordinator] Loaded batch: Milk Batch.xlsx
+[2025-09-15 13:49:09] [Barcode] No barcodes decoded in ROI.
+[2025-09-15 13:49:09] [Barcode] No barcodes decoded in ROI.
+[2025-09-15 13:49:10] [Barcode] No barcodes decoded in ROI.
+[2025-09-15 13:49:10] [Top] Got top image.
+[2025-09-15 13:49:10] [Top] event_id=0 cap=False expire=False
+[2025-09-15 13:49:11] [Barcode] No barcode class found.
+[2025-09-15 13:49:11] [Top] Got top image.
+[2025-09-15 13:49:11] [Top] event_id=1 cap=False expire=True
+[2025-09-15 13:49:12] [Top] Got top image.
+[2025-09-15 13:49:12] [Top] event_id=2 cap=False expire=True
+[2025-09-15 13:49:12] [Top] Got top image.
+[2025-09-15 13:49:13] [Top] event_id=3 cap=False expire=True
+[2025-09-15 14:00:28] [Comm] AV cameras discovered: ['DEV_1AB22C00C5A5', 'DEV_1AB22C00C5A7']
+[2025-09-15 14:00:30] [barcode] Using device: cpu
+[2025-09-15 14:00:30] [Coordinator] Loaded batch: Milk Batch.xlsx
+[2025-09-15 14:01:45] [Comm] AV cameras discovered: ['DEV_1AB22C00C5A5', 'DEV_1AB22C00C5A7']
+[2025-09-15 14:01:47] [barcode] Using device: cpu
+[2025-09-15 14:01:47] [Coordinator] Loaded batch: Milk Batch.xlsx
+[2025-09-15 14:01:57] [Barcode] No barcodes decoded in ROI.
+[2025-09-15 14:01:57] [Barcode] No barcodes decoded in ROI.
+[2025-09-15 14:01:57] [Barcode] No barcodes decoded in ROI.
+[2025-09-15 14:01:57] [Top] Got top image.
+[2025-09-15 14:01:58] [Top] event_id=0 cap=False expire=False
+[2025-09-15 14:01:58] [Barcode] No barcodes decoded in ROI.
+[2025-09-15 14:01:58] [Top] Got top image.
+[2025-09-15 14:01:58] [Top] event_id=1 cap=False expire=True
+[2025-09-15 14:01:58] [Label] Detected: Juhayna_Fullcream_235ml bbox=(608,406,742,653)
+[2025-09-15 14:01:58] [Top] Got top image.
+[2025-09-15 14:01:58] [Label] Detected: Juhayna_Fullcream_235ml bbox=(444,403,548,654)
+[2025-09-15 14:01:58] [Top] event_id=2 cap=False expire=True
+[2025-09-15 14:01:59] [Top] Got top image.
+[2025-09-15 14:01:59] [Label] Detected: Juhayna_Orange_235ml bbox=(548,371,690,661)
+[2025-09-15 14:01:59] [Top] event_id=3 cap=False expire=True
+[2025-09-15 14:01:59] [Label] Detected: Beyti_Orange_235ml bbox=(543,372,684,653)
+[2025-09-15 14:06:29] [Comm] AV cameras discovered: ['DEV_1AB22C00C5A5', 'DEV_1AB22C00C5A7']
+[2025-09-15 14:06:29] [Comm] pipeline started
+[2025-09-15 14:06:31] [Barcode] Using device: cpu
+[2025-09-15 14:06:31] [Top Capture] starting
+[2025-09-15 14:06:31] [Barcode Capture] starting
+[2025-09-15 14:06:31] [Coordinator] Loaded batch: Milk Batch.xlsx
+[2025-09-15 14:06:31] [Coordinator] started
+[2025-09-15 14:06:38] [Barcode] started
+[2025-09-15 14:06:38] [Label] Loaded batch: Milk Batch.xlsx
+[2025-09-15 14:06:38] [Label] started
+[2025-09-15 14:06:44] [Barcode Capture] queued event_id=0
+[2025-09-15 14:06:45] [Barcode] event_id=0 no decode; forwarding box_id=0
+[2025-09-15 14:06:45] [Top] box queued event_id=0 box_id=0
+[2025-09-15 14:06:45] [Barcode Capture] queued event_id=1
+[2025-09-15 14:06:45] [Barcode] event_id=1 no decode; forwarding box_id=1
+[2025-09-15 14:06:45] [Top] box queued event_id=1 box_id=1
+[2025-09-15 14:06:45] [Barcode Capture] queued event_id=2
+[2025-09-15 14:06:45] [Barcode] event_id=2 no decode; forwarding box_id=2
+[2025-09-15 14:06:45] [Top] box queued event_id=2 box_id=2
+[2025-09-15 14:06:45] [Top Capture] queued event_id=0
+[2025-09-15 14:06:46] [Barcode Capture] queued event_id=3
+[2025-09-15 14:06:46] [Top] event_id=0 cap=False expire=False
+[2025-09-15 14:06:46] [Top] FORWARDED event_id=0 box_id=0 cap=False expire=False
+[2025-09-15 14:06:46] [Coordinator] box queued box_id=0 pending_boxes=1
+[2025-09-15 14:06:46] [Barcode] event_id=3 no decode; forwarding box_id=3
+[2025-09-15 14:06:46] [Top] box queued event_id=3 box_id=3
+[2025-09-15 14:06:46] [Top Capture] queued event_id=1
+[2025-09-15 14:06:46] [Top] event_id=1 cap=False expire=True
+[2025-09-15 14:06:46] [Top] FORWARDED event_id=1 box_id=1 cap=False expire=True
+[2025-09-15 14:06:46] [Coordinator] box queued box_id=1 pending_boxes=2
+[2025-09-15 14:06:46] [Top Capture] queued event_id=2
+[2025-09-15 14:06:47] [Top] event_id=2 cap=False expire=True
+[2025-09-15 14:06:47] [Top] FORWARDED event_id=2 box_id=2 cap=False expire=True
+[2025-09-15 14:06:47] [Coordinator] box queued box_id=2 pending_boxes=3
+[2025-09-15 14:06:47] [Top Capture] queued event_id=3
+[2025-09-15 14:06:47] [Top] event_id=3 cap=False expire=True
+[2025-09-15 14:06:47] [Top] FORWARDED event_id=3 box_id=3 cap=False expire=True
+[2025-09-15 14:06:47] [Coordinator] box queued box_id=3 pending_boxes=4
+[2025-09-15 14:06:47] [Label] pruned 1 stale track(s)
+[2025-09-15 14:06:48] [Label] pruned 1 stale track(s)
+[2025-09-15 14:06:49] [Label] pruned 1 stale track(s)
+[2025-09-15 14:06:49] [Label] pruned 1 stale track(s)
+[2025-09-15 14:06:49] [Label] pruned 1 stale track(s)
+[2025-09-15 14:06:49] [Label] pruned 1 stale track(s)
+[2025-09-15 14:08:53] [Comm] AV cameras discovered: ['DEV_1AB22C00C5A5', 'DEV_1AB22C00C5A7']
+[2025-09-15 14:08:53] [Comm] pipeline started
+[2025-09-15 14:08:55] [Barcode] Using device: cpu
+[2025-09-15 14:08:55] [Barcode Capture] starting
+[2025-09-15 14:08:55] [Top Capture] starting
+[2025-09-15 14:08:55] [Coordinator] Loaded batch: Milk Batch.xlsx
+[2025-09-15 14:08:55] [Coordinator] started
+[2025-09-15 14:09:01] [Top] started
+ed
+[2025-09-15 14:09:02] [Label] Loaded batch: Milk Batch.xlsx
+[2025-09-15 14:09:02] [Label] started
+[2025-09-15 14:09:08] [Barcode Capture] queued event_id=0
+[2025-09-15 14:09:09] [Barcode] event_id=0 no decode; forwarding box_id=0
+[2025-09-15 14:09:09] [Top] box queued event_id=0 box_id=0
+[2025-09-15 14:09:09] [Barcode Capture] queued event_id=1
+[2025-09-15 14:09:09] [Barcode] event_id=1 no decode; forwarding box_id=1
+[2025-09-15 14:09:09] [Top] box queued event_id=1 box_id=1
+[2025-09-15 14:09:09] [Barcode Capture] queued event_id=2
+[2025-09-15 14:09:10] [Barcode] event_id=2 no decode; forwarding box_id=2
+[2025-09-15 14:09:10] [Top] box queued event_id=2 box_id=2
+[2025-09-15 14:09:10] [Top Capture] queued event_id=0
+[2025-09-15 14:09:10] [Barcode Capture] queued event_id=3
+[2025-09-15 14:09:10] [Top] event_id=0 cap=False expire=False
+[2025-09-15 14:09:10] [Top] FORWARDED event_id=0 box_id=0 cap=False expire=False
+[2025-09-15 14:09:10] [Coordinator] box queued box_id=0 pending_boxes=1
+[2025-09-15 14:09:10] [Barcode] event_id=3 no decode; forwarding box_id=3
+[2025-09-15 14:09:10] [Top] box queued event_id=3 box_id=3
+[2025-09-15 14:09:10] [Top Capture] queued event_id=1
+[2025-09-15 14:09:10] [Top] event_id=1 cap=False expire=True
+[2025-09-15 14:09:10] [Top] FORWARDED event_id=1 box_id=1 cap=False expire=True
+[2025-09-15 14:09:10] [Coordinator] box queued box_id=1 pending_boxes=2
+[2025-09-15 14:09:10] [Top Capture] queued event_id=2
+[2025-09-15 14:09:11] [Top] event_id=2 cap=False expire=True
+[2025-09-15 14:09:11] [Top] FORWARDED event_id=2 box_id=2 cap=False expire=True
+[2025-09-15 14:09:11] [Coordinator] box queued box_id=2 pending_boxes=3
+[2025-09-15 14:09:11] [Top Capture] queued event_id=3
+[2025-09-15 14:09:11] [Top] event_id=3 cap=False expire=True
+[2025-09-15 14:09:11] [Top] FORWARDED event_id=3 box_id=3 cap=False expire=True
+[2025-09-15 14:09:11] [Coordinator] box queued box_id=3 pending_boxes=4
+[2025-09-15 14:09:12] [Label] pruned 1 stale track(s)
+[2025-09-15 14:09:13] [Label] pruned 1 stale track(s)
+[2025-09-15 14:09:13] [Label] pruned 1 stale track(s)
+[2025-09-15 14:09:13] [Label] pruned 1 stale track(s)
+[2025-09-15 14:09:13] [Label] pruned 1 stale track(s)
+[2025-09-15 14:09:16] [Barcode Capture] queued event_id=4
+[2025-09-15 14:09:16] [Barcode] event_id=4 no decode; forwarding box_id=4
+[2025-09-15 14:09:16] [Top] box queued event_id=4 box_id=4
+[2025-09-15 14:09:16] [Barcode Capture] queued event_id=5
+[2025-09-15 14:09:16] [Barcode] event_id=5 no decode; forwarding box_id=5
+[2025-09-15 14:09:16] [Top] box queued event_id=5 box_id=5
+[2025-09-15 14:09:16] [Barcode Capture] queued event_id=6
+[2025-09-15 14:09:17] [Top Capture] queued event_id=4
+[2025-09-15 14:09:17] [Barcode] event_id=6 no decode; forwarding box_id=6
+[2025-09-15 14:09:17] [Barcode Capture] queued event_id=7
+[2025-09-15 14:09:17] [Top] event_id=4 cap=False expire=False
+[2025-09-15 14:09:17] [Top] FORWARDED event_id=4 box_id=4 cap=False expire=False
+[2025-09-15 14:09:17] [Top] box queued event_id=6 box_id=6
+[2025-09-15 14:09:17] [Coordinator] box queued box_id=4 pending_boxes=5
+[2025-09-15 14:09:17] [Barcode] event_id=7 no decode; forwarding box_id=7
+[2025-09-15 14:09:17] [Top] box queued event_id=7 box_id=7
+[2025-09-15 14:09:17] [Top Capture] queued event_id=5
+[2025-09-15 14:09:17] [Top] event_id=5 cap=False expire=True
+[2025-09-15 14:09:17] [Top] FORWARDED event_id=5 box_id=5 cap=False expire=True
+[2025-09-15 14:09:17] [Coordinator] box queued box_id=5 pending_boxes=6
+[2025-09-15 14:09:17] [Top Capture] queued event_id=6
+[2025-09-15 14:09:18] [Top] event_id=6 cap=False expire=True
+[2025-09-15 14:09:18] [Top] FORWARDED event_id=6 box_id=6 cap=False expire=True
+[2025-09-15 14:09:18] [Coordinator] box queued box_id=6 pending_boxes=7
+[2025-09-15 14:09:18] [Top Capture] queued event_id=7
+[2025-09-15 14:09:18] [Top] event_id=7 cap=False expire=True
+[2025-09-15 14:09:18] [Top] FORWARDED event_id=7 box_id=7 cap=False expire=True
+[2025-09-15 14:09:18] [Coordinator] box queued box_id=7 pending_boxes=8
+[2025-09-15 14:09:19] [Label] pruned 1 stale track(s)
+[2025-09-15 14:09:19] [Label] pruned 1 stale track(s)
+[2025-09-15 14:09:19] [Label] pruned 1 stale track(s)
+[2025-09-15 14:09:19] [Label] pruned 1 stale track(s)
+[2025-09-15 14:09:20] [Label] pruned 1 stale track(s)
+[2025-09-15 14:09:20] [Label] pruned 1 stale track(s)
+[2025-09-15 14:09:20] [Label] pruned 1 stale track(s)
+[2025-09-15 14:11:23] [Comm] AV cameras discovered: ['DEV_1AB22C00C5A5', 'DEV_1AB22C00C5A7']
+[2025-09-15 14:11:23] [Comm] pipeline started
+[2025-09-15 14:11:25] [Top Capture] starting
+[2025-09-15 14:11:25] [Barcode] Using device: cpu
+[2025-09-15 14:11:25] [Barcode Capture] starting
+[2025-09-15 14:11:25] [Coordinator] Loaded batch: Milk Batch.xlsx
+[2025-09-15 14:11:25] [Coordinator] started
+[2025-09-15 14:11:31] [Top] started
+ed
+[2025-09-15 14:11:31] [Label] Loaded batch: Milk Batch.xlsx
+[2025-09-15 14:11:31] [Label] started
+[2025-09-15 14:11:39] [Barcode Capture] queued event_id=0
+[2025-09-15 14:11:39] [Barcode] event_id=0 no decode; forwarding box_id=0
+[2025-09-15 14:11:39] [Top] box queued event_id=0 box_id=0
+[2025-09-15 14:11:40] [Barcode Capture] queued event_id=1
+[2025-09-15 14:11:40] [Barcode] event_id=1 no decode; forwarding box_id=1
+[2025-09-15 14:11:40] [Top] box queued event_id=1 box_id=1
+[2025-09-15 14:11:40] [Barcode Capture] queued event_id=2
+[2025-09-15 14:11:40] [Barcode] event_id=2 no decode; forwarding box_id=2
+[2025-09-15 14:11:40] [Top] box queued event_id=2 box_id=2
+[2025-09-15 14:11:40] [Top Capture] queued event_id=0
+[2025-09-15 14:11:40] [Barcode Capture] queued event_id=3
+[2025-09-15 14:11:40] [Top] event_id=0 cap=False expire=False
+[2025-09-15 14:11:40] [Top] FORWARDED event_id=0 box_id=0 cap=False expire=False
+[2025-09-15 14:11:40] [Coordinator] box queued box_id=0 pending_boxes=1
+[2025-09-15 14:11:41] [Barcode] event_id=3 no decode; forwarding box_id=3
+[2025-09-15 14:11:41] [Top] box queued event_id=3 box_id=3
+[2025-09-15 14:11:41] [Top Capture] queued event_id=1
+[2025-09-15 14:11:41] [Top] event_id=1 cap=False expire=True
+[2025-09-15 14:11:41] [Top] FORWARDED event_id=1 box_id=1 cap=False expire=True
+[2025-09-15 14:11:41] [Coordinator] box queued box_id=1 pending_boxes=2
+[2025-09-15 14:11:41] [Top Capture] queued event_id=2
+[2025-09-15 14:11:41] [Top] event_id=2 cap=False expire=True
+[2025-09-15 14:11:41] [Top] FORWARDED event_id=2 box_id=2 cap=False expire=True
+[2025-09-15 14:11:41] [Coordinator] box queued box_id=2 pending_boxes=3
+[2025-09-15 14:11:42] [Top Capture] queued event_id=3
+[2025-09-15 14:11:42] [Top] event_id=3 cap=False expire=True
+[2025-09-15 14:11:42] [Top] FORWARDED event_id=3 box_id=3 cap=False expire=True
+[2025-09-15 14:11:42] [Coordinator] box queued box_id=3 pending_boxes=4
+[2025-09-15 14:11:43] [Label] pruned 1 stale track(s)
+[2025-09-15 14:11:43] [Label] pruned 1 stale track(s)
+[2025-09-15 14:12:36] [Comm] AV cameras discovered: ['DEV_1AB22C00C5A5', 'DEV_1AB22C00C5A7']
+[2025-09-15 14:12:36] [Comm] pipeline started
+[2025-09-15 14:12:38] [Top Capture] starting
+[2025-09-15 14:12:38] [Barcode] Using device: cpu
+[2025-09-15 14:12:38] [Barcode Capture] starting
+[2025-09-15 14:12:38] [Coordinator] Loaded batch: Milk Batch.xlsx
+[2025-09-15 14:12:38] [Coordinator] started
+[2025-09-15 14:12:45] [Top] started
+ed
+[2025-09-15 14:12:45] [Label] Loaded batch: Milk Batch.xlsx
+[2025-09-15 14:12:45] [Label] started
+[2025-09-15 14:12:50] [Barcode Capture] queued event_id=0
+[2025-09-15 14:12:51] [Barcode] event_id=0 no decode; forwarding box_id=0
+[2025-09-15 14:12:51] [Top] box queued event_id=0 box_id=0
+[2025-09-15 14:12:51] [Barcode Capture] queued event_id=1
+[2025-09-15 14:12:51] [Barcode] event_id=1 no decode; forwarding box_id=1
+[2025-09-15 14:12:51] [Top] box queued event_id=1 box_id=1
+[2025-09-15 14:12:51] [Barcode Capture] queued event_id=2
+[2025-09-15 14:12:51] [Top Capture] queued event_id=0
+[2025-09-15 14:12:52] [Barcode] event_id=2 no decode; forwarding box_id=2
+[2025-09-15 14:12:52] [Barcode Capture] queued event_id=3
+[2025-09-15 14:12:52] [Top] event_id=0 cap=False expire=False
+[2025-09-15 14:12:52] [Top] FORWARDED event_id=0 box_id=0 cap=False expire=False
+[2025-09-15 14:12:52] [Top] box queued event_id=2 box_id=2
+[2025-09-15 14:12:52] [Coordinator] box queued box_id=0 pending_boxes=1
+[2025-09-15 14:12:52] [Barcode] event_id=3 no decode; forwarding box_id=3
+[2025-09-15 14:12:52] [Top] box queued event_id=3 box_id=3
+[2025-09-15 14:12:52] [Top Capture] queued event_id=1
+[2025-09-15 14:12:52] [Top] event_id=1 cap=False expire=True
+[2025-09-15 14:12:52] [Top] FORWARDED event_id=1 box_id=1 cap=False expire=True
+[2025-09-15 14:12:52] [Coordinator] box queued box_id=1 pending_boxes=2
+[2025-09-15 14:12:52] [Top Capture] queued event_id=2
+[2025-09-15 14:12:52] [Top] event_id=2 cap=False expire=True
+[2025-09-15 14:12:52] [Top] FORWARDED event_id=2 box_id=2 cap=False expire=True
+[2025-09-15 14:12:52] [Coordinator] box queued box_id=2 pending_boxes=3
+[2025-09-15 14:12:53] [Top Capture] queued event_id=3
+[2025-09-15 14:12:53] [Top] event_id=3 cap=False expire=True
+[2025-09-15 14:12:53] [Top] FORWARDED event_id=3 box_id=3 cap=False expire=True
+[2025-09-15 14:12:53] [Coordinator] box queued box_id=3 pending_boxes=4
+[2025-09-15 14:12:54] [Label] pruned 1 stale track(s)
+[2025-09-15 14:12:54] [Label] pruned 1 stale track(s)
+[2025-09-15 14:12:54] [Label] pruned 1 stale track(s)
+[2025-09-15 14:12:54] [Label] pruned 1 stale track(s)
+[2025-09-15 14:12:55] [Label] pruned 1 stale track(s)
+[2025-09-15 14:12:55] [Label] pruned 1 stale track(s)
+[2025-09-15 14:12:55] [Label] pruned 1 stale track(s)
+[2025-09-15 14:13:06] [Barcode Capture] queued event_id=4
+[2025-09-15 14:13:06] [Barcode] event_id=4 no decode; forwarding box_id=4
+[2025-09-15 14:13:06] [Top] box queued event_id=4 box_id=4
+[2025-09-15 14:13:07] [Barcode Capture] queued event_id=5
+[2025-09-15 14:13:07] [Barcode] event_id=5 no decode; forwarding box_id=5
+[2025-09-15 14:13:07] [Top] box queued event_id=5 box_id=5
+[2025-09-15 14:13:08] [Barcode Capture] queued event_id=6
+[2025-09-15 14:13:08] [Barcode] event_id=6 no decode; forwarding box_id=6
+[2025-09-15 14:13:08] [Top] box queued event_id=6 box_id=6
+[2025-09-15 14:13:08] [Top Capture] queued event_id=4
+[2025-09-15 14:13:08] [Top] event_id=4 cap=False expire=False
+[2025-09-15 14:13:08] [Top] FORWARDED event_id=4 box_id=4 cap=False expire=False
+[2025-09-15 14:13:08] [Coordinator] box queued box_id=4 pending_boxes=5
+[2025-09-15 14:13:08] [Barcode Capture] queued event_id=7
+[2025-09-15 14:13:08] [Barcode] event_id=7 no decode; forwarding box_id=7
+[2025-09-15 14:13:08] [Top] box queued event_id=7 box_id=7
+[2025-09-15 14:13:09] [Top Capture] queued event_id=5
+[2025-09-15 14:13:09] [Top] event_id=5 cap=False expire=True
+[2025-09-15 14:13:09] [Top] FORWARDED event_id=5 box_id=5 cap=False expire=True
+[2025-09-15 14:13:09] [Coordinator] box queued box_id=5 pending_boxes=6
+[2025-09-15 14:13:10] [Top Capture] queued event_id=6
+[2025-09-15 14:13:10] [Top] event_id=6 cap=False expire=True
+[2025-09-15 14:13:10] [Top] FORWARDED event_id=6 box_id=6 cap=False expire=True
+[2025-09-15 14:13:10] [Coordinator] box queued box_id=6 pending_boxes=7
+[2025-09-15 14:13:10] [Top Capture] queued event_id=7
+[2025-09-15 14:13:10] [Top] event_id=7 cap=False expire=True
+[2025-09-15 14:13:10] [Top] FORWARDED event_id=7 box_id=7 cap=False expire=True
+[2025-09-15 14:13:10] [Coordinator] box queued box_id=7 pending_boxes=8
+[2025-09-15 14:13:11] [Label] pruned 1 stale track(s)
+[2025-09-15 14:13:11] [Label] pruned 1 stale track(s)
+[2025-09-15 14:13:11] [Label] pruned 1 stale track(s)
+[2025-09-15 14:13:11] [Label] pruned 1 stale track(s)
+[2025-09-15 14:13:12] [Label] pruned 1 stale track(s)
+[2025-09-15 14:13:12] [Label] pruned 1 stale track(s)
+[2025-09-15 14:13:12] [Label] pruned 1 stale track(s)
+[2025-09-15 14:13:13] [Label] pruned 1 stale track(s)
+[2025-09-15 14:13:13] [Label] pruned 1 stale track(s)
+[2025-09-15 14:13:13] [Label] pruned 1 stale track(s)
+[2025-09-15 14:13:13] [Label] pruned 1 stale track(s)
+[2025-09-15 14:13:13] [Label] pruned 1 stale track(s)
+[2025-09-15 14:15:05] [Comm] AV cameras discovered: ['DEV_1AB22C00C5A5', 'DEV_1AB22C00C5A7']
+[2025-09-15 14:15:05] [Comm] pipeline started
+[2025-09-15 14:15:07] [Barcode Capture] starting
+[2025-09-15 14:15:07] [Top Capture] starting
+[2025-09-15 14:15:07] [Barcode] Using device: cpu
+[2025-09-15 14:15:07] [Coordinator] Loaded batch: Milk Batch.xlsx
+[2025-09-15 14:15:07] [Coordinator] started
+[2025-09-15 14:15:13] [Top] started
+ed
+[2025-09-15 14:15:14] [Label] Loaded batch: Milk Batch.xlsx
+[2025-09-15 14:15:14] [Label] started
+[2025-09-15 14:15:29] [Barcode Capture] stopped
+[2025-09-15 14:15:29] [Top Capture] stopped
+[2025-09-15 14:16:32] [Comm] AV cameras discovered: ['DEV_1AB22C00C5A5', 'DEV_1AB22C00C5A7']
+[2025-09-15 14:16:32] [Comm] pipeline started
+[2025-09-15 14:16:34] [Barcode] Using device: cpu
+[2025-09-15 14:16:34] [Barcode Capture] starting
+[2025-09-15 14:16:34] [Top Capture] starting
+[2025-09-15 14:16:34] [Coordinator] Loaded batch: Milk Batch.xlsx
+[2025-09-15 14:16:34] [Coordinator] started
+[2025-09-15 14:17:18] [Comm] AV cameras discovered: ['DEV_1AB22C00C5A5', 'DEV_1AB22C00C5A7']
+[2025-09-15 14:17:18] [Comm] pipeline started
+[2025-09-15 14:17:19] [Barcode Capture] starting
+[2025-09-15 14:17:19] [Barcode] Using device: cpu
+[2025-09-15 14:17:19] [Top Capture] starting
+[2025-09-15 14:17:20] [Coordinator] Loaded batch: Milk Batch.xlsx
+[2025-09-15 14:17:20] [Coordinator] started
+[2025-09-15 14:17:26] [Top] started
+ed
+[2025-09-15 14:17:26] [Label] Loaded batch: Milk Batch.xlsx
+[2025-09-15 14:17:26] [Label] started
+[2025-09-15 14:17:29] [Barcode Capture] queued event_id=0
+[2025-09-15 14:17:30] [Barcode] event_id=0 no decode; forwarding box_id=0
+[2025-09-15 14:17:30] [Top] box queued event_id=0 box_id=0
+[2025-09-15 14:17:30] [Barcode Capture] queued event_id=1
+[2025-09-15 14:17:30] [Barcode] event_id=1 no decode; forwarding box_id=1
+[2025-09-15 14:17:30] [Top] box queued event_id=1 box_id=1
+[2025-09-15 14:17:31] [Barcode Capture] queued event_id=2
+[2025-09-15 14:17:31] [Barcode] event_id=2 no decode; forwarding box_id=2
+[2025-09-15 14:17:31] [Top] box queued event_id=2 box_id=2
+[2025-09-15 14:17:31] [Top Capture] queued event_id=0
+[2025-09-15 14:17:31] [Top] event_id=0 cap=False expire=False
+[2025-09-15 14:17:31] [Top] FORWARDED event_id=0 box_id=0 cap=False expire=False
+[2025-09-15 14:17:31] [Coordinator] box queued box_id=0 pending_boxes=1
+[2025-09-15 14:17:31] [Barcode Capture] queued event_id=3
+[2025-09-15 14:17:31] [Barcode] event_id=3 no decode; forwarding box_id=3
+[2025-09-15 14:17:31] [Top] box queued event_id=3 box_id=3
+[2025-09-15 14:17:32] [Top Capture] queued event_id=1
+[2025-09-15 14:17:32] [Top] event_id=1 cap=False expire=True
+[2025-09-15 14:17:32] [Top] FORWARDED event_id=1 box_id=1 cap=False expire=True
+[2025-09-15 14:17:32] [Coordinator] box queued box_id=1 pending_boxes=2
+[2025-09-15 14:17:32] [Top Capture] queued event_id=2
+[2025-09-15 14:17:32] [Top] event_id=2 cap=False expire=True
+[2025-09-15 14:17:32] [Top] FORWARDED event_id=2 box_id=2 cap=False expire=True
+[2025-09-15 14:17:32] [Coordinator] box queued box_id=2 pending_boxes=3
+[2025-09-15 14:17:33] [Top Capture] queued event_id=3
+[2025-09-15 14:17:33] [Top] event_id=3 cap=False expire=True
+[2025-09-15 14:17:33] [Top] FORWARDED event_id=3 box_id=3 cap=False expire=True
+[2025-09-15 14:17:33] [Coordinator] box queued box_id=3 pending_boxes=4
+[2025-09-15 14:17:33] [Label] pruned 1 stale track(s)
+[2025-09-15 14:17:33] [Label] pruned 1 stale track(s)
+[2025-09-15 14:17:34] [Label] pruned 1 stale track(s)
+[2025-09-15 14:17:34] [Label] pruned 1 stale track(s)
+[2025-09-15 14:17:34] [Label] pruned 1 stale track(s)
+[2025-09-15 14:17:35] [Label] pruned 1 stale track(s)
+[2025-09-15 14:17:35] [Label] pruned 1 stale track(s)
+[2025-09-15 14:17:35] [Label] pruned 1 stale track(s)
+[2025-09-15 14:17:35] [Label] pruned 1 stale track(s)
+[2025-09-15 14:17:35] [Label] pruned 1 stale track(s)
+[2025-09-15 14:17:35] [Label] pruned 1 stale track(s)
+[2025-09-15 14:21:11] [Barcode Capture] stopped
+[2025-09-15 14:21:11] [Top Capture] stopped
+[2025-09-15 14:21:17] [Serial Error] Could not open serial port: could not open port 'COM6': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+[2025-09-15 14:22:46] [Serial Error] Could not open serial port: could not open port 'COM6': FileNotFoundError(2, 'The system cannot find the file specified.', None, 2)
+[2025-09-15 14:26:03] [Comm] AV cameras discovered: ['DEV_1AB22C00C5A5', 'DEV_1AB22C00C5A7']
+[2025-09-15 14:26:03] [Comm] pipeline started
+[2025-09-15 14:26:05] [Barcode] Using device: cpu
+[2025-09-15 14:26:05] [Barcode Capture] starting
+[2025-09-15 14:26:05] [Top Capture] starting
+[2025-09-15 14:26:05] [Coordinator] Loaded batch: Milk Batch.xlsx
+[2025-09-15 14:26:05] [Coordinator] started
+[2025-09-15 14:26:12] [Barcode] started
+[2025-09-15 14:26:12] [Top] started
+[2025-09-15 14:26:12] [Label] Loaded batch: Milk Batch.xlsx
+[2025-09-15 14:26:12] [Label] started
+[2025-09-15 14:26:14] [Barcode Capture] queued event_id=0
+[2025-09-15 14:26:14] [Barcode] event_id=0 no decode; forwarding box_id=0
+[2025-09-15 14:26:14] [Top] box queued event_id=0 box_id=0
+[2025-09-15 14:26:15] [Barcode Capture] queued event_id=1
+[2025-09-15 14:26:15] [Barcode] event_id=1 no decode; forwarding box_id=1
+[2025-09-15 14:26:15] [Top] box queued event_id=1 box_id=1
+[2025-09-15 14:26:15] [Barcode Capture] queued event_id=2
+[2025-09-15 14:26:15] [Barcode] event_id=2 no decode; forwarding box_id=2
+[2025-09-15 14:26:15] [Top] box queued event_id=2 box_id=2
+[2025-09-15 14:26:15] [Top Capture] queued event_id=0
+[2025-09-15 14:26:16] [Barcode Capture] queued event_id=3
+[2025-09-15 14:26:16] [Top] event_id=0 cap=False expire=False
+[2025-09-15 14:26:16] [Top] FORWARDED event_id=0 box_id=0 cap=False expire=False
+[2025-09-15 14:26:16] [Coordinator] box queued box_id=0 pending_boxes=1
+[2025-09-15 14:26:16] [Barcode] event_id=3 no decode; forwarding box_id=3
+[2025-09-15 14:26:16] [Top] box queued event_id=3 box_id=3
+[2025-09-15 14:26:16] [Top Capture] queued event_id=1
+[2025-09-15 14:26:16] [Top] event_id=1 cap=False expire=True
+[2025-09-15 14:26:16] [Top] FORWARDED event_id=1 box_id=1 cap=False expire=True
+[2025-09-15 14:26:16] [Coordinator] box queued box_id=1 pending_boxes=2
+[2025-09-15 14:26:16] [Top Capture] queued event_id=2
+[2025-09-15 14:26:16] [Label] Fired (grace delay) class=Juhayna_Fullcream_1L
+[2025-09-15 14:26:16] [Coordinator] label queued pending_labels=1
+[2025-09-15 14:26:16] [Coordinator] paired box_id=0; left B=1 L=0
+[2025-09-15 14:26:17] [Top] event_id=2 cap=False expire=True
+[2025-09-15 14:26:17] [Top] FORWARDED event_id=2 box_id=2 cap=False expire=True
+[2025-09-15 14:26:17] [Coordinator] box queued box_id=2 pending_boxes=2
+[2025-09-15 14:26:17] [Top Capture] queued event_id=3
+[2025-09-15 14:26:17] [Label] Fired (grace delay) class=Juhayna_Orange_235ml
+[2025-09-15 14:26:17] [Coordinator] label queued pending_labels=1
+[2025-09-15 14:26:17] [Coordinator] paired box_id=1; left B=1 L=0
+[2025-09-15 14:26:17] [Top] event_id=3 cap=False expire=True
+[2025-09-15 14:26:17] [Top] FORWARDED event_id=3 box_id=3 cap=False expire=True
+[2025-09-15 14:26:17] [Coordinator] box queued box_id=3 pending_boxes=2
+[2025-09-15 14:26:17] [Label] Fired (grace delay) class=Suntop_Orange_250ml
+[2025-09-15 14:26:17] [Coordinator] label queued pending_labels=1
+[2025-09-15 14:26:17] [Coordinator] paired box_id=2; left B=1 L=0
+[2025-09-15 14:26:18] [Label] Fired (grace delay) class=Beyti_Orange_235ml
+[2025-09-15 14:26:18] [Coordinator] label queued pending_labels=1
+[2025-09-15 14:26:18] [Coordinator] paired box_id=3; left B=0 L=0
+[2025-09-15 14:26:18] [Label] pruned 1 stale track(s)
+[2025-09-15 14:26:19] [Label] pruned 1 stale track(s)
+[2025-09-15 14:26:19] [Label] pruned 1 stale track(s)
+[2025-09-15 14:26:19] [Label] pruned 1 stale track(s)
+[2025-09-15 14:26:19] [Label] pruned 1 stale track(s)
+[2025-09-15 14:26:20] [Label] pruned 1 stale track(s)
+[2025-09-15 14:26:20] [Label] pruned 1 stale track(s)
+[2025-09-15 14:26:20] [Label] pruned 1 stale track(s)
+[2025-09-15 14:26:20] [Label] pruned 1 stale track(s)
+[2025-09-15 14:26:39] [Barcode Capture] stopped
+[2025-09-15 14:27:12] [Comm] AV cameras discovered: ['DEV_1AB22C00C5A5', 'DEV_1AB22C00C5A7']
+[2025-09-15 14:27:12] [Comm] pipeline started
+[2025-09-15 14:27:14] [Barcode Capture] starting
+[2025-09-15 14:27:14] [Top Capture] starting
+[2025-09-15 14:27:14] [Barcode] Using device: cpu
+[2025-09-15 14:27:14] [Coordinator] Loaded batch: Milk Batch.xlsx
+[2025-09-15 14:27:14] [Coordinator] started
+[2025-09-15 14:27:21] [Top] started
+[2025-09-15 14:27:21] [Barcode] started
+[2025-09-15 14:27:21] [Label] Loaded batch: Milk Batch.xlsx
+[2025-09-15 14:27:21] [Label] started
+[2025-09-15 14:27:26] [Barcode Capture] queued event_id=0
+[2025-09-15 14:27:26] [Barcode] event_id=0 no decode; forwarding box_id=0
+[2025-09-15 14:27:26] [Top] box queued event_id=0 box_id=0
+[2025-09-15 14:27:26] [Barcode Capture] queued event_id=1
+[2025-09-15 14:27:26] [Barcode] event_id=1 no decode; forwarding box_id=1
+[2025-09-15 14:27:26] [Top] box queued event_id=1 box_id=1
+[2025-09-15 14:27:27] [Barcode Capture] queued event_id=2
+[2025-09-15 14:27:27] [Barcode] event_id=2 no decode; forwarding box_id=2
+[2025-09-15 14:27:27] [Top] box queued event_id=2 box_id=2
+[2025-09-15 14:27:27] [Top Capture] queued event_id=0
+[2025-09-15 14:27:27] [Barcode Capture] queued event_id=3
+[2025-09-15 14:27:27] [Top] event_id=0 cap=False expire=False
+[2025-09-15 14:27:27] [Top] FORWARDED event_id=0 box_id=0 cap=False expire=False
+[2025-09-15 14:27:27] [Coordinator] box queued box_id=0 pending_boxes=1
+[2025-09-15 14:27:27] [Barcode] event_id=3 no decode; forwarding box_id=3
+[2025-09-15 14:27:27] [Top] box queued event_id=3 box_id=3
+[2025-09-15 14:27:27] [Top Capture] queued event_id=1
+[2025-09-15 14:27:27] [Barcode Capture] queued event_id=4
+[2025-09-15 14:27:28] [Top] event_id=1 cap=False expire=True
+[2025-09-15 14:27:28] [Top] FORWARDED event_id=1 box_id=1 cap=False expire=True
+[2025-09-15 14:27:28] [Coordinator] box queued box_id=1 pending_boxes=2
+[2025-09-15 14:27:28] [Barcode] event_id=4 no decode; forwarding box_id=4
+[2025-09-15 14:27:28] [Top] box queued event_id=4 box_id=4
+[2025-09-15 14:27:28] [Top Capture] queued event_id=2
+[2025-09-15 14:27:28] [Top] event_id=2 cap=False expire=True
+[2025-09-15 14:27:28] [Top] FORWARDED event_id=2 box_id=2 cap=False expire=True
+[2025-09-15 14:27:28] [Coordinator] box queued box_id=2 pending_boxes=3
+[2025-09-15 14:27:28] [Barcode Capture] queued event_id=5
+[2025-09-15 14:27:28] [Top Capture] queued event_id=3
+[2025-09-15 14:27:28] [Barcode] event_id=5 no decode; forwarding box_id=5
+[2025-09-15 14:27:28] [Label] Fired (grace delay) class=Juhayna_Orange_1L
+[2025-09-15 14:27:28] [Coordinator] label queued pending_labels=1
+[2025-09-15 14:27:28] [Coordinator] paired box_id=0; left B=2 L=0
+[2025-09-15 14:27:28] [Top] event_id=3 cap=False expire=True
+[2025-09-15 14:27:28] [Top] FORWARDED event_id=3 box_id=3 cap=False expire=True
+[2025-09-15 14:27:28] [Top] box queued event_id=5 box_id=5
+[2025-09-15 14:27:28] [Coordinator] box queued box_id=3 pending_boxes=3
+[2025-09-15 14:27:29] [Top Capture] queued event_id=4
+[2025-09-15 14:27:29] [Top] event_id=4 cap=False expire=False
+[2025-09-15 14:27:29] [Top] FORWARDED event_id=4 box_id=4 cap=False expire=False
+[2025-09-15 14:27:29] [Coordinator] box queued box_id=4 pending_boxes=4
+[2025-09-15 14:27:29] [Top Capture] queued event_id=5
+[2025-09-15 14:27:29] [Label] Fired (grace delay) class=Beyti_Orange_235ml
+[2025-09-15 14:27:29] [Coordinator] label queued pending_labels=1
+[2025-09-15 14:27:29] [Coordinator] paired box_id=1; left B=3 L=0
+[2025-09-15 14:27:29] [Top] event_id=5 cap=False expire=True
+[2025-09-15 14:27:29] [Top] FORWARDED event_id=5 box_id=5 cap=False expire=True
+[2025-09-15 14:27:29] [Coordinator] box queued box_id=5 pending_boxes=4
+[2025-09-15 14:27:30] [Label] pruned 1 stale track(s)
+[2025-09-15 14:27:30] [Label] pruned 1 stale track(s)
+[2025-09-15 14:27:30] [Label] pruned 1 stale track(s)
+[2025-09-15 14:27:31] [Label] pruned 1 stale track(s)
+[2025-09-15 14:27:32] [Label] pruned 1 stale track(s)
+[2025-09-15 14:27:32] [Label] pruned 1 stale track(s)
+[2025-09-15 14:27:32] [Label] pruned 1 stale track(s)
+[2025-09-15 14:27:32] [Label] pruned 1 stale track(s)
+[2025-09-15 14:27:42] [Barcode Capture] stopped
+[2025-09-15 14:28:58] [Comm] AV cameras discovered: ['DEV_1AB22C00C5A5', 'DEV_1AB22C00C5A7']
+[2025-09-15 14:28:58] [Comm] pipeline started
+[2025-09-15 14:29:00] [Top Capture] starting
+[2025-09-15 14:29:00] [Barcode Capture] starting
+[2025-09-15 14:29:00] [Barcode] Using device: cpu
+[2025-09-15 14:29:00] [Coordinator] Loaded batch: Milk Batch.xlsx
+[2025-09-15 14:29:00] [Coordinator] started
+[2025-09-15 14:29:08] [Barcode] started
+[2025-09-15 14:29:08] [Label] Loaded batch: Milk Batch.xlsx
+[2025-09-15 14:29:08] [Label] started
+[2025-09-15 14:29:12] [Barcode Capture] queued event_id=0
+[2025-09-15 14:29:12] [Barcode] event_id=0 no decode; forwarding box_id=0
+[2025-09-15 14:29:12] [Top] box queued event_id=0 box_id=0
+[2025-09-15 14:29:12] [Barcode Capture] queued event_id=1
+[2025-09-15 14:29:12] [Barcode] event_id=1 no decode; forwarding box_id=1
+[2025-09-15 14:29:12] [Top] box queued event_id=1 box_id=1
+[2025-09-15 14:29:13] [Barcode Capture] queued event_id=2
+[2025-09-15 14:29:13] [Barcode] event_id=2 no decode; forwarding box_id=2
+[2025-09-15 14:29:13] [Top] box queued event_id=2 box_id=2
+[2025-09-15 14:29:13] [Top Capture] queued event_id=0
+[2025-09-15 14:29:13] [Barcode Capture] queued event_id=3
+[2025-09-15 14:29:13] [Top] event_id=0 cap=False expire=False
+[2025-09-15 14:29:13] [Top] FORWARDED event_id=0 box_id=0 cap=False expire=False
+[2025-09-15 14:29:13] [Coordinator] box queued box_id=0 pending_boxes=1
+[2025-09-15 14:29:13] [Barcode] event_id=3 no decode; forwarding box_id=3
+[2025-09-15 14:29:13] [Top] box queued event_id=3 box_id=3
+[2025-09-15 14:29:13] [Top Capture] queued event_id=1
+[2025-09-15 14:29:14] [Barcode Capture] queued event_id=4
+[2025-09-15 14:29:14] [Top] event_id=1 cap=False expire=True
+[2025-09-15 14:29:14] [Top] FORWARDED event_id=1 box_id=1 cap=False expire=True
+[2025-09-15 14:29:14] [Coordinator] box queued box_id=1 pending_boxes=2
+[2025-09-15 14:29:14] [Barcode] event_id=4 no decode; forwarding box_id=4
+[2025-09-15 14:29:14] [Top] box queued event_id=4 box_id=4
+[2025-09-15 14:29:14] [Top Capture] queued event_id=2
+[2025-09-15 14:29:14] [Top] event_id=2 cap=False expire=True
+[2025-09-15 14:29:14] [Top] FORWARDED event_id=2 box_id=2 cap=False expire=True
+[2025-09-15 14:29:14] [Coordinator] box queued box_id=2 pending_boxes=3
+[2025-09-15 14:29:14] [Barcode Capture] queued event_id=5
+[2025-09-15 14:29:14] [Top Capture] queued event_id=3
+[2025-09-15 14:29:14] [Barcode] event_id=5 no decode; forwarding box_id=5
+[2025-09-15 14:29:14] [Top] event_id=3 cap=False expire=True
+[2025-09-15 14:29:14] [Top] FORWARDED event_id=3 box_id=3 cap=False expire=True
+[2025-09-15 14:29:14] [Top] box queued event_id=5 box_id=5
+[2025-09-15 14:29:14] [Coordinator] box queued box_id=3 pending_boxes=4
+[2025-09-15 14:29:14] [Label] Fired (grace delay) class=Juhayna_Orange_235ml
+[2025-09-15 14:29:14] [Coordinator] label queued pending_labels=1
+[2025-09-15 14:29:14] [Coordinator] paired box_id=0; left B=3 L=0
+[2025-09-15 14:29:15] [Top Capture] queued event_id=4
+[2025-09-15 14:29:15] [Top] event_id=4 cap=False expire=True
+[2025-09-15 14:29:15] [Top] FORWARDED event_id=4 box_id=4 cap=False expire=True
+[2025-09-15 14:29:15] [Coordinator] box queued box_id=4 pending_boxes=4
+[2025-09-15 14:29:15] [Top Capture] queued event_id=5
+[2025-09-15 14:29:15] [Label] Fired (grace delay) class=Beyti_Orange_235ml
+[2025-09-15 14:29:15] [Coordinator] label queued pending_labels=1
+[2025-09-15 14:29:15] [Coordinator] paired box_id=1; left B=3 L=0
+[2025-09-15 14:29:15] [Top] event_id=5 cap=False expire=True
+[2025-09-15 14:29:15] [Top] FORWARDED event_id=5 box_id=5 cap=False expire=True
+[2025-09-15 14:29:15] [Coordinator] box queued box_id=5 pending_boxes=4
+[2025-09-15 14:29:16] [Label] pruned 1 stale track(s)
+[2025-09-15 14:29:16] [Label] pruned 1 stale track(s)
+[2025-09-15 14:29:17] [Label] pruned 1 stale track(s)
+[2025-09-15 14:29:17] [Label] pruned 1 stale track(s)
+[2025-09-15 14:29:18] [Label] pruned 1 stale track(s)
+[2025-09-15 14:29:18] [Label] pruned 1 stale track(s)
+[2025-09-15 14:29:18] [Label] pruned 1 stale track(s)
+[2025-09-15 14:29:56] [Barcode Capture] stopped
+[2025-09-15 14:29:56] [Top Capture] stopped
+[2025-09-15 14:30:05] [Comm] AV cameras discovered: ['DEV_1AB22C00C5A5', 'DEV_1AB22C00C5A7']
+[2025-09-15 14:30:05] [Comm] pipeline started
+[2025-09-15 14:30:07] [Barcode Capture] starting
+[2025-09-15 14:30:07] [Top Capture] starting
+[2025-09-15 14:30:07] [Barcode] Using device: cpu
+[2025-09-15 14:30:07] [Coordinator] Loaded batch: Milk Batch.xlsx
+[2025-09-15 14:30:07] [Coordinator] started
+[2025-09-15 14:30:13] [Top] started
+ed
+[2025-09-15 14:30:14] [Label] Loaded batch: Milk Batch.xlsx
+[2025-09-15 14:30:14] [Label] started
+[2025-09-15 14:30:17] [Barcode Capture] queued event_id=0
+[2025-09-15 14:30:18] [Barcode] event_id=0 no decode; forwarding box_id=0
+[2025-09-15 14:30:18] [Top] box queued event_id=0 box_id=0
+[2025-09-15 14:30:18] [Barcode Capture] queued event_id=1
+[2025-09-15 14:30:18] [Barcode] event_id=1 no decode; forwarding box_id=1
+[2025-09-15 14:30:18] [Top] box queued event_id=1 box_id=1
+[2025-09-15 14:30:18] [Barcode Capture] queued event_id=2
+[2025-09-15 14:30:19] [Barcode] event_id=2 no decode; forwarding box_id=2
+[2025-09-15 14:30:19] [Top] box queued event_id=2 box_id=2
+[2025-09-15 14:30:19] [Top Capture] queued event_id=0
+[2025-09-15 14:30:19] [Top] event_id=0 cap=False expire=False
+[2025-09-15 14:30:19] [Top] FORWARDED event_id=0 box_id=0 cap=False expire=False
+[2025-09-15 14:30:19] [Barcode Capture] queued event_id=3
+[2025-09-15 14:30:19] [Coordinator] box queued box_id=0 pending_boxes=1
+[2025-09-15 14:30:19] [Barcode] event_id=3 no decode; forwarding box_id=3
+[2025-09-15 14:30:19] [Top] box queued event_id=3 box_id=3
+[2025-09-15 14:30:19] [Top Capture] queued event_id=1
+[2025-09-15 14:30:19] [Barcode Capture] queued event_id=4
+[2025-09-15 14:30:19] [Top] event_id=1 cap=False expire=True
+[2025-09-15 14:30:19] [Top] FORWARDED event_id=1 box_id=1 cap=False expire=True
+[2025-09-15 14:30:19] [Coordinator] box queued box_id=1 pending_boxes=2
+[2025-09-15 14:30:20] [Barcode] event_id=4 no decode; forwarding box_id=4
+[2025-09-15 14:30:20] [Top] box queued event_id=4 box_id=4
+[2025-09-15 14:30:20] [Top Capture] queued event_id=2
+[2025-09-15 14:30:20] [Top] event_id=2 cap=False expire=True
+[2025-09-15 14:30:20] [Top] FORWARDED event_id=2 box_id=2 cap=False expire=True
+[2025-09-15 14:30:20] [Coordinator] box queued box_id=2 pending_boxes=3
+[2025-09-15 14:30:20] [Barcode Capture] queued event_id=5
+[2025-09-15 14:30:20] [Top Capture] queued event_id=3
+[2025-09-15 14:30:20] [Barcode] event_id=5 no decode; forwarding box_id=5
+[2025-09-15 14:30:20] [Top] event_id=3 cap=False expire=True
+[2025-09-15 14:30:20] [Top] FORWARDED event_id=3 box_id=3 cap=False expire=True
+[2025-09-15 14:30:20] [Top] box queued event_id=5 box_id=5
+[2025-09-15 14:30:20] [Coordinator] box queued box_id=3 pending_boxes=4
+[2025-09-15 14:30:21] [Top Capture] queued event_id=4
+[2025-09-15 14:30:21] [Top] event_id=4 cap=False expire=True
+[2025-09-15 14:30:21] [Top] FORWARDED event_id=4 box_id=4 cap=False expire=True
+[2025-09-15 14:30:21] [Coordinator] box queued box_id=4 pending_boxes=5
+[2025-09-15 14:30:21] [Top Capture] queued event_id=5
+[2025-09-15 14:30:21] [Top] event_id=5 cap=False expire=True
+[2025-09-15 14:30:21] [Top] FORWARDED event_id=5 box_id=5 cap=False expire=True
+[2025-09-15 14:30:21] [Coordinator] box queued box_id=5 pending_boxes=6
+[2025-09-15 14:30:22] [Label] Fired (grace delay) class=Juhayna_Applepear_235ml
+[2025-09-15 14:30:22] [Label] pruned 1 stale track(s)
+[2025-09-15 14:30:22] [Coordinator] label queued pending_labels=1
+[2025-09-15 14:30:22] [Coordinator] paired box_id=0; left B=5 L=0
+[2025-09-15 14:30:22] [Label] Fired (grace delay) class=Beyti_Orange_235ml
+[2025-09-15 14:30:22] [Coordinator] label queued pending_labels=1
+[2025-09-15 14:30:22] [Coordinator] paired box_id=1; left B=4 L=0
+[2025-09-15 14:30:22] [Label] Fired (grace delay) class=Beyti_Orange_235ml
+[2025-09-15 14:30:22] [Label] pruned 1 stale track(s)
+[2025-09-15 14:30:22] [Coordinator] label queued pending_labels=1
+[2025-09-15 14:30:22] [Coordinator] paired box_id=2; left B=3 L=0
+[2025-09-15 14:30:23] [Label] pruned 1 stale track(s)
+[2025-09-15 14:30:23] [Label] pruned 1 stale track(s)
+[2025-09-15 14:30:23] [Barcode Capture] queued event_id=6
+[2025-09-15 14:30:23] [Barcode] event_id=6 no decode; forwarding box_id=6
+[2025-09-15 14:30:23] [Top] box queued event_id=6 box_id=6
+[2025-09-15 14:30:24] [Label] pruned 1 stale track(s)
+[2025-09-15 14:30:24] [Label] pruned 1 stale track(s)
+[2025-09-15 14:30:24] [Label] pruned 1 stale track(s)
+[2025-09-15 14:30:24] [Label] pruned 1 stale track(s)
+[2025-09-15 14:30:24] [Label] pruned 1 stale track(s)
+[2025-09-15 14:30:24] [Label] pruned 1 stale track(s)
+[2025-09-15 14:30:25] [Label] pruned 1 stale track(s)
+[2025-09-15 14:30:37] [Barcode Capture] stopped
+[2025-09-15 14:30:37] [Top Capture] stopped
+[2025-09-15 14:33:02] [Comm] Pipeline started (Luna-triggered AV capture + JPEG queues + episode-aware label).
+[2025-09-15 14:33:30] [Barcode Capture] Saved 20250915_143330_380DEV_1AB22C00C5A5.jpg
+[2025-09-15 14:33:31] [Barcode Capture] Saved 20250915_143331_008DEV_1AB22C00C5A5.jpg
+[2025-09-15 14:33:31] [Barcode Capture] Saved 20250915_143331_513DEV_1AB22C00C5A5.jpg
+[2025-09-15 14:33:31] [Top Capture] Saved 20250915_143331_763DEV_1AB22C00C5A7.jpg
+[2025-09-15 14:33:32] [Barcode Capture] Saved 20250915_143332_024DEV_1AB22C00C5A5.jpg
+[2025-09-15 14:33:32] [Top Capture] Saved 20250915_143332_380DEV_1AB22C00C5A7.jpg
+[2025-09-15 14:33:32] [Barcode Capture] Saved 20250915_143332_564DEV_1AB22C00C5A5.jpg
+[2025-09-15 14:33:32] [Top Capture] Saved 20250915_143332_889DEV_1AB22C00C5A7.jpg
+[2025-09-15 14:33:33] [Barcode Capture] Saved 20250915_143333_151DEV_1AB22C00C5A5.jpg
+[2025-09-15 14:33:33] [Top Capture] Saved 20250915_143333_391DEV_1AB22C00C5A7.jpg
+[2025-09-15 14:33:33] [Top Capture] Saved 20250915_143333_929DEV_1AB22C00C5A7.jpg
+[2025-09-15 14:33:34] [Top Capture] Saved 20250915_143334_498DEV_1AB22C00C5A7.jpg
+[2025-09-15 14:33:57] [Barcode Capture] Saved 20250915_143357_429DEV_1AB22C00C5A5.jpg
+[2025-09-15 14:34:16] [Barcode Capture] Saved 20250915_143416_759DEV_1AB22C00C5A5.jpg
+[2025-09-15 14:34:17] [Barcode Capture] Saved 20250915_143417_436DEV_1AB22C00C5A5.jpg
+[2025-09-15 14:34:17] [Top Capture] Saved 20250915_143417_734DEV_1AB22C00C5A7.jpg
+[2025-09-15 14:34:17] [Barcode Capture] Saved 20250915_143417_988DEV_1AB22C00C5A5.jpg
+[2025-09-15 14:34:18] [Top Capture] Saved 20250915_143418_226DEV_1AB22C00C5A7.jpg
+[2025-09-15 14:34:18] [Barcode Capture] Saved 20250915_143418_492DEV_1AB22C00C5A5.jpg
+[2025-09-15 14:34:18] [Top Capture] Saved 20250915_143418_741DEV_1AB22C00C5A7.jpg
+[2025-09-15 14:34:19] [Barcode Capture] Saved 20250915_143419_020DEV_1AB22C00C5A5.jpg
+[2025-09-15 14:34:19] [Top Capture] Saved 20250915_143419_256DEV_1AB22C00C5A7.jpg
+[2025-09-15 14:34:19] [Top Capture] Saved 20250915_143419_749DEV_1AB22C00C5A7.jpg
+[2025-09-15 14:34:20] [Top Capture] Saved 20250915_143420_273DEV_1AB22C00C5A7.jpg
+[2025-09-15 14:34:21] [Barcode Capture] Saved 20250915_143421_875DEV_1AB22C00C5A5.jpg
+[2025-09-15 14:34:22] [Barcode Capture] Saved 20250915_143422_281DEV_1AB22C00C5A5.jpg
+[2025-09-15 14:34:22] [Barcode Capture] Saved 20250915_143422_690DEV_1AB22C00C5A5.jpg
+[2025-09-15 14:34:22] [Top Capture] Saved 20250915_143422_916DEV_1AB22C00C5A7.jpg
+[2025-09-15 14:34:23] [Barcode Capture] Saved 20250915_143423_121DEV_1AB22C00C5A5.jpg
+[2025-09-15 14:34:23] [Top Capture] Saved 20250915_143423_313DEV_1AB22C00C5A7.jpg
+[2025-09-15 14:34:23] [Barcode Capture] Saved 20250915_143423_533DEV_1AB22C00C5A5.jpg
+[2025-09-15 14:34:23] [Top Capture] Saved 20250915_143423_743DEV_1AB22C00C5A7.jpg
+[2025-09-15 14:34:23] [Barcode Capture] Saved 20250915_143423_973DEV_1AB22C00C5A5.jpg
+[2025-09-15 14:34:24] [Top Capture] Saved 20250915_143424_157DEV_1AB22C00C5A7.jpg
+[2025-09-15 14:34:24] [Top Capture] Saved 20250915_143424_567DEV_1AB22C00C5A7.jpg
+[2025-09-15 14:34:25] [Top Capture] Saved 20250915_143425_020DEV_1AB22C00C5A7.jpg
+[2025-09-15 14:35:11] [Comm] Pipeline started (Luna-triggered AV capture + JPEG queues + episode-aware label).
+[2025-09-15 14:35:38] [Barcode Capture] Saved 20250915_143538_198DEV_1AB22C00C5A5.jpg
+[2025-09-15 14:35:39] [Barcode Capture] Saved 20250915_143539_152DEV_1AB22C00C5A5.jpg
+[2025-09-15 14:35:39] [Barcode Capture] Saved 20250915_143539_861DEV_1AB22C00C5A5.jpg
+[2025-09-15 14:35:40] [Top Capture] Saved 20250915_143540_214DEV_1AB22C00C5A7.jpg
+[2025-09-15 14:35:40] [Barcode Capture] Saved 20250915_143540_537DEV_1AB22C00C5A5.jpg
+[2025-09-15 14:35:40] [Top Capture] Saved 20250915_143540_831DEV_1AB22C00C5A7.jpg
+[2025-09-15 14:35:41] [Barcode Capture] Saved 20250915_143541_163DEV_1AB22C00C5A5.jpg
+[2025-09-15 14:35:41] [Top Capture] Saved 20250915_143541_479DEV_1AB22C00C5A7.jpg
+[2025-09-15 14:35:41] [Barcode Capture] Saved 20250915_143541_823DEV_1AB22C00C5A5.jpg
+[2025-09-15 14:35:42] [Top Capture] Saved 20250915_143542_098DEV_1AB22C00C5A7.jpg
+[2025-09-15 14:35:42] [Top Capture] Saved 20250915_143542_716DEV_1AB22C00C5A7.jpg
+[2025-09-15 14:40:54] [Comm] AV cameras discovered: ['DEV_1AB22C00C5A5', 'DEV_1AB22C00C5A7']
+[2025-09-15 14:40:54] [Comm] pipeline started
+[2025-09-15 14:40:56] [Barcode] Using device: cpu
+[2025-09-15 14:40:56] [Barcode Capture] starting
+[2025-09-15 14:40:56] [Top Capture] starting
+[2025-09-15 14:40:56] [Coordinator] Loaded batch: Milk Batch.xlsx
+[2025-09-15 14:40:56] [Coordinator] started
+[2025-09-15 14:40:58] [Barcode Capture] queued event_id=0
+[2025-09-15 14:40:58] [Barcode Capture] queued event_id=1
+[2025-09-15 14:40:59] [Barcode Capture] queued event_id=2
+[2025-09-15 14:40:59] [Top Capture] queued event_id=0
+[2025-09-15 14:40:59] [Barcode Capture] queued event_id=3
+[2025-09-15 14:41:00] [Top Capture] queued event_id=1
+[2025-09-15 14:41:00] [Barcode Capture] queued event_id=4
+[2025-09-15 14:41:00] [Top Capture] queued event_id=2
+[2025-09-15 14:41:00] [Barcode Capture] queued event_id=5
+[2025-09-15 14:41:01] [Top Capture] queued event_id=3
+[2025-09-15 14:41:01] [Top Capture] queued event_id=4
+[2025-09-15 14:41:02] [Top Capture] queued event_id=5
+[2025-09-15 14:41:02] [Barcode] started
+[2025-09-15 14:41:02] [Top] started
+[2025-09-15 14:41:02] [Top] event_id=0 cap=False expire=False
+[2025-09-15 14:41:02] [Barcode] event_id=0 decoded=6223000350010 box_id=0
+[2025-09-15 14:41:02] [Label] Loaded batch: Milk Batch.xlsx
+[2025-09-15 14:41:02] [Label] started
+[2025-09-15 14:41:03] [Top] event_id=1 cap=False expire=True
+[2025-09-15 14:41:03] [Barcode] event_id=1 decoded=6222014330537 box_id=1
+[2025-09-15 14:41:03] [Top] event_id=2 cap=False expire=True
+[2025-09-15 14:41:03] [Barcode] event_id=2 decoded=6224001167423 box_id=2
+[2025-09-15 14:41:03] [Top] event_id=3 cap=False expire=True
+[2025-09-15 14:41:03] [Barcode] event_id=3 decoded=6223001875246 box_id=3
+[2025-09-15 14:41:04] [Top] event_id=4 cap=False expire=True
+[2025-09-15 14:41:04] [Barcode] event_id=4 decoded=6222014334337 box_id=4
+[2025-09-15 14:41:04] [Top] event_id=5 cap=False expire=True
+[2025-09-15 14:41:04] [Top] box queued event_id=0 box_id=0
+[2025-09-15 14:41:04] [Top] FORWARDED event_id=0 box_id=0 cap=False expire=False
+[2025-09-15 14:41:04] [Top] box queued event_id=1 box_id=1
+[2025-09-15 14:41:04] [Top] FORWARDED event_id=1 box_id=1 cap=False expire=True
+[2025-09-15 14:41:04] [Top] box queued event_id=2 box_id=2
+[2025-09-15 14:41:04] [Top] FORWARDED event_id=2 box_id=2 cap=False expire=True
+[2025-09-15 14:41:04] [Top] box queued event_id=3 box_id=3
+[2025-09-15 14:41:04] [Top] FORWARDED event_id=3 box_id=3 cap=False expire=True
+[2025-09-15 14:41:04] [Top] box queued event_id=4 box_id=4
+[2025-09-15 14:41:04] [Barcode] event_id=5 decoded=6223001875246 box_id=5
+[2025-09-15 14:41:04] [Top] FORWARDED event_id=4 box_id=4 cap=False expire=True
+[2025-09-15 14:41:04] [Top] box queued event_id=5 box_id=5
+[2025-09-15 14:41:04] [Coordinator] box queued box_id=0 pending_boxes=1
+[2025-09-15 14:41:04] [Top] FORWARDED event_id=5 box_id=5 cap=False expire=True
+[2025-09-15 14:41:04] [Coordinator] box queued box_id=1 pending_boxes=2
+[2025-09-15 14:41:04] [Coordinator] box queued box_id=2 pending_boxes=3
+[2025-09-15 14:41:04] [Coordinator] box queued box_id=3 pending_boxes=4
+[2025-09-15 14:41:04] [Coordinator] box queued box_id=4 pending_boxes=5
+[2025-09-15 14:41:04] [Coordinator] box queued box_id=5 pending_boxes=6
+[2025-09-15 14:41:05] [Label] pruned 1 stale track(s)
+[2025-09-15 14:41:09] [Barcode Capture] queued event_id=6
+[2025-09-15 14:41:09] [Barcode] event_id=6 decoded=6223000350010 box_id=6
+[2025-09-15 14:41:09] [Top] box queued event_id=6 box_id=6
+[2025-09-15 14:41:10] [Barcode Capture] queued event_id=7
+[2025-09-15 14:41:10] [Barcode] event_id=7 decoded=6222014330537 box_id=7
+[2025-09-15 14:41:10] [Top] box queued event_id=7 box_id=7
+[2025-09-15 14:41:10] [Barcode Capture] queued event_id=8
+[2025-09-15 14:41:10] [Barcode] event_id=8 decoded=6224001167423 box_id=8
+[2025-09-15 14:41:10] [Top] box queued event_id=8 box_id=8
+[2025-09-15 14:41:11] [Top Capture] queued event_id=6
+[2025-09-15 14:41:11] [Top] event_id=6 cap=False expire=False
+[2025-09-15 14:41:11] [Top] FORWARDED event_id=6 box_id=6 cap=False expire=False
+[2025-09-15 14:41:11] [Coordinator] box queued box_id=6 pending_boxes=7
+[2025-09-15 14:41:11] [Barcode Capture] queued event_id=9
+[2025-09-15 14:41:11] [Barcode] event_id=9 decoded=6223001875246 box_id=9
+[2025-09-15 14:41:11] [Top] box queued event_id=9 box_id=9
+[2025-09-15 14:41:11] [Top Capture] queued event_id=7
+[2025-09-15 14:41:11] [Top] event_id=7 cap=False expire=True
+[2025-09-15 14:41:11] [Top] FORWARDED event_id=7 box_id=7 cap=False expire=True
+[2025-09-15 14:41:11] [Coordinator] box queued box_id=7 pending_boxes=8
+[2025-09-15 14:41:11] [Barcode Capture] queued event_id=10
+[2025-09-15 14:41:11] [Barcode] event_id=10 decoded=6222014334337 box_id=10
+[2025-09-15 14:41:11] [Top] box queued event_id=10 box_id=10
+[2025-09-15 14:41:12] [Top Capture] queued event_id=8
+[2025-09-15 14:41:12] [Top] event_id=8 cap=False expire=True
+[2025-09-15 14:41:12] [Top] FORWARDED event_id=8 box_id=8 cap=False expire=True
+[2025-09-15 14:41:12] [Coordinator] box queued box_id=8 pending_boxes=9
+[2025-09-15 14:41:12] [Label] Fired (grace delay) class=Juhayna_Fullcream_235ml
+[2025-09-15 14:41:12] [Coordinator] label queued pending_labels=1
+[2025-09-15 14:41:12] [Coordinator] paired box_id=0; left B=8 L=0
+[2025-09-15 14:41:12] [Barcode Capture] queued event_id=11
+[2025-09-15 14:41:12] [Barcode] event_id=11 decoded=6223001875246 box_id=11
+[2025-09-15 14:41:12] [Top] box queued event_id=11 box_id=11
+[2025-09-15 14:41:12] [Top Capture] queued event_id=9
+[2025-09-15 14:41:12] [Top] event_id=9 cap=False expire=True
+[2025-09-15 14:41:12] [Top] FORWARDED event_id=9 box_id=9 cap=False expire=True
+[2025-09-15 14:41:12] [Coordinator] box queued box_id=9 pending_boxes=9
+[2025-09-15 14:41:13] [Top Capture] queued event_id=10
+[2025-09-15 14:41:13] [Top] event_id=10 cap=False expire=True
+[2025-09-15 14:41:13] [Top] FORWARDED event_id=10 box_id=10 cap=False expire=True
+[2025-09-15 14:41:13] [Coordinator] box queued box_id=10 pending_boxes=10
+[2025-09-15 14:41:13] [Label] Fired (grace delay) class=Suntop_Orange_250ml
+[2025-09-15 14:41:13] [Coordinator] label queued pending_labels=1
+[2025-09-15 14:41:13] [Coordinator] paired box_id=1; left B=9 L=0
+[2025-09-15 14:41:13] [Top Capture] queued event_id=11
+[2025-09-15 14:41:13] [Top] event_id=11 cap=False expire=True
+[2025-09-15 14:41:13] [Top] FORWARDED event_id=11 box_id=11 cap=False expire=True
+[2025-09-15 14:41:13] [Coordinator] box queued box_id=11 pending_boxes=10
+[2025-09-15 14:41:14] [Label] pruned 1 stale track(s)
+[2025-09-15 14:41:14] [Label] Fired (grace delay) class=Juhayna_Applepear_235ml
+[2025-09-15 14:41:14] [Label] pruned 1 stale track(s)
+[2025-09-15 14:41:14] [Coordinator] label queued pending_labels=1
+[2025-09-15 14:41:14] [Coordinator] paired box_id=2; left B=9 L=0
+[2025-09-15 14:41:14] [Label] Fired (band) class=Beyti_Orange_235ml size=235ml
+[2025-09-15 14:41:14] [Coordinator] label queued pending_labels=1
+[2025-09-15 14:41:14] [Coordinator] paired box_id=3; left B=8 L=0
+[2025-09-15 14:41:15] [Label] pruned 1 stale track(s)
+[2025-09-15 14:41:15] [Label] pruned 1 stale track(s)
+[2025-09-15 14:41:16] [Label] pruned 1 stale track(s)
+[2025-09-15 14:41:16] [Label] pruned 1 stale track(s)
+[2025-09-15 14:41:16] [Label] pruned 1 stale track(s)
+[2025-09-15 14:41:16] [Label] pruned 1 stale track(s)
+[2025-09-15 14:41:16] [Label] pruned 1 stale track(s)
+[2025-09-15 14:41:16] [Label] pruned 1 stale track(s)
+[2025-09-15 14:41:39] [Comm] AV cameras discovered: ['DEV_1AB22C00C5A5', 'DEV_1AB22C00C5A7']
+[2025-09-15 14:41:39] [Comm] pipeline started
+[2025-09-15 14:41:40] [Top Capture] starting
+[2025-09-15 14:41:40] [Barcode] Using device: cpu
+[2025-09-15 14:41:41] [Coordinator] Loaded batch: Milk Batch.xlsx
+[2025-09-15 14:41:41] [Coordinator] started
+[2025-09-15 14:41:41] [Barcode Capture] starting
+[2025-09-15 14:41:47] [Barcode] started
+[2025-09-15 14:41:47] [Top] started
+[2025-09-15 14:41:47] [Label] Loaded batch: Milk Batch.xlsx
+[2025-09-15 14:41:47] [Label] started
+[2025-09-15 14:41:49] [Barcode Capture] queued event_id=0
+[2025-09-15 14:41:49] [Barcode] event_id=0 decoded=6223000350010 box_id=0
+[2025-09-15 14:41:49] [Top] box queued event_id=0 box_id=0
+[2025-09-15 14:41:49] [Barcode Capture] queued event_id=1
+[2025-09-15 14:41:50] [Barcode] event_id=1 decoded=6222014330537 box_id=1
+[2025-09-15 14:41:50] [Top] box queued event_id=1 box_id=1
+[2025-09-15 14:41:50] [Barcode Capture] queued event_id=2
+[2025-09-15 14:41:50] [Barcode] event_id=2 decoded=6224001167423 box_id=2
+[2025-09-15 14:41:50] [Top] box queued event_id=2 box_id=2
+[2025-09-15 14:41:50] [Top Capture] queued event_id=0
+[2025-09-15 14:41:50] [Barcode Capture] queued event_id=3
+[2025-09-15 14:41:50] [Top] event_id=0 cap=False expire=True
+[2025-09-15 14:41:50] [Top] FORWARDED event_id=0 box_id=0 cap=False expire=True
+[2025-09-15 14:41:50] [Coordinator] box queued box_id=0 pending_boxes=1
+[2025-09-15 14:41:51] [Barcode] event_id=3 decoded=6223001875246 box_id=3
+[2025-09-15 14:41:51] [Top] box queued event_id=3 box_id=3
+[2025-09-15 14:41:51] [Top Capture] queued event_id=1
+[2025-09-15 14:41:51] [Top] event_id=1 cap=False expire=True
+[2025-09-15 14:41:51] [Top] FORWARDED event_id=1 box_id=1 cap=False expire=True
+[2025-09-15 14:41:51] [Coordinator] box queued box_id=1 pending_boxes=2
+[2025-09-15 14:41:51] [Barcode Capture] queued event_id=4
+[2025-09-15 14:41:51] [Barcode] event_id=4 decoded=6222014334337 box_id=4
+[2025-09-15 14:41:51] [Top] box queued event_id=4 box_id=4
+[2025-09-15 14:41:51] [Top Capture] queued event_id=2
+[2025-09-15 14:41:51] [Top] event_id=2 cap=False expire=True
+[2025-09-15 14:41:51] [Top] FORWARDED event_id=2 box_id=2 cap=False expire=True
+[2025-09-15 14:41:51] [Coordinator] box queued box_id=2 pending_boxes=3
+[2025-09-15 14:41:51] [Barcode Capture] queued event_id=5
+[2025-09-15 14:41:52] [Barcode] event_id=5 decoded=6223001875246 box_id=5
+[2025-09-15 14:41:52] [Top] box queued event_id=5 box_id=5
+[2025-09-15 14:41:52] [Top Capture] queued event_id=3
+[2025-09-15 14:41:52] [Label] Fired (grace delay) class=Juhayna_Orange_1L
+[2025-09-15 14:41:52] [Coordinator] label queued pending_labels=1
+[2025-09-15 14:41:52] [Coordinator] paired box_id=0; left B=2 L=0
+[2025-09-15 14:41:52] [Top] event_id=3 cap=False expire=True
+[2025-09-15 14:41:52] [Top] FORWARDED event_id=3 box_id=3 cap=False expire=True
+[2025-09-15 14:41:52] [Coordinator] box queued box_id=3 pending_boxes=3
+[2025-09-15 14:41:52] [Top Capture] queued event_id=4
+[2025-09-15 14:41:52] [Top] event_id=4 cap=False expire=True
+[2025-09-15 14:41:52] [Top] FORWARDED event_id=4 box_id=4 cap=False expire=True
+[2025-09-15 14:41:52] [Coordinator] box queued box_id=4 pending_boxes=4
+[2025-09-15 14:41:52] [Label] Fired (grace delay) class=Suntop_Orange_250ml
+[2025-09-15 14:41:52] [Coordinator] label queued pending_labels=1
+[2025-09-15 14:41:52] [Coordinator] paired box_id=1; left B=3 L=0
+[2025-09-15 14:41:53] [Top Capture] queued event_id=5
+[2025-09-15 14:41:53] [Label] Fired (grace delay) class=Beyti_Orange_235ml
+[2025-09-15 14:41:53] [Coordinator] label queued pending_labels=1
+[2025-09-15 14:41:53] [Coordinator] paired box_id=2; left B=2 L=0
+[2025-09-15 14:41:53] [Top] event_id=5 cap=False expire=False
+[2025-09-15 14:41:53] [Top] FORWARDED event_id=5 box_id=5 cap=False expire=False
+[2025-09-15 14:41:53] [Coordinator] box queued box_id=5 pending_boxes=3
+[2025-09-15 14:41:53] [Label] Fired (grace delay) class=Juhayna_Applepear_235ml
+[2025-09-15 14:41:53] [Coordinator] label queued pending_labels=1
+[2025-09-15 14:41:53] [Coordinator] paired box_id=3; left B=2 L=0
+[2025-09-15 14:41:54] [Label] pruned 1 stale track(s)
+[2025-09-15 14:41:54] [Label] pruned 1 stale track(s)
+[2025-09-15 14:41:54] [Label] pruned 1 stale track(s)
+[2025-09-15 14:41:54] [Label] pruned 1 stale track(s)
+[2025-09-15 14:41:55] [Label] pruned 1 stale track(s)
+[2025-09-15 14:41:55] [Label] pruned 1 stale track(s)
+[2025-09-15 14:41:55] [Label] pruned 1 stale track(s)
+[2025-09-15 14:41:56] [Label] pruned 1 stale track(s)
+[2025-09-15 14:41:56] [Label] pruned 1 stale track(s)
+[2025-09-15 14:42:14] [Top Capture] stopped
+[2025-09-15 14:42:14] [Barcode Capture] stopped
+[2025-09-15 14:42:23] [Comm] AV cameras discovered: ['DEV_1AB22C00C5A5', 'DEV_1AB22C00C5A7']
+[2025-09-15 14:42:23] [Comm] pipeline started
+[2025-09-15 14:42:25] [Barcode Capture] starting
+[2025-09-15 14:42:25] [Top Capture] starting
+[2025-09-15 14:42:25] [Barcode] Using device: cpu
+[2025-09-15 14:42:25] [Coordinator] Loaded batch: Milk Batch.xlsx
+[2025-09-15 14:42:25] [Coordinator] started
+[2025-09-15 14:42:31] [Barcode] started
+[2025-09-15 14:42:31] [Label] Loaded batch: Milk Batch.xlsx
+[2025-09-15 14:42:31] [Label] started
+[2025-09-15 14:42:42] [Barcode Capture] queued event_id=0
+[2025-09-15 14:42:42] [Barcode] event_id=0 decoded=6223000350010 box_id=0
+[2025-09-15 14:42:42] [Top] box queued event_id=0 box_id=0
+[2025-09-15 14:42:42] [Barcode Capture] queued event_id=1
+[2025-09-15 14:42:42] [Barcode] event_id=1 decoded=6222014330537 box_id=1
+[2025-09-15 14:42:42] [Top] box queued event_id=1 box_id=1
+[2025-09-15 14:42:43] [Barcode Capture] queued event_id=2
+[2025-09-15 14:42:43] [Barcode] event_id=2 decoded=6224001167423 box_id=2
+[2025-09-15 14:42:43] [Top] box queued event_id=2 box_id=2
+[2025-09-15 14:42:43] [Top Capture] queued event_id=0
+[2025-09-15 14:42:43] [Top] event_id=0 cap=False expire=False
+[2025-09-15 14:42:43] [Top] FORWARDED event_id=0 box_id=0 cap=False expire=False
+[2025-09-15 14:42:43] [Coordinator] box queued box_id=0 pending_boxes=1
+[2025-09-15 14:42:43] [Barcode Capture] queued event_id=3
+[2025-09-15 14:42:43] [Barcode] event_id=3 decoded=6223001875246 box_id=3
+[2025-09-15 14:42:43] [Top] box queued event_id=3 box_id=3
+[2025-09-15 14:42:43] [Top Capture] queued event_id=1
+[2025-09-15 14:42:43] [Top] event_id=1 cap=False expire=True
+[2025-09-15 14:42:43] [Top] FORWARDED event_id=1 box_id=1 cap=False expire=True
+[2025-09-15 14:42:43] [Coordinator] box queued box_id=1 pending_boxes=2
+[2025-09-15 14:42:44] [Barcode Capture] queued event_id=4
+[2025-09-15 14:42:44] [Barcode] event_id=4 decoded=6222014334337 box_id=4
+[2025-09-15 14:42:44] [Top] box queued event_id=4 box_id=4
+[2025-09-15 14:42:44] [Top Capture] queued event_id=2
+[2025-09-15 14:42:44] [Top] event_id=2 cap=False expire=True
+[2025-09-15 14:42:44] [Top] FORWARDED event_id=2 box_id=2 cap=False expire=True
+[2025-09-15 14:42:44] [Coordinator] box queued box_id=2 pending_boxes=3
+[2025-09-15 14:42:44] [Barcode Capture] queued event_id=5
+[2025-09-15 14:42:44] [Barcode] event_id=5 decoded=6223001875246 box_id=5
+[2025-09-15 14:42:44] [Top Capture] queued event_id=3
+[2025-09-15 14:42:45] [Top] event_id=3 cap=False expire=True
+[2025-09-15 14:42:45] [Top] FORWARDED event_id=3 box_id=3 cap=False expire=True
+[2025-09-15 14:42:45] [Top] box queued event_id=5 box_id=5
+[2025-09-15 14:42:45] [Coordinator] box queued box_id=3 pending_boxes=4
+[2025-09-15 14:42:45] [Top Capture] queued event_id=4
+[2025-09-15 14:42:45] [Top] event_id=4 cap=False expire=True
+[2025-09-15 14:42:45] [Top] FORWARDED event_id=4 box_id=4 cap=False expire=True
+[2025-09-15 14:42:45] [Coordinator] box queued box_id=4 pending_boxes=5
+[2025-09-15 14:42:45] [Label] Fired (grace delay) class=Suntop_Orange_250ml
+[2025-09-15 14:42:45] [Coordinator] label queued pending_labels=1
+[2025-09-15 14:42:45] [Coordinator] paired box_id=0; left B=4 L=0
+[2025-09-15 14:42:45] [Top Capture] queued event_id=5
+[2025-09-15 14:42:45] [Label] Fired (grace delay) class=Beyti_Orange_235ml
+[2025-09-15 14:42:45] [Coordinator] label queued pending_labels=1
+[2025-09-15 14:42:45] [Coordinator] paired box_id=1; left B=3 L=0
+[2025-09-15 14:42:46] [Top] event_id=5 cap=False expire=True
+[2025-09-15 14:42:46] [Top] FORWARDED event_id=5 box_id=5 cap=False expire=True
+[2025-09-15 14:42:46] [Coordinator] box queued box_id=5 pending_boxes=4
+[2025-09-15 14:42:46] [Label] Fired (grace delay) class=Juhayna_Applepear_235ml
+[2025-09-15 14:42:46] [Label] pruned 1 stale track(s)
+[2025-09-15 14:42:46] [Coordinator] label queued pending_labels=1
+[2025-09-15 14:42:46] [Coordinator] paired box_id=2; left B=3 L=0
+[2025-09-15 14:42:46] [Coordinator] label queued pending_labels=1
+e_235ml
+[2025-09-15 14:42:46] [Coordinator] paired box_id=3; left B=2 L=0
+[2025-09-15 14:42:47] [Label] pruned 1 stale track(s)
+[2025-09-15 14:42:47] [Label] pruned 1 stale track(s)
+[2025-09-15 14:42:47] [Label] pruned 1 stale track(s)
+[2025-09-15 14:42:47] [Label] pruned 1 stale track(s)
+[2025-09-15 14:42:48] [Label] pruned 1 stale track(s)
+[2025-09-15 14:42:48] [Label] pruned 1 stale track(s)
+[2025-09-15 14:42:48] [Label] pruned 1 stale track(s)
+[2025-09-15 14:42:48] [Label] pruned 2 stale track(s)
+[2025-09-15 14:42:48] [Label] pruned 1 stale track(s)
+[2025-09-15 14:44:00] [Comm] AV cameras discovered: ['DEV_1AB22C00C5A5', 'DEV_1AB22C00C5A7']
+[2025-09-15 14:44:00] [Comm] pipeline started
+[2025-09-15 14:44:02] [Top Capture] starting
+[2025-09-15 14:44:02] [Barcode] Using device: cpu
+[2025-09-15 14:44:02] [Barcode Capture] starting
+[2025-09-15 14:44:02] [Coordinator] Loaded batch: Milk Batch.xlsx
+[2025-09-15 14:44:02] [Coordinator] started
+[2025-09-15 14:44:08] [Barcode] started
+[2025-09-15 14:44:08] [Label] Loaded batch: Milk Batch.xlsx
+[2025-09-15 14:44:08] [Label] started
+[2025-09-15 14:44:15] [Barcode Capture] queued event_id=0
+[2025-09-15 14:44:16] [Barcode] event_id=0 decoded=6223000350010 box_id=0
+[2025-09-15 14:44:16] [Top] box queued event_id=0 box_id=0
+[2025-09-15 14:44:16] [Barcode Capture] queued event_id=1
+[2025-09-15 14:44:16] [Barcode] event_id=1 decoded=6222014330537 box_id=1
+[2025-09-15 14:44:16] [Top] box queued event_id=1 box_id=1
+[2025-09-15 14:44:16] [Barcode Capture] queued event_id=2
+[2025-09-15 14:44:17] [Barcode] event_id=2 decoded=6224001167423 box_id=2
+[2025-09-15 14:44:17] [Top] box queued event_id=2 box_id=2
+[2025-09-15 14:44:17] [Top Capture] queued event_id=0
+[2025-09-15 14:44:17] [Barcode Capture] queued event_id=3
+[2025-09-15 14:44:17] [Top] event_id=0 cap=False expire=False
+[2025-09-15 14:44:17] [Top] FORWARDED event_id=0 box_id=0 cap=False expire=False
+[2025-09-15 14:44:17] [Coordinator] box queued box_id=0 ts=1757936657409 pending_boxes=1
+[2025-09-15 14:44:17] [Top Capture] queued event_id=1
+[2025-09-15 14:44:17] [Barcode] event_id=3 decoded=6223001875246 box_id=3
+[2025-09-15 14:44:17] [Top] event_id=1 cap=False expire=True
+[2025-09-15 14:44:17] [Top] FORWARDED event_id=1 box_id=1 cap=False expire=True
+[2025-09-15 14:44:17] [Top] box queued event_id=3 box_id=3
+[2025-09-15 14:44:17] [Coordinator] box queued box_id=1 ts=1757936657762 pending_boxes=2
+[2025-09-15 14:44:17] [Barcode Capture] queued event_id=4
+[2025-09-15 14:44:17] [Top Capture] queued event_id=2
+[2025-09-15 14:44:17] [Barcode] event_id=4 decoded=6222014334337 box_id=4
+[2025-09-15 14:44:18] [Label] Fired (grace delay) class=Juhayna_Fullcream_1L
+[2025-09-15 14:44:18] [Coordinator] label queued ts=1757936658146 pending_labels=1
+[2025-09-15 14:44:18] [Coordinator] pairing box_id=0 Δt=737ms (box_ts=1757936657409 lbl_ts=1757936658146)
+[2025-09-15 14:44:18] [Coordinator] paired box_id=0; left B=1 L=0
+[2025-09-15 14:44:18] [Top] event_id=2 cap=False expire=True
+[2025-09-15 14:44:18] [Top] FORWARDED event_id=2 box_id=2 cap=False expire=True
+[2025-09-15 14:44:18] [Top] box queued event_id=4 box_id=4
+[2025-09-15 14:44:18] [Coordinator] box queued box_id=2 ts=1757936658202 pending_boxes=2
+[2025-09-15 14:44:18] [Barcode Capture] queued event_id=5
+[2025-09-15 14:44:18] [Top Capture] queued event_id=3
+[2025-09-15 14:44:18] [Barcode] event_id=5 decoded=6223001875246 box_id=5
+[2025-09-15 14:44:18] [Label] Fired (grace delay) class=Juhayna_Orange_1L
+[2025-09-15 14:44:18] [Coordinator] label queued ts=1757936658553 pending_labels=1
+[2025-09-15 14:44:18] [Coordinator] pairing box_id=1 Δt=791ms (box_ts=1757936657762 lbl_ts=1757936658553)
+[2025-09-15 14:44:18] [Coordinator] paired box_id=1; left B=1 L=0
+[2025-09-15 14:44:18] [Top] event_id=3 cap=False expire=True
+[2025-09-15 14:44:18] [Top] FORWARDED event_id=3 box_id=3 cap=False expire=True
+[2025-09-15 14:44:18] [Top] box queued event_id=5 box_id=5
+[2025-09-15 14:44:18] [Coordinator] box queued box_id=3 ts=1757936658593 pending_boxes=2
+[2025-09-15 14:44:18] [Top Capture] queued event_id=4
+[2025-09-15 14:44:18] [Top] event_id=4 cap=False expire=True
+[2025-09-15 14:44:18] [Top] FORWARDED event_id=4 box_id=4 cap=False expire=True
+[2025-09-15 14:44:18] [Coordinator] box queued box_id=4 ts=1757936658967 pending_boxes=3
+[2025-09-15 14:44:19] [Top Capture] queued event_id=5
+[2025-09-15 14:44:19] [Label] Fired (grace delay) class=Beyti_Orange_235ml
+[2025-09-15 14:44:19] [Coordinator] label queued ts=1757936659347 pending_labels=1
+[2025-09-15 14:44:19] [Coordinator] pairing box_id=2 Δt=1145ms (box_ts=1757936658202 lbl_ts=1757936659347)
+[2025-09-15 14:44:19] [Coordinator] paired box_id=2; left B=2 L=0
+[2025-09-15 14:44:19] [Top] event_id=5 cap=False expire=False
+[2025-09-15 14:44:19] [Top] FORWARDED event_id=5 box_id=5 cap=False expire=False
+[2025-09-15 14:44:19] [Coordinator] box queued box_id=5 ts=1757936659402 pending_boxes=3
+[2025-09-15 14:44:19] [Label] Fired (grace delay) class=Juhayna_Applepear_235ml
+[2025-09-15 14:44:19] [Coordinator] label queued ts=1757936659761 pending_labels=1
+[2025-09-15 14:44:19] [Coordinator] pairing box_id=3 Δt=1168ms (box_ts=1757936658593 lbl_ts=1757936659761)
+[2025-09-15 14:44:19] [Coordinator] paired box_id=3; left B=2 L=0
+[2025-09-15 14:44:20] [Label] pruned 1 stale track(s)
+[2025-09-15 14:44:20] [Label] pruned 1 stale track(s)
+[2025-09-15 14:44:20] [Label] pruned 1 stale track(s)
+[2025-09-15 14:44:20] [Label] pruned 1 stale track(s)
+[2025-09-15 14:44:20] [Barcode Capture] queued event_id=6
+[2025-09-15 14:44:20] [Barcode] event_id=6 decoded=6223000350010 box_id=6
+[2025-09-15 14:44:20] [Top] box queued event_id=6 box_id=6
+[2025-09-15 14:44:21] [Label] pruned 1 stale track(s)
+[2025-09-15 14:44:21] [Barcode Capture] queued event_id=7
+[2025-09-15 14:44:21] [Label] pruned 1 stale track(s)
+[2025-09-15 14:44:21] [Barcode] event_id=7 decoded=6222014330537 box_id=7
+[2025-09-15 14:44:21] [Top] box queued event_id=7 box_id=7
+[2025-09-15 14:44:21] [Label] pruned 1 stale track(s)
+[2025-09-15 14:44:21] [Label] pruned 1 stale track(s)
+[2025-09-15 14:44:21] [Label] pruned 1 stale track(s)
+[2025-09-15 14:44:21] [Label] pruned 1 stale track(s)
+[2025-09-15 14:44:22] [Barcode Capture] queued event_id=8
+[2025-09-15 14:44:22] [Label] pruned 1 stale track(s)
+[2025-09-15 14:44:22] [Barcode] event_id=8 decoded=6224001167423 box_id=8
+[2025-09-15 14:44:22] [Top] box queued event_id=8 box_id=8
+[2025-09-15 14:44:22] [Label] pruned 1 stale track(s)
+[2025-09-15 14:44:22] [Top Capture] queued event_id=6
+[2025-09-15 14:44:22] [Top] event_id=6 cap=False expire=False
+[2025-09-15 14:44:22] [Top] FORWARDED event_id=6 box_id=6 cap=False expire=False
+[2025-09-15 14:44:22] [Coordinator] box queued box_id=6 ts=1757936662615 pending_boxes=3
+[2025-09-15 14:44:22] [Barcode Capture] queued event_id=9
+[2025-09-15 14:44:22] [Barcode] event_id=9 decoded=6223001875246 box_id=9
+[2025-09-15 14:44:22] [Top] box queued event_id=9 box_id=9
+[2025-09-15 14:44:22] [Top Capture] queued event_id=7
+[2025-09-15 14:44:23] [Top] event_id=7 cap=False expire=True
+[2025-09-15 14:44:23] [Top] FORWARDED event_id=7 box_id=7 cap=False expire=True
+[2025-09-15 14:44:23] [Coordinator] box queued box_id=7 ts=1757936663108 pending_boxes=4
+[2025-09-15 14:44:23] [Barcode Capture] queued event_id=10
+[2025-09-15 14:44:23] [Barcode] event_id=10 decoded=6222014334337 box_id=10
+[2025-09-15 14:44:23] [Top Capture] queued event_id=8
+[2025-09-15 14:44:23] [Top] event_id=8 cap=False expire=True
+[2025-09-15 14:44:23] [Top] FORWARDED event_id=8 box_id=8 cap=False expire=True
+[2025-09-15 14:44:23] [Top] box queued event_id=10 box_id=10
+[2025-09-15 14:44:23] [Coordinator] box queued box_id=8 ts=1757936663549 pending_boxes=5
+[2025-09-15 14:44:23] [Barcode Capture] queued event_id=11
+[2025-09-15 14:44:23] [Top Capture] queued event_id=9
+[2025-09-15 14:44:23] [Barcode] event_id=11 decoded=6223001875246 box_id=11
+[2025-09-15 14:44:24] [Top] event_id=9 cap=False expire=True
+[2025-09-15 14:44:24] [Top] FORWARDED event_id=9 box_id=9 cap=False expire=True
+[2025-09-15 14:44:24] [Top] box queued event_id=11 box_id=11
+[2025-09-15 14:44:24] [Coordinator] box queued box_id=9 ts=1757936664009 pending_boxes=6
+[2025-09-15 14:44:24] [Top Capture] queued event_id=10
+[2025-09-15 14:44:24] [Coordinator] label queued ts=1757936664305 pending_labels=1
+[2025-09-15 14:44:24] [Coordinator] pairing box_id=6 Δt=1690ms (box_ts=1757936662615 lbl_ts=1757936664305)
+[2025-09-15 14:44:24] [Coordinator] paired box_id=6; left B=5 L=0
+[2025-09-15 14:44:24] [Top] event_id=10 cap=False expire=True
+[2025-09-15 14:44:24] [Top] FORWARDED event_id=10 box_id=10 cap=False expire=True
+[2025-09-15 14:44:24] [Coordinator] box queued box_id=10 ts=1757936664397 pending_boxes=6
+[2025-09-15 14:44:24] [Top Capture] queued event_id=11
+[2025-09-15 14:44:24] [Top] event_id=11 cap=False expire=False
+[2025-09-15 14:44:24] [Top] FORWARDED event_id=11 box_id=11 cap=False expire=False
+[2025-09-15 14:44:24] [Coordinator] box queued box_id=11 ts=1757936664862 pending_boxes=7
+[2025-09-15 14:44:24] [Label] Fired (grace delay) class=Beyti_Orange_235ml
+[2025-09-15 14:44:24] [Coordinator] label queued ts=1757936664873 pending_labels=1
+[2025-09-15 14:44:24] [Coordinator] pairing box_id=7 Δt=1765ms (box_ts=1757936663108 lbl_ts=1757936664873)
+[2025-09-15 14:44:24] [Coordinator] paired box_id=7; left B=6 L=0
+[2025-09-15 14:44:24] [Coordinator] box timeout box_id=4 waited=6003ms; finalizing without label
+[2025-09-15 14:44:25] [Label] Fired (grace delay) class=Juhayna_Applepear_235ml
+[2025-09-15 14:44:25] [Coordinator] label queued ts=1757936665259 pending_labels=1
+[2025-09-15 14:44:25] [Coordinator] pairing box_id=8 Δt=1710ms (box_ts=1757936663549 lbl_ts=1757936665259)
+[2025-09-15 14:44:25] [Coordinator] paired box_id=8; left B=4 L=0
+[2025-09-15 14:44:25] [Coordinator] box timeout box_id=5 waited=6004ms; finalizing without label
+[2025-09-15 14:44:25] [Label] pruned 1 stale track(s)
+[2025-09-15 14:44:25] [Label] Fired (grace delay) class=Beyti_Orange_235ml
+[2025-09-15 14:44:25] [Coordinator] label queued ts=1757936665742 pending_labels=1
+[2025-09-15 14:44:25] [Coordinator] pairing box_id=9 Δt=1733ms (box_ts=1757936664009 lbl_ts=1757936665742)
+[2025-09-15 14:44:25] [Coordinator] paired box_id=9; left B=2 L=0
+[2025-09-15 14:44:26] [Label] pruned 1 stale track(s)
+[2025-09-15 14:44:26] [Label] pruned 1 stale track(s)
+[2025-09-15 14:44:26] [Label] pruned 1 stale track(s)
+[2025-09-15 14:44:26] [Label] pruned 1 stale track(s)
+[2025-09-15 14:44:26] [Label] pruned 1 stale track(s)
+[2025-09-15 14:44:27] [Label] pruned 1 stale track(s)
+[2025-09-15 14:44:27] [Label] pruned 1 stale track(s)
+[2025-09-15 14:44:27] [Label] pruned 1 stale track(s)
+[2025-09-15 14:44:27] [Label] pruned 1 stale track(s)
+[2025-09-15 14:44:27] [Label] pruned 1 stale track(s)
+[2025-09-15 14:44:30] [Coordinator] box timeout box_id=10 waited=6003ms; finalizing without label
+[2025-09-15 14:44:30] [Coordinator] box timeout box_id=11 waited=6002ms; finalizing without label
+[2025-09-15 14:45:02] [Label] pruned 1 stale track(s)
+[2025-09-15 14:45:08] [Top Capture] stopped
+ed
+[2025-09-15 14:45:17] [Comm] AV cameras discovered: ['DEV_1AB22C00C5A5', 'DEV_1AB22C00C5A7']
+[2025-09-15 14:45:17] [Comm] pipeline started
+[2025-09-15 14:45:19] [Barcode] Using device: cpu
+[2025-09-15 14:45:19] [Top Capture] starting
+[2025-09-15 14:45:19] [Barcode Capture] starting
+[2025-09-15 14:45:19] [Coordinator] Loaded batch: Milk Batch.xlsx
+[2025-09-15 14:45:19] [Coordinator] started
+[2025-09-15 14:45:25] [Top] started
+[2025-09-15 14:45:25] [Barcode] started
+[2025-09-15 14:45:25] [Label] Loaded batch: Milk Batch.xlsx
+[2025-09-15 14:45:25] [Label] started
+[2025-09-15 14:45:30] [Barcode Capture] queued event_id=0
+[2025-09-15 14:45:30] [Barcode] event_id=0 decoded=6223000350010 box_id=0
+[2025-09-15 14:45:30] [Top] box queued event_id=0 box_id=0
+[2025-09-15 14:45:31] [Barcode Capture] queued event_id=1
+[2025-09-15 14:45:31] [Barcode] event_id=1 decoded=6222014330537 box_id=1
+[2025-09-15 14:45:31] [Top] box queued event_id=1 box_id=1
+[2025-09-15 14:45:31] [Barcode Capture] queued event_id=2
+[2025-09-15 14:45:31] [Barcode] event_id=2 decoded=6224001167423 box_id=2
+[2025-09-15 14:45:31] [Top] box queued event_id=2 box_id=2
+[2025-09-15 14:45:31] [Top Capture] queued event_id=0
+[2025-09-15 14:45:32] [Top] event_id=0 cap=False expire=False
+[2025-09-15 14:45:32] [Top] FORWARDED event_id=0 box_id=0 cap=False expire=False
+[2025-09-15 14:45:32] [Coordinator] box queued box_id=0 ts=1757936732148 pending_boxes=1
+[2025-09-15 14:45:32] [Barcode Capture] queued event_id=3
+[2025-09-15 14:45:32] [Top Capture] queued event_id=1
+[2025-09-15 14:45:32] [Barcode] event_id=3 decoded=6223001875246 box_id=3
+[2025-09-15 14:45:32] [Top] event_id=1 cap=False expire=True
+[2025-09-15 14:45:32] [Top] FORWARDED event_id=1 box_id=1 cap=False expire=True
+[2025-09-15 14:45:32] [Top] box queued event_id=3 box_id=3
+[2025-09-15 14:45:32] [Coordinator] box queued box_id=1 ts=1757936732597 pending_boxes=2
+[2025-09-15 14:45:32] [Barcode Capture] queued event_id=4
+[2025-09-15 14:45:32] [Barcode] event_id=4 decoded=6222014334337 box_id=4
+[2025-09-15 14:45:32] [Top Capture] queued event_id=2
+[2025-09-15 14:45:33] [Label] Fired (grace delay) class=Juhayna_Fullcream_235ml
+[2025-09-15 14:45:33] [Coordinator] label queued ts=1757936733044 pending_labels=1
+[2025-09-15 14:45:33] [Coordinator] pairing box_id=0 Δt=896ms (box_ts=1757936732148 lbl_ts=1757936733044)
+[2025-09-15 14:45:33] [Top] event_id=2 cap=False expire=True
+[2025-09-15 14:45:33] [Top] FORWARDED event_id=2 box_id=2 cap=False expire=True
+[2025-09-15 14:45:33] [Top] box queued event_id=4 box_id=4
+[2025-09-15 14:45:33] [Coordinator] paired box_id=0; left B=1 L=0
+[2025-09-15 14:45:33] [Coordinator] box queued box_id=2 ts=1757936733055 pending_boxes=2
+[2025-09-15 14:45:33] [Barcode Capture] queued event_id=5
+[2025-09-15 14:45:33] [Top Capture] queued event_id=3
+[2025-09-15 14:45:33] [Barcode] event_id=5 decoded=6223001875246 box_id=5
+[2025-09-15 14:45:33] [Top] event_id=3 cap=False expire=True
+[2025-09-15 14:45:33] [Top] FORWARDED event_id=3 box_id=3 cap=False expire=True
+[2025-09-15 14:45:33] [Top] box queued event_id=5 box_id=5
+[2025-09-15 14:45:33] [Coordinator] box queued box_id=3 ts=1757936733549 pending_boxes=3
+[2025-09-15 14:45:33] [Top Capture] queued event_id=4
+[2025-09-15 14:45:33] [Top] event_id=4 cap=False expire=False
+[2025-09-15 14:45:33] [Top] FORWARDED event_id=4 box_id=4 cap=False expire=False
+[2025-09-15 14:45:33] [Coordinator] box queued box_id=4 ts=1757936733990 pending_boxes=4
+[2025-09-15 14:45:33] [Label] Fired (grace delay) class=Suntop_Orange_250ml
+[2025-09-15 14:45:33] [Coordinator] label queued ts=1757936733995 pending_labels=1
+[2025-09-15 14:45:33] [Coordinator] pairing box_id=1 Δt=1398ms (box_ts=1757936732597 lbl_ts=1757936733995)
+[2025-09-15 14:45:33] [Coordinator] paired box_id=1; left B=3 L=0
+[2025-09-15 14:45:34] [Top Capture] queued event_id=5
+[2025-09-15 14:45:34] [Label] Fired (grace delay) class=Beyti_Orange_235ml
+[2025-09-15 14:45:34] [Coordinator] label queued ts=1757936734416 pending_labels=1
+[2025-09-15 14:45:34] [Coordinator] pairing box_id=2 Δt=1361ms (box_ts=1757936733055 lbl_ts=1757936734416)
+[2025-09-15 14:45:34] [Coordinator] paired box_id=2; left B=2 L=0
+[2025-09-15 14:45:34] [Top] event_id=5 cap=False expire=True
+[2025-09-15 14:45:34] [Top] FORWARDED event_id=5 box_id=5 cap=False expire=True
+[2025-09-15 14:45:34] [Coordinator] box queued box_id=5 ts=1757936734530 pending_boxes=3
+[2025-09-15 14:45:34] [Label] Fired (grace delay) class=Juhayna_Applepear_235ml
+[2025-09-15 14:45:34] [Label] pruned 1 stale track(s)
+[2025-09-15 14:45:34] [Coordinator] label queued ts=1757936734933 pending_labels=1
+[2025-09-15 14:45:34] [Coordinator] pairing box_id=3 Δt=1384ms (box_ts=1757936733549 lbl_ts=1757936734933)
+[2025-09-15 14:45:34] [Coordinator] paired box_id=3; left B=2 L=0
+[2025-09-15 14:45:35] [Label] pruned 1 stale track(s)
+[2025-09-15 14:45:35] [Label] pruned 1 stale track(s)
+[2025-09-15 14:45:35] [Label] pruned 1 stale track(s)
+[2025-09-15 14:45:35] [Label] pruned 1 stale track(s)
+[2025-09-15 14:45:36] [Label] pruned 1 stale track(s)
+[2025-09-15 14:45:36] [Label] pruned 1 stale track(s)
+[2025-09-15 14:45:36] [Label] pruned 1 stale track(s)
+[2025-09-15 14:45:36] [Label] pruned 1 stale track(s)
+[2025-09-15 14:45:36] [Label] pruned 1 stale track(s)
+[2025-09-15 14:45:37] [Label] pruned 1 stale track(s)
+[2025-09-15 14:45:37] [Label] pruned 1 stale track(s)
+[2025-09-15 14:45:37] [Label] pruned 1 stale track(s)
+[2025-09-15 14:45:39] [Coordinator] box timeout box_id=4 waited=6001ms; finalizing without label
+[2025-09-15 14:45:40] [Coordinator] box timeout box_id=5 waited=6004ms; finalizing without label
+[2025-09-15 14:46:09] [Comm] AV cameras discovered: ['DEV_1AB22C00C5A5', 'DEV_1AB22C00C5A7']
+[2025-09-15 14:46:09] [Comm] pipeline started
+[2025-09-15 14:46:11] [Barcode] Using device: cpu
+[2025-09-15 14:46:11] [Top Capture] starting
+[2025-09-15 14:46:11] [Barcode Capture] starting
+[2025-09-15 14:46:11] [Coordinator] Loaded batch: Milk Batch.xlsx
+[2025-09-15 14:46:11] [Coordinator] started
+[2025-09-15 14:46:17] [Top] started
+ed
+[2025-09-15 14:46:17] [Label] Loaded batch: Milk Batch.xlsx
+[2025-09-15 14:46:17] [Label] started
+[2025-09-15 14:46:24] [Barcode Capture] queued event_id=0
+[2025-09-15 14:46:24] [Barcode] event_id=0 decoded=6223000350010 box_id=0
+[2025-09-15 14:46:24] [Top] box queued event_id=0 box_id=0
+[2025-09-15 14:46:25] [Barcode Capture] queued event_id=1
+[2025-09-15 14:46:25] [Barcode] event_id=1 decoded=6222014330537 box_id=1
+[2025-09-15 14:46:25] [Top] box queued event_id=1 box_id=1
+[2025-09-15 14:46:25] [Barcode Capture] queued event_id=2
+[2025-09-15 14:46:25] [Barcode] event_id=2 decoded=6224001167423 box_id=2
+[2025-09-15 14:46:25] [Top] box queued event_id=2 box_id=2
+[2025-09-15 14:46:25] [Top Capture] queued event_id=0
+[2025-09-15 14:46:26] [Top] event_id=0 cap=False expire=False
+[2025-09-15 14:46:26] [Top] FORWARDED event_id=0 box_id=0 cap=False expire=False
+[2025-09-15 14:46:26] [Coordinator] box queued box_id=0 ts=1757936786011 pending_boxes=1
+[2025-09-15 14:46:26] [Barcode Capture] queued event_id=3
+[2025-09-15 14:46:26] [Top Capture] queued event_id=1
+[2025-09-15 14:46:26] [Barcode] event_id=3 decoded=6223001875246 box_id=3
+[2025-09-15 14:46:26] [Top] event_id=1 cap=False expire=True
+[2025-09-15 14:46:26] [Top] FORWARDED event_id=1 box_id=1 cap=False expire=True
+[2025-09-15 14:46:26] [Top] box queued event_id=3 box_id=3
+[2025-09-15 14:46:26] [Coordinator] box queued box_id=1 ts=1757936786436 pending_boxes=2
+[2025-09-15 14:46:26] [Barcode Capture] queued event_id=4
+[2025-09-15 14:46:26] [Top Capture] queued event_id=2
+[2025-09-15 14:46:26] [Barcode] event_id=4 decoded=6222014334337 box_id=4
+[2025-09-15 14:46:26] [Label] Fired (grace delay) class=Juhayna_Fullcream_1L
+[2025-09-15 14:46:26] [Coordinator] label queued ts=1757936786729 pending_labels=1
+[2025-09-15 14:46:26] [Coordinator] pairing box_id=0 Δt=718ms (box_ts=1757936786011 lbl_ts=1757936786729)
+[2025-09-15 14:46:26] [Coordinator] paired box_id=0; left B=1 L=0
+[2025-09-15 14:46:26] [Top] event_id=2 cap=False expire=True
+[2025-09-15 14:46:26] [Top] FORWARDED event_id=2 box_id=2 cap=False expire=True
+[2025-09-15 14:46:26] [Top] box queued event_id=4 box_id=4
+[2025-09-15 14:46:26] [Coordinator] box queued box_id=2 ts=1757936786898 pending_boxes=2
+[2025-09-15 14:46:26] [Label] Fired (grace delay) class=Juhayna_Fullcream_235ml
+[2025-09-15 14:46:26] [Coordinator] label queued ts=1757936786910 pending_labels=1
+[2025-09-15 14:46:26] [Coordinator] pairing box_id=1 Δt=474ms (box_ts=1757936786436 lbl_ts=1757936786910)
+[2025-09-15 14:46:26] [Coordinator] paired box_id=1; left B=1 L=0
+[2025-09-15 14:46:26] [Barcode Capture] queued event_id=5
+[2025-09-15 14:46:27] [Top Capture] queued event_id=3
+[2025-09-15 14:46:27] [Barcode] event_id=5 decoded=6223001875246 box_id=5
+[2025-09-15 14:46:27] [Label] Fired (grace delay) class=Juhayna_Orange_235ml
+[2025-09-15 14:46:27] [Coordinator] label queued ts=1757936787287 pending_labels=1
+[2025-09-15 14:46:27] [Coordinator] pairing box_id=2 Δt=389ms (box_ts=1757936786898 lbl_ts=1757936787287)
+[2025-09-15 14:46:27] [Coordinator] paired box_id=2; left B=0 L=0
+[2025-09-15 14:46:27] [Top] event_id=3 cap=False expire=True
+[2025-09-15 14:46:27] [Top] FORWARDED event_id=3 box_id=3 cap=False expire=True
+[2025-09-15 14:46:27] [Top] box queued event_id=5 box_id=5
+[2025-09-15 14:46:27] [Coordinator] box queued box_id=3 ts=1757936787376 pending_boxes=1
+[2025-09-15 14:46:27] [Top Capture] queued event_id=4
+[2025-09-15 14:46:27] [Top] event_id=4 cap=False expire=True
+[2025-09-15 14:46:27] [Top] FORWARDED event_id=4 box_id=4 cap=False expire=True
+[2025-09-15 14:46:27] [Coordinator] box queued box_id=4 ts=1757936787759 pending_boxes=2
+[2025-09-15 14:46:28] [Top Capture] queued event_id=5
+[2025-09-15 14:46:28] [Top] event_id=5 cap=False expire=True
+[2025-09-15 14:46:28] [Top] FORWARDED event_id=5 box_id=5 cap=False expire=True
+[2025-09-15 14:46:28] [Coordinator] box queued box_id=5 ts=1757936788244 pending_boxes=3
+[2025-09-15 14:46:28] [Label] Fired (grace delay) class=Beyti_Orange_235ml
+[2025-09-15 14:46:28] [Coordinator] label queued ts=1757936788305 pending_labels=1
+[2025-09-15 14:46:28] [Coordinator] pairing box_id=3 Δt=929ms (box_ts=1757936787376 lbl_ts=1757936788305)
+[2025-09-15 14:46:28] [Coordinator] paired box_id=3; left B=2 L=0
+[2025-09-15 14:46:28] [Label] pruned 1 stale track(s)
+[2025-09-15 14:46:28] [Label] Fired (grace delay) class=Juhayna_Applepear_235ml
+[2025-09-15 14:46:28] [Coordinator] label queued ts=1757936788682 pending_labels=1
+[2025-09-15 14:46:28] [Coordinator] pairing box_id=4 Δt=923ms (box_ts=1757936787759 lbl_ts=1757936788682)
+[2025-09-15 14:46:28] [Coordinator] paired box_id=4; left B=1 L=0
+[2025-09-15 14:46:28] [Label] pruned 1 stale track(s)
+[2025-09-15 14:46:29] [Label] Fired (grace delay) class=Beyti_Orange_235ml
+[2025-09-15 14:46:29] [Coordinator] label queued ts=1757936789040 pending_labels=1
+[2025-09-15 14:46:29] [Coordinator] pairing box_id=5 Δt=796ms (box_ts=1757936788244 lbl_ts=1757936789040)
+[2025-09-15 14:46:29] [Coordinator] paired box_id=5; left B=0 L=0
+[2025-09-15 14:46:29] [Label] pruned 1 stale track(s)
+[2025-09-15 14:46:29] [Label] pruned 1 stale track(s)
+[2025-09-15 14:46:29] [Label] pruned 1 stale track(s)
+[2025-09-15 14:46:30] [Label] pruned 1 stale track(s)
+[2025-09-15 14:46:30] [Label] pruned 1 stale track(s)
+[2025-09-15 14:46:30] [Label] pruned 1 stale track(s)
+[2025-09-15 14:46:30] [Label] pruned 1 stale track(s)
+[2025-09-15 14:46:31] [Label] pruned 1 stale track(s)
+[2025-09-15 14:46:52] [Barcode Capture] queued event_id=6
+[2025-09-15 14:46:52] [Barcode] event_id=6 decoded=6223000350010 box_id=6
+[2025-09-15 14:46:52] [Top] box queued event_id=6 box_id=6
+[2025-09-15 14:46:52] [Barcode Capture] queued event_id=7
+[2025-09-15 14:46:53] [Barcode] event_id=7 decoded=6222014330537 box_id=7
+[2025-09-15 14:46:53] [Top] box queued event_id=7 box_id=7
+[2025-09-15 14:46:53] [Barcode Capture] queued event_id=8
+[2025-09-15 14:46:54] [Barcode] event_id=8 decoded=6224001167423 box_id=8
+[2025-09-15 14:46:54] [Top] box queued event_id=8 box_id=8
+[2025-09-15 14:46:54] [Top Capture] queued event_id=6
+[2025-09-15 14:46:54] [Top] event_id=6 cap=False expire=False
+[2025-09-15 14:46:54] [Top] FORWARDED event_id=6 box_id=6 cap=False expire=False
+[2025-09-15 14:46:54] [Coordinator] box queued box_id=6 ts=1757936814450 pending_boxes=1
+[2025-09-15 14:46:54] [Barcode Capture] queued event_id=9
+[2025-09-15 14:46:54] [Barcode] event_id=9 decoded=6223001875246 box_id=9
+[2025-09-15 14:46:54] [Top] box queued event_id=9 box_id=9
+[2025-09-15 14:46:55] [Top Capture] queued event_id=7
+[2025-09-15 14:46:55] [Top] event_id=7 cap=False expire=True
+[2025-09-15 14:46:55] [Top] FORWARDED event_id=7 box_id=7 cap=False expire=True
+[2025-09-15 14:46:55] [Coordinator] box queued box_id=7 ts=1757936815237 pending_boxes=2
+[2025-09-15 14:46:55] [Barcode Capture] queued event_id=10
+[2025-09-15 14:46:55] [Barcode] event_id=10 decoded=6222014334337 box_id=10
+[2025-09-15 14:46:55] [Top] box queued event_id=10 box_id=10
+[2025-09-15 14:46:55] [Top Capture] queued event_id=8
+[2025-09-15 14:46:56] [Top] event_id=8 cap=False expire=True
+[2025-09-15 14:46:56] [Top] FORWARDED event_id=8 box_id=8 cap=False expire=True
+[2025-09-15 14:46:56] [Coordinator] box queued box_id=8 ts=1757936816109 pending_boxes=3
+[2025-09-15 14:46:56] [Label] Fired (band) class=Juhayna_Orange_1L size=235ml
+[2025-09-15 14:46:56] [Coordinator] label queued ts=1757936816213 pending_labels=1
+[2025-09-15 14:46:56] [Coordinator] pairing box_id=6 Δt=1763ms (box_ts=1757936814450 lbl_ts=1757936816213)
+[2025-09-15 14:46:56] [Coordinator] paired box_id=6; left B=2 L=0
+[2025-09-15 14:46:56] [Barcode Capture] queued event_id=11
+[2025-09-15 14:46:56] [Barcode] event_id=11 decoded=6223001875246 box_id=11
+[2025-09-15 14:46:56] [Top] box queued event_id=11 box_id=11
+[2025-09-15 14:46:56] [Top Capture] queued event_id=9
+[2025-09-15 14:46:56] [Top] event_id=9 cap=False expire=True
+[2025-09-15 14:46:56] [Top] FORWARDED event_id=9 box_id=9 cap=False expire=True
+[2025-09-15 14:46:56] [Coordinator] box queued box_id=9 ts=1757936816931 pending_boxes=3
+[2025-09-15 14:46:57] [Label] Fired (edge) class=Suntop_Orange_250ml size=235ml
+[2025-09-15 14:46:57] [Coordinator] label queued ts=1757936817205 pending_labels=1
+[2025-09-15 14:46:57] [Coordinator] pairing box_id=7 Δt=1968ms (box_ts=1757936815237 lbl_ts=1757936817205)
+[2025-09-15 14:46:57] [Coordinator] paired box_id=7; left B=2 L=0
+[2025-09-15 14:46:57] [Top Capture] queued event_id=10
+[2025-09-15 14:46:57] [Top] event_id=10 cap=False expire=True
+[2025-09-15 14:46:57] [Top] FORWARDED event_id=10 box_id=10 cap=False expire=True
+[2025-09-15 14:46:57] [Coordinator] box queued box_id=10 ts=1757936817778 pending_boxes=3
+[2025-09-15 14:46:57] [Label] pruned 1 stale track(s)
+[2025-09-15 14:46:58] [Label] pruned 1 stale track(s)
+[2025-09-15 14:46:58] [Label] Fired (edge) class=Beyti_Orange_235ml size=235ml
+[2025-09-15 14:46:58] [Coordinator] label queued ts=1757936818137 pending_labels=1
+[2025-09-15 14:46:58] [Coordinator] pairing box_id=8 Δt=2028ms (box_ts=1757936816109 lbl_ts=1757936818137)
+[2025-09-15 14:46:58] [Coordinator] paired box_id=8; left B=2 L=0
+[2025-09-15 14:46:58] [Label] pruned 1 stale track(s)
+[2025-09-15 14:46:58] [Top Capture] queued event_id=11
+[2025-09-15 14:46:58] [Top] event_id=11 cap=False expire=True
+[2025-09-15 14:46:58] [Top] FORWARDED event_id=11 box_id=11 cap=False expire=True
+[2025-09-15 14:46:58] [Coordinator] box queued box_id=11 ts=1757936818682 pending_boxes=3
+[2025-09-15 14:46:58] [Label] Fired (edge) class=Juhayna_Applepear_235ml size=235ml
+[2025-09-15 14:46:58] [Label] pruned 1 stale track(s)
+[2025-09-15 14:46:58] [Coordinator] label queued ts=1757936818913 pending_labels=1
+[2025-09-15 14:46:58] [Coordinator] pairing box_id=9 Δt=1982ms (box_ts=1757936816931 lbl_ts=1757936818913)
+[2025-09-15 14:46:58] [Coordinator] paired box_id=9; left B=2 L=0
+[2025-09-15 14:46:59] [Label] pruned 1 stale track(s)
+[2025-09-15 14:46:59] [Label] pruned 1 stale track(s)
+[2025-09-15 14:47:00] [Label] pruned 1 stale track(s)
+[2025-09-15 14:47:01] [Label] pruned 1 stale track(s)
+[2025-09-15 14:47:01] [Label] pruned 1 stale track(s)
+[2025-09-15 14:47:02] [Label] pruned 1 stale track(s)
+[2025-09-15 14:47:03] [Coordinator] box timeout box_id=10 waited=6005ms; finalizing without label
+[2025-09-15 14:47:04] [Coordinator] box timeout box_id=11 waited=6002ms; finalizing without label
+[2025-09-15 14:47:17] [Top Capture] stopped
+ed
+[2025-09-15 14:47:26] [Comm] AV cameras discovered: ['DEV_1AB22C00C5A5', 'DEV_1AB22C00C5A7']
+[2025-09-15 14:47:26] [Comm] pipeline started
+[2025-09-15 14:47:28] [Barcode] Using device: cpu
+[2025-09-15 14:47:28] [Top Capture] starting
+[2025-09-15 14:47:28] [Barcode Capture] starting
+[2025-09-15 14:47:28] [Coordinator] Loaded batch: Milk Batch.xlsx
+[2025-09-15 14:47:28] [Coordinator] started
+[2025-09-15 14:47:35] [Barcode] started
+[2025-09-15 14:47:35] [Top] started
+[2025-09-15 14:47:35] [Label] Loaded batch: Milk Batch.xlsx
+[2025-09-15 14:47:35] [Label] started
+[2025-09-15 14:47:37] [Barcode Capture] queued event_id=0
+[2025-09-15 14:47:37] [Barcode] event_id=0 decoded=6223000350010 box_id=0
+[2025-09-15 14:47:37] [Top] box queued event_id=0 box_id=0
+[2025-09-15 14:47:37] [Barcode Capture] queued event_id=1
+[2025-09-15 14:47:37] [Barcode] event_id=1 decoded=6222014330537 box_id=1
+[2025-09-15 14:47:37] [Top] box queued event_id=1 box_id=1
+[2025-09-15 14:47:38] [Barcode Capture] queued event_id=2
+[2025-09-15 14:47:38] [Barcode] event_id=2 decoded=6224001167423 box_id=2
+[2025-09-15 14:47:38] [Top] box queued event_id=2 box_id=2
+[2025-09-15 14:47:38] [Top Capture] queued event_id=0
+[2025-09-15 14:47:38] [Top] event_id=0 cap=False expire=True
+[2025-09-15 14:47:38] [Top] FORWARDED event_id=0 box_id=0 cap=False expire=True
+[2025-09-15 14:47:38] [Coordinator] box queued box_id=0 ts=1757936858958 pending_boxes=1
+[2025-09-15 14:47:39] [Barcode Capture] queued event_id=3
+[2025-09-15 14:47:39] [Barcode] event_id=3 decoded=6223001875246 box_id=3
+[2025-09-15 14:47:39] [Top] box queued event_id=3 box_id=3
+[2025-09-15 14:47:39] [Top Capture] queued event_id=1
+[2025-09-15 14:47:39] [Top] event_id=1 cap=False expire=True
+[2025-09-15 14:47:39] [Top] FORWARDED event_id=1 box_id=1 cap=False expire=True
+[2025-09-15 14:47:39] [Coordinator] box queued box_id=1 ts=1757936859501 pending_boxes=2
+[2025-09-15 14:47:39] [Barcode Capture] queued event_id=4
+[2025-09-15 14:47:39] [Label] Fired (grace delay) class=Juhayna_Fullcream_1L
+[2025-09-15 14:47:39] [Coordinator] label queued ts=1757936859802 pending_labels=1
+[2025-09-15 14:47:39] [Coordinator] pairing box_id=0 Δt=844ms (box_ts=1757936858958 lbl_ts=1757936859802)
+[2025-09-15 14:47:39] [Barcode] event_id=4 decoded=6222014334337 box_id=4
+[2025-09-15 14:47:39] [Coordinator] paired box_id=0; left B=1 L=0
+[2025-09-15 14:47:39] [Top] box queued event_id=4 box_id=4
+[2025-09-15 14:47:39] [Top Capture] queued event_id=2
+[2025-09-15 14:47:40] [Top] event_id=2 cap=False expire=True
+[2025-09-15 14:47:40] [Top] FORWARDED event_id=2 box_id=2 cap=False expire=True
+[2025-09-15 14:47:40] [Coordinator] box queued box_id=2 ts=1757936860105 pending_boxes=2
+[2025-09-15 14:47:40] [Barcode Capture] queued event_id=5
+[2025-09-15 14:47:40] [Barcode] event_id=5 decoded=6223001875246 box_id=5
+[2025-09-15 14:47:40] [Top] box queued event_id=5 box_id=5
+[2025-09-15 14:47:40] [Label] Fired (grace delay) class=Juhayna_Orange_235ml
+[2025-09-15 14:47:40] [Coordinator] label queued ts=1757936860456 pending_labels=1
+[2025-09-15 14:47:40] [Coordinator] pairing box_id=1 Δt=955ms (box_ts=1757936859501 lbl_ts=1757936860456)
+[2025-09-15 14:47:40] [Coordinator] paired box_id=1; left B=1 L=0
+[2025-09-15 14:47:40] [Top Capture] queued event_id=3
+[2025-09-15 14:47:40] [Top] event_id=3 cap=False expire=True
+[2025-09-15 14:47:40] [Top] FORWARDED event_id=3 box_id=3 cap=False expire=True
+[2025-09-15 14:47:40] [Coordinator] box queued box_id=3 ts=1757936860722 pending_boxes=2
+[2025-09-15 14:47:41] [Top Capture] queued event_id=4
+[2025-09-15 14:47:41] [Label] Fired (grace delay) class=Suntop_Orange_250ml
+[2025-09-15 14:47:41] [Coordinator] label queued ts=1757936861221 pending_labels=1
+[2025-09-15 14:47:41] [Coordinator] pairing box_id=2 Δt=1116ms (box_ts=1757936860105 lbl_ts=1757936861221)
+[2025-09-15 14:47:41] [Coordinator] paired box_id=2; left B=1 L=0
+[2025-09-15 14:47:41] [Top] event_id=4 cap=False expire=True
+[2025-09-15 14:47:41] [Top] FORWARDED event_id=4 box_id=4 cap=False expire=True
+[2025-09-15 14:47:41] [Coordinator] box queued box_id=4 ts=1757936861275 pending_boxes=2
+[2025-09-15 14:47:41] [Label] pruned 1 stale track(s)
+[2025-09-15 14:47:41] [Top Capture] queued event_id=5
+[2025-09-15 14:47:41] [Label] Fired (grace delay) class=Beyti_Orange_235ml
+[2025-09-15 14:47:41] [Coordinator] label queued ts=1757936861778 pending_labels=1
+[2025-09-15 14:47:41] [Coordinator] pairing box_id=3 Δt=1056ms (box_ts=1757936860722 lbl_ts=1757936861778)
+[2025-09-15 14:47:41] [Coordinator] paired box_id=3; left B=1 L=0
+[2025-09-15 14:47:41] [Top] event_id=5 cap=False expire=True
+[2025-09-15 14:47:41] [Top] FORWARDED event_id=5 box_id=5 cap=False expire=True
+[2025-09-15 14:47:41] [Coordinator] box queued box_id=5 ts=1757936861915 pending_boxes=2
+[2025-09-15 14:47:41] [Label] pruned 1 stale track(s)
+[2025-09-15 14:47:42] [Label] pruned 1 stale track(s)
+[2025-09-15 14:47:42] [Label] Fired (grace delay) class=Juhayna_Applepear_235ml
+[2025-09-15 14:47:42] [Label] pruned 1 stale track(s)
+[2025-09-15 14:47:42] [Coordinator] label queued ts=1757936862327 pending_labels=1
+[2025-09-15 14:47:42] [Coordinator] pairing box_id=4 Δt=1052ms (box_ts=1757936861275 lbl_ts=1757936862327)
+[2025-09-15 14:47:42] [Coordinator] paired box_id=4; left B=1 L=0
+[2025-09-15 14:47:42] [Label] pruned 1 stale track(s)
+[2025-09-15 14:47:42] [Label] Fired (grace delay) class=Beyti_Orange_235ml
+[2025-09-15 14:47:42] [Coordinator] label queued ts=1757936862832 pending_labels=1
+[2025-09-15 14:47:42] [Coordinator] pairing box_id=5 Δt=917ms (box_ts=1757936861915 lbl_ts=1757936862832)
+[2025-09-15 14:47:42] [Coordinator] paired box_id=5; left B=0 L=0
+[2025-09-15 14:47:42] [Label] pruned 1 stale track(s)
+[2025-09-15 14:47:43] [Label] pruned 1 stale track(s)
+[2025-09-15 14:47:44] [Label] pruned 1 stale track(s)
+[2025-09-15 14:47:44] [Label] pruned 1 stale track(s)
+[2025-09-15 14:47:44] [Label] pruned 1 stale track(s)
+[2025-09-15 14:47:44] [Label] pruned 1 stale track(s)
+[2025-09-15 14:47:44] [Label] pruned 1 stale track(s)
+[2025-09-15 14:47:44] [Label] pruned 1 stale track(s)
+[2025-09-15 14:47:45] [Label] pruned 1 stale track(s)
+[2025-09-15 14:48:00] [Barcode Capture] queued event_id=6
+[2025-09-15 14:48:00] [Barcode] event_id=6 decoded=6223000350010 box_id=6
+[2025-09-15 14:48:00] [Top] box queued event_id=6 box_id=6
+[2025-09-15 14:48:00] [Barcode Capture] queued event_id=7
+[2025-09-15 14:48:01] [Barcode] event_id=7 decoded=6222014330537 box_id=7
+[2025-09-15 14:48:01] [Top] box queued event_id=7 box_id=7
+[2025-09-15 14:48:01] [Barcode Capture] queued event_id=8
+[2025-09-15 14:48:01] [Barcode] event_id=8 decoded=6224001167423 box_id=8
+[2025-09-15 14:48:01] [Top] box queued event_id=8 box_id=8
+[2025-09-15 14:48:01] [Top Capture] queued event_id=6
+[2025-09-15 14:48:01] [Top] event_id=6 cap=False expire=False
+[2025-09-15 14:48:01] [Top] FORWARDED event_id=6 box_id=6 cap=False expire=False
+[2025-09-15 14:48:01] [Coordinator] box queued box_id=6 ts=1757936881937 pending_boxes=1
+[2025-09-15 14:48:01] [Barcode Capture] queued event_id=9
+[2025-09-15 14:48:02] [Top Capture] queued event_id=7
+[2025-09-15 14:48:02] [Barcode] event_id=9 decoded=6223001875246 box_id=9
+[2025-09-15 14:48:02] [Top] event_id=7 cap=False expire=True
+[2025-09-15 14:48:02] [Top] FORWARDED event_id=7 box_id=7 cap=False expire=True
+[2025-09-15 14:48:02] [Top] box queued event_id=9 box_id=9
+[2025-09-15 14:48:02] [Coordinator] box queued box_id=7 ts=1757936882388 pending_boxes=2
+[2025-09-15 14:48:02] [Barcode Capture] queued event_id=10
+[2025-09-15 14:48:02] [Barcode] event_id=10 decoded=6222014334337 box_id=10
+[2025-09-15 14:48:02] [Top] box queued event_id=10 box_id=10
+[2025-09-15 14:48:02] [Top Capture] queued event_id=8
+[2025-09-15 14:48:02] [Top] event_id=8 cap=False expire=True
+[2025-09-15 14:48:02] [Top] FORWARDED event_id=8 box_id=8 cap=False expire=True
+[2025-09-15 14:48:02] [Coordinator] box queued box_id=8 ts=1757936882907 pending_boxes=3
+[2025-09-15 14:48:02] [Barcode Capture] queued event_id=11
+[2025-09-15 14:48:03] [Top Capture] queued event_id=9
+[2025-09-15 14:48:03] [Barcode] event_id=11 decoded=6223001875246 box_id=11
+[2025-09-15 14:48:03] [Top] event_id=9 cap=False expire=True
+[2025-09-15 14:48:03] [Top] FORWARDED event_id=9 box_id=9 cap=False expire=True
+[2025-09-15 14:48:03] [Top] box queued event_id=11 box_id=11
+[2025-09-15 14:48:03] [Coordinator] box queued box_id=9 ts=1757936883364 pending_boxes=4
+[2025-09-15 14:48:03] [Top Capture] queued event_id=10
+[2025-09-15 14:48:03] [Label] Fired (grace delay) class=Suntop_Orange_250ml
+[2025-09-15 14:48:03] [Coordinator] label queued ts=1757936883791 pending_labels=1
+[2025-09-15 14:48:03] [Coordinator] pairing box_id=6 Δt=1854ms (box_ts=1757936881937 lbl_ts=1757936883791)
+[2025-09-15 14:48:03] [Coordinator] paired box_id=6; left B=3 L=0
+[2025-09-15 14:48:03] [Top] event_id=10 cap=False expire=True
+[2025-09-15 14:48:03] [Top] FORWARDED event_id=10 box_id=10 cap=False expire=True
+[2025-09-15 14:48:03] [Coordinator] box queued box_id=10 ts=1757936883847 pending_boxes=4
+[2025-09-15 14:48:04] [Top Capture] queued event_id=11
+[2025-09-15 14:48:04] [Top] event_id=11 cap=False expire=True
+[2025-09-15 14:48:04] [Top] FORWARDED event_id=11 box_id=11 cap=False expire=True
+[2025-09-15 14:48:04] [Coordinator] box queued box_id=11 ts=1757936884371 pending_boxes=5
+[2025-09-15 14:48:04] [Label] Fired (grace delay) class=Juhayna_Applepear_235ml
+[2025-09-15 14:48:04] [Coordinator] label queued ts=1757936884648 pending_labels=1
+[2025-09-15 14:48:04] [Coordinator] pairing box_id=7 Δt=2260ms (box_ts=1757936882388 lbl_ts=1757936884648)
+[2025-09-15 14:48:04] [Coordinator] paired box_id=7; left B=4 L=0
+[2025-09-15 14:48:04] [Label] Fired (grace delay) class=Juhayna_Applepear_235ml
+[2025-09-15 14:48:04] [Coordinator] label queued ts=1757936884771 pending_labels=1
+[2025-09-15 14:48:04] [Coordinator] pairing box_id=8 Δt=1864ms (box_ts=1757936882907 lbl_ts=1757936884771)
+[2025-09-15 14:48:04] [Coordinator] paired box_id=8; left B=3 L=0
+[2025-09-15 14:48:04] [Label] pruned 1 stale track(s)
+[2025-09-15 14:48:05] [Label] Fired (grace delay) class=Beyti_Orange_235ml
+[2025-09-15 14:48:05] [Coordinator] label queued ts=1757936885284 pending_labels=1
+[2025-09-15 14:48:05] [Coordinator] pairing box_id=9 Δt=1920ms (box_ts=1757936883364 lbl_ts=1757936885284)
+[2025-09-15 14:48:05] [Coordinator] paired box_id=9; left B=2 L=0
+[2025-09-15 14:48:05] [Label] pruned 1 stale track(s)
+[2025-09-15 14:48:05] [Label] pruned 1 stale track(s)
+[2025-09-15 14:48:05] [Label] pruned 1 stale track(s)
+[2025-09-15 14:48:06] [Label] pruned 1 stale track(s)
+[2025-09-15 14:48:06] [Label] pruned 1 stale track(s)
+[2025-09-15 14:48:06] [Label] pruned 1 stale track(s)
+[2025-09-15 14:48:06] [Label] pruned 1 stale track(s)
+[2025-09-15 14:48:07] [Label] pruned 1 stale track(s)
+[2025-09-15 14:48:07] [Label] pruned 1 stale track(s)
+[2025-09-15 14:48:09] [Coordinator] box timeout box_id=10 waited=6002ms; finalizing without label
+[2025-09-15 14:48:10] [Coordinator] box timeout box_id=11 waited=6005ms; finalizing without label
+[2025-09-15 14:48:53] [Comm] AV cameras discovered: ['DEV_1AB22C00C5A5', 'DEV_1AB22C00C5A7']
+[2025-09-15 14:48:53] [Comm] pipeline started
+[2025-09-15 14:48:55] [Barcode Capture] starting
+[2025-09-15 14:48:55] [Top Capture] starting
+[2025-09-15 14:48:55] [Barcode] Using device: cpu
+[2025-09-15 14:48:55] [Coordinator] Loaded batch: Milk Batch.xlsx
+[2025-09-15 14:48:55] [Coordinator] started
+[2025-09-15 14:49:01] [Barcode] started
+[2025-09-15 14:49:01] [Label] Loaded batch: Milk Batch.xlsx
+[2025-09-15 14:49:01] [Label] started
+[2025-09-15 14:49:09] [Barcode Capture] queued event_id=0
+[2025-09-15 14:49:09] [Barcode] event_id=0 decoded=6223000350010 box_id=0
+[2025-09-15 14:49:09] [Top] box queued event_id=0 box_id=0
+[2025-09-15 14:49:09] [Barcode Capture] queued event_id=1
+[2025-09-15 14:49:10] [Barcode] event_id=1 decoded=6222014330537 box_id=1
+[2025-09-15 14:49:10] [Top] box queued event_id=1 box_id=1
+[2025-09-15 14:49:10] [Barcode Capture] queued event_id=2
+[2025-09-15 14:49:10] [Barcode] event_id=2 decoded=6224001167423 box_id=2
+[2025-09-15 14:49:10] [Top] box queued event_id=2 box_id=2
+[2025-09-15 14:49:10] [Top Capture] queued event_id=0
+[2025-09-15 14:49:10] [Top] event_id=0 cap=False expire=False
+[2025-09-15 14:49:10] [Top] FORWARDED event_id=0 box_id=0 cap=False expire=False
+[2025-09-15 14:49:10] [Coordinator] box queued box_id=0 ts=1757936950881 pending_boxes=1
+[2025-09-15 14:49:10] [Barcode Capture] queued event_id=3
+[2025-09-15 14:49:11] [Barcode] event_id=3 decoded=6223001875246 box_id=3
+[2025-09-15 14:49:11] [Top] box queued event_id=3 box_id=3
+[2025-09-15 14:49:11] [Top Capture] queued event_id=1
+[2025-09-15 14:49:11] [Top] event_id=1 cap=False expire=True
+[2025-09-15 14:49:11] [Top] FORWARDED event_id=1 box_id=1 cap=False expire=True
+[2025-09-15 14:49:11] [Coordinator] box queued box_id=1 ts=1757936951335 pending_boxes=2
+[2025-09-15 14:49:11] [Barcode Capture] queued event_id=4
+[2025-09-15 14:49:11] [Barcode] event_id=4 decoded=6222014334337 box_id=4
+[2025-09-15 14:49:11] [Top] box queued event_id=4 box_id=4
+[2025-09-15 14:49:11] [Top Capture] queued event_id=2
+[2025-09-15 14:49:11] [Top] event_id=2 cap=False expire=True
+[2025-09-15 14:49:11] [Top] FORWARDED event_id=2 box_id=2 cap=False expire=True
+[2025-09-15 14:49:11] [Coordinator] box queued box_id=2 ts=1757936951900 pending_boxes=3
+[2025-09-15 14:49:12] [Barcode Capture] queued event_id=5
+[2025-09-15 14:49:12] [Barcode] event_id=5 decoded=6223001875246 box_id=5
+[2025-09-15 14:49:12] [Top] box queued event_id=5 box_id=5
+[2025-09-15 14:49:12] [Top Capture] queued event_id=3
+[2025-09-15 14:49:12] [Label] Fired (grace delay) class=Juhayna_Orange_235ml
+[2025-09-15 14:49:12] [Coordinator] label queued ts=1757936952354 pending_labels=1
+[2025-09-15 14:49:12] [Coordinator] pairing box_id=0 Δt=1473ms (box_ts=1757936950881 lbl_ts=1757936952354)
+[2025-09-15 14:49:12] [Coordinator] paired box_id=0; left B=2 L=0
+[2025-09-15 14:49:12] [Top] event_id=3 cap=False expire=True
+[2025-09-15 14:49:12] [Top] FORWARDED event_id=3 box_id=3 cap=False expire=True
+[2025-09-15 14:49:12] [Coordinator] box queued box_id=3 ts=1757936952441 pending_boxes=3
+[2025-09-15 14:49:12] [Top Capture] queued event_id=4
+[2025-09-15 14:49:12] [Label] Fired (grace delay) class=Suntop_Orange_250ml
+[2025-09-15 14:49:12] [Coordinator] label queued ts=1757936952898 pending_labels=1
+[2025-09-15 14:49:12] [Coordinator] pairing box_id=1 Δt=1563ms (box_ts=1757936951335 lbl_ts=1757936952898)
+[2025-09-15 14:49:12] [Coordinator] paired box_id=1; left B=2 L=0
+[2025-09-15 14:49:12] [Top] event_id=4 cap=False expire=True
+[2025-09-15 14:49:12] [Top] FORWARDED event_id=4 box_id=4 cap=False expire=True
+[2025-09-15 14:49:12] [Coordinator] box queued box_id=4 ts=1757936952947 pending_boxes=3
+[2025-09-15 14:49:13] [Top Capture] queued event_id=5
+[2025-09-15 14:49:13] [Label] Fired (grace delay) class=Beyti_Orange_235ml
+[2025-09-15 14:49:13] [Coordinator] label queued ts=1757936953449 pending_labels=1
+[2025-09-15 14:49:13] [Coordinator] pairing box_id=2 Δt=1549ms (box_ts=1757936951900 lbl_ts=1757936953449)
+[2025-09-15 14:49:13] [Coordinator] paired box_id=2; left B=2 L=0
+[2025-09-15 14:49:13] [Top] event_id=5 cap=False expire=True
+[2025-09-15 14:49:13] [Top] FORWARDED event_id=5 box_id=5 cap=False expire=True
+[2025-09-15 14:49:13] [Coordinator] box queued box_id=5 ts=1757936953526 pending_boxes=3
+[2025-09-15 14:49:13] [Label] Fired (grace delay) class=Juhayna_Applepear_235ml
+[2025-09-15 14:49:13] [Coordinator] label queued ts=1757936953850 pending_labels=1
+[2025-09-15 14:49:13] [Coordinator] pairing box_id=3 Δt=1409ms (box_ts=1757936952441 lbl_ts=1757936953850)
+[2025-09-15 14:49:13] [Coordinator] paired box_id=3; left B=2 L=0
+[2025-09-15 14:49:13] [Label] Fired (grace delay) class=Juhayna_Applepear_235ml
+[2025-09-15 14:49:13] [Coordinator] label queued ts=1757936953972 pending_labels=1
+[2025-09-15 14:49:13] [Coordinator] pairing box_id=4 Δt=1025ms (box_ts=1757936952947 lbl_ts=1757936953972)
+[2025-09-15 14:49:13] [Coordinator] paired box_id=4; left B=1 L=0
+[2025-09-15 14:49:14] [Label] pruned 1 stale track(s)
+[2025-09-15 14:49:14] [Label] pruned 1 stale track(s)
+[2025-09-15 14:49:14] [Label] pruned 1 stale track(s)
+[2025-09-15 14:49:14] [Label] pruned 1 stale track(s)
+[2025-09-15 14:49:15] [Barcode Capture] queued event_id=6
+[2025-09-15 14:49:15] [Barcode] event_id=6 decoded=6223000350010 box_id=6
+[2025-09-15 14:49:15] [Top] box queued event_id=6 box_id=6
+[2025-09-15 14:49:15] [Label] pruned 1 stale track(s)
+[2025-09-15 14:49:15] [Label] pruned 1 stale track(s)
+[2025-09-15 14:49:15] [Barcode Capture] queued event_id=7
+[2025-09-15 14:49:15] [Label] pruned 1 stale track(s)
+[2025-09-15 14:49:16] [Barcode] event_id=7 decoded=6222014330537 box_id=7
+[2025-09-15 14:49:16] [Top] box queued event_id=7 box_id=7
+[2025-09-15 14:49:16] [Label] pruned 1 stale track(s)
+[2025-09-15 14:49:16] [Label] pruned 1 stale track(s)
+[2025-09-15 14:49:16] [Barcode Capture] queued event_id=8
+[2025-09-15 14:49:16] [Label] pruned 1 stale track(s)
+[2025-09-15 14:49:16] [Barcode] event_id=8 decoded=6224001167423 box_id=8
+[2025-09-15 14:49:16] [Top] box queued event_id=8 box_id=8
+[2025-09-15 14:49:16] [Top Capture] queued event_id=6
+[2025-09-15 14:49:16] [Top] event_id=6 cap=False expire=False
+[2025-09-15 14:49:16] [Top] FORWARDED event_id=6 box_id=6 cap=False expire=False
+[2025-09-15 14:49:16] [Coordinator] box queued box_id=6 ts=1757936956880 pending_boxes=2
+[2025-09-15 14:49:16] [Barcode Capture] queued event_id=9
+[2025-09-15 14:49:17] [Barcode] event_id=9 decoded=6223001875246 box_id=9
+[2025-09-15 14:49:17] [Top] box queued event_id=9 box_id=9
+[2025-09-15 14:49:17] [Top Capture] queued event_id=7
+[2025-09-15 14:49:17] [Top] event_id=7 cap=False expire=True
+[2025-09-15 14:49:17] [Top] FORWARDED event_id=7 box_id=7 cap=False expire=True
+[2025-09-15 14:49:17] [Coordinator] box queued box_id=7 ts=1757936957411 pending_boxes=3
+[2025-09-15 14:49:17] [Barcode Capture] queued event_id=10
+[2025-09-15 14:49:17] [Barcode] event_id=10 decoded=6222014334337 box_id=10
+[2025-09-15 14:49:17] [Top] box queued event_id=10 box_id=10
+[2025-09-15 14:49:17] [Top Capture] queued event_id=8
+[2025-09-15 14:49:17] [Label] Fired (grace delay) class=Juhayna_Fullcream_235ml
+[2025-09-15 14:49:17] [Coordinator] label queued ts=1757936957818 pending_labels=1
+[2025-09-15 14:49:17] [Coordinator] pairing box_id=6 Δt=938ms (box_ts=1757936956880 lbl_ts=1757936957818)
+[2025-09-15 14:49:17] [Coordinator] paired box_id=6; left B=2 L=0
+[2025-09-15 14:49:17] [Top] event_id=8 cap=False expire=True
+[2025-09-15 14:49:17] [Top] FORWARDED event_id=8 box_id=8 cap=False expire=True
+[2025-09-15 14:49:17] [Coordinator] box queued box_id=8 ts=1757936957952 pending_boxes=3
+[2025-09-15 14:49:18] [Barcode Capture] queued event_id=11
+[2025-09-15 14:49:18] [Barcode] event_id=11 decoded=6223001875246 box_id=11
+[2025-09-15 14:49:18] [Top] box queued event_id=11 box_id=11
+[2025-09-15 14:49:18] [Top Capture] queued event_id=9
+[2025-09-15 14:49:18] [Top] event_id=9 cap=False expire=True
+[2025-09-15 14:49:18] [Top] FORWARDED event_id=9 box_id=9 cap=False expire=True
+[2025-09-15 14:49:18] [Coordinator] box queued box_id=9 ts=1757936958485 pending_boxes=4
+[2025-09-15 14:49:18] [Top Capture] queued event_id=10
+[2025-09-15 14:49:18] [Label] Fired (grace delay) class=Suntop_Orange_250ml
+[2025-09-15 14:49:18] [Coordinator] label queued ts=1757936958904 pending_labels=1
+[2025-09-15 14:49:18] [Coordinator] pairing box_id=7 Δt=1493ms (box_ts=1757936957411 lbl_ts=1757936958904)
+[2025-09-15 14:49:18] [Coordinator] paired box_id=7; left B=3 L=0
+[2025-09-15 14:49:18] [Top] event_id=10 cap=False expire=True
+[2025-09-15 14:49:18] [Top] FORWARDED event_id=10 box_id=10 cap=False expire=True
+[2025-09-15 14:49:18] [Coordinator] box queued box_id=10 ts=1757936958993 pending_boxes=4
+[2025-09-15 14:49:19] [Top Capture] queued event_id=11
+[2025-09-15 14:49:19] [Label] Fired (grace delay) class=Beyti_Orange_235ml
+[2025-09-15 14:49:19] [Coordinator] label queued ts=1757936959451 pending_labels=1
+[2025-09-15 14:49:19] [Coordinator] pairing box_id=8 Δt=1499ms (box_ts=1757936957952 lbl_ts=1757936959451)
+[2025-09-15 14:49:19] [Coordinator] paired box_id=8; left B=3 L=0
+[2025-09-15 14:49:19] [Coordinator] box timeout box_id=5 waited=6000ms; finalizing without label
+[2025-09-15 14:49:19] [Top] event_id=11 cap=False expire=True
+[2025-09-15 14:49:19] [Top] FORWARDED event_id=11 box_id=11 cap=False expire=True
+[2025-09-15 14:49:19] [Coordinator] box queued box_id=11 ts=1757936959571 pending_boxes=3
+[2025-09-15 14:49:19] [Label] pruned 1 stale track(s)
+[2025-09-15 14:49:19] [Label] Fired (grace delay) class=Juhayna_Applepear_235ml
+[2025-09-15 14:49:19] [Label] pruned 1 stale track(s)
+[2025-09-15 14:49:19] [Coordinator] label queued ts=1757936959857 pending_labels=1
+[2025-09-15 14:49:19] [Coordinator] pairing box_id=9 Δt=1372ms (box_ts=1757936958485 lbl_ts=1757936959857)
+[2025-09-15 14:49:19] [Coordinator] paired box_id=9; left B=2 L=0
+[2025-09-15 14:49:19] [Label] Fired (grace delay) class=Juhayna_Applepear_235ml
+[2025-09-15 14:49:19] [Coordinator] label queued ts=1757936959985 pending_labels=1
+[2025-09-15 14:49:19] [Coordinator] pairing box_id=10 Δt=992ms (box_ts=1757936958993 lbl_ts=1757936959985)
+[2025-09-15 14:49:19] [Coordinator] paired box_id=10; left B=1 L=0
+[2025-09-15 14:49:20] [Label] pruned 1 stale track(s)
+[2025-09-15 14:49:20] [Label] pruned 1 stale track(s)
+[2025-09-15 14:49:20] [Label] pruned 1 stale track(s)
+[2025-09-15 14:49:20] [Label] pruned 1 stale track(s)
+[2025-09-15 14:49:21] [Label] pruned 1 stale track(s)
+[2025-09-15 14:49:21] [Label] pruned 1 stale track(s)
+[2025-09-15 14:49:21] [Label] pruned 1 stale track(s)
+[2025-09-15 14:49:22] [Label] pruned 1 stale track(s)
+[2025-09-15 14:49:22] [Label] pruned 1 stale track(s)
+[2025-09-15 14:49:22] [Label] pruned 1 stale track(s)
+[2025-09-15 14:49:22] [Label] pruned 1 stale track(s)
+[2025-09-15 14:49:25] [Coordinator] box timeout box_id=11 waited=6002ms; finalizing without label
+[2025-09-15 14:50:47] [Comm] AV cameras discovered: ['DEV_1AB22C00C5A5', 'DEV_1AB22C00C5A7']
+[2025-09-15 14:50:47] [Comm] pipeline started
+[2025-09-15 14:50:49] [Barcode] Using device: cpu
+[2025-09-15 14:50:49] [Barcode Capture] starting
+[2025-09-15 14:50:49] [Top Capture] starting
+[2025-09-15 14:50:49] [Coordinator] Loaded batch: Milk Batch.xlsx
+[2025-09-15 14:50:49] [Coordinator] started
+[2025-09-15 14:50:56] [Top] started
+ed
+[2025-09-15 14:50:56] [Label] Loaded batch: Milk Batch.xlsx
+[2025-09-15 14:50:56] [Label] started
+[2025-09-15 14:51:02] [Barcode Capture] queued event_id=0
+[2025-09-15 14:51:02] [Barcode] event_id=0 decoded=6223000350010 box_id=0
+[2025-09-15 14:51:02] [Top] box queued event_id=0 box_id=0
+[2025-09-15 14:51:03] [Barcode Capture] queued event_id=1
+[2025-09-15 14:51:03] [Barcode] event_id=1 decoded=6222014330537 box_id=1
+[2025-09-15 14:51:03] [Top] box queued event_id=1 box_id=1
+[2025-09-15 14:51:03] [Barcode Capture] queued event_id=2
+[2025-09-15 14:51:03] [Barcode] event_id=2 decoded=6224001167423 box_id=2
+[2025-09-15 14:51:03] [Top] box queued event_id=2 box_id=2
+[2025-09-15 14:51:03] [Top Capture] queued event_id=0
+[2025-09-15 14:51:04] [Top] event_id=0 cap=False expire=False
+[2025-09-15 14:51:04] [Top] FORWARDED event_id=0 box_id=0 cap=False expire=False
+[2025-09-15 14:51:04] [Coordinator] box queued box_id=0 ts=1757937064137 pending_boxes=1
+[2025-09-15 14:51:04] [Barcode Capture] queued event_id=3
+[2025-09-15 14:51:04] [Barcode] event_id=3 decoded=6223001875246 box_id=3
+[2025-09-15 14:51:04] [Top] box queued event_id=3 box_id=3
+[2025-09-15 14:51:04] [Top Capture] queued event_id=1
+[2025-09-15 14:51:04] [Top] event_id=1 cap=False expire=True
+[2025-09-15 14:51:04] [Top] FORWARDED event_id=1 box_id=1 cap=False expire=True
+[2025-09-15 14:51:04] [Coordinator] box queued box_id=1 ts=1757937064660 pending_boxes=2
+[2025-09-15 14:51:04] [Barcode Capture] queued event_id=4
+[2025-09-15 14:51:04] [Label] Fired (grace delay) class=Juhayna_Fullcream_1L
+[2025-09-15 14:51:04] [Coordinator] label queued ts=1757937064953 pending_labels=1
+[2025-09-15 14:51:04] [Coordinator] pairing box_id=0 Δt=816ms (box_ts=1757937064137 lbl_ts=1757937064953)
+[2025-09-15 14:51:04] [Coordinator] paired box_id=0; left B=1 L=0
+[2025-09-15 14:51:04] [Barcode] event_id=4 decoded=6222014334337 box_id=4
+[2025-09-15 14:51:04] [Top] box queued event_id=4 box_id=4
+[2025-09-15 14:51:05] [Top Capture] queued event_id=2
+[2025-09-15 14:51:05] [Top] event_id=2 cap=False expire=True
+[2025-09-15 14:51:05] [Top] FORWARDED event_id=2 box_id=2 cap=False expire=True
+[2025-09-15 14:51:05] [Coordinator] box queued box_id=2 ts=1757937065254 pending_boxes=2
+[2025-09-15 14:51:05] [Barcode Capture] queued event_id=5
+[2025-09-15 14:51:05] [Barcode] event_id=5 decoded=6223001875246 box_id=5
+[2025-09-15 14:51:05] [Top] box queued event_id=5 box_id=5
+[2025-09-15 14:51:05] [Top Capture] queued event_id=3
+[2025-09-15 14:51:05] [Top] event_id=3 cap=False expire=True
+[2025-09-15 14:51:05] [Top] FORWARDED event_id=3 box_id=3 cap=False expire=True
+[2025-09-15 14:51:05] [Coordinator] box queued box_id=3 ts=1757937065832 pending_boxes=3
+[2025-09-15 14:51:06] [Top Capture] queued event_id=4
+[2025-09-15 14:51:06] [Label] Fired (grace delay) class=Suntop_Orange_250ml
+[2025-09-15 14:51:06] [Coordinator] label queued ts=1757937066300 pending_labels=1
+[2025-09-15 14:51:06] [Coordinator] pairing box_id=1 Δt=1640ms (box_ts=1757937064660 lbl_ts=1757937066300)
+[2025-09-15 14:51:06] [Coordinator] paired box_id=1; left B=2 L=0
+[2025-09-15 14:51:06] [Top] event_id=4 cap=False expire=True
+[2025-09-15 14:51:06] [Top] FORWARDED event_id=4 box_id=4 cap=False expire=True
+[2025-09-15 14:51:06] [Coordinator] box queued box_id=4 ts=1757937066397 pending_boxes=3
+[2025-09-15 14:51:06] [Top Capture] queued event_id=5
+[2025-09-15 14:51:06] [Label] Fired (grace delay) class=Beyti_Orange_235ml
+[2025-09-15 14:51:06] [Label] pruned 1 stale track(s)
+[2025-09-15 14:51:06] [Coordinator] label queued ts=1757937066825 pending_labels=1
+[2025-09-15 14:51:06] [Coordinator] pairing box_id=2 Δt=1571ms (box_ts=1757937065254 lbl_ts=1757937066825)
+[2025-09-15 14:51:06] [Coordinator] paired box_id=2; left B=2 L=0
+[2025-09-15 14:51:07] [Top] event_id=5 cap=False expire=True
+[2025-09-15 14:51:07] [Top] FORWARDED event_id=5 box_id=5 cap=False expire=True
+[2025-09-15 14:51:07] [Coordinator] box queued box_id=5 ts=1757937067008 pending_boxes=3
+[2025-09-15 14:51:07] [Label] pruned 1 stale track(s)
+[2025-09-15 14:51:07] [Label] Fired (grace delay) class=Juhayna_Applepear_235ml
+[2025-09-15 14:51:07] [Label] pruned 1 stale track(s)
+[2025-09-15 14:51:07] [Coordinator] label queued ts=1757937067364 pending_labels=1
+[2025-09-15 14:51:07] [Coordinator] pairing box_id=3 Δt=1532ms (box_ts=1757937065832 lbl_ts=1757937067364)
+[2025-09-15 14:51:07] [Coordinator] paired box_id=3; left B=2 L=0
+[2025-09-15 14:51:07] [Label] pruned 1 stale track(s)
+[2025-09-15 14:51:08] [Label] pruned 1 stale track(s)
+[2025-09-15 14:51:08] [Label] pruned 1 stale track(s)
+[2025-09-15 14:51:08] [Label] pruned 1 stale track(s)
+[2025-09-15 14:51:09] [Label] pruned 1 stale track(s)
+[2025-09-15 14:51:09] [Label] pruned 2 stale track(s)
+[2025-09-15 14:51:09] [Label] pruned 2 stale track(s)
+[2025-09-15 14:51:12] [Coordinator] box timeout box_id=4 waited=6000ms; finalizing without label
+[2025-09-15 14:51:13] [Coordinator] box timeout box_id=5 waited=6000ms; finalizing without label
+[2025-09-15 14:51:38] [Comm] AV cameras discovered: ['DEV_1AB22C00C5A5', 'DEV_1AB22C00C5A7']
+[2025-09-15 14:51:38] [Comm] pipeline started
+[2025-09-15 14:51:40] [Barcode Capture] starting
+[2025-09-15 14:51:40] [Top Capture] starting
+[2025-09-15 14:51:40] [Barcode] Using device: cpu
+[2025-09-15 14:51:40] [Coordinator] Loaded batch: Milk Batch.xlsx
+[2025-09-15 14:51:40] [Coordinator] started
+[2025-09-15 14:51:47] [Barcode] started
+[2025-09-15 14:51:47] [Label] Loaded batch: Milk Batch.xlsx
+[2025-09-15 14:51:47] [Label] started
+[2025-09-15 14:53:02] [Barcode Capture] queued event_id=0
+[2025-09-15 14:53:02] [Barcode] event_id=0 decoded=6223000350010 box_id=0
+[2025-09-15 14:53:02] [Top] box queued event_id=0 box_id=0
+[2025-09-15 14:53:02] [Barcode Capture] queued event_id=1
+[2025-09-15 14:53:03] [Barcode] event_id=1 decoded=6222014330537 box_id=1
+[2025-09-15 14:53:03] [Top] box queued event_id=1 box_id=1
+[2025-09-15 14:53:03] [Barcode Capture] queued event_id=2
+[2025-09-15 14:53:03] [Barcode] event_id=2 decoded=6224001167423 box_id=2
+[2025-09-15 14:53:03] [Top] box queued event_id=2 box_id=2
+[2025-09-15 14:53:03] [Top Capture] queued event_id=0
+[2025-09-15 14:53:04] [Top] event_id=0 cap=False expire=False
+[2025-09-15 14:53:04] [Top] FORWARDED event_id=0 box_id=0 cap=False expire=False
+[2025-09-15 14:53:04] [Coordinator] box queued box_id=0 ts=1757937184048 pending_boxes=1
+[2025-09-15 14:53:04] [Barcode Capture] queued event_id=3
+[2025-09-15 14:53:04] [Barcode] event_id=3 decoded=6223001875246 box_id=3
+[2025-09-15 14:53:04] [Top] box queued event_id=3 box_id=3
+[2025-09-15 14:53:04] [Top Capture] queued event_id=1
+[2025-09-15 14:53:04] [Top] event_id=1 cap=False expire=True
+[2025-09-15 14:53:04] [Top] FORWARDED event_id=1 box_id=1 cap=False expire=True
+[2025-09-15 14:53:04] [Coordinator] box queued box_id=1 ts=1757937184516 pending_boxes=2
+[2025-09-15 14:53:04] [Barcode Capture] queued event_id=4
+[2025-09-15 14:53:04] [Barcode] event_id=4 decoded=6222014334337 box_id=4
+[2025-09-15 14:53:04] [Top] box queued event_id=4 box_id=4
+[2025-09-15 14:53:04] [Top Capture] queued event_id=2
+[2025-09-15 14:53:05] [Top] event_id=2 cap=False expire=True
+[2025-09-15 14:53:05] [Top] FORWARDED event_id=2 box_id=2 cap=False expire=True
+[2025-09-15 14:53:05] [Coordinator] box queued box_id=2 ts=1757937185035 pending_boxes=3
+[2025-09-15 14:53:05] [Barcode Capture] queued event_id=5
+[2025-09-15 14:53:05] [Top Capture] queued event_id=3
+[2025-09-15 14:53:05] [Barcode] event_id=5 decoded=6223001875246 box_id=5
+[2025-09-15 14:53:05] [Top] event_id=3 cap=False expire=True
+[2025-09-15 14:53:05] [Top] FORWARDED event_id=3 box_id=3 cap=False expire=True
+[2025-09-15 14:53:05] [Top] box queued event_id=5 box_id=5
+[2025-09-15 14:53:05] [Coordinator] box queued box_id=3 ts=1757937185568 pending_boxes=4
+[2025-09-15 14:53:05] [Top Capture] queued event_id=4
+[2025-09-15 14:53:06] [Label] Fired (grace delay) class=Suntop_Orange_250ml
+[2025-09-15 14:53:06] [Coordinator] label queued ts=1757937186052 pending_labels=1
+[2025-09-15 14:53:06] [Coordinator] pairing box_id=0 Δt=2004ms (box_ts=1757937184048 lbl_ts=1757937186052)
+[2025-09-15 14:53:06] [Coordinator] paired box_id=0; left B=3 L=0
+[2025-09-15 14:53:06] [Top] event_id=4 cap=False expire=True
+[2025-09-15 14:53:06] [Top] FORWARDED event_id=4 box_id=4 cap=False expire=True
+[2025-09-15 14:53:06] [Coordinator] box queued box_id=4 ts=1757937186107 pending_boxes=4
+[2025-09-15 14:53:06] [Top Capture] queued event_id=5
+[2025-09-15 14:53:06] [Label] Fired (grace delay) class=Beyti_Orange_235ml
+bels=1
+[2025-09-15 14:53:06] [Coordinator] pairing box_id=1 Δt=1981ms (box_ts=1757937184516 lbl_ts=1757937186497)
+[2025-09-15 14:53:06] [Coordinator] paired box_id=1; left B=3 L=0
+[2025-09-15 14:53:06] [Top] event_id=5 cap=False expire=True
+[2025-09-15 14:53:06] [Top] FORWARDED event_id=5 box_id=5 cap=False expire=True
+[2025-09-15 14:53:06] [Coordinator] box queued box_id=5 ts=1757937186652 pending_boxes=4
+[2025-09-15 14:53:07] [Label] Fired (grace delay) class=Juhayna_Applepear_235ml
+1
+[2025-09-15 14:53:07] [Label] pruned 1 stale track(s)
+[2025-09-15 14:53:07] [Coordinator] pairing box_id=2 Δt=2062ms (box_ts=1757937185035 lbl_ts=1757937187097)
+[2025-09-15 14:53:07] [Coordinator] paired box_id=2; left B=3 L=0
+[2025-09-15 14:53:07] [Label] pruned 1 stale track(s)
+[2025-09-15 14:53:07] [Label] pruned 1 stale track(s)
+[2025-09-15 14:53:08] [Label] pruned 1 stale track(s)
+[2025-09-15 14:53:08] [Barcode Capture] queued event_id=6
+[2025-09-15 14:53:08] [Barcode] event_id=6 decoded=6223000350010 box_id=6
+[2025-09-15 14:53:08] [Top] box queued event_id=6 box_id=6
+[2025-09-15 14:53:08] [Label] pruned 1 stale track(s)
+[2025-09-15 14:53:09] [Barcode Capture] queued event_id=7
+[2025-09-15 14:53:09] [Label] pruned 1 stale track(s)
+[2025-09-15 14:53:09] [Barcode] event_id=7 decoded=6222014330537 box_id=7
+[2025-09-15 14:53:09] [Top] box queued event_id=7 box_id=7
+[2025-09-15 14:53:09] [Label] pruned 1 stale track(s)
+[2025-09-15 14:53:09] [Label] pruned 1 stale track(s)
+[2025-09-15 14:53:09] [Barcode Capture] queued event_id=8
+[2025-09-15 14:53:09] [Label] pruned 1 stale track(s)
+[2025-09-15 14:53:09] [Barcode] event_id=8 decoded=6224001167423 box_id=8
+[2025-09-15 14:53:09] [Top] box queued event_id=8 box_id=8
+[2025-09-15 14:53:09] [Top Capture] queued event_id=6
+[2025-09-15 14:53:10] [Top] event_id=6 cap=False expire=False
+[2025-09-15 14:53:10] [Top] FORWARDED event_id=6 box_id=6 cap=False expire=False
+[2025-09-15 14:53:10] [Coordinator] box queued box_id=6 ts=1757937190016 pending_boxes=4
+[2025-09-15 14:53:10] [Barcode Capture] queued event_id=9
+[2025-09-15 14:53:10] [Barcode] event_id=9 decoded=6223001875246 box_id=9
+[2025-09-15 14:53:10] [Top] box queued event_id=9 box_id=9
+[2025-09-15 14:53:10] [Top Capture] queued event_id=7
+[2025-09-15 14:53:10] [Top] event_id=7 cap=False expire=True
+[2025-09-15 14:53:10] [Top] FORWARDED event_id=7 box_id=7 cap=False expire=True
+[2025-09-15 14:53:10] [Coordinator] box queued box_id=7 ts=1757937190543 pending_boxes=5
+[2025-09-15 14:53:10] [Barcode Capture] queued event_id=10
+[2025-09-15 14:53:10] [Barcode] event_id=10 decoded=6222014334337 box_id=10
+[2025-09-15 14:53:10] [Top] box queued event_id=10 box_id=10
+[2025-09-15 14:53:10] [Label] Fired (grace delay) class=Juhayna_Fullcream_1L
+[2025-09-15 14:53:10] [Coordinator] label queued ts=1757937190852 pending_labels=1
+[2025-09-15 14:53:10] [Coordinator] pairing box_id=6 Δt=836ms (box_ts=1757937190016 lbl_ts=1757937190852)
+[2025-09-15 14:53:10] [Coordinator] paired box_id=6; left B=4 L=0
+[2025-09-15 14:53:10] [Top Capture] queued event_id=8
+[2025-09-15 14:53:11] [Top] event_id=8 cap=False expire=True
+[2025-09-15 14:53:11] [Top] FORWARDED event_id=8 box_id=8 cap=False expire=True
+[2025-09-15 14:53:11] [Coordinator] box queued box_id=8 ts=1757937191098 pending_boxes=5
+[2025-09-15 14:53:11] [Barcode Capture] queued event_id=11
+[2025-09-15 14:53:11] [Top Capture] queued event_id=9
+[2025-09-15 14:53:11] [Label] Fired (grace delay) class=Juhayna_Orange_1L
+[2025-09-15 14:53:11] [Barcode] event_id=11 decoded=6223001875246 box_id=11
+[2025-09-15 14:53:11] [Coordinator] label queued ts=1757937191399 pending_labels=1
+[2025-09-15 14:53:11] [Coordinator] pairing box_id=7 Δt=856ms (box_ts=1757937190543 lbl_ts=1757937191399)
+[2025-09-15 14:53:11] [Coordinator] paired box_id=7; left B=4 L=0
+[2025-09-15 14:53:11] [Coordinator] box timeout box_id=3 waited=6004ms; finalizing without label
+[2025-09-15 14:53:11] [Top] event_id=9 cap=False expire=True
+[2025-09-15 14:53:11] [Top] FORWARDED event_id=9 box_id=9 cap=False expire=True
+[2025-09-15 14:53:11] [Top] box queued event_id=11 box_id=11
+[2025-09-15 14:53:11] [Coordinator] box queued box_id=9 ts=1757937191672 pending_boxes=4
+[2025-09-15 14:53:11] [Top Capture] queued event_id=10
+[2025-09-15 14:53:12] [Label] Fired (grace delay) class=Suntop_Orange_250ml
+[2025-09-15 14:53:12] [Coordinator] label queued ts=1757937192091 pending_labels=1
+[2025-09-15 14:53:12] [Coordinator] pairing box_id=8 Δt=993ms (box_ts=1757937191098 lbl_ts=1757937192091)
+[2025-09-15 14:53:12] [Coordinator] paired box_id=8; left B=3 L=0
+[2025-09-15 14:53:12] [Coordinator] box timeout box_id=4 waited=6002ms; finalizing without label
+[2025-09-15 14:53:12] [Top] event_id=10 cap=False expire=True
+[2025-09-15 14:53:12] [Top] FORWARDED event_id=10 box_id=10 cap=False expire=True
+[2025-09-15 14:53:12] [Coordinator] box queued box_id=10 ts=1757937192116 pending_boxes=3
+[2025-09-15 14:53:12] [Top Capture] queued event_id=11
+[2025-09-15 14:53:12] [Label] Fired (grace delay) class=Beyti_Orange_235ml
+[2025-09-15 14:53:12] [Coordinator] label queued ts=1757937192543 pending_labels=1
+[2025-09-15 14:53:12] [Coordinator] pairing box_id=9 Δt=871ms (box_ts=1757937191672 lbl_ts=1757937192543)
+[2025-09-15 14:53:12] [Coordinator] paired box_id=9; left B=2 L=0
+[2025-09-15 14:53:12] [Coordinator] box timeout box_id=5 waited=6004ms; finalizing without label
+[2025-09-15 14:53:12] [Top] event_id=11 cap=False expire=True
+[2025-09-15 14:53:12] [Top] FORWARDED event_id=11 box_id=11 cap=False expire=True
+[2025-09-15 14:53:12] [Coordinator] box queued box_id=11 ts=1757937192701 pending_boxes=2
+[2025-09-15 14:53:12] [Label] pruned 1 stale track(s)
+[2025-09-15 14:53:12] [Label] pruned 1 stale track(s)
+[2025-09-15 14:53:13] [Label] Fired (grace delay) class=Juhayna_Applepear_235ml
+[2025-09-15 14:53:13] [Label] pruned 1 stale track(s)
+[2025-09-15 14:53:13] [Coordinator] label queued ts=1757937193158 pending_labels=1
+[2025-09-15 14:53:13] [Coordinator] pairing box_id=10 Δt=1042ms (box_ts=1757937192116 lbl_ts=1757937193158)
+[2025-09-15 14:53:13] [Coordinator] paired box_id=10; left B=1 L=0
+[2025-09-15 14:53:13] [Label] pruned 1 stale track(s)
+[2025-09-15 14:53:13] [Label] Fired (grace delay) class=Beyti_Orange_235ml
+[2025-09-15 14:53:13] [Coordinator] label queued ts=1757937193692 pending_labels=1
+[2025-09-15 14:53:13] [Coordinator] pairing box_id=11 Δt=991ms (box_ts=1757937192701 lbl_ts=1757937193692)
+[2025-09-15 14:53:13] [Coordinator] paired box_id=11; left B=0 L=0
+[2025-09-15 14:53:13] [Label] pruned 1 stale track(s)
+[2025-09-15 14:53:13] [Label] pruned 1 stale track(s)
+[2025-09-15 14:53:14] [Label] pruned 1 stale track(s)
+[2025-09-15 14:53:14] [Label] pruned 1 stale track(s)
+[2025-09-15 14:53:14] [Label] pruned 1 stale track(s)
+[2025-09-15 14:53:15] [Label] pruned 1 stale track(s)
+[2025-09-15 14:53:15] [Label] pruned 1 stale track(s)
+[2025-09-15 14:53:15] [Label] pruned 1 stale track(s)
+[2025-09-15 14:53:15] [Label] pruned 1 stale track(s)
+[2025-09-15 14:53:15] [Label] pruned 1 stale track(s)
+[2025-09-15 14:53:32] [Barcode Capture] queued event_id=12
+[2025-09-15 14:53:32] [Barcode] event_id=12 decoded=6223000350010 box_id=12
+[2025-09-15 14:53:32] [Top] box queued event_id=12 box_id=12
+[2025-09-15 14:53:36] [Barcode Capture] queued event_id=13
+[2025-09-15 14:53:37] [Barcode] event_id=13 decoded=6222014330537 box_id=13
+[2025-09-15 14:53:37] [Top] box queued event_id=13 box_id=13
+[2025-09-15 14:53:37] [Barcode Capture] queued event_id=14
+[2025-09-15 14:53:37] [Barcode] event_id=14 decoded=6224001167423 box_id=14
+[2025-09-15 14:53:37] [Top] box queued event_id=14 box_id=14
+[2025-09-15 14:53:37] [Top Capture] queued event_id=12
+[2025-09-15 14:53:37] [Top] event_id=12 cap=False expire=False
+[2025-09-15 14:53:37] [Top] FORWARDED event_id=12 box_id=12 cap=False expire=False
+[2025-09-15 14:53:37] [Coordinator] box queued box_id=12 ts=1757937217994 pending_boxes=1
+[2025-09-15 14:53:38] [Barcode Capture] queued event_id=15
+[2025-09-15 14:53:38] [Barcode] event_id=15 decoded=6223001875246 box_id=15
+[2025-09-15 14:53:38] [Top] box queued event_id=15 box_id=15
+[2025-09-15 14:53:38] [Top Capture] queued event_id=13
+[2025-09-15 14:53:38] [Top] event_id=13 cap=False expire=True
+[2025-09-15 14:53:38] [Top] FORWARDED event_id=13 box_id=13 cap=False expire=True
+[2025-09-15 14:53:38] [Coordinator] box queued box_id=13 ts=1757937218621 pending_boxes=2
+[2025-09-15 14:53:38] [Barcode Capture] queued event_id=16
+[2025-09-15 14:53:38] [Barcode] event_id=16 decoded=6222014334337 box_id=16
+[2025-09-15 14:53:38] [Top] box queued event_id=16 box_id=16
+[2025-09-15 14:53:39] [Top Capture] queued event_id=14
+[2025-09-15 14:53:39] [Label] Fired (grace delay) class=Juhayna_Fullcream_235ml
+[2025-09-15 14:53:39] [Coordinator] label queued ts=1757937219061 pending_labels=1
+[2025-09-15 14:53:39] [Coordinator] pairing box_id=12 Δt=1067ms (box_ts=1757937217994 lbl_ts=1757937219061)
+[2025-09-15 14:53:39] [Coordinator] paired box_id=12; left B=1 L=0
+[2025-09-15 14:53:39] [Top] event_id=14 cap=False expire=True
+[2025-09-15 14:53:39] [Top] FORWARDED event_id=14 box_id=14 cap=False expire=True
+[2025-09-15 14:53:39] [Coordinator] box queued box_id=14 ts=1757937219253 pending_boxes=2
+[2025-09-15 14:53:39] [Barcode Capture] queued event_id=17
+[2025-09-15 14:53:39] [Label] Fired (grace delay) class=Juhayna_Orange_1L
+[2025-09-15 14:53:39] [Coordinator] label queued ts=1757937219594 pending_labels=1
+[2025-09-15 14:53:39] [Coordinator] pairing box_id=13 Δt=973ms (box_ts=1757937218621 lbl_ts=1757937219594)
+[2025-09-15 14:53:39] [Coordinator] paired box_id=13; left B=1 L=0
+[2025-09-15 14:53:39] [Barcode] event_id=17 decoded=6223001875246 box_id=17
+[2025-09-15 14:53:39] [Top] box queued event_id=17 box_id=17
+[2025-09-15 14:53:39] [Top Capture] queued event_id=15
+[2025-09-15 14:53:39] [Top] event_id=15 cap=False expire=True
+[2025-09-15 14:53:39] [Top] FORWARDED event_id=15 box_id=15 cap=False expire=True
+[2025-09-15 14:53:39] [Coordinator] box queued box_id=15 ts=1757937219898 pending_boxes=2
+[2025-09-15 14:53:40] [Top Capture] queued event_id=16
+[2025-09-15 14:53:40] [Label] Fired (grace delay) class=Suntop_Orange_250ml
+[2025-09-15 14:53:40] [Coordinator] label queued ts=1757937220372 pending_labels=1
+[2025-09-15 14:53:40] [Coordinator] pairing box_id=14 Δt=1119ms (box_ts=1757937219253 lbl_ts=1757937220372)
+[2025-09-15 14:53:40] [Coordinator] paired box_id=14; left B=1 L=0
+[2025-09-15 14:53:40] [Top] event_id=16 cap=False expire=True
+[2025-09-15 14:53:40] [Top] FORWARDED event_id=16 box_id=16 cap=False expire=True
+[2025-09-15 14:53:40] [Coordinator] box queued box_id=16 ts=1757937220513 pending_boxes=2
+[2025-09-15 14:53:40] [Label] Fired (grace delay) class=Beyti_Orange_235ml
+[2025-09-15 14:53:40] [Label] pruned 1 stale track(s)
+[2025-09-15 14:53:40] [Coordinator] label queued ts=1757937220937 pending_labels=1
+[2025-09-15 14:53:40] [Coordinator] pairing box_id=15 Δt=1039ms (box_ts=1757937219898 lbl_ts=1757937220937)
+[2025-09-15 14:53:40] [Coordinator] paired box_id=15; left B=1 L=0
+[2025-09-15 14:53:40] [Top Capture] queued event_id=17
+[2025-09-15 14:53:41] [Label] Fired (grace delay) class=Beyti_Orange_235ml
+[2025-09-15 14:53:41] [Label] pruned 1 stale track(s)
+[2025-09-15 14:53:41] [Coordinator] label queued ts=1757937221091 pending_labels=1
+[2025-09-15 14:53:41] [Coordinator] pairing box_id=16 Δt=578ms (box_ts=1757937220513 lbl_ts=1757937221091)
+[2025-09-15 14:53:41] [Coordinator] paired box_id=16; left B=0 L=0
+[2025-09-15 14:53:41] [Top] event_id=17 cap=False expire=True
+[2025-09-15 14:53:41] [Top] FORWARDED event_id=17 box_id=17 cap=False expire=True
+[2025-09-15 14:53:41] [Coordinator] box queued box_id=17 ts=1757937221180 pending_boxes=1
+[2025-09-15 14:53:41] [Label] Fired (grace delay) class=Juhayna_Applepear_235ml
+[2025-09-15 14:53:41] [Label] pruned 1 stale track(s)
+[2025-09-15 14:53:41] [Coordinator] label queued ts=1757937221501 pending_labels=1
+[2025-09-15 14:53:41] [Coordinator] pairing box_id=17 Δt=321ms (box_ts=1757937221180 lbl_ts=1757937221501)
+[2025-09-15 14:53:41] [Coordinator] paired box_id=17; left B=0 L=0
+[2025-09-15 14:53:41] [Label] Fired (grace delay) class=Juhayna_Applepear_235ml
+[2025-09-15 14:53:41] [Coordinator] label queued ts=1757937221630 pending_labels=1
+[2025-09-15 14:53:41] [Label] pruned 1 stale track(s)
+[2025-09-15 14:53:42] [Label] pruned 1 stale track(s)
+[2025-09-15 14:53:42] [Label] pruned 1 stale track(s)
+[2025-09-15 14:53:42] [Label] pruned 1 stale track(s)
+[2025-09-15 14:53:43] [Label] pruned 1 stale track(s)
+[2025-09-15 14:53:43] [Label] pruned 1 stale track(s)
+[2025-09-15 14:53:43] [Label] pruned 1 stale track(s)
+[2025-09-15 14:53:43] [Label] pruned 1 stale track(s)
+[2025-09-15 14:53:43] [Label] pruned 1 stale track(s)
+[2025-09-15 14:53:43] [Label] pruned 1 stale track(s)
+[2025-09-15 14:53:49] [Label] pruned 1 stale track(s)
+[2025-09-15 14:54:33] [Comm] Pipeline started (Luna-triggered AV capture + JPEG queues + episode-aware label).
+[2025-09-15 14:55:17] [Comm] Pipeline started (Luna-triggered AV capture + JPEG queues + episode-aware label).
+[2025-09-15 14:55:29] [Barcode Capture] Saved 20250915_145529_825DEV_1AB22C00C5A5.jpg
+[2025-09-15 14:55:30] [Barcode Capture] Saved 20250915_145530_351DEV_1AB22C00C5A5.jpg
+[2025-09-15 14:55:30] [Barcode Capture] Saved 20250915_145530_868DEV_1AB22C00C5A5.jpg
+[2025-09-15 14:55:31] [Top Capture] Saved 20250915_145531_134DEV_1AB22C00C5A7.jpg
+[2025-09-15 14:55:31] [Barcode Capture] Saved 20250915_145531_420DEV_1AB22C00C5A5.jpg
+[2025-09-15 14:55:31] [Top Capture] Saved 20250915_145531_650DEV_1AB22C00C5A7.jpg
+[2025-09-15 14:55:31] [Barcode Capture] Saved 20250915_145531_933DEV_1AB22C00C5A5.jpg
+[2025-09-15 14:55:32] [Top Capture] Saved 20250915_145532_190DEV_1AB22C00C5A7.jpg
+[2025-09-15 14:55:32] [Barcode Capture] Saved 20250915_145532_515DEV_1AB22C00C5A5.jpg
+[2025-09-15 14:55:32] [Top Capture] Saved 20250915_145532_719DEV_1AB22C00C5A7.jpg
+[2025-09-15 14:55:33] [LabelWorker] Assigned Box #0 -> track 3 (episode 1757937333208)
+[2025-09-15 14:55:33] [Top Capture] Saved 20250915_145533_240DEV_1AB22C00C5A7.jpg
+[2025-09-15 14:55:33] [Top Capture] Saved 20250915_145533_809DEV_1AB22C00C5A7.jpg
+[2025-09-15 14:58:31] [Comm] AV cameras discovered: ['DEV_1AB22C00C5A5', 'DEV_1AB22C00C5A7']
+[2025-09-15 14:58:31] [Comm] pipeline started
+[2025-09-15 14:58:33] [Barcode Capture] starting
+[2025-09-15 14:58:33] [Barcode] Using device: cpu
+[2025-09-15 14:58:33] [Top Capture] starting
+[2025-09-15 14:58:33] [Coordinator] Loaded batch: Milk Batch.xlsx
+[2025-09-15 14:58:33] [Coordinator] started
+[2025-09-15 14:58:40] [Top] started
+[2025-09-15 14:58:40] [Barcode] started
+[2025-09-15 14:58:40] [Label] Loaded batch: Milk Batch.xlsx
+[2025-09-15 14:58:40] [Label] started
+[2025-09-15 14:58:49] [Barcode Capture] queued event_id=0
+[2025-09-15 14:58:49] [Barcode] event_id=0 decoded=6223000350010 box_id=0
+[2025-09-15 14:58:49] [Top] box queued event_id=0 box_id=0
+[2025-09-15 14:58:49] [Barcode Capture] queued event_id=1
+[2025-09-15 14:58:50] [Barcode] event_id=1 decoded=6222014330537 box_id=1
+[2025-09-15 14:58:50] [Top] box queued event_id=1 box_id=1
+[2025-09-15 14:58:50] [Barcode Capture] queued event_id=2
+[2025-09-15 14:58:50] [Barcode] event_id=2 decoded=6224001167423 box_id=2
+[2025-09-15 14:58:50] [Top] box queued event_id=2 box_id=2
+[2025-09-15 14:58:50] [Top Capture] queued event_id=0
+[2025-09-15 14:58:50] [Barcode Capture] queued event_id=3
+[2025-09-15 14:58:50] [Top] event_id=0 cap=False expire=False
+[2025-09-15 14:58:50] [Top] FORWARDED event_id=0 box_id=0 cap=False expire=False
+[2025-09-15 14:58:50] [Coordinator] box queued box_id=0 ts=1757937530897 pending_boxes=1
+[2025-09-15 14:58:51] [Top Capture] queued event_id=1
+[2025-09-15 14:58:51] [Barcode] event_id=3 decoded=6223001875246 box_id=3
+[2025-09-15 14:58:51] [Top] event_id=1 cap=False expire=True
+[2025-09-15 14:58:51] [Top] FORWARDED event_id=1 box_id=1 cap=False expire=True
+[2025-09-15 14:58:51] [Top] box queued event_id=3 box_id=3
+[2025-09-15 14:58:51] [Barcode Capture] queued event_id=4
+[2025-09-15 14:58:51] [Coordinator] box queued box_id=1 ts=1757937531321 pending_boxes=2
+[2025-09-15 14:58:51] [Top Capture] queued event_id=2
+[2025-09-15 14:58:51] [Barcode] event_id=4 decoded=6222014334337 box_id=4
+[2025-09-15 14:58:51] [Top] event_id=2 cap=False expire=True
+[2025-09-15 14:58:51] [Top] FORWARDED event_id=2 box_id=2 cap=False expire=True
+[2025-09-15 14:58:51] [Top] box queued event_id=4 box_id=4
+[2025-09-15 14:58:51] [Coordinator] box queued box_id=2 ts=1757937531771 pending_boxes=3
+[2025-09-15 14:58:51] [Label] Fired (grace delay) class=Juhayna_Fullcream_235ml
+[2025-09-15 14:58:51] [Coordinator] label queued ts=1757937531784 pending_labels=1
+[2025-09-15 14:58:51] [Coordinator] pairing box_id=2 Δt=13ms (box_ts=1757937531771 lbl_ts=1757937531784)
+[2025-09-15 14:58:51] [Coordinator] paired box_id=2; left B=2 L=0
+[2025-09-15 14:58:51] [Barcode Capture] queued event_id=5
+[2025-09-15 14:58:52] [Top Capture] queued event_id=3
+[2025-09-15 14:58:52] [Barcode] event_id=5 decoded=6223001875246 box_id=5
+[2025-09-15 14:58:52] [Top] event_id=3 cap=False expire=True
+[2025-09-15 14:58:52] [Top] FORWARDED event_id=3 box_id=3 cap=False expire=True
+[2025-09-15 14:58:52] [Coordinator] box queued box_id=3 ts=1757937532235 pending_boxes=3
+[2025-09-15 14:58:52] [Top] box queued event_id=5 box_id=5
+[2025-09-15 14:58:52] [Top Capture] queued event_id=4
+[2025-09-15 14:58:52] [Top] event_id=4 cap=False expire=False
+[2025-09-15 14:58:52] [Top] FORWARDED event_id=4 box_id=4 cap=False expire=False
+[2025-09-15 14:58:52] [Coordinator] box queued box_id=4 ts=1757937532671 pending_boxes=4
+[2025-09-15 14:58:52] [Top Capture] queued event_id=5
+[2025-09-15 14:58:53] [Label] Fired (grace delay) class=Beyti_Orange_235ml
+[2025-09-15 14:58:53] [Coordinator] label queued ts=1757937533069 pending_labels=1
+[2025-09-15 14:58:53] [Coordinator] pairing box_id=4 Δt=398ms (box_ts=1757937532671 lbl_ts=1757937533069)
+[2025-09-15 14:58:53] [Coordinator] paired box_id=4; left B=3 L=0
+[2025-09-15 14:58:53] [Top] event_id=5 cap=False expire=True
+[2025-09-15 14:58:53] [Top] FORWARDED event_id=5 box_id=5 cap=False expire=True
+[2025-09-15 14:58:53] [Coordinator] box queued box_id=5 ts=1757937533187 pending_boxes=4
+[2025-09-15 14:58:53] [Label] pruned 1 stale track(s)
+[2025-09-15 14:58:53] [Label] pruned 1 stale track(s)
+[2025-09-15 14:58:54] [Label] pruned 1 stale track(s)
+[2025-09-15 14:58:54] [Label] pruned 1 stale track(s)
+[2025-09-15 14:58:54] [Label] pruned 1 stale track(s)
+[2025-09-15 14:58:55] [Label] pruned 1 stale track(s)
+[2025-09-15 14:58:55] [Label] pruned 1 stale track(s)
+[2025-09-15 14:58:55] [Label] pruned 1 stale track(s)
+[2025-09-15 14:58:56] [Label] pruned 1 stale track(s)
+[2025-09-15 14:58:56] [Label] pruned 1 stale track(s)
+[2025-09-15 14:58:56] [Coordinator] box timeout box_id=0 waited=6002ms; finalizing without label
+[2025-09-15 14:58:57] [Coordinator] box timeout box_id=1 waited=6000ms; finalizing without label
+[2025-09-15 14:58:58] [Coordinator] box timeout box_id=3 waited=6005ms; finalizing without label
+[2025-09-15 14:58:59] [Coordinator] box timeout box_id=5 waited=6003ms; finalizing without label
+[2025-09-15 14:59:14] [Barcode Capture] queued event_id=6
+[2025-09-15 14:59:14] [Barcode] event_id=6 decoded=6223000350010 box_id=6
+[2025-09-15 14:59:14] [Top] box queued event_id=6 box_id=6
+[2025-09-15 14:59:14] [Barcode Capture] queued event_id=7
+[2025-09-15 14:59:15] [Barcode] event_id=7 decoded=6222014330537 box_id=7
+[2025-09-15 14:59:15] [Top] box queued event_id=7 box_id=7
+[2025-09-15 14:59:15] [Barcode Capture] queued event_id=8
+[2025-09-15 14:59:15] [Barcode] event_id=8 decoded=6224001167423 box_id=8
+[2025-09-15 14:59:15] [Top] box queued event_id=8 box_id=8
+[2025-09-15 14:59:15] [Top Capture] queued event_id=6
+[2025-09-15 14:59:15] [Top] event_id=6 cap=False expire=False
+[2025-09-15 14:59:15] [Top] FORWARDED event_id=6 box_id=6 cap=False expire=False
+[2025-09-15 14:59:15] [Coordinator] box queued box_id=6 ts=1757937555878 pending_boxes=1
+[2025-09-15 14:59:15] [Barcode Capture] queued event_id=9
+[2025-09-15 14:59:16] [Barcode] event_id=9 decoded=6223001875246 box_id=9
+[2025-09-15 14:59:16] [Top] box queued event_id=9 box_id=9
+[2025-09-15 14:59:16] [Top Capture] queued event_id=7
+[2025-09-15 14:59:16] [Top] event_id=7 cap=False expire=True
+[2025-09-15 14:59:16] [Top] FORWARDED event_id=7 box_id=7 cap=False expire=True
+[2025-09-15 14:59:16] [Coordinator] box queued box_id=7 ts=1757937556392 pending_boxes=2
+[2025-09-15 14:59:16] [Barcode Capture] queued event_id=10
+[2025-09-15 14:59:16] [Barcode] event_id=10 decoded=6222014334337 box_id=10
+[2025-09-15 14:59:16] [Top] box queued event_id=10 box_id=10
+[2025-09-15 14:59:16] [Label] Fired (grace delay) class=Juhayna_Fullcream_1L
+[2025-09-15 14:59:16] [Coordinator] label queued ts=1757937556669 pending_labels=1
+[2025-09-15 14:59:16] [Coordinator] pairing box_id=7 Δt=277ms (box_ts=1757937556392 lbl_ts=1757937556669)
+[2025-09-15 14:59:16] [Coordinator] paired box_id=7; left B=1 L=0
+[2025-09-15 14:59:16] [Top Capture] queued event_id=8
+[2025-09-15 14:59:16] [Label] Fired (grace delay) class=Juhayna_Fullcream_1L
+[2025-09-15 14:59:16] [Coordinator] label queued ts=1757937556843 pending_labels=1
+[2025-09-15 14:59:16] [Coordinator] pairing box_id=6 Δt=965ms (box_ts=1757937555878 lbl_ts=1757937556843)
+[2025-09-15 14:59:16] [Coordinator] paired box_id=6; left B=0 L=0
+[2025-09-15 14:59:16] [Top] event_id=8 cap=False expire=True
+[2025-09-15 14:59:16] [Top] FORWARDED event_id=8 box_id=8 cap=False expire=True
+[2025-09-15 14:59:16] [Coordinator] box queued box_id=8 ts=1757937556932 pending_boxes=1
+[2025-09-15 14:59:17] [Barcode Capture] queued event_id=11
+[2025-09-15 14:59:17] [Barcode] event_id=11 decoded=6223001875246 box_id=11
+[2025-09-15 14:59:17] [Top] box queued event_id=11 box_id=11
+[2025-09-15 14:59:17] [Top Capture] queued event_id=9
+[2025-09-15 14:59:17] [Label] Fired (grace delay) class=Juhayna_Orange_235ml
+[2025-09-15 14:59:17] [Coordinator] label queued ts=1757937557349 pending_labels=1
+[2025-09-15 14:59:17] [Coordinator] pairing box_id=8 Δt=417ms (box_ts=1757937556932 lbl_ts=1757937557349)
+[2025-09-15 14:59:17] [Coordinator] paired box_id=8; left B=0 L=0
+[2025-09-15 14:59:17] [Top] event_id=9 cap=False expire=True
+[2025-09-15 14:59:17] [Top] FORWARDED event_id=9 box_id=9 cap=False expire=True
+[2025-09-15 14:59:17] [Coordinator] box queued box_id=9 ts=1757937557487 pending_boxes=1
+[2025-09-15 14:59:17] [Top Capture] queued event_id=10
+[2025-09-15 14:59:17] [Label] Fired (grace delay) class=Suntop_Orange_250ml
+[2025-09-15 14:59:17] [Coordinator] label queued ts=1757937557933 pending_labels=1
+[2025-09-15 14:59:17] [Coordinator] pairing box_id=9 Δt=446ms (box_ts=1757937557487 lbl_ts=1757937557933)
+[2025-09-15 14:59:17] [Coordinator] paired box_id=9; left B=0 L=0
+[2025-09-15 14:59:17] [Top] event_id=10 cap=False expire=True
+[2025-09-15 14:59:17] [Top] FORWARDED event_id=10 box_id=10 cap=False expire=True
+[2025-09-15 14:59:17] [Coordinator] box queued box_id=10 ts=1757937557968 pending_boxes=1
+[2025-09-15 14:59:18] [Top Capture] queued event_id=11
+[2025-09-15 14:59:18] [Label] Fired (grace delay) class=Beyti_Orange_235ml
+[2025-09-15 14:59:18] [Coordinator] label queued ts=1757937558470 pending_labels=1
+[2025-09-15 14:59:18] [Coordinator] pairing box_id=10 Δt=502ms (box_ts=1757937557968 lbl_ts=1757937558470)
+[2025-09-15 14:59:18] [Coordinator] paired box_id=10; left B=0 L=0
+[2025-09-15 14:59:18] [Top] event_id=11 cap=False expire=True
+[2025-09-15 14:59:18] [Top] FORWARDED event_id=11 box_id=11 cap=False expire=True
+[2025-09-15 14:59:18] [Coordinator] box queued box_id=11 ts=1757937558556 pending_boxes=1
+[2025-09-15 14:59:18] [Label] pruned 1 stale track(s)
+[2025-09-15 14:59:18] [Label] pruned 1 stale track(s)
+[2025-09-15 14:59:18] [Label] pruned 1 stale track(s)
+[2025-09-15 14:59:19] [Label] Fired (grace delay) class=Juhayna_Applepear_235ml
+[2025-09-15 14:59:19] [Coordinator] label queued ts=1757937559008 pending_labels=1
+[2025-09-15 14:59:19] [Coordinator] pairing box_id=11 Δt=452ms (box_ts=1757937558556 lbl_ts=1757937559008)
+[2025-09-15 14:59:19] [Coordinator] paired box_id=11; left B=0 L=0
+[2025-09-15 14:59:19] [Label] pruned 1 stale track(s)
+[2025-09-15 14:59:19] [Label] pruned 1 stale track(s)
+[2025-09-15 14:59:19] [Label] pruned 1 stale track(s)
+[2025-09-15 14:59:20] [Label] pruned 1 stale track(s)
+[2025-09-15 14:59:20] [Label] pruned 1 stale track(s)
+[2025-09-15 14:59:20] [Label] pruned 1 stale track(s)
+[2025-09-15 14:59:21] [Label] pruned 1 stale track(s)
+[2025-09-15 14:59:21] [Label] pruned 1 stale track(s)
+[2025-09-15 14:59:21] [Label] pruned 1 stale track(s)
+[2025-09-15 14:59:39] [Barcode Capture] stopped
+[2025-09-15 14:59:39] [Top Capture] stopped
+[2025-09-15 14:59:49] [Comm] AV cameras discovered: ['DEV_1AB22C00C5A5', 'DEV_1AB22C00C5A7']
+[2025-09-15 14:59:49] [Comm] pipeline started
+[2025-09-15 14:59:51] [Top Capture] starting
+[2025-09-15 14:59:51] [Barcode Capture] starting
+[2025-09-15 14:59:51] [Barcode] Using device: cpu
+[2025-09-15 14:59:51] [Coordinator] Loaded batch: Milk Batch.xlsx
+[2025-09-15 14:59:51] [Coordinator] started
+[2025-09-15 14:59:57] [Top] started
+ed
+[2025-09-15 14:59:58] [Label] Loaded batch: Milk Batch.xlsx
+[2025-09-15 14:59:58] [Label] started
+[2025-09-15 15:00:13] [Barcode Capture] queued event_id=0
+[2025-09-15 15:00:14] [Barcode] event_id=0 decoded=6223000350010 box_id=0
+[2025-09-15 15:00:14] [Top] box queued event_id=0 box_id=0
+[2025-09-15 15:00:14] [Barcode Capture] queued event_id=1
+[2025-09-15 15:00:14] [Barcode] event_id=1 decoded=6222014330537 box_id=1
+[2025-09-15 15:00:14] [Top] box queued event_id=1 box_id=1
+[2025-09-15 15:00:14] [Barcode Capture] queued event_id=2
+[2025-09-15 15:00:15] [Barcode] event_id=2 decoded=6224001167423 box_id=2
+[2025-09-15 15:00:15] [Top] box queued event_id=2 box_id=2
+[2025-09-15 15:00:15] [Top Capture] queued event_id=0
+[2025-09-15 15:00:15] [Barcode Capture] queued event_id=3
+[2025-09-15 15:00:15] [Top] event_id=0 cap=False expire=False
+[2025-09-15 15:00:15] [Top] FORWARDED event_id=0 box_id=0 cap=False expire=False
+[2025-09-15 15:00:15] [Coordinator] box queued box_id=0 ts=1757937615404 pending_boxes=1
+[2025-09-15 15:00:15] [Top Capture] queued event_id=1
+[2025-09-15 15:00:15] [Barcode] event_id=3 decoded=6223001875246 box_id=3
+[2025-09-15 15:00:15] [Top] event_id=1 cap=False expire=True
+[2025-09-15 15:00:15] [Top] FORWARDED event_id=1 box_id=1 cap=False expire=True
+[2025-09-15 15:00:15] [Top] box queued event_id=3 box_id=3
+[2025-09-15 15:00:15] [Coordinator] box queued box_id=1 ts=1757937615830 pending_boxes=2
+[2025-09-15 15:00:15] [Barcode Capture] queued event_id=4
+[2025-09-15 15:00:16] [Barcode] event_id=4 decoded=6222014334337 box_id=4
+[2025-09-15 15:00:16] [Top] box queued event_id=4 box_id=4
+[2025-09-15 15:00:16] [Top Capture] queued event_id=2
+[2025-09-15 15:00:16] [Top] event_id=2 cap=False expire=True
+[2025-09-15 15:00:16] [Top] FORWARDED event_id=2 box_id=2 cap=False expire=True
+[2025-09-15 15:00:16] [Coordinator] box queued box_id=2 ts=1757937616266 pending_boxes=3
+[2025-09-15 15:00:16] [Label] Fired (grace delay) class=Juhayna_Fullcream_1L
+[2025-09-15 15:00:16] [Coordinator] label queued ts=1757937616292 pending_labels=1
+[2025-09-15 15:00:16] [Coordinator] pairing box_id=2 Δt=26ms (box_ts=1757937616266 lbl_ts=1757937616292)
+[2025-09-15 15:00:16] [Coordinator] paired box_id=2; left B=2 L=0
+[2025-09-15 15:00:16] [Barcode Capture] queued event_id=5
+[2025-09-15 15:00:16] [Top Capture] queued event_id=3
+[2025-09-15 15:00:16] [Barcode] event_id=5 decoded=6223001875246 box_id=5
+[2025-09-15 15:00:16] [Label] Fired (grace delay) class=Juhayna_Orange_1L
+[2025-09-15 15:00:16] [Coordinator] label queued ts=1757937616665 pending_labels=1
+[2025-09-15 15:00:16] [Coordinator] pairing box_id=1 Δt=835ms (box_ts=1757937615830 lbl_ts=1757937616665)
+[2025-09-15 15:00:16] [Coordinator] paired box_id=1; left B=1 L=0
+[2025-09-15 15:00:16] [Top] event_id=3 cap=False expire=True
+[2025-09-15 15:00:16] [Top] FORWARDED event_id=3 box_id=3 cap=False expire=True
+[2025-09-15 15:00:16] [Top] box queued event_id=5 box_id=5
+[2025-09-15 15:00:16] [Coordinator] box queued box_id=3 ts=1757937616744 pending_boxes=2
+[2025-09-15 15:00:16] [Top Capture] queued event_id=4
+[2025-09-15 15:00:17] [Label] Fired (grace delay) class=Suntop_Orange_250ml
+[2025-09-15 15:00:17] [Coordinator] label queued ts=1757937617114 pending_labels=1
+[2025-09-15 15:00:17] [Coordinator] pairing box_id=3 Δt=370ms (box_ts=1757937616744 lbl_ts=1757937617114)
+[2025-09-15 15:00:17] [Coordinator] paired box_id=3; left B=1 L=0
+[2025-09-15 15:00:17] [Top] event_id=4 cap=False expire=True
+[2025-09-15 15:00:17] [Top] FORWARDED event_id=4 box_id=4 cap=False expire=True
+[2025-09-15 15:00:17] [Coordinator] box queued box_id=4 ts=1757937617167 pending_boxes=2
+[2025-09-15 15:00:17] [Top Capture] queued event_id=5
+[2025-09-15 15:00:17] [Top] event_id=5 cap=False expire=True
+[2025-09-15 15:00:17] [Top] FORWARDED event_id=5 box_id=5 cap=False expire=True
+[2025-09-15 15:00:17] [Coordinator] box queued box_id=5 ts=1757937617658 pending_boxes=3
+[2025-09-15 15:00:18] [Label] Fired (grace delay) class=Juhayna_Applepear_235ml
+[2025-09-15 15:00:18] [Coordinator] label queued ts=1757937618050 pending_labels=1
+[2025-09-15 15:00:18] [Coordinator] pairing box_id=5 Δt=392ms (box_ts=1757937617658 lbl_ts=1757937618050)
+[2025-09-15 15:00:18] [Coordinator] paired box_id=5; left B=2 L=0
+[2025-09-15 15:00:18] [Label] pruned 1 stale track(s)
+[2025-09-15 15:00:18] [Label] Fired (grace delay) class=Beyti_Orange_235ml
+[2025-09-15 15:00:18] [Coordinator] label queued ts=1757937618408 pending_labels=1
+[2025-09-15 15:00:18] [Coordinator] pairing box_id=4 Δt=1241ms (box_ts=1757937617167 lbl_ts=1757937618408)
+[2025-09-15 15:00:18] [Coordinator] paired box_id=4; left B=1 L=0
+[2025-09-15 15:00:18] [Label] Fired (grace delay) class=Beyti_Orange_235ml
+[2025-09-15 15:00:18] [Label] pruned 1 stale track(s)
+[2025-09-15 15:00:18] [Coordinator] label queued ts=1757937618535 pending_labels=1
+[2025-09-15 15:00:19] [Label] pruned 1 stale track(s)
+[2025-09-15 15:00:19] [Label] pruned 1 stale track(s)
+[2025-09-15 15:00:19] [Label] pruned 2 stale track(s)
+[2025-09-15 15:00:20] [Label] pruned 1 stale track(s)
+[2025-09-15 15:00:20] [Label] pruned 1 stale track(s)
+[2025-09-15 15:00:20] [Label] pruned 1 stale track(s)
+[2025-09-15 15:00:20] [Label] pruned 1 stale track(s)
+[2025-09-15 15:00:21] [Coordinator] box timeout box_id=0 waited=6000ms; finalizing without label
+[2025-09-15 15:00:40] [Barcode Capture] stopped
+[2025-09-15 15:00:40] [Top Capture] stopped
+[2025-09-15 15:02:49] [Comm] AV cameras discovered: ['DEV_1AB22C00C5A5', 'DEV_1AB22C00C5A7']
+[2025-09-15 15:02:49] [Comm] pipeline started
+[2025-09-15 15:02:51] [Barcode Capture] starting
+[2025-09-15 15:02:51] [Barcode] Using device: cpu
+[2025-09-15 15:02:51] [Top Capture] starting
+[2025-09-15 15:02:51] [Coordinator] Loaded batch: Milk Batch.xlsx
+[2025-09-15 15:02:51] [Coordinator] started
+[2025-09-15 15:08:32] [Comm] AV cameras discovered: ['DEV_1AB22C00C5A5', 'DEV_1AB22C00C5A7']
+[2025-09-15 15:08:32] [Comm] pipeline started
+[2025-09-15 15:08:34] [Barcode] Using device: cpu
+[2025-09-15 15:08:34] [Top Capture] starting
+[2025-09-15 15:08:34] [Barcode Capture] starting
+[2025-09-15 15:08:34] [Coordinator] Loaded batch: Milk Batch.xlsx
+[2025-09-15 15:08:34] [Coordinator] started
+[2025-09-15 15:09:12] [Comm] AV cameras discovered: ['DEV_1AB22C00C5A5', 'DEV_1AB22C00C5A7']
+[2025-09-15 15:09:12] [Comm] pipeline started
+[2025-09-15 15:09:14] [Barcode Capture] starting
+[2025-09-15 15:09:14] [Barcode] Using device: cpu
+[2025-09-15 15:09:14] [Top Capture] starting
+[2025-09-15 15:09:14] [Coordinator] Loaded batch: Milk Batch.xlsx
+[2025-09-15 15:09:14] [Coordinator] started
+[2025-09-15 15:11:07] [Barcode Capture] queued event_id=0
+[2025-09-15 15:11:08] [Barcode Capture] queued event_id=1
+[2025-09-15 15:11:08] [Barcode Capture] queued event_id=2
+[2025-09-15 15:11:09] [Top Capture] queued event_id]=0
+[2025-09-15 15:11:09] [Barcode Capture] queued event_id=3
+[2025-09-15 15:11:10] [Top Capture] queued event_id]=1
+[2025-09-15 15:11:16] [Barcode Capture] queued event_id=4
+[2025-09-15 15:11:17] [Top Capture] queued event_id]=2
+[2025-09-15 15:11:38] [Top Capture] stopped
+[2025-09-15 15:11:38] [Barcode Capture] stopped
+[2025-09-15 15:11:59] [Comm] AV cameras discovered: ['DEV_1AB22C00C5A5', 'DEV_1AB22C00C5A7']
+[2025-09-15 15:11:59] [Comm] pipeline started
+[2025-09-15 15:12:01] [Barcode] Using device: cpu
+[2025-09-15 15:12:01] [Top Capture] starting
+[2025-09-15 15:12:01] [Barcode Capture] starting
+[2025-09-15 15:12:01] [Coordinator] Loaded batch: Milk Batch.xlsx
+[2025-09-15 15:12:01] [Coordinator] started
+[2025-09-15 15:12:25] [Barcode Capture] stopped
+[2025-09-15 15:12:25] [Top Capture] stopped
+[2025-09-15 15:12:33] [Comm] AV cameras discovered: ['DEV_1AB22C00C5A5', 'DEV_1AB22C00C5A7']
+[2025-09-15 15:12:33] [Comm] pipeline started
+[2025-09-15 15:12:36] [Barcode Capture] starting
+[2025-09-15 15:12:36] [Top Capture] starting
+[2025-09-15 15:12:36] [Barcode] Using device: cpu
+[2025-09-15 15:12:36] [Coordinator] Loaded batch: Milk Batch.xlsx
+[2025-09-15 15:12:36] [Coordinator] started
+[2025-09-15 15:13:13] [Comm] AV cameras discovered: ['DEV_1AB22C00C5A5', 'DEV_1AB22C00C5A7']
+[2025-09-15 15:13:13] [Comm] pipeline started
+[2025-09-15 15:13:15] [Barcode] Using device: cpu
+[2025-09-15 15:13:15] [Top Capture] starting
+[2025-09-15 15:13:15] [Barcode Capture] starting
+[2025-09-15 15:13:16] [Coordinator] Loaded batch: Milk Batch.xlsx
+[2025-09-15 15:13:16] [Coordinator] started
+[2025-09-15 15:13:23] [Top] started
+ed
+[2025-09-15 15:13:23] [Label] Loaded batch: Milk Batch.xlsx
+[2025-09-15 15:13:23] [Label] started
+[2025-09-15 15:13:25] [Barcode Capture] queued event_id=0
+[2025-09-15 15:13:25] [Barcode] event_id=0 decoded=6223000350010 box_id=0
+[2025-09-15 15:13:25] [Top] box queued event_id=0 box_id=0
+[2025-09-15 15:13:25] [Barcode Capture] queued event_id=1
+[2025-09-15 15:13:26] [Barcode] event_id=1 decoded=6222014330537 box_id=1
+[2025-09-15 15:13:26] [Top] box queued event_id=1 box_id=1
+[2025-09-15 15:13:26] [Barcode Capture] queued event_id=2
+[2025-09-15 15:13:26] [Barcode] event_id=2 decoded=6224001167423 box_id=2
+[2025-09-15 15:13:26] [Top] box queued event_id=2 box_id=2
+[2025-09-15 15:13:26] [Top Capture] queued event_id]=0
+[2025-09-15 15:13:26] [Top] event_id=0 cap=False expire=False
+[2025-09-15 15:13:26] [Top] FORWARDED event_id=0 box_id=0 seq=0 cap=False expire=False
+[2025-09-15 15:13:26] [Coordinator] box queued box_id=0 seq=0 ts=1757938406993 pending_boxes=1
+[2025-09-15 15:13:27] [Barcode Capture] queued event_id=3
+[2025-09-15 15:13:27] [Barcode] event_id=3 decoded=6223001875246 box_id=3
+[2025-09-15 15:13:27] [Top] box queued event_id=3 box_id=3
+[2025-09-15 15:13:27] [Top Capture] queued event_id]=1
+[2025-09-15 15:13:27] [Top] event_id=1 cap=False expire=True
+[2025-09-15 15:13:27] [Top] FORWARDED event_id=1 box_id=1 seq=1 cap=False expire=True
+[2025-09-15 15:13:27] [Coordinator] box queued box_id=1 seq=1 ts=1757938407485 pending_boxes=2
+[2025-09-15 15:13:27] [Barcode Capture] queued event_id=4
+[2025-09-15 15:13:27] [Barcode] event_id=4 decoded=6222014334337 box_id=4
+[2025-09-15 15:13:27] [Top] box queued event_id=4 box_id=4
+[2025-09-15 15:13:27] [Top Capture] queued event_id]=2
+[2025-09-15 15:13:27] [Top] event_id=2 cap=False expire=True
+[2025-09-15 15:13:27] [Top] FORWARDED event_id=2 box_id=2 seq=2 cap=False expire=True
+[2025-09-15 15:13:27] [Coordinator] box queued box_id=2 seq=2 ts=1757938407988 pending_boxes=3
+[2025-09-15 15:13:28] [Barcode Capture] queued event_id=5
+[2025-09-15 15:13:28] [Top Capture] queued event_id]=3
+[2025-09-15 15:13:28] [Barcode] event_id=5 decoded=6223001875246 box_id=5
+[2025-09-15 15:13:28] [Top] event_id=3 cap=False expire=True
+[2025-09-15 15:13:28] [Top] FORWARDED event_id=3 box_id=3 seq=3 cap=False expire=True
+[2025-09-15 15:13:28] [Coordinator] box queued box_id=3 seq=3 ts=1757938408519 pending_boxes=4
+[2025-09-15 15:13:28] [Top] box queued event_id=5 box_id=5
+[2025-09-15 15:13:28] [Top Capture] queued event_id]=4
+[2025-09-15 15:13:29] [Top] event_id=4 cap=False expire=True
+[2025-09-15 15:13:29] [Top] FORWARDED event_id=4 box_id=4 seq=4 cap=False expire=True
+[2025-09-15 15:13:29] [Coordinator] box queued box_id=4 seq=4 ts=1757938409016 pending_boxes=5
+[2025-09-15 15:13:29] [Label] pruned 1 stale track(s)
+[2025-09-15 15:13:29] [Label] pruned 1 stale track(s)
+[2025-09-15 15:13:29] [Top Capture] queued event_id]=5
+[2025-09-15 15:13:29] [Label] pruned 1 stale track(s)
+[2025-09-15 15:13:29] [Top] event_id=5 cap=False expire=True
+[2025-09-15 15:13:29] [Top] FORWARDED event_id=5 box_id=5 seq=5 cap=False expire=True
+[2025-09-15 15:13:29] [Coordinator] box queued box_id=5 seq=5 ts=1757938409604 pending_boxes=6
+[2025-09-15 15:13:29] [Label] pruned 1 stale track(s)
+[2025-09-15 15:13:29] [Label] pruned 1 stale track(s)
+[2025-09-15 15:13:30] [Label] pruned 1 stale track(s)
+[2025-09-15 15:13:30] [Label] pruned 1 stale track(s)
+[2025-09-15 15:13:30] [Label] pruned 1 stale track(s)
+[2025-09-15 15:13:31] [Label] pruned 1 stale track(s)
+[2025-09-15 15:13:31] [Label] pruned 1 stale track(s)
+[2025-09-15 15:13:31] [Label] pruned 1 stale track(s)
+[2025-09-15 15:13:31] [Label] pruned 1 stale track(s)
+[2025-09-15 15:13:31] [Label] pruned 1 stale track(s)
+[2025-09-15 15:13:54] [Comm] pipeline stopped
+[2025-09-15 15:14:06] [Comm] AV cameras discovered: ['DEV_1AB22C00C5A5', 'DEV_1AB22C00C5A7']
+[2025-09-15 15:14:06] [Comm] pipeline started
+[2025-09-15 15:14:07] [Barcode Capture] starting
+[2025-09-15 15:14:08] [Barcode] Using device: cpu
+[2025-09-15 15:14:08] [Coordinator] Loaded batch: Milk Batch.xlsx
+[2025-09-15 15:14:08] [Coordinator] started
+[2025-09-15 15:14:14] [Barcode] started
+[2025-09-15 15:14:14] [Label] Loaded batch: Milk Batch.xlsx
+[2025-09-15 15:14:14] [Label] started
+[2025-09-15 15:16:46] [Comm] AV cameras discovered: ['DEV_1AB22C00C5A5', 'DEV_1AB22C00C5A7']
+[2025-09-15 15:16:46] [Comm] pipeline started
+[2025-09-15 15:16:48] [Barcode Capture] starting
+[2025-09-15 15:16:48] [Barcode] Using device: cpu
+[2025-09-15 15:16:48] [Top Capture] starting
+[2025-09-15 15:16:49] [Coordinator] Loaded batch: Milk Batch.xlsx
+[2025-09-15 15:16:49] [Coordinator] started
+[2025-09-15 15:16:54] [Top] started
+ed
+[2025-09-15 15:16:54] [Label] Loaded batch: Milk Batch.xlsx
+[2025-09-15 15:16:54] [Label] started
+[2025-09-15 15:16:56] [Barcode Capture] queued event_id=0
+[2025-09-15 15:16:57] [Barcode] event_id=0 decoded=6223000350010 box_id=0
+[2025-09-15 15:16:57] [Top] box queued event_id=0 box_id=0
+[2025-09-15 15:16:57] [Barcode Capture] queued event_id=1
+[2025-09-15 15:16:57] [Barcode] event_id=1 decoded=6222014330537 box_id=1
+[2025-09-15 15:16:57] [Top] box queued event_id=1 box_id=1
+[2025-09-15 15:16:57] [Barcode Capture] queued event_id=2
+[2025-09-15 15:16:58] [Barcode] event_id=2 decoded=6224001167423 box_id=2
+[2025-09-15 15:16:58] [Top] box queued event_id=2 box_id=2
+[2025-09-15 15:16:58] [Top Capture] queued event_id]=0
+[2025-09-15 15:16:58] [Barcode Capture] queued event_id=3
+[2025-09-15 15:16:58] [Top] event_id=0 cap=False expire=False
+[2025-09-15 15:16:58] [Top] FORWARDED event_id=0 box_id=0 seq=0 cap=False expire=False
+[2025-09-15 15:16:58] [Coordinator] box queued box_id=0 seq=0 ts=1757938618310 pending_boxes=1
+[2025-09-15 15:16:58] [Top Capture] queued event_id]=1
+[2025-09-15 15:16:58] [Barcode] event_id=3 decoded=6223001875246 box_id=3
+[2025-09-15 15:16:58] [Top] event_id=1 cap=False expire=True
+[2025-09-15 15:16:58] [Top] FORWARDED event_id=1 box_id=1 seq=1 cap=False expire=True
+[2025-09-15 15:16:58] [Top] box queued event_id=3 box_id=3
+[2025-09-15 15:16:58] [Barcode Capture] queued event_id=4
+[2025-09-15 15:16:58] [Top Capture] queued event_id]=2
+[2025-09-15 15:16:58] [Barcode] event_id=4 decoded=6222014334337 box_id=4
+[2025-09-15 15:16:59] [Top] event_id=2 cap=False expire=True
+[2025-09-15 15:16:59] [Top] FORWARDED event_id=2 box_id=2 seq=2 cap=False expire=True
+[2025-09-15 15:16:59] [Top] box queued event_id=4 box_id=4
+[2025-09-15 15:16:59] [Barcode Capture] queued event_id=5
+[2025-09-15 15:16:59] [Top Capture] queued event_id]=3
+[2025-09-15 15:16:59] [Barcode] event_id=5 decoded=6223001875246 box_id=5
+[2025-09-15 15:16:59] [Top] event_id=3 cap=False expire=True
+[2025-09-15 15:16:59] [Top] FORWARDED event_id=3 box_id=3 seq=3 cap=False expire=True
+[2025-09-15 15:16:59] [Top] box queued event_id=5 box_id=5
+[2025-09-15 15:16:59] [Top Capture] queued event_id]=4
+[2025-09-15 15:16:59] [Top] event_id=4 cap=False expire=True
+[2025-09-15 15:16:59] [Top] FORWARDED event_id=4 box_id=4 seq=4 cap=False expire=True
+[2025-09-15 15:17:00] [Top Capture] queued event_id]=5
+[2025-09-15 15:17:00] [Label] pruned 1 stale track(s)
+[2025-09-15 15:17:00] [Top] event_id=5 cap=False expire=True
+[2025-09-15 15:17:00] [Top] FORWARDED event_id=5 box_id=5 seq=5 cap=False expire=True
+[2025-09-15 15:17:00] [Label] pruned 1 stale track(s)
+[2025-09-15 15:17:00] [Label] pruned 1 stale track(s)
+[2025-09-15 15:17:01] [Label] Fired (band) seq=0 class=Beyti_Orange_235ml size=235ml
+[2025-09-15 15:17:01] [Label] pruned 1 stale track(s)
+[2025-09-15 15:17:01] [Label] pruned 1 stale track(s)
+[2025-09-15 15:17:02] [Label] pruned 1 stale track(s)
+[2025-09-15 15:17:02] [Label] pruned 1 stale track(s)
+[2025-09-15 15:17:02] [Label] pruned 1 stale track(s)
+[2025-09-15 15:17:02] [Label] pruned 1 stale track(s)
+[2025-09-15 15:17:02] [Label] pruned 1 stale track(s)
+[2025-09-15 15:17:02] [Label] pruned 1 stale track(s)
+[2025-09-15 15:17:31] [Barcode Capture] queued event_id=6
+[2025-09-15 15:17:31] [Barcode] event_id=6 decoded=6223000350010 box_id=6
+[2025-09-15 15:17:31] [Top] box queued event_id=6 box_id=6
+[2025-09-15 15:17:31] [Barcode Capture] queued event_id=7
+[2025-09-15 15:17:31] [Barcode] event_id=7 decoded=6222014330537 box_id=7
+[2025-09-15 15:17:31] [Top] box queued event_id=7 box_id=7
+[2025-09-15 15:17:32] [Barcode Capture] queued event_id=8
+[2025-09-15 15:17:32] [Barcode] event_id=8 decoded=6224001167423 box_id=8
+[2025-09-15 15:17:32] [Top] box queued event_id=8 box_id=8
+[2025-09-15 15:17:32] [Top Capture] queued event_id]=6
+[2025-09-15 15:17:32] [Top] event_id=6 cap=False expire=False
+[2025-09-15 15:17:32] [Top] FORWARDED event_id=6 box_id=6 seq=6 cap=False expire=False
+[2025-09-15 15:17:32] [Barcode Capture] queued event_id=9
+[2025-09-15 15:17:32] [Top Capture] queued event_id]=7
+[2025-09-15 15:17:32] [Barcode] event_id=9 decoded=6223001875246 box_id=9
+[2025-09-15 15:17:33] [Top] event_id=7 cap=False expire=True
+[2025-09-15 15:17:33] [Top] FORWARDED event_id=7 box_id=7 seq=7 cap=False expire=True
+[2025-09-15 15:17:33] [Top] box queued event_id=9 box_id=9
+[2025-09-15 15:17:33] [Barcode Capture] queued event_id=10
+[2025-09-15 15:17:33] [Barcode] event_id=10 decoded=6222014334337 box_id=10
+[2025-09-15 15:17:33] [Top] box queued event_id=10 box_id=10
+[2025-09-15 15:17:33] [Top Capture] queued event_id]=8
+[2025-09-15 15:17:33] [Top] event_id=8 cap=False expire=True
+[2025-09-15 15:17:33] [Top] FORWARDED event_id=8 box_id=8 seq=8 cap=False expire=True
+[2025-09-15 15:17:33] [Barcode Capture] queued event_id=11
+[2025-09-15 15:17:33] [Top Capture] queued event_id]=9
+[2025-09-15 15:17:33] [Barcode] event_id=11 decoded=6223001875246 box_id=11
+[2025-09-15 15:17:34] [Top] event_id=9 cap=False expire=True
+[2025-09-15 15:17:34] [Top] FORWARDED event_id=9 box_id=9 seq=9 cap=False expire=True
+[2025-09-15 15:17:34] [Top] box queued event_id=11 box_id=11
+[2025-09-15 15:17:34] [Top Capture] queued event_id]=10
+[2025-09-15 15:17:34] [Top] event_id=10 cap=False expire=True
+[2025-09-15 15:17:34] [Top] FORWARDED event_id=10 box_id=10 seq=10 cap=False expire=True
+[2025-09-15 15:17:34] [Label] pruned 1 stale track(s)
+[2025-09-15 15:17:34] [Label] pruned 1 stale track(s)
+[2025-09-15 15:17:34] [Top Capture] queued event_id]=11
+[2025-09-15 15:17:34] [Label] pruned 1 stale track(s)
+[2025-09-15 15:17:35] [Top] event_id=11 cap=False expire=True
+[2025-09-15 15:17:35] [Top] FORWARDED event_id=11 box_id=11 seq=11 cap=False expire=True
+[2025-09-15 15:17:35] [Label] pruned 1 stale track(s)
+[2025-09-15 15:17:35] [Label] pruned 1 stale track(s)
+[2025-09-15 15:17:35] [Label] pruned 1 stale track(s)
+[2025-09-15 15:17:35] [Label] Fired (band) seq=1 class=Beyti_Orange_235ml size=235ml
+[2025-09-15 15:17:35] [Label] pruned 1 stale track(s)
+[2025-09-15 15:17:35] [Label] pruned 1 stale track(s)
+[2025-09-15 15:17:36] [Label] pruned 1 stale track(s)
+[2025-09-15 15:17:36] [Label] pruned 1 stale track(s)
+[2025-09-15 15:17:36] [Label] pruned 1 stale track(s)
+[2025-09-15 15:17:36] [Barcode Capture] queued event_id=12
+[2025-09-15 15:17:36] [Label] pruned 1 stale track(s)
+[2025-09-15 15:17:36] [Barcode] event_id=12 decoded=6223000350010 box_id=12
+[2025-09-15 15:17:36] [Top] box queued event_id=12 box_id=12
+[2025-09-15 15:17:37] [Label] pruned 1 stale track(s)
+[2025-09-15 15:17:37] [Label] pruned 1 stale track(s)
+[2025-09-15 15:17:37] [Barcode Capture] queued event_id=13
+[2025-09-15 15:17:37] [Barcode] event_id=13 decoded=6222014330537 box_id=13
+[2025-09-15 15:17:37] [Top] box queued event_id=13 box_id=13
+[2025-09-15 15:17:37] [Barcode Capture] queued event_id=14
+[2025-09-15 15:17:37] [Barcode] event_id=14 decoded=6224001167423 box_id=14
+[2025-09-15 15:17:37] [Top] box queued event_id=14 box_id=14
+[2025-09-15 15:17:38] [Top Capture] queued event_id]=12
+[2025-09-15 15:17:38] [Top] event_id=12 cap=False expire=False
+[2025-09-15 15:17:38] [Top] FORWARDED event_id=12 box_id=12 seq=12 cap=False expire=False
+[2025-09-15 15:17:38] [Barcode Capture] queued event_id=15
+[2025-09-15 15:17:38] [Barcode] event_id=15 decoded=6223001875246 box_id=15
+[2025-09-15 15:17:38] [Top] box queued event_id=15 box_id=15
+[2025-09-15 15:17:38] [Top Capture] queued event_id]=13
+[2025-09-15 15:17:38] [Top] event_id=13 cap=False expire=True
+[2025-09-15 15:17:38] [Top] FORWARDED event_id=13 box_id=13 seq=13 cap=False expire=True
+[2025-09-15 15:17:38] [Barcode Capture] queued event_id=16
+[2025-09-15 15:17:38] [Barcode] event_id=16 decoded=6222014334337 box_id=16
+[2025-09-15 15:17:38] [Top] box queued event_id=16 box_id=16
+[2025-09-15 15:17:38] [Top Capture] queued event_id]=14
+[2025-09-15 15:17:39] [Top] event_id=14 cap=False expire=True
+[2025-09-15 15:17:39] [Top] FORWARDED event_id=14 box_id=14 seq=14 cap=False expire=True
+[2025-09-15 15:17:39] [Barcode Capture] queued event_id=17
+[2025-09-15 15:17:39] [Barcode] event_id=17 decoded=6223001875246 box_id=17
+[2025-09-15 15:17:39] [Top] box queued event_id=17 box_id=17
+[2025-09-15 15:17:39] [Top Capture] queued event_id]=15
+[2025-09-15 15:17:39] [Top] event_id=15 cap=False expire=True
+[2025-09-15 15:17:39] [Top] FORWARDED event_id=15 box_id=15 seq=15 cap=False expire=True
+[2025-09-15 15:17:40] [Top Capture] queued event_id]=16
+[2025-09-15 15:17:40] [Label] pruned 1 stale track(s)
+[2025-09-15 15:17:40] [Top] event_id=16 cap=False expire=True
+[2025-09-15 15:17:40] [Top] FORWARDED event_id=16 box_id=16 seq=16 cap=False expire=True
+[2025-09-15 15:17:40] [Label] pruned 1 stale track(s)
+[2025-09-15 15:17:40] [Label] pruned 1 stale track(s)
+[2025-09-15 15:17:40] [Top Capture] queued event_id]=17
+[2025-09-15 15:17:40] [Label] pruned 1 stale track(s)
+[2025-09-15 15:17:40] [Top] event_id=17 cap=False expire=True
+[2025-09-15 15:17:40] [Top] FORWARDED event_id=17 box_id=17 seq=17 cap=False expire=True
+[2025-09-15 15:17:41] [Label] pruned 1 stale track(s)
+[2025-09-15 15:17:41] [Label] pruned 1 stale track(s)
+[2025-09-15 15:17:41] [Label] Fired (band) seq=2 class=Beyti_Orange_235ml size=235ml
+[2025-09-15 15:17:42] [Label] pruned 1 stale track(s)
+[2025-09-15 15:17:42] [Label] pruned 1 stale track(s)
+[2025-09-15 15:17:42] [Label] pruned 1 stale track(s)
+[2025-09-15 15:17:42] [Label] pruned 1 stale track(s)
+[2025-09-15 15:17:42] [Label] pruned 1 stale track(s)
+[2025-09-15 15:17:42] [Label] pruned 1 stale track(s)
+[2025-09-15 15:17:42] [Label] pruned 1 stale track(s)
+[2025-09-15 15:17:43] [Label] pruned 1 stale track(s)
+[2025-09-15 15:17:43] [Label] pruned 1 stale track(s)
+[2025-09-15 15:19:19] [Comm] AV cameras discovered: ['DEV_1AB22C00C5A5', 'DEV_1AB22C00C5A7']
+[2025-09-15 15:19:19] [Comm] pipeline started
+[2025-09-15 15:19:21] [Top Capture] starting
+[2025-09-15 15:19:21] [Barcode Capture] starting
+[2025-09-15 15:19:21] [Barcode] Using device: cpu
+[2025-09-15 15:19:21] [Coordinator] Loaded batch: Milk Batch.xlsx
+[2025-09-15 15:19:21] [Coordinator] started
+[2025-09-15 15:19:27] [Top] started
+ed
+[2025-09-15 15:19:27] [Label] Loaded batch: Milk Batch.xlsx
+[2025-09-15 15:19:27] [Label] started
+[2025-09-15 15:19:29] [Barcode Capture] queued event_id=0
+[2025-09-15 15:19:29] [Barcode] event_id=0 decoded=6223000350010 box_id=0
+[2025-09-15 15:19:29] [Top] box queued event_id=0 box_id=0
+[2025-09-15 15:19:30] [Barcode Capture] queued event_id=1
+[2025-09-15 15:19:30] [Barcode] event_id=1 decoded=6222014330537 box_id=1
+[2025-09-15 15:19:30] [Top] box queued event_id=1 box_id=1
+[2025-09-15 15:19:30] [Barcode Capture] queued event_id=2
+[2025-09-15 15:19:30] [Barcode] event_id=2 decoded=6224001167423 box_id=2
+[2025-09-15 15:19:30] [Top] box queued event_id=2 box_id=2
+[2025-09-15 15:19:30] [Top Capture] queued event_id]=0
+[2025-09-15 15:19:30] [Barcode Capture] queued event_id=3
+[2025-09-15 15:19:30] [Top] event_id=0 cap=False expire=False
+[2025-09-15 15:19:30] [Top] FORWARDED event_id=0 box_id=0 seq=0 cap=False expire=False
+[2025-09-15 15:19:30] [Coordinator] box queued box_id=0 seq=0 ts=1757938770936 pending_boxes=1
+[2025-09-15 15:19:31] [Top Capture] queued event_id]=1
+[2025-09-15 15:19:31] [Barcode] event_id=3 decoded=6223001875246 box_id=3
+[2025-09-15 15:19:31] [Top] event_id=1 cap=False expire=True
+[2025-09-15 15:19:31] [Top] FORWARDED event_id=1 box_id=1 seq=1 cap=False expire=True
+[2025-09-15 15:19:31] [Top] box queued event_id=3 box_id=3
+[2025-09-15 15:19:31] [Coordinator] box queued box_id=1 seq=1 ts=1757938771307 pending_boxes=2
+[2025-09-15 15:19:31] [Barcode Capture] queued event_id=4
+[2025-09-15 15:19:31] [Top Capture] queued event_id]=2
+[2025-09-15 15:19:31] [Barcode] event_id=4 decoded=6222014334337 box_id=4
+[2025-09-15 15:19:31] [Top] event_id=2 cap=False expire=True
+[2025-09-15 15:19:31] [Top] FORWARDED event_id=2 box_id=2 seq=2 cap=False expire=True
+[2025-09-15 15:19:31] [Top] box queued event_id=4 box_id=4
+[2025-09-15 15:19:31] [Coordinator] box queued box_id=2 seq=2 ts=1757938771741 pending_boxes=3
+[2025-09-15 15:19:31] [Barcode Capture] queued event_id=5
+[2025-09-15 15:19:31] [Top Capture] queued event_id]=3
+[2025-09-15 15:19:32] [Barcode] event_id=5 decoded=6223001875246 box_id=5
+[2025-09-15 15:19:32] [Top] event_id=3 cap=False expire=True
+[2025-09-15 15:19:32] [Top] FORWARDED event_id=3 box_id=3 seq=3 cap=False expire=True
+[2025-09-15 15:19:32] [Top] box queued event_id=5 box_id=5
+[2025-09-15 15:19:32] [Coordinator] box queued box_id=3 seq=3 ts=1757938772189 pending_boxes=4
+[2025-09-15 15:19:32] [Top Capture] queued event_id]=4
+[2025-09-15 15:19:32] [Top] event_id=4 cap=False expire=False
+[2025-09-15 15:19:32] [Top] FORWARDED event_id=4 box_id=4 seq=4 cap=False expire=False
+[2025-09-15 15:19:32] [Coordinator] box queued box_id=4 seq=4 ts=1757938772560 pending_boxes=5
+[2025-09-15 15:19:32] [Label] pruned 1 stale track(s)
+[2025-09-15 15:19:32] [Top Capture] queued event_id]=5
+[2025-09-15 15:19:32] [Label] pruned 1 stale track(s)
+[2025-09-15 15:19:33] [Label] pruned 1 stale track(s)
+[2025-09-15 15:19:33] [Top] event_id=5 cap=False expire=True
+[2025-09-15 15:19:33] [Top] FORWARDED event_id=5 box_id=5 seq=5 cap=False expire=True
+[2025-09-15 15:19:33] [Coordinator] box queued box_id=5 seq=5 ts=1757938773038 pending_boxes=6
+[2025-09-15 15:19:33] [Label] pruned 1 stale track(s)
+[2025-09-15 15:19:33] [Label] pruned 1 stale track(s)
+[2025-09-15 15:19:33] [Label] Fired (band) seq=0 class=Beyti_Orange_235ml size=235ml
+[2025-09-15 15:19:33] [Label] pruned 1 stale track(s)
+[2025-09-15 15:19:33] [Coordinator] label queued ts=1757938773657 pending_labels=1
+[2025-09-15 15:19:33] [Coordinator] pairing box_id=0 seq=0
+[2025-09-15 15:19:33] [Coordinator] paired box_id=0; left B=5 L=0
+[2025-09-15 15:19:33] [Label] pruned 1 stale track(s)
+[2025-09-15 15:19:34] [Label] pruned 1 stale track(s)
+[2025-09-15 15:19:34] [Label] pruned 1 stale track(s)
+[2025-09-15 15:19:34] [Label] pruned 1 stale track(s)
+[2025-09-15 15:19:35] [Label] pruned 1 stale track(s)
+[2025-09-15 15:19:35] [Label] pruned 1 stale track(s)
+[2025-09-15 15:23:37] [Top Capture] queued event_id]=6
+[2025-09-15 15:23:37] [Top] event_id=6 cap=False expire=False
+[2025-09-15 15:23:37] [Top Capture] queued event_id]=7
+[2025-09-15 15:23:37] [Top] event_id=7 cap=False expire=False
+[2025-09-15 15:24:23] [Top Capture] queued event_id]=8
+[2025-09-15 15:24:23] [Top] event_id=8 cap=False expire=False
+[2025-09-15 15:24:23] [Top Capture] queued event_id]=9
+[2025-09-15 15:24:23] [Top] event_id=9 cap=False expire=False
+[2025-09-15 15:24:23] [Top Capture] queued event_id]=10
+[2025-09-15 15:24:23] [Top] event_id=10 cap=False expire=False
+[2025-09-15 15:24:24] [Top Capture] queued event_id]=11
+[2025-09-15 15:24:24] [Top] event_id=11 cap=False expire=False
+[2025-09-15 15:25:36] [Top Capture] queued event_id]=12
+[2025-09-15 15:25:36] [Top] event_id=12 cap=False expire=False
+[2025-09-15 15:25:45] [Top Capture] queued event_id]=13
+[2025-09-15 15:25:45] [Top] event_id=13 cap=False expire=False
+[2025-09-15 15:25:47] [Top Capture] queued event_id]=14
+[2025-09-15 15:25:47] [Top] event_id=14 cap=False expire=False
+[2025-09-15 15:27:22] [Top Capture] queued event_id]=15
+[2025-09-15 15:27:22] [Top] event_id=15 cap=False expire=False
+[2025-09-15 15:59:42] [Barcode Capture] Saved 20250915_155942_470DEV_1AB22C00C5A5.jpg
+[2025-09-15 15:59:42] [Barcode Capture] Saved 20250915_155942_941DEV_1AB22C00C5A5.jpg
+[2025-09-15 15:59:43] [Barcode Capture] Saved 20250915_155943_374DEV_1AB22C00C5A5.jpg
+[2025-09-15 15:59:43] [Top Capture] Saved 20250915_155943_424DEV_1AB22C00C5A7.jpg
+[2025-09-15 15:59:43] [Barcode Capture] Saved 20250915_155943_825DEV_1AB22C00C5A5.jpg
+[2025-09-15 15:59:43] [Top Capture] Saved 20250915_155943_866DEV_1AB22C00C5A7.jpg
+[2025-09-15 15:59:44] [Barcode Capture] Saved 20250915_155944_258DEV_1AB22C00C5A5.jpg
+[2025-09-15 15:59:44] [Top Capture] Saved 20250915_155944_315DEV_1AB22C00C5A7.jpg
+[2025-09-15 15:59:44] [Top Capture] Saved 20250915_155944_758DEV_1AB22C00C5A7.jpg
+[2025-09-15 15:59:44] [Barcode Capture] Saved 20250915_155944_742DEV_1AB22C00C5A5.jpg
+[2025-09-15 15:59:45] [Top Capture] Saved 20250915_155945_176DEV_1AB22C00C5A7.jpg
+[2025-09-15 15:59:45] [Top Capture] Saved 20250915_155945_652DEV_1AB22C00C5A7.jpg
+[2025-09-15 15:59:47] [Barcode Capture] Saved 20250915_155947_558DEV_1AB22C00C5A5.jpg
+[2025-09-15 16:01:42] [Barcode Capture] Saved 20250915_160142_332DEV_1AB22C00C5A5.jpg
+[2025-09-15 16:01:42] [Barcode Capture] Saved 20250915_160142_774DEV_1AB22C00C5A5.jpg
+[2025-09-15 16:01:42] [Top Capture] Saved 20250915_160142_835DEV_1AB22C00C5A7.jpg
+[2025-09-15 16:01:43] [Barcode Capture] Saved 20250915_160143_208DEV_1AB22C00C5A5.jpg
+[2025-09-15 16:01:43] [Top Capture] Saved 20250915_160143_249DEV_1AB22C00C5A7.jpg
+[2025-09-15 16:01:43] [Barcode Capture] Saved 20250915_160143_610DEV_1AB22C00C5A5.jpg
+[2025-09-15 16:01:43] [Top Capture] Saved 20250915_160143_662DEV_1AB22C00C5A7.jpg
+[2025-09-15 16:01:44] [Barcode Capture] Saved 20250915_160144_064DEV_1AB22C00C5A5.jpg
+[2025-09-15 16:01:44] [Top Capture] Saved 20250915_160144_084DEV_1AB22C00C5A7.jpg
+[2025-09-15 16:01:44] [Top Capture] Saved 20250915_160144_473DEV_1AB22C00C5A7.jpg
+[2025-09-15 16:01:44] [Top Capture] Saved 20250915_160144_925DEV_1AB22C00C5A7.jpg
+[2025-09-15 16:09:12] [Top Capture] Saved 20250915_160912_148DEV_1AB22C00C5A7.jpg
+[2025-09-15 16:09:12] [Top Capture] Saved 20250915_160912_618DEV_1AB22C00C5A7.jpg
+[2025-09-15 16:09:19] [Top Capture] Saved 20250915_160919_446DEV_1AB22C00C5A7.jpg
+[2025-09-15 16:09:20] [Top Capture] Saved 20250915_160920_708DEV_1AB22C00C5A7.jpg
+[2025-09-15 16:09:21] [Top Capture] Saved 20250915_160921_621DEV_1AB22C00C5A7.jpg
+[2025-09-15 16:09:23] [Top Capture] Saved 20250915_160923_501DEV_1AB22C00C5A7.jpg
+[2025-09-15 16:09:30] [Barcode Capture] Saved 20250915_160930_633DEV_1AB22C00C5A5.jpg
+[2025-09-15 16:09:31] [Barcode Capture] Saved 20250915_160931_038DEV_1AB22C00C5A5.jpg
+[2025-09-15 16:09:31] [Barcode Capture] Saved 20250915_160931_452DEV_1AB22C00C5A5.jpg
+[2025-09-15 16:09:31] [Top Capture] Saved 20250915_160931_525DEV_1AB22C00C5A7.jpg
+[2025-09-15 16:09:31] [Barcode Capture] Saved 20250915_160931_899DEV_1AB22C00C5A5.jpg
+[2025-09-15 16:09:31] [Top Capture] Saved 20250915_160931_932DEV_1AB22C00C5A7.jpg
+[2025-09-15 16:09:32] [Barcode Capture] Saved 20250915_160932_305DEV_1AB22C00C5A5.jpg
+[2025-09-15 16:09:32] [Top Capture] Saved 20250915_160932_368DEV_1AB22C00C5A7.jpg
+[2025-09-15 16:09:32] [Barcode Capture] Saved 20250915_160932_775DEV_1AB22C00C5A5.jpg
+[2025-09-15 16:09:32] [Top Capture] Saved 20250915_160932_791DEV_1AB22C00C5A7.jpg
+[2025-09-15 16:09:33] [Top Capture] Saved 20250915_160933_196DEV_1AB22C00C5A7.jpg
+[2025-09-15 16:09:33] [Top Capture] Saved 20250915_160933_671DEV_1AB22C00C5A7.jpg
+[2025-09-15 16:20:48] [Barcode Capture] Saved 20250915_162048_929DEV_1AB22C00C5A5.jpg
+[2025-09-15 16:20:49] [Barcode Capture] Saved 20250915_162049_452DEV_1AB22C00C5A5.jpg
+[2025-09-15 16:20:49] [Barcode Capture] Saved 20250915_162049_911DEV_1AB22C00C5A5.jpg
+[2025-09-15 16:20:49] [Top Capture] Saved 20250915_162049_981DEV_1AB22C00C5A7.jpg
+[2025-09-15 16:20:50] [Barcode Capture] Saved 20250915_162050_390DEV_1AB22C00C5A5.jpg
+[2025-09-15 16:20:50] [Top Capture] Saved 20250915_162050_440DEV_1AB22C00C5A7.jpg
+[2025-09-15 16:20:50] [Barcode Capture] Saved 20250915_162050_845DEV_1AB22C00C5A5.jpg
+[2025-09-15 16:20:50] [Top Capture] Saved 20250915_162050_903DEV_1AB22C00C5A7.jpg
+[2025-09-15 16:20:51] [Barcode Capture] Saved 20250915_162051_340DEV_1AB22C00C5A5.jpg
+[2025-09-15 16:20:51] [Top Capture] Saved 20250915_162051_360DEV_1AB22C00C5A7.jpg
+[2025-09-15 16:20:51] [Top Capture] Saved 20250915_162051_791DEV_1AB22C00C5A7.jpg
+[2025-09-15 16:20:52] [Top Capture] Saved 20250915_162052_284DEV_1AB22C00C5A7.jpg
