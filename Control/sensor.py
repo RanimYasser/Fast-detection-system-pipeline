@@ -56,16 +56,18 @@ def _listen_loop(
 
             sensor_id = id_b[0]  # 0=D2(barcode), 1=D3(top), 2=LiDAR/TOF
 
-            # If you need timestamps later, uncomment:
-            # t_arduino_us = int.from_bytes(ts_b, 'little', signed=False)
-            # t_pc = time.time()
-            # delta_ms = (t_pc * 1e6 - t_arduino_us) / 1000.0
+            #If you need timestamps later, uncomment:
+            t_arduino_us = int.from_bytes(ts_b, 'little', signed=False)
+            t_pc = time.time()
+            delta_ms = (t_pc * 1e6 - t_arduino_us) / 1000.0
 
             if sensor_id == 0:
+                #log("[SerialListener] Barcode event_id={} time={}".format(counters[0]),t_arduino_us)
                 _enqueue(barcode_event_queue, ("triggered", counters[0]))
                 counters[0] += 1
 
             elif sensor_id == 1:
+                #log("[SerialListener] Top event_id={} time={}".format(counters[1]),t_arduino_us)
                 _enqueue(top_event_queue, ("triggered", counters[1]))
                 counters[1] += 1
 

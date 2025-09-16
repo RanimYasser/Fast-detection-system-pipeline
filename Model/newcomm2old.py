@@ -157,10 +157,11 @@ def barcode_process(barcode_image_queue: mp.Queue, box_q_B2E: mp.Queue, ready):
 
         new_box = Box()
         new_box.set_id(next_box_id)
-        next_box_id += 1                    # ✅ (remove your second increment)
+        next_box_id += 1                    
 
         if len(results.boxes) == 0:
-            new_box.set_barcode(None)
+            new_box.set_barcode("inverted")
+         
         else:
             decoded_any = False
             for b in results.boxes:
@@ -313,30 +314,8 @@ def recover_camera(camera_index: int):
         return cap, ok, frame
     return cap, False, None
 
-
-#still uses trigger
-def assign_box(track_id, cx, box_q_E2L, assigned, seen_tracks, processed_ids):
-    """Assign a pending box to a detected track if it crosses trigger (one-shot)."""
-    # Do not assign if this track_id already processed
-    if track_id in processed_ids:
-        return
-    if track_id not in seen_tracks:
-        try:
-            pending_box = box_q_E2L.get_nowait()
-            assigned[track_id] = pending_box
-            seen_tracks.add(track_id)
-            #log(f"[LabelWorker] Assigned Box #{pending_box.id} -> track {track_id}")
-        except Empty:
-            pass
-
-def process_detection(track_id, class_name, assigned, detect, info_q, processed_ids, size_hint=None):
-    if track_id in processed_ids:
-        assigned.pop(track_id, None)
-        return
-
-    box = assigned.get(track_id)
-    if box is None:
-        return
+def process_detection(class_name,detect, info_q,box,size_hint=None):
+   
 
     try:
         parts = detect.label_detections(class_name)  # [brand, flavor, capacity, (opt) type]
@@ -350,9 +329,9 @@ def process_detection(track_id, class_name, assigned, detect, info_q, processed_
             if size_hint:
                 # normalize then slam to the enforced capacity
                 if size_hint == "1l":
-                    capacity = "1 L"
+                    capacity = "1L"
                 else:
-                    capacity = "235 ml"
+                    capacity = "235ml"
 
             box.set_brand(brand)
             box.set_flavor(flavor)
@@ -383,347 +362,167 @@ def process_detection(track_id, class_name, assigned, detect, info_q, processed_
 
     except Exception as e:
         log(f"[LabelWorker] Processing error: {e}")
-    finally:
-        assigned.pop(track_id, None)
-        processed_ids.add(track_id)
-
-# 
-# Stage 3: Label (OpenCV webcam)
-# 
-from collections import deque
-
-# timeouts so nothing blocks forever
-BOX_WAIT_TIMEOUT_S    = 1.2
-LABEL_WAIT_TIMEOUT_S  = 1.2
-
-def label_box_matcher_proc(
-    box_q_E2L: mp.Queue,
-    labels_queue: mp.Queue,
-    info_q: mp.Queue,
-    stop_event: mp.Event,
-    batch_name: Optional[str] = None,     # add this
-):
-    # Ensure Excel DF is loaded in THIS process
-    if batch_name:
-        try:
-            readExcel(f"{batch_name}.xlsx")
-        except Exception as e:
-            log(f"[Matcher] readExcel error: {e}")
-
-    detect = Detect()  # real parser
-
-    pending_boxes  = {}
-    pending_labels = {}
-    def _now(): return time.perf_counter()
-
-    while not stop_event.is_set():
-        # pump boxes
-        while True:
-            try:
-                item = box_q_E2L.get_nowait()
-                if isinstance(item, tuple) and len(item) >= 3 and item[0] == "box":
-                    _, event_id, box_obj = item
-                    pending_boxes[event_id] = {"t_recv": _now(), "box": box_obj}
-            except Empty:
-                break
-            except Exception:
-                break
-
-        # pump labels
-        while True:
-            try:
-                event_id, cls_name, conf, t_trig, meta = labels_queue.get_nowait()
-                pending_labels[event_id] = {
-                    "t_recv": _now(),
-                    "label": {"class": cls_name, "conf": conf, "t_trigger": t_trig, "meta": meta}
-                }
-            except Empty:
-                break
-            except Exception:
-                break
-
-        # match
-        for eid in list(pending_boxes.keys() & pending_labels.keys()):
-            box_obj = pending_boxes[eid]["box"]
-            lab     = pending_labels[eid]["label"]
-
-            # optional size hint from label bbox vs SIZE_LINE_Y
-            size_hint = None
-            try:
-                bbox = lab["meta"].get("bbox")
-                if bbox:
-                    y1, y2 = int(bbox[1]), int(bbox[3])
-                    hits = intersects_horizontal_line(y1, y2, SIZE_LINE_Y, margin=SIZE_LINE_MARGIN)
-                    size_hint = "1l" if hits else "235ml"
-            except Exception:
-                pass
-
-            try:
-                assigned = {eid: box_obj}
-                process_detection(eid, lab["class"], assigned, detect, info_q,
-                                  processed_ids=set(), size_hint=size_hint)
-            except Exception as e:
-                log(f"[Matcher] finalize error: {e}")
-
-            pending_boxes.pop(eid, None)
-            pending_labels.pop(eid, None)
-
-        # expire stragglers
-        now = _now()
-        for eid in [k for k,v in pending_boxes.items() if (now - v["t_recv"]) >= BOX_WAIT_TIMEOUT_S]:
-            try:
-                assigned = {eid: pending_boxes[eid]["box"]}
-                process_detection(eid, "Undefined", assigned, detect, info_q, processed_ids=set(), size_hint=None)
-            except Exception as e:
-                log(f"[Matcher] expire box error: {e}")
-            pending_boxes.pop(eid, None)
-
-        for eid in [k for k,v in pending_labels.items() if (now - v["t_recv"]) >= LABEL_WAIT_TIMEOUT_S]:
-            # drop unmatched labels (no box)
-            pending_labels.pop(eid, None)
-
-        time.sleep(0.002)
 
 
-import time, multiprocessing as mp
+
 import cv2
-from queue import Empty
+import time
+from collections import deque
+from multiprocessing import Process, Event as MPEvent, Queue as MPQueue
+from queue import Empty, Full
 
-# ---- knobs (tune to taste) ----
-TRIGGER_X             = 360      # virtual vertical line (px)
-DIR_RIGHT_TO_LEFT     = True     # your conveyor direction
-
-NEAR_LINE_ONLY        = False     # <- disable any near-line gating
-SNAPSHOT_MAX_AGE_MS   = 600       # allow a bit more slack than 400
-DET_CONF              = 0.35      # make detections easier to get
-SLEEP_BETWEEN_FRAMES  = 0.003
-def _pick_current_label(results, model_names):
-    """
-    Returns {'class': str, 'conf': float, 'bbox': (x1,y1,x2,y2)} or None.
-    Picks highest-confidence detection in the frame. No spatial gating.
-    """
-    boxes = None
+def _enqueue(q: MPQueue, item, drop_if_full=True):
+    if q is None:
+        return False
     try:
-        if results and results[0].boxes is not None:
-            boxes = results[0].boxes
+        q.put_nowait(item)
+        return True
+    except Full:
+        if not drop_if_full:
+            q.put(item)  # block if you prefer
+        return False
     except Exception:
-        return None
-    if boxes is None:
-        return None
+        return False
 
-    names = model_names or {}
+def label_capture_process(
+    camera_index: int,
+    event_queue: MPQueue,     # emits e.g. ("triggered", arduino_us, pc_time_s) or ("triggered", pc_time_s)
+    frame_q: MPQueue,         # for UI display (newest frames)
+    label_image_queue: MPQueue,       # frames to run detection when sensor triggers
+    stop_event: MPEvent,
+    ring_size: int = 10,      # number of recent frames kept (with timestamps)
+    display_stride: int = 1,  # push every Nth frame to frame_q (reduce UI load)
+    backend=cv2.CAP_DSHOW,    # helpful on Windows
+):
+    cap = cv2.VideoCapture(camera_index, backend)
+    if not cap.isOpened():
+        # fallback
+        cap = cv2.VideoCapture(camera_index)
+        if not cap.isOpened():
+            print(f"[Capture] ERROR: Could not open camera index {camera_index}")
+            return
+
+
+    # ring buffer: (pc_time_s, frame)
+    ring = deque(maxlen=ring_size)
+
+    frame_idx = 0
+    last_push_ui = 0
+
+    print("[Capture] started")
     try:
-        n = len(boxes)
-    except Exception:
-        n = 0
-    if n == 0:
-        return None
+        while not stop_event.is_set():
+            ok, frame = cap.read()
+            if not ok or frame is None:
+                # brief backoff and continue
+                time.sleep(0.01)
+                continue
 
-    best = None
-    best_conf = -1.0
-    for i in range(n):
+            now = time.time()
+            frame_idx += 1
+
+            # keep in ring (copy only if you expect downstream mutation)
+            ring.append((now, frame.copy()))
+
+            # Throttle UI queue (every 'display_stride' frames)
+            if display_stride <= 1 or (frame_idx % display_stride == 0):
+               ok, ui_buf = cv2.imencode(".jpg", frame, [cv2.IMWRITE_JPEG_QUALITY, 80])
+            if ok:
+                _enqueue(frame_q, ui_buf.tobytes(), drop_if_full=True)
+                last_push_ui = now
+
+            # Drain ALL pending events this loop so we don't fall behind
+            while True:
+                try:
+                    ev = event_queue.get_nowait()
+                except Empty:
+                    break
+
+                if not ev:
+                    continue
+
+                # Accept a few formats:
+                # ("triggered", pc_time_s)
+                # ("triggered", sensor_id, arduino_us, pc_time_s)
+                # ("triggered", sensor_id, pc_time_s)
+                # Normalize to (etype="triggered", pc_ts=float)
+                etype = ev[0] if isinstance(ev, (list, tuple)) and len(ev) > 0 else None
+                if etype != "triggered":
+                    # Ignore other event types
+                    continue
+
+                # Try to parse a pc_time_s from event; if not present, use 'now'
+                pc_ts = None
+                if isinstance(ev, (list, tuple)):
+                    # search any float-like in event tuple
+                    for x in ev:
+                        if isinstance(x, (int, float)) and x > 1000000000:  # rough heuristic for epoch seconds
+                            pc_ts = float(x)
+                            break
+                if pc_ts is None:
+                    pc_ts = now
+
+                # Choose a frame from ring.
+                # Strategy 1: latest
+                chosen = ring[-1] if len(ring) else None
+
+                # Strategy 2 (optional): nearest by timestamp
+                # if len(ring):
+                #     chosen = min(ring, key=lambda p: abs(p[0] - pc_ts))
+
+                if chosen is None:
+                    # If ring is empty (startup), just use current frame
+                    chosen = (now, frame)
+
+                chosen_frame = chosen[1] if chosen is not None else frame
+                ok, trig_buf = cv2.imencode(".jpg", chosen_frame, [cv2.IMWRITE_JPEG_QUALITY, 95])
+                if ok:
+                    _enqueue(label_image_queue, trig_buf.tobytes(), drop_if_full=True)
+
+            # Small sleep to keep CPU reasonable; tune as needed
+            # If you need max FPS, set to 0 or a very small value
+            # time.sleep(0.001)
+
+    except KeyboardInterrupt:
+        pass
+    finally:
+        cap.release()
+        print("[Capture] stopped")
+
+
+
+
+def label_process(box_q_E2L: mp.Queue, label_image_queue: mp.Queue,ready,batch_name: Optional[str],frame_q:mp.Queue,info_q:mp.Queue, stop_event: MPEvent):
+    """Process label images, match with Box, and output results."""
+    model, detect = initialize_label_model()
+    warmup_yolo_for_detect(model, DEVICE, imgsz=640)
+    if batch_name:
+        load_batch_data(batch_name)
+    ready.wait()
+
+    while True:
+        jpg_bytes = label_image_queue.get()  # blocking
+        frame = cv2.imdecode(np.frombuffer(jpg_bytes, dtype=np.uint8), cv2.IMREAD_COLOR)
+        if frame is None:
+            # handle decode failure
+            continue
+   # blocking
+        tag, event_id_box, current_box = box_q_E2L.get()   # blocking
+
+
         try:
-            cls  = int(boxes.cls[i].item())
-            conf = float(boxes.conf[i].item())
-            x1,y1,x2,y2 = map(int, boxes.xyxy[i].tolist())
-            if conf > best_conf:
-                best_conf = conf
-                best = {"class": names.get(cls, str(cls)),
-                        "conf": conf,
-                        "bbox": (x1, y1, x2, y2)}
+            results = model.track(frame, conf=0.8, device=DEVICE)[0]
         except Exception:
             continue
-    return best
 
-def label_detector_sensor_proc(
-    camera_index: int,
-    event_queue: mp.Queue,      # ('triggered', event_id, ...) from your sensor thread
-    labels_queue: mp.Queue,     # (event_id, class, conf, t_trigger_pc, meta)
-    frame_q: mp.Queue,          # optional: JPEG bytes for UI
-    stop_event: mp.Event,
-    *,
-    snapshot_max_age_ms: int = 600,   # how far back we accept a detection for a trigger
-    det_conf: float = 0.35,           # YOLO confidence (lower to ensure we get boxes)
-    burst_ring_size: int = 12,        # how many recent detections to keep
-    sleep_between_frames: float = 0.003
-):
-    """
-    Sensor-only fusion:
-      - Continuously runs YOLO tracking on the label camera.
-      - Maintains a small ring buffer of (timestamp, best_detection).
-      - When a sensor trigger arrives, picks the most recent detection within `snapshot_max_age_ms`
-        and pushes (event_id, class, conf, t_trigger, meta) to labels_queue.
-      - No spatial gating / trigger line involved.
-    """
-    from collections import deque
+        for b in results.boxes:
+            cls = int(b.cls[0])
+            cls_name = model.names[cls].lower()
+            x1, y1, x2, y2 = map(int, b.xyxy[0])
+            size_hint=intersects_horizontal_line(y1, y2, SIZE_LINE_Y, SIZE_LINE_MARGIN)
+            process_detection(cls_name,detect,info_q,current_box,size_hint)
 
-    # ---- open camera ----
-    cap = try_open_camera(camera_index)
-    if not cap:
-        return
-
-    # ---- model init ----
-    try:
-        model, _ = initialize_label_model()
-    except Exception as e:
-        log(f"[LabelDet] init error: {e}")
-        try:
-            cap.release()
-        except Exception:
-            pass
-        return
-
-    try:
-        warmup_yolo_for_detect(model, DEVICE, imgsz=640)
-    except Exception:
-        pass
-    model_names = getattr(model, "names", {}) or {}
-
-    # ---- small buffer of recent detections ----
-    snapshots = deque(maxlen=burst_ring_size)   # each item: (t_perf, {'class','conf','bbox'})
-
-    def _pick_top1(results):
-        """
-        Return {'class': str, 'conf': float, 'bbox': (x1,y1,x2,y2)} or None.
-        Chooses the highest-confidence detection in the current frame.
-        """
-        try:
-            if not results or results[0].boxes is None:
-                return None
-        except Exception:
-            return None
-
-        boxes = results[0].boxes
-        try:
-            n = len(boxes)
-        except Exception:
-            n = 0
-        if n == 0:
-            return None
-
-        best = None
-        best_conf = -1.0
-        for i in range(n):
-            try:
-                cls  = int(boxes.cls[i].item())
-                conf = float(boxes.conf[i].item())
-                x1, y1, x2, y2 = map(int, boxes.xyxy[i].tolist())
-                if conf > best_conf:
-                    best_conf = conf
-                    best = {
-                        "class": model_names.get(cls, str(cls)),
-                        "conf": conf,
-                        "bbox": (x1, y1, x2, y2),
-                    }
-            except Exception:
-                continue
-        return best
-
-    # ---- main loop ----
-    while not stop_event.is_set():
-        # 1) grab frame
-        ok, frame = (False, None)
-        try:
-            ok, frame = cap.read()
-        except Exception:
-            ok = False
-
-        if not ok or frame is None:
-            try:
-                cap, ok, frame = recover_camera(camera_index)
-            except Exception:
-                ok, frame = False, None
-            if not ok or frame is None:
-                time.sleep(0.03)
-                # still drain sensor queue to avoid buildup
-                try:
-                    while True:
-                        _ = event_queue.get_nowait()
-                except Empty:
-                    pass
-                except Exception:
-                    pass
-                continue
-
-        # 2) run tracking on this frame
-        try:
-            results = model.track(
-                source=frame,
-                conf=det_conf,
-                persist=True,
-                device=DEVICE,
-                verbose=False
-            )
-        except Exception as e:
-            results = None
-            log(f"[LabelDet] model.track error: {e}")
-
-        # 3) take a snapshot (top-1 by confidence)
-        det = _pick_top1(results)
-        if det is not None:
-            snapshots.append((time.perf_counter(), det))
-            # debug (optional): log(f"[LabelDet] snap {det['class']} {det['conf']:.2f}")
-
-        # 4) drain sensor triggers and emit labels (time-based only)
-        while True:
-            try:
-                evt = event_queue.get_nowait()
-            except Empty:
-                break
-            except Exception:
-                break
-
-            if isinstance(evt, tuple) and len(evt) >= 2 and evt[0] == "triggered":
-                _, event_id = evt[:2]
-                t_trigger = time.perf_counter()
-
-                # find most recent snapshot within age window
-                chosen = None
-                for t_snap, d in reversed(snapshots):
-                    if (t_trigger - t_snap) * 1000.0 <= snapshot_max_age_ms:
-                        chosen = d
-                        break
-
-                if chosen is not None:
-                    out_class = chosen["class"]
-                    out_conf  = chosen["conf"]
-                    meta      = {"bbox": chosen.get("bbox")}
-                else:
-                    out_class = "Undefined"
-                    out_conf  = 0.0
-                    meta      = {}
-
-                try:
-                    log(f"[LabelDet] Trigger eid={event_id} -> {out_class} ({out_conf:.2f})")
-                    labels_queue.put_nowait((event_id, out_class, out_conf, t_trigger, meta))
-                except Exception:
-                    pass
-                # debug (optional): log(f"[LABEL] eid={event_id} class={out_class} conf={out_conf:.2f}")
-
-        # 5) optional: push preview frame as JPEG (non-blocking)
-        try:
-            ok_jpg, buf = cv2.imencode(".jpg", frame)
-            if ok_jpg:
-                if frame_q.full():
-                    try:
-                        _ = frame_q.get_nowait()
-                    except Exception:
-                        pass
-                frame_q.put_nowait(buf.tobytes())
-        except Exception:
-            pass
-
-        time.sleep(sleep_between_frames)
-
-    # ---- cleanup ----
-    try:
-        if cap:
-            try:
-                cap.release()
-            except Exception:
-                pass
-    except NameError:
-        pass
+       
 
 
 # Pipeline start/stop helpers for the UI
@@ -735,7 +534,7 @@ def start_pipeline(label_cam_index: int = LABEL_CAM_INDEX,
                    info_q: Optional[MPQueue] = None,
                    batch_name: Optional[str] = None):
     
-    ready = Barrier(2)
+    ready = Barrier(3)
 
     barcode_event_queue = mp.Queue()
     top_event_queue=mp.Queue()
@@ -743,6 +542,8 @@ def start_pipeline(label_cam_index: int = LABEL_CAM_INDEX,
 
     barcode_image_queue = mp.Queue()
     top_image_queue=mp.Queue()
+    label_image_queue=mp.Queue()    
+
     box_q_B2E = mp.Queue()
     box_q_E2L = mp.Queue()
     labels_queue = mp.Queue()
@@ -787,12 +588,25 @@ def start_pipeline(label_cam_index: int = LABEL_CAM_INDEX,
 
     # Label worker
     procs.append(mp.Process(
-        target=label_detector_sensor_proc,
-                    args=(label_cam_index, label_event_queue, labels_queue, frame_q, stop_event),
-                    daemon=True))
-    procs.append(mp.Process(target=label_box_matcher_proc,
-                    args=(box_q_E2L, labels_queue, info_q, stop_event,batch_name),
-                    daemon=True))
+        target=label_capture_process,
+        args=(label_cam_index,          # camera_index
+            label_event_queue,        # event_queue
+            frame_q,                  # frame_q (for UI)
+            label_image_queue,        # label_image_queue (triggered)
+            stop_event),              # stop_event
+        daemon=True))
+
+    # --- Label process (consume triggered frames + boxes -> detect -> save info)
+    procs.append(mp.Process(
+        target=label_process,
+        args=(box_q_E2L,                # box_q_E2L
+            label_image_queue,        # label_image_queue
+            ready,                    # ready (barrier)
+            batch_name,               # batch_name
+            frame_q,                  # frame_q (optional for overlays/logs)
+            info_q,                   # info_q (UI/status)
+            stop_event),              # stop_event
+        daemon=True))
     for p in procs:
         p.start()
 
