@@ -11,6 +11,7 @@ class Box:
         self.flavor = None
         self.capacity = None
         self.product_type = None
+        self.orientation = None
         self.status = ""
         self.reason=[]
     
@@ -44,6 +45,9 @@ class Box:
     def set_reason(self, reason):
         self.reason = reason
 
+    def set_orientation(self, orientation):
+        self.orientation = orientation
+
   #getters
     
     def get_cap(self):
@@ -65,6 +69,9 @@ class Box:
         return self.capacity
     def has_expire_date(self):
         return self.expire_date
+    
+    def get_orientation(self):
+        return self.orientation
 
     # Get Info
     def get_box_info(self):
@@ -78,6 +85,7 @@ class Box:
             "flavor": self.flavor,
             "capacity": self.capacity,
             "product_type": self.product_type,
+            "orientation": self.orientation,
             "reason": self.reason,
             "status": self.status
 
@@ -85,10 +93,10 @@ class Box:
     def evaluate_box(self):
         rejection_reasons = []
 
-        # Barcode-related
-        if self.get_barcode() == "inverted":
+       
+        if self.get_orientation() == "inverted":
             rejection_reasons.append("inverted")
-        if not self.get_barcode():
+        if not self.get_barcode() and self.get_orientation() != "inverted" :
             rejection_reasons.append("unreadable barcode")
 
         # Expiry date check

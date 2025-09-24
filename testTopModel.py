@@ -3,7 +3,7 @@ import time
 from ultralytics import YOLO
 
 # --- config ---
-MODEL_PATH = r"C:\Users\RC-co\Desktop\Fast-detection\Yolo-models\best960.pt"   # change to your model (e.g., "best.pt")
+MODEL_PATH = r"C:\Users\RC-co\Desktop\Fast-detection\Yolo-models\best_top2.pt"   # change to your model (e.g., "best.pt")
 IMAGE_FOLDER = r"C:\Users\RC-co\Desktop\Fast-detection\captures\top"           # folder with your images
 OUTPUT_FOLDER = "runs/detect"  # YOLO saves results here by default
 
@@ -23,7 +23,7 @@ def run_yolo_on_folder(model_path, image_folder, output_folder):
 
     # Run prediction and measure wall time
     t0 = time.perf_counter()
-    results = model.predict(source=image_paths, save=True, project=output_folder, verbose=False)
+    results = model.predict(source=image_paths, save=True, project=output_folder, verbose=False, conf=0.50)
     wall_secs = time.perf_counter() - t0
 
     # Print per-image timings from Ultralytics (ms)

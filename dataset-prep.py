@@ -2,7 +2,7 @@ import os
 import cv2
 import serial
 from datetime import datetime
-from Control.camera_manger2 import SoftTriggerGrabber
+from Control.camera_manger import SoftTriggerGrabber
 
 # ===== Config =====
 PORT = "COM6"          # ← change if needed

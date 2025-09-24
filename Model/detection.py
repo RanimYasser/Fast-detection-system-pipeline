@@ -1,14 +1,8 @@
 from pyzbar import pyzbar
 import cv2
 import numpy as np
-import os
-import re
-import time
 from Model.utils import log
 
-# === Google Cloud Setup ===
-#os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = r"C:\Users\kmoha\OneDrive\Desktop\Last-fast-detection\Credentials\key.json"
-#client = vision.ImageAnnotatorClient()
 
 class Detect:
     def __init__(self):
